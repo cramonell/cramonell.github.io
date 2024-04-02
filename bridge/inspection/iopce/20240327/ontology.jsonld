@@ -1,0 +1,548 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#accesibilidad"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "alta"
+    }, {
+      "@value" : "baja"
+    }, {
+      "@value" : "media"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#indiceDeCondicion"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid26"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "100"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#indiceDeDeterioro"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid30"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "100"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#evolucion"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#extension"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#gravedad"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/iopce#codigo"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/dot#ClassifiedDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dot#Inspection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2024/03/27"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'. Amplía la DTO https://alhakam.github.io/dot/"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  }, {
+    "@value" : "es"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the Inspection of Bridges in the Spanish Road Network"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "iopce"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#InpeccionBasica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Inspección visual desarrollada por personal no especializado. Este nivel de inspección consituye una sistemática útil  para detectar deterioros de forma temprana y poder así prevenir que éstos degeneren en deterioros graves, así  comopara localizar daños que necesiten una reparación urgente"
+  }, {
+    "@language" : "en",
+    "@value" : "Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Basic Inspection"
+  }, {
+    "@language" : "es",
+    "@value" : "Inspeccion Basica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dot#Inspection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#InpeccionEspecial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Inspección que surge como  consecuencia de daños detectados en inspecciones principales o por situaciones extraordinarias. Además de un examen visual, se necesitan ensayos de caracterización y mediciones complementarias. Requieren la redacción de un informede caracterización y evaluación de daños ode un proyecto de reparación."
+  }, {
+    "@language" : "en",
+    "@value" : "Inspection arising from damage detected in main inspections or extraordinary situations. In addition to a visual examination, characterization tests and complementary measurements are required. These inspections necessitate the preparation of a characterization report and damage evaluation or a repair project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Inspeccion Especial"
+  }, {
+    "@language" : "en",
+    "@value" : "Special Inspection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dot#Inspection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#InpeccionPrincipal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Inspección visual minuciosa del estado de todos los elementos del puente, constituyendo una auténtica auscultacion del mismo. A priori no requieren la utilización de medios extraordinarios. Deben ser realizadas por personal especializado bajo la supervisión de un ingeniero. Se recomienda que la primera inspección principal, denominada comunmente inspección cero, se realice poco antes de la puesta en servicio del puente, ya que servirá de referencia para determinar la evolución de los deterioros."
+  }, {
+    "@language" : "en",
+    "@value" : "Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as 'inspection zero', be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Inspeccion Principal"
+  }, {
+    "@language" : "en",
+    "@value" : "Main Inspection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dot#Inspection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#accesibilidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\nalta (high):\n    - Repairs easily accessible for equipment and machinery that need to perform them: small scaffolding, basket with truck crane within 15 meters of reach.\n    - No need to cut traffic for the execution of these works, or the cut has little importance.\n    - No affected services.\nmedia (medium):\n    - Requires the use of scaffolding of considerable height.\n    - Small volume formwork is needed to support the elements.\n    - It is necessary to resort to cranes with a reach of more than 15 meters.\n    - Access roads or small platforms need to be created to reach the base of the element.\n    - Other elements that can be reused need to be removed.\n    - Special measures are required for the protection of people.\n    - The affected services do not involve major works for their replacement (conduits under sidewalks, cables attached to the board…).\nbaja (low):\n    - Special scaffolding or large-volume formwork is required.\n    - Cranes with a reach of more than 60 meters must be used.\n    - An auxiliary work or road diversion is necessary to divert traffic.\n    - Railway traffic is affected.\n    - The work will be carried out in deep water, with divers or other special means.\n    - Artificial peninsulas, enclosures with sheet piles, or particularly important platforms need to be created.\n    - Other elements that need to be replaced must be demolished or removed.\n    - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries\n"
+  }, {
+    "@language" : "es",
+    "@value" : "alta: \n    - Reparaciones facilmente accesibles para el equipo y maquinaria que tenga que realizarlos: pequeños andamios, cesta con camión grúa a menos de 15m de alcance.\n    - No es necesario realizar cortes de tráfico para larealización de estas obras, o el  corte de los mismos tiene poca importancia.\n    - No hay servicios afectados\nmedia:\n    - Se necesita utilizar andamios de  considerable altura.\n    - Se precisan cimbras de pequeño volumen para el  sopoorte de los elementos.\n    - Se precisan recurrir a grúas de más de 15 m de alcance.\n    - Se necesita realizar caminos de acceso o plataformas de pequeña magnitud para llegar a la base del elemento.\n    - Es necesario retirar otros elementos que luego pueden ser reutilizados.\n    - Se requieren medidas especiales para protección de las personas.\n    - Los servicios afectados no implican obras importantes para su reposición (conducciones bajo aceras, cables adosados al tablero...)\nbaja:\n    - Se requieren andamios especiales,cimbras exentas o de gran volumen.\n    - Se debe usar grúas de más de 60 m de alcance\n    - Se necesita realizar una obra auxiliar o camino para desviar el tráfico.\n    - Se afecta al tráfico ferroviario\n    - La obra se realizará bajo aguaprofunda, con buzos u otros medios especiales.\n    - Se requiere realizar pernínsulas artificiales, recintos con tablestacas o plataformas especialmente importantes.\n    - Se necesita demoler o retirar otros elementos que luego debenser repuestos.\n    - Son precisas obras auxiliares para protección temporal en cauces o pueden verse  afectados servicios de importancia:conducciones o alcantarillado importante, líneas AT, catenarias de FFCC.\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "accesibilidad"
+  }, {
+    "@language" : "en",
+    "@value" : "accessibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#codigo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "código de la inspección"
+  }, {
+    "@language" : "en",
+    "@value" : "inspection code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/dot#Inspection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "code"
+  }, {
+    "@language" : "es",
+    "@value" : "codigo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#evolucion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "0: slow speed and non-aggressive environment\n1: low speed and aggressive environment or high speed and non-aggressive environment\n2: fast speed and aggressive environment\n"
+  }, {
+    "@language" : "es",
+    "@value" : "0: velocidad lenta y ambiente no agresivo\n1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo\n2: velocidad rápida  y  ambiente agresivo\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/dot#ClassifiedDamage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "evolucion"
+  }, {
+    "@language" : "en",
+    "@value" : "evolution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#extension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "
+  }, {
+    "@language" : "es",
+    "@value" : "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/dot#ClassifiedDamage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "extension"
+  }, {
+    "@language" : "es",
+    "@value" : "extension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#gravedad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "0: <25%\n1:25-50%\n2:50-75%\n"
+  }, {
+    "@language" : "es",
+    "@value" : "0: <25%\n1:25-50%\n2:50-75%\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/dot#ClassifiedDamage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "gravedad"
+  }, {
+    "@language" : "en",
+    "@value" : "severity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#indiceDeCondicion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.\n21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.\n41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.\n61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.\n81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso"
+  }, {
+    "@language" : "en",
+    "@value" : "0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.\n21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. \n61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. \n81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "condition index"
+  }, {
+    "@language" : "es",
+    "@value" : "indice de condicion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://w3id.org/iopce#indiceDeDeterioro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "0-20: No significant consequences 'a priori' deterioration.\n21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.\n41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.\n61-80: Deterioration that can translate into a modification of the structural or functional behavior.\n81-100: Deterioration that compromises the safety of the element"
+  }, {
+    "@language" : "es",
+    "@value" : "0-20:Deterioro sin consecuencias importantes 'a priori'\n21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.\n41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.\n61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.\n81-100: Deterioro quecompromete la seguridad del elemento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/iopce#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damage index"
+  }, {
+    "@language" : "es",
+    "@value" : "indice de deterioro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid28"
+  } ]
+} ]
