@@ -4,18 +4,22 @@ Welcome to my GitHub profile! Here, you'll find a collection of my projects and 
 
 ## Based on IFC (Industry Foundation Classes)
 ### IFC 4X3 ADD2 
-[IFC 4X3 ADD2 ](/ifc/ifcowl/IFC4X3_ADD2/20240327/index-en.html)
+English: [IFC 4X3 ADD2 ](/ifc/ifcowl/IFC4X3_ADD2/20240327/index-en.html)
 ### IFC Built Products
-[BPO (Built Product Ontology) ](/ifc/bpo/20240327/index-en.html)
+English: [BPO (Built Product Ontology) ](/ifc/bpo/20240327/index-en.html)
 ### IFC Processes
-[PO (Processes Ontology) ](/ifc/po/20240327/index-en.html)
+English: [PO (Processes Ontology) ](/ifc/po/20240327/index-en.html)
+
 
 ## Information Management
 ### ISO 19560
-[19560 ontology](/Information_Management/ISO19560/) WIP
+English: [19560 ontology](/Information_Management/ISO19560/) WIP
+Spanish: [19560 ontology](/Information_Management/ISO19560/) WIP
 
 ### Versioning
-[Entity Version Ontology](/Information_Management/Versions/) 
+English: [Entity Version Ontology](/Information_Management/Versions/) WIP
+Spanish: [Entity Version Ontology](/Information_Management/Versions/) WIP
+
 
 ## Bridge 
 ### Steel Damage Ontology
