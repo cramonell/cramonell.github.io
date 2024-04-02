@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/sdo#"
+     xml:base="https://w3id.org/sdo"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="https://w3id.org/sdo#">
+        <owl:versionIRI rdf:resource="https://w3id.org/sdo#"/>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
+        <dc:date>2024/03/27</dc:date>
+        <dc:description xml:lang="es">Ontologia que describe los deterioros en el material de elementos construidos con acero. Extiende la damage topology ontology (DTO): https://alhakam.github.io/dot/</dc:description>
+        <dc:description xml:lang="en">Ontology to describe material damages identified in built elements made of steel. It extends de Damage Topology Ontology (DTO): https://alhakam.github.io/dot/</dc:description>
+        <dc:language>en</dc:language>
+        <dc:language>es</dc:language>
+        <dc:title>Steel Damage Ontology</dc:title>
+        <vann:preferredNamespacePrefix>sdo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/sdo#</vann:preferredNamespaceUri>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/sdo#section_loss -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sdo#section_loss">
+        <rdfs:domain rdf:resource="https://w3id.org/sdo#Corrosion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">material loss that modifies the mechanical characteristics of a corroded element to which affets. Unit: mm</rdfs:comment>
+        <rdfs:comment xml:lang="es">pérdida de material que modifica las propiedades mecánicas de el elemento corroido al que afecta. Unidades: mm</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sdo#"/>
+        <rdfs:label xml:lang="es">pérdida de sección</rdfs:label>
+        <rdfs:label xml:lang="en">section loss</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/dot#ClassifiedDamage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dot#ClassifiedDamage"/>
+    
+
+
+    <!-- https://w3id.org/sdo#Corrosion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sdo#Corrosion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/sdo#section_loss"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Damage caused by iron oxidation, which occurs at a rate largely dependent on temperature, humidity, and the aggressiveness of the air in contact with the element, and causes partial or total loss of material section</rdfs:comment>
+        <rdfs:comment xml:lang="es">Deterioro causado por la oxidaciñon del hierro, que se produce a una velocidad que depende en gran medida de la temperatura, la humedad  y la agresividad del aire en contacto con el elemento y causa la perdida parcial o total de la seccion de material. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sdo#"/>
+        <rdfs:label xml:lang="en">Corrosion</rdfs:label>
+        <rdfs:label xml:lang="es">Corrosion</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

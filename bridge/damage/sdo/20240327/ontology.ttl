@@ -1,0 +1,104 @@
+@prefix : <https://w3id.org/sdo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/sdo#> .
+
+<https://w3id.org/sdo#> rdf:type owl:Ontology ;
+                         owl:versionIRI <https://w3id.org/sdo#> ;
+                         <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                         <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                         <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
+                         <http://purl.org/dc/elements/1.1/description> "Ontologia que describe los deterioros en el material de elementos construidos con acero. Extiende la damage topology ontology (DTO): https://alhakam.github.io/dot/"@es ,
+                                                                       "Ontology to describe material damages identified in built elements made of steel. It extends de Damage Topology Ontology (DTO): https://alhakam.github.io/dot/"@en ;
+                         <http://purl.org/dc/elements/1.1/language> "en" ,
+                                                                    "es" ;
+                         <http://purl.org/dc/elements/1.1/title> "Steel Damage Ontology" ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sdo" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/sdo#" ;
+                         owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/sdo#section_loss
+:section_loss rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Corrosion ;
+              rdfs:range xsd:float ;
+              rdfs:comment "material loss that modifies the mechanical characteristics of a corroded element to which affets. Unit: mm"@en ,
+                           "pérdida de material que modifica las propiedades mecánicas de el elemento corroido al que afecta. Unidades: mm"@es ;
+              rdfs:isDefinedBy <https://w3id.org/sdo#> ;
+              rdfs:label "pérdida de sección"@es ,
+                         "section loss"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/dot#ClassifiedDamage
+<https://w3id.org/dot#ClassifiedDamage> rdf:type owl:Class .
+
+
+###  https://w3id.org/sdo#Corrosion
+:Corrosion rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/dot#ClassifiedDamage> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :section_loss ;
+                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           rdfs:comment "Damage caused by iron oxidation, which occurs at a rate largely dependent on temperature, humidity, and the aggressiveness of the air in contact with the element, and causes partial or total loss of material section"@en ,
+                        "Deterioro causado por la oxidaciñon del hierro, que se produce a una velocidad que depende en gran medida de la temperatura, la humedad  y la agresividad del aire en contacto con el elemento y causa la perdida parcial o total de la seccion de material. "@es ;
+           rdfs:isDefinedBy <https://w3id.org/sdo#> ;
+           rdfs:label "Corrosion"@en ,
+                      "Corrosion"@es .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/iopce#"
+     xml:base="https://w3id.org/iopce"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="https://w3id.org/iopce#">
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
+        <dc:date>2024/03/27</dc:date>
+        <dc:description xml:lang="en">Ontology that describe the bridge inspection entities and parameters according to the spanish guide for road bridge inspections</dc:description>
+        <dc:description xml:lang="es">Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la &apos;Guía para la inspección de obras de paso en la Red de Carreteras del Estado&apos;</dc:description>
+        <dc:language>en</dc:language>
+        <dc:language>es</dc:language>
+        <dc:title xml:lang="en">Ontology for the Inspection of Bridges in the Spanish Road Network</dc:title>
+        <dc:title xml:lang="es">Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado</dc:title>
+        <vann:preferredNamespacePrefix>iopce</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/iopce#</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/iopce#accesibilidad -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#accesibilidad">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#accesibilidad"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>alta</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>baja</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>media</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">
+alta (high):
+    - Repairs easily accessible for equipment and machinery that need to perform them: small scaffolding, basket with truck crane within 15 meters of reach.
+    - No need to cut traffic for the execution of these works, or the cut has little importance.
+    - No affected services.
+media (medium):
+    - Requires the use of scaffolding of considerable height.
+    - Small volume formwork is needed to support the elements.
+    - It is necessary to resort to cranes with a reach of more than 15 meters.
+    - Access roads or small platforms need to be created to reach the base of the element.
+    - Other elements that can be reused need to be removed.
+    - Special measures are required for the protection of people.
+    - The affected services do not involve major works for their replacement (conduits under sidewalks, cables attached to the board…).
+baja (low):
+    - Special scaffolding or large-volume formwork is required.
+    - Cranes with a reach of more than 60 meters must be used.
+    - An auxiliary work or road diversion is necessary to divert traffic.
+    - Railway traffic is affected.
+    - The work will be carried out in deep water, with divers or other special means.
+    - Artificial peninsulas, enclosures with sheet piles, or particularly important platforms need to be created.
+    - Other elements that need to be replaced must be demolished or removed.
+    - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries
+</rdfs:comment>
+        <rdfs:comment xml:lang="es">alta: 
+    - Reparaciones facilmente accesibles para el equipo y maquinaria que tenga que realizarlos: pequeños andamios, cesta con camión grúa a menos de 15m de alcance.
+    - No es necesario realizar cortes de tráfico para larealización de estas obras, o el  corte de los mismos tiene poca importancia.
+    - No hay servicios afectados
+media:
+    - Se necesita utilizar andamios de  considerable altura.
+    - Se precisan cimbras de pequeño volumen para el  sopoorte de los elementos.
+    - Se precisan recurrir a grúas de más de 15 m de alcance.
+    - Se necesita realizar caminos de acceso o plataformas de pequeña magnitud para llegar a la base del elemento.
+    - Es necesario retirar otros elementos que luego pueden ser reutilizados.
+    - Se requieren medidas especiales para protección de las personas.
+    - Los servicios afectados no implican obras importantes para su reposición (conducciones bajo aceras, cables adosados al tablero...)
+baja:
+    - Se requieren andamios especiales,cimbras exentas o de gran volumen.
+    - Se debe usar grúas de más de 60 m de alcance
+    - Se necesita realizar una obra auxiliar o camino para desviar el tráfico.
+    - Se afecta al tráfico ferroviario
+    - La obra se realizará bajo aguaprofunda, con buzos u otros medios especiales.
+    - Se requiere realizar pernínsulas artificiales, recintos con tablestacas o plataformas especialmente importantes.
+    - Se necesita demoler o retirar otros elementos que luego debenser repuestos.
+    - Son precisas obras auxiliares para protección temporal en cauces o pueden verse  afectados servicios de importancia:conducciones o alcantarillado importante, líneas AT, catenarias de FFCC.
+</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="es">accesibilidad</rdfs:label>
+        <rdfs:label xml:lang="en">accessibility</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#codigo -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#codigo">
+        <rdfs:domain rdf:resource="https://w3id.org/dot#Inspection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">código de la inspección</rdfs:comment>
+        <rdfs:comment xml:lang="en">inspection code</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="en">code</rdfs:label>
+        <rdfs:label xml:lang="es">codigo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#evolucion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#evolucion">
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">0: slow speed and non-aggressive environment
+1: low speed and aggressive environment or high speed and non-aggressive environment
+2: fast speed and aggressive environment
+</rdfs:comment>
+        <rdfs:comment xml:lang="es">0: velocidad lenta y ambiente no agresivo
+1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo
+2: velocidad rápida  y  ambiente agresivo
+</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="es">evolucion</rdfs:label>
+        <rdfs:label xml:lang="en">evolution</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#extension -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#extension">
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </rdfs:comment>
+        <rdfs:comment xml:lang="es">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="en">extension</rdfs:label>
+        <rdfs:label xml:lang="es">extension</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#gravedad -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#gravedad">
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">0: &lt;25%
+1:25-50%
+2:50-75%
+</rdfs:comment>
+        <rdfs:comment xml:lang="es">0: &lt;25%
+1:25-50%
+2:50-75%
+</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="es">gravedad</rdfs:label>
+        <rdfs:label xml:lang="en">severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#indiceDeCondicion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#indiceDeCondicion">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#indiceDeCondicion"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.
+21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.
+41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.
+61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.
+81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso</rdfs:comment>
+        <rdfs:comment xml:lang="en">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
+21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
+61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
+81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="en">condition index</rdfs:label>
+        <rdfs:label xml:lang="es">indice de condicion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#indiceDeDeterioro -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#indiceDeDeterioro">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#indiceDeDeterioro"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">0-20: No significant consequences &apos;a priori&apos; deterioration.
+21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
+41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
+61-80: Deterioration that can translate into a modification of the structural or functional behavior.
+81-100: Deterioration that compromises the safety of the element</rdfs:comment>
+        <rdfs:comment xml:lang="es">0-20:Deterioro sin consecuencias importantes &apos;a priori&apos;
+21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.
+41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.
+61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.
+81-100: Deterioro quecompromete la seguridad del elemento</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="en">damage index</rdfs:label>
+        <rdfs:label xml:lang="es">indice de deterioro</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/dot#ClassifiedDamage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dot#ClassifiedDamage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#evolucion"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#extension"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#gravedad"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dot#Inspection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dot#Inspection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iopce#codigo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#InpeccionBasica -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#InpeccionBasica">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dot#Inspection"/>
+        <rdfs:comment xml:lang="es">Inspección visual desarrollada por personal no especializado. Este nivel de inspección consituye una sistemática útil  para detectar deterioros de forma temprana y poder así prevenir que éstos degeneren en deterioros graves, así  comopara localizar daños que necesiten una reparación urgente</rdfs:comment>
+        <rdfs:comment xml:lang="en">Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="en">Basic Inspection</rdfs:label>
+        <rdfs:label xml:lang="es">Inspeccion Basica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#InpeccionEspecial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#InpeccionEspecial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dot#Inspection"/>
+        <rdfs:comment xml:lang="es">Inspección que surge como  consecuencia de daños detectados en inspecciones principales o por situaciones extraordinarias. Además de un examen visual, se necesitan ensayos de caracterización y mediciones complementarias. Requieren la redacción de un informede caracterización y evaluación de daños ode un proyecto de reparación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inspection arising from damage detected in main inspections or extraordinary situations. In addition to a visual examination, characterization tests and complementary measurements are required. These inspections necessitate the preparation of a characterization report and damage evaluation or a repair project.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="es">Inspeccion Especial</rdfs:label>
+        <rdfs:label xml:lang="en">Special Inspection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#InpeccionPrincipal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#InpeccionPrincipal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dot#Inspection"/>
+        <rdfs:comment xml:lang="es">Inspección visual minuciosa del estado de todos los elementos del puente, constituyendo una auténtica auscultacion del mismo. A priori no requieren la utilización de medios extraordinarios. Deben ser realizadas por personal especializado bajo la supervisión de un ingeniero. Se recomienda que la primera inspección principal, denominada comunmente inspección cero, se realice poco antes de la puesta en servicio del puente, ya que servirá de referencia para determinar la evolución de los deterioros.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as &apos;inspection zero&apos;, be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
+        <rdfs:label xml:lang="es">Inspeccion Principal</rdfs:label>
+        <rdfs:label xml:lang="en">Main Inspection</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
