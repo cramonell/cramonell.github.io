@@ -13,8 +13,8 @@
         <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
         <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
         <dc:date>2024/03/27</dc:date>
-        <dc:description xml:lang="en">Ontology that describe the bridge inspection entities and parameters according to the spanish guide for road bridge inspections</dc:description>
-        <dc:description xml:lang="es">Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la &apos;Guía para la inspección de obras de paso en la Red de Carreteras del Estado&apos;</dc:description>
+        <dc:description xml:lang="en">Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/</dc:description>
+        <dc:description xml:lang="es">Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la &apos;Guía para la inspección de obras de paso en la Red de Carreteras del Estado&apos;. Amplía la DTO https://alhakam.github.io/dot/</dc:description>
         <dc:language>en</dc:language>
         <dc:language>es</dc:language>
         <dc:title xml:lang="en">Ontology for the Inspection of Bridges in the Spanish Road Network</dc:title>

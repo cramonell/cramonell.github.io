@@ -265,10 +265,10 @@
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "Ontology that describe the bridge inspection entities and parameters according to the spanish guide for road bridge inspections"
+    "@value" : "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/"
   }, {
     "@language" : "es",
-    "@value" : "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'"
+    "@value" : "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'. Amplía la DTO https://alhakam.github.io/dot/"
   } ],
   "http://purl.org/dc/elements/1.1/language" : [ {
     "@value" : "en"

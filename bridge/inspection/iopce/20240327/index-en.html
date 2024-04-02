@@ -2,21 +2,17 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />   
- <link rel="stylesheet" href="resources/rec.css" media="screen" />   
- <link rel="stylesheet" href="resources/extra.css" media="screen" />   
- <link rel="stylesheet" href="resources/owl.css" media="screen" />   
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Ontology for the Inspection of Bridges in the Spanish Road Network</title>
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Ontology for the Inspection of Bridges in the Spanish Road Network</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/iopce#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/iopce#","name":"Ontology for the Inspection of Bridges in the Spanish Road Network", "headline":"This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFCExpress2OWL_Proces custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)", "dateReleased":"Tue Apr 02 11:00:31 CEST 2024", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/iopce#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/iopce#","name":"Ontology for the Inspection of Bridges in the Spanish Road Network", "headline":"Document describing the ontology https://w3id.org/iopce#", "dateReleased":"Tue Apr 02 11:30:20 CEST 2024", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
     <script> 
 function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
 	if($(hash).offset()!=null){
 	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
@@ -46,18 +42,12 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
+ }; 
+   </script> 
   </head> 
 
 <body>
@@ -85,13 +75,504 @@ function loadTOC(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-	  <div id="nstable"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Ontology for the Inspection of Bridges in the Spanish Road Network: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#InpeccionBasica" title="https://w3id.org/iopce#InpeccionBasica">Basic Inspection</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">
+         <span>classified damage</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
+         <span>inspection</span>
+      </a>
+   </li>
+   <li>
+      <a href="#InpeccionPrincipal" title="https://w3id.org/iopce#InpeccionPrincipal">Main Inspection</a>
+   </li>
+   <li>
+      <a href="#InpeccionEspecial" title="https://w3id.org/iopce#InpeccionEspecial">Special Inspection</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#accesibilidad" title="https://w3id.org/iopce#accesibilidad">accessibility</a>
+   </li>
+   <li>
+      <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
+   </li>
+   <li>
+      <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
+   </li>
+   <li>
+      <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
+   </li>
+   <li>
+      <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
+   </li>
+   <li>
+      <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+   </li>
+   <li>
+      <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Ontology for the Inspection of Bridges in the Spanish Road Network: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Ontology for the Inspection of Bridges in the Spanish Road Network classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for the Inspection of Bridges in the Spanish Road Network.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#InpeccionBasica" title="https://w3id.org/iopce#InpeccionBasica">Basic Inspection</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">
+            <span>classified damage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
+            <span>inspection</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InpeccionPrincipal" title="https://w3id.org/iopce#InpeccionPrincipal">Main Inspection</a>
+      </li>
+      <li>
+         <a href="#InpeccionEspecial" title="https://w3id.org/iopce#InpeccionEspecial">Special Inspection</a>
+      </li>
+   </ul>
+   <div class="entity" id="InpeccionBasica">
+      <h3>Basic Inspection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#InpeccionBasica</p>
+      <div class="comment">
+         <span class="markdown">Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/dot#ClassifiedDamage">
+      <h3>classified damage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/dot#ClassifiedDamage</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/dot#Inspection">
+      <h3>inspection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/dot#Inspection</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InpeccionBasica" title="https://w3id.org/iopce#InpeccionBasica">Basic Inspection</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InpeccionPrincipal" title="https://w3id.org/iopce#InpeccionPrincipal">Main Inspection</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InpeccionEspecial" title="https://w3id.org/iopce#InpeccionEspecial">Special Inspection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InpeccionPrincipal">
+      <h3>Main Inspection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#InpeccionPrincipal</p>
+      <div class="comment">
+         <span class="markdown">Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as 'inspection zero', be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InpeccionEspecial">
+      <h3>Special Inspection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#InpeccionEspecial</p>
+      <div class="comment">
+         <span class="markdown">Inspection arising from damage detected in main inspections or extraordinary situations. In addition to a visual examination, characterization tests and complementary measurements are required. These inspections necessitate the preparation of a characterization report and damage evaluation or a repair project.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#accesibilidad" title="https://w3id.org/iopce#accesibilidad">accessibility</a>
+      </li>
+      <li>
+         <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
+      </li>
+      <li>
+         <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
+      </li>
+      <li>
+         <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
+      </li>
+      <li>
+         <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
+      </li>
+      <li>
+         <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+      </li>
+      <li>
+         <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+      </li>
+   </ul>
+   <div class="entity" id="accesibilidad">
+      <h3>accessibility<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#accesibilidad</p>
+      <div class="comment">
+         <span class="markdown">
+alta (high):
+    - Repairs easily accessible for equipment and machinery that need to perform them: small scaffolding, basket with truck crane within 15 meters of reach.
+    - No need to cut traffic for the execution of these works, or the cut has little importance.
+    - No affected services.
+media (medium):
+    - Requires the use of scaffolding of considerable height.
+    - Small volume formwork is needed to support the elements.
+    - It is necessary to resort to cranes with a reach of more than 15 meters.
+    - Access roads or small platforms need to be created to reach the base of the element.
+    - Other elements that can be reused need to be removed.
+    - Special measures are required for the protection of people.
+    - The affected services do not involve major works for their replacement (conduits under sidewalks, cables attached to the board…).
+baja (low):
+    - Special scaffolding or large-volume formwork is required.
+    - Cranes with a reach of more than 60 meters must be used.
+    - An auxiliary work or road diversion is necessary to divert traffic.
+    - Railway traffic is affected.
+    - The work will be carried out in deep water, with divers or other special means.
+    - Artificial peninsulas, enclosures with sheet piles, or particularly important platforms need to be created.
+    - Other elements that need to be replaced must be demolished or removed.
+    - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#accesibilidad" title="https://w3id.org/iopce#accesibilidad">accessibility</a>
+               <sup class="type-dp" title="data property">dp</sup> 
+               <span class="logic">max</span> 1</dd>
+            <dt>has range</dt>
+            <dd>{ "alta" , "baja" , "media" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="codigo">
+      <h3>code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#codigo</p>
+      <div class="comment">
+         <span class="markdown">inspection code</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="indiceDeCondicion">
+      <h3>condition index<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#indiceDeCondicion</p>
+      <div class="comment">
+         <span class="markdown">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
+21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
+61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
+81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
+               <sup class="type-dp" title="data property">dp</sup> 
+               <span class="logic">max</span> 1</dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="indiceDeDeterioro">
+      <h3>damage index<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#indiceDeDeterioro</p>
+      <div class="comment">
+         <span class="markdown">0-20: No significant consequences 'a priori' deterioration.
+21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
+41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
+61-80: Deterioration that can translate into a modification of the structural or functional behavior.
+81-100: Deterioration that compromises the safety of the element</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
+               <sup class="type-dp" title="data property">dp</sup> 
+               <span class="logic">max</span> 1</dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="evolucion">
+      <h3>evolution<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#evolucion</p>
+      <div class="comment">
+         <span class="markdown">0: slow speed and non-aggressive environment
+1: low speed and aggressive environment or high speed and non-aggressive environment
+2: fast speed and aggressive environment
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="extension">
+      <h3>extension<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#extension</p>
+      <div class="comment">
+         <span class="markdown">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="gravedad">
+      <h3>severity<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#gravedad</p>
+      <div class="comment">
+         <span class="markdown">0: &lt;25%
+1:25-50%
+2:50-75%
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>

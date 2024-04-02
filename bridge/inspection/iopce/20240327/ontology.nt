@@ -2,8 +2,8 @@
 <https://w3id.org/iopce#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/date> "2024/03/27" .
-<https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/description> "Ontology that describe the bridge inspection entities and parameters according to the spanish guide for road bridge inspections"@en .
-<https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/description> "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'"@es .
+<https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/description> "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/"@en .
+<https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/description> "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'. Amplía la DTO https://alhakam.github.io/dot/"@es .
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/language> "en" .
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/language> "es" .
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/title> "Ontology for the Inspection of Bridges in the Spanish Road Network"@en .
