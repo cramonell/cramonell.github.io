@@ -7,6 +7,7 @@
       "es" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"
     },
     "iri" : "https://w3id.org/iopce#",
+    "version" : "1.0",
     "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
     "description" : {
       "en" : "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/",
@@ -48,6 +49,12 @@
         "value" : "en",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
@@ -56,13 +63,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "es",
-        "value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
+        "language" : "en",
+        "value" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
+        "language" : "es",
+        "value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
         "type" : "label"
       } ]
     }

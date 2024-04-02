@@ -15,7 +15,7 @@ Welcome to my GitHub profile! Here, you'll find a collection of my projects and 
 [19560 ontology](/Information_Management/ISO19560/) WIP
 
 ### Versioning
-[Entity Version Ontology](/Information_Management/Versions/) WIP
+[Entity Version Ontology](/Information_Management/Versions/) 
 
 ## Bridge 
 ### Steel Damage Ontology

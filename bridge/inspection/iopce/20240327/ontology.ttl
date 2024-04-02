@@ -7,6 +7,7 @@
 @base <https://w3id.org/iopce#> .
 
 <https://w3id.org/iopce#> rdf:type owl:Ontology ;
+                           owl:versionIRI <https://w3id.org/iopce#> ;
                            <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
                            <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
                            <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
@@ -17,7 +18,8 @@
                            <http://purl.org/dc/elements/1.1/title> "Ontology for the Inspection of Bridges in the Spanish Road Network"@en ,
                                                                    "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"@es ;
                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "iopce" ;
-                           <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/iopce#" .
+                           <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/iopce#" ;
+                           owl:versionInfo "1.0" .
 
 #################################################################
 #    Annotation properties
