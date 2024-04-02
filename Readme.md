@@ -5,11 +5,11 @@ Welcome to my GitHub profile! Here, you'll find a collection of my projects and 
 ## Ontologies:
 
 ### IFC 4X3 ADD2 
-[IFC 4X3 ADD2 ](cramonell.github.io/ifc/ifcowl/IFC4X3_ADD2/20240327/index-en.html)
+[IFC 4X3 ADD2 ](/ifc/ifcowl/IFC4X3_ADD2/20240327/index-en.html)
 ### IFC Built Products
-[BPO (Built Product Ontology) ](cramonell.github.io/ifc/bpo/20240327/index-en.html)
+[BPO (Built Product Ontology) ](/ifc/bpo/20240327/index-en.html)
 ### IFC Processes
-[PO (Processes Ontology) ](cramonell.github.io/ifc/po/20240327/index-en.html)
+[PO (Processes Ontology) ](/ifc/po/20240327/index-en.html)
 ### ISO 19560
 
 ### Steel Damage Ontology
