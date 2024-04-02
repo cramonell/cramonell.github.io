@@ -1,124 +1,767 @@
 {
-  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
-  "header" : {
-    "languages" : [ "en", "es", "undefined" ],
-    "title" : {
-      "en" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
-      "es" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en",
+      "es"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "https://w3id.org/dot",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "https://w3id.org/iopce"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "https://w3id.org/iopce#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     },
-    "iri" : "https://w3id.org/iopce#",
-    "version" : "1.0",
-    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
-    "description" : {
-      "en" : "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/",
-      "es" : "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'. Amplía la DTO https://alhakam.github.io/dot/"
+    "title": {
+      "en": "Ontology for the Inspection of Bridges in the Spanish Road Network",
+      "es": "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"
     },
-    "other" : {
-      "date" : [ {
-        "identifier" : "date",
-        "language" : "undefined",
-        "value" : "2024/03/27",
-        "type" : "label"
-      } ],
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "http://creativecommons.org/licenses/by/3.0/",
-        "type" : "label"
-      } ],
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
-        "type" : "label"
-      } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "iopce",
-        "type" : "label"
-      } ],
-      "language" : [ {
-        "identifier" : "language",
-        "language" : "undefined",
-        "value" : "es",
-        "type" : "label"
-      }, {
-        "identifier" : "language",
-        "language" : "undefined",
-        "value" : "en",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0",
-        "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/iopce#",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
-        "type" : "label"
-      }, {
-        "identifier" : "title",
-        "language" : "es",
-        "value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
-        "type" : "label"
-      } ]
+    "iri": "https://w3id.org/iopce#",
+    "version": "1.0",
+    "author": [
+      "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+    ],
+    "description": {
+      "en": "Ontology that describes the bridge inspection entities and parameters according to the spanish guide for road bridge inspections. It extends DTO https://alhakam.github.io/dot/",
+      "es": "Ontología que describe las entidades y parámetros para la inspección de obras de paso en carreteras de acuerdo con la 'Guía para la inspección de obras de paso en la Red de Carreteras del Estado'. Amplía la DTO https://alhakam.github.io/dot/"
+    },
+    "other": {
+      "date": [
+        {
+          "identifier": "date",
+          "language": "undefined",
+          "value": "2024/03/27",
+          "type": "label"
+        }
+      ],
+      "license": [
+        {
+          "identifier": "license",
+          "language": "undefined",
+          "value": "http://creativecommons.org/licenses/by/3.0/",
+          "type": "label"
+        }
+      ],
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+          "type": "label"
+        }
+      ],
+      "preferredNamespacePrefix": [
+        {
+          "identifier": "preferredNamespacePrefix",
+          "language": "undefined",
+          "value": "iopce",
+          "type": "label"
+        }
+      ],
+      "language": [
+        {
+          "identifier": "language",
+          "language": "undefined",
+          "value": "en",
+          "type": "label"
+        },
+        {
+          "identifier": "language",
+          "language": "undefined",
+          "value": "es",
+          "type": "label"
+        }
+      ],
+      "preferredNamespaceUri": [
+        {
+          "identifier": "preferredNamespaceUri",
+          "language": "undefined",
+          "value": "https://w3id.org/iopce#",
+          "type": "label"
+        }
+      ],
+      "versionInfo": [
+        {
+          "identifier": "versionInfo",
+          "language": "undefined",
+          "value": "1.0",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "es",
+          "value": "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
+          "type": "label"
+        },
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "Ontology for the Inspection of Bridges in the Spanish Road Network",
+          "type": "label"
+        }
+      ]
     }
   },
-  "namespace" : [ ],
-  "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  } ],
-  "classAttribute" : [ {
-    "iri" : "https://w3id.org/dot#ClassifiedDamage",
-    "baseIri" : "https://w3id.org/dot",
-    "instances" : 0,
-    "id" : "0"
-  }, {
-    "iri" : "https://w3id.org/iopce#InpeccionPrincipal",
-    "baseIri" : "https://w3id.org/iopce",
-    "instances" : 0,
-    "id" : "1",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://w3id.org/iopce#InpeccionBasica",
-    "baseIri" : "https://w3id.org/iopce",
-    "instances" : 0,
-    "id" : "3",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://w3id.org/iopce#InpeccionEspecial",
-    "baseIri" : "https://w3id.org/iopce",
-    "instances" : 0,
-    "id" : "4",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://w3id.org/dot#Inspection",
-    "baseIri" : "https://w3id.org/dot",
-    "instances" : 0,
-    "subClasses" : [ "1", "3", "4" ],
-    "id" : "2"
-  } ]
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.46",
+      "translation": [
+        238.25,
+        175.82
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "4",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "5",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "6",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "8",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "15",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "https://w3id.org/iopce#InpeccionBasica",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "InpeccionBasica",
+        "en": "Basic Inspection",
+        "es": "Inspeccion Basica"
+      },
+      "comment": {
+        "en": "Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair.",
+        "es": "Inspección visual desarrollada por personal no especializado. Este nivel de inspección consituye una sistemática útil  para detectar deterioros de forma temprana y poder así prevenir que éstos degeneren en deterioros graves, así  comopara localizar daños que necesiten una reparación urgente"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "pos": [
+        448.95,
+        339.44
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        511.65,
+        -196.49
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        629.6,
+        -375.6
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        300.48,
+        -151.17
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        674.58,
+        -53.65
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        907.53,
+        792.1
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1143.53,
+        373.03
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        381.8,
+        858.41
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        859.5,
+        385.87
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "https://w3id.org/dot#Inspection",
+      "baseIri": "https://w3id.org/dot",
+      "label": {
+        "IRI-based": "Inspection"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        281.98,
+        640.98
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "https://w3id.org/dot#ClassifiedDamage",
+      "baseIri": "https://w3id.org/dot",
+      "label": {
+        "IRI-based": "ClassifiedDamage"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1008.03,
+        573.21
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "https://w3id.org/iopce#InpeccionPrincipal",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "InpeccionPrincipal",
+        "en": "Main Inspection",
+        "es": "Inspeccion Principal"
+      },
+      "comment": {
+        "en": "Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as 'inspection zero', be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration.",
+        "es": "Inspección visual minuciosa del estado de todos los elementos del puente, constituyendo una auténtica auscultacion del mismo. A priori no requieren la utilización de medios extraordinarios. Deben ser realizadas por personal especializado bajo la supervisión de un ingeniero. Se recomienda que la primera inspección principal, denominada comunmente inspección cero, se realice poco antes de la puesta en servicio del puente, ya que servirá de referencia para determinar la evolución de los deterioros."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "pos": [
+        -61.91,
+        610.57
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "https://w3id.org/iopce#InpeccionEspecial",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "InpeccionEspecial",
+        "en": "Special Inspection",
+        "es": "Inspeccion Especial"
+      },
+      "comment": {
+        "en": "Inspection arising from damage detected in main inspections or extraordinary situations. In addition to a visual examination, characterization tests and complementary measurements are required. These inspections necessitate the preparation of a characterization report and damage evaluation or a repair project.",
+        "es": "Inspección que surge como  consecuencia de daños detectados en inspecciones principales o por situaciones extraordinarias. Además de un examen visual, se necesitan ensayos de caracterización y mediciones complementarias. Requieren la redacción de un informede caracterización y evaluación de daños ode un proyecto de reparación."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "pos": [
+        90.95,
+        341.26
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "3",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "12",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "20",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:subClassOf"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "3",
+      "iri": "https://w3id.org/iopce#indiceDeDeterioro",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "indiceDeDeterioro",
+        "en": "damage index",
+        "es": "indice de deterioro"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "0-20: No significant consequences 'a priori' deterioration.\n21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.\n41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.\n61-80: Deterioration that can translate into a modification of the structural or functional behavior.\n81-100: Deterioration that compromises the safety of the element",
+        "es": "0-20:Deterioro sin consecuencias importantes 'a priori'\n21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.\n41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.\n61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.\n81-100: Deterioro quecompromete la seguridad del elemento"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "4",
+      "pos": [
+        575.58,
+        -293.57
+      ]
+    },
+    {
+      "id": "9",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "10",
+      "range": "1",
+      "pos": [
+        110.04,
+        625.77
+      ]
+    },
+    {
+      "id": "11",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "0",
+      "range": "1",
+      "pos": [
+        365.47,
+        490.21
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://w3id.org/iopce#extension",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "extension",
+        "en": "extension",
+        "es": "extension"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "1: <25%\n2:25-50%\n3:50-75%\n4:>75% ",
+        "es": "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "maxCardinality": "1",
+      "domain": "13",
+      "range": "14",
+      "pos": [
+        922.2,
+        464.95
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "https://w3id.org/iopce#indiceDeCondicion",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "indiceDeCondicion",
+        "en": "condition index",
+        "es": "indice de condicion"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.\n21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. \n61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. \n81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary",
+        "es": "0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.\n21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.\n41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.\n61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.\n81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "5",
+      "pos": [
+        404.65,
+        -173.53
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "https://w3id.org/iopce#accesibilidad",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "accesibilidad",
+        "en": "accessibility",
+        "es": "accesibilidad"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "\nalta (high):\n    - Repairs easily accessible for equipment and machinery that need to perform them: small scaffolding, basket with truck crane within 15 meters of reach.\n    - No need to cut traffic for the execution of these works, or the cut has little importance.\n    - No affected services.\nmedia (medium):\n    - Requires the use of scaffolding of considerable height.\n    - Small volume formwork is needed to support the elements.\n    - It is necessary to resort to cranes with a reach of more than 15 meters.\n    - Access roads or small platforms need to be created to reach the base of the element.\n    - Other elements that can be reused need to be removed.\n    - Special measures are required for the protection of people.\n    - The affected services do not involve major works for their replacement (conduits under sidewalks, cables attached to the board…).\nbaja (low):\n    - Special scaffolding or large-volume formwork is required.\n    - Cranes with a reach of more than 60 meters must be used.\n    - An auxiliary work or road diversion is necessary to divert traffic.\n    - Railway traffic is affected.\n    - The work will be carried out in deep water, with divers or other special means.\n    - Artificial peninsulas, enclosures with sheet piles, or particularly important platforms need to be created.\n    - Other elements that need to be replaced must be demolished or removed.\n    - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries\n",
+        "es": "alta: \n    - Reparaciones facilmente accesibles para el equipo y maquinaria que tenga que realizarlos: pequeños andamios, cesta con camión grúa a menos de 15m de alcance.\n    - No es necesario realizar cortes de tráfico para larealización de estas obras, o el  corte de los mismos tiene poca importancia.\n    - No hay servicios afectados\nmedia:\n    - Se necesita utilizar andamios de  considerable altura.\n    - Se precisan cimbras de pequeño volumen para el  sopoorte de los elementos.\n    - Se precisan recurrir a grúas de más de 15 m de alcance.\n    - Se necesita realizar caminos de acceso o plataformas de pequeña magnitud para llegar a la base del elemento.\n    - Es necesario retirar otros elementos que luego pueden ser reutilizados.\n    - Se requieren medidas especiales para protección de las personas.\n    - Los servicios afectados no implican obras importantes para su reposición (conducciones bajo aceras, cables adosados al tablero...)\nbaja:\n    - Se requieren andamios especiales,cimbras exentas o de gran volumen.\n    - Se debe usar grúas de más de 60 m de alcance\n    - Se necesita realizar una obra auxiliar o camino para desviar el tráfico.\n    - Se afecta al tráfico ferroviario\n    - La obra se realizará bajo aguaprofunda, con buzos u otros medios especiales.\n    - Se requiere realizar pernínsulas artificiales, recintos con tablestacas o plataformas especialmente importantes.\n    - Se necesita demoler o retirar otros elementos que luego debenser repuestos.\n    - Son precisas obras auxiliares para protección temporal en cauces o pueden verse  afectados servicios de importancia:conducciones o alcantarillado importante, líneas AT, catenarias de FFCC.\n"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "6",
+      "pos": [
+        598.69,
+        -120.18
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "https://w3id.org/iopce#evolucion",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "evolucion",
+        "en": "evolution",
+        "es": "evolucion"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "0: slow speed and non-aggressive environment\n1: low speed and aggressive environment or high speed and non-aggressive environment\n2: fast speed and aggressive environment\n",
+        "es": "0: velocidad lenta y ambiente no agresivo\n1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo\n2: velocidad rápida  y  ambiente agresivo\n"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "maxCardinality": "1",
+      "domain": "13",
+      "range": "7",
+      "pos": [
+        949.64,
+        700.38
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "https://w3id.org/iopce#gravedad",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "gravedad",
+        "en": "severity",
+        "es": "gravedad"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "0: <25%\n1:25-50%\n2:50-75%\n",
+        "es": "0: <25%\n1:25-50%\n2:50-75%\n"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "maxCardinality": "1",
+      "domain": "13",
+      "range": "8",
+      "pos": [
+        1086.41,
+        457.42
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "https://w3id.org/iopce#codigo",
+      "baseIri": "https://w3id.org/iopce",
+      "label": {
+        "IRI-based": "codigo",
+        "en": "code",
+        "es": "codigo"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "inspection code",
+        "es": "código de la inspección"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "https://w3id.org/iopce#",
+            "type": "iri"
+          }
+        ]
+      },
+      "cardinality": "1",
+      "domain": "1",
+      "range": "15",
+      "pos": [
+        340.02,
+        767.42
+      ]
+    },
+    {
+      "id": "22",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "19",
+      "range": "1",
+      "pos": [
+        186.47,
+        491.12
+      ]
+    }
+  ]
 }
