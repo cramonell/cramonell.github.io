@@ -14,10 +14,12 @@ English: [PO (Processes Ontology) ](/ifc/po/20240327/index-en.html)
 ## Information Management
 ### ISO 19560
 English: [19560 ontology](/Information_Management/ISO19560/) WIP
+
 Spanish: [19560 ontology](/Information_Management/ISO19560/) WIP
 
 ### Versioning
 English: [Entity Version Ontology](/Information_Management/Versions/) WIP
+
 Spanish: [Entity Version Ontology](/Information_Management/Versions/) WIP
 
 
