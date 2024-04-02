@@ -12,10 +12,10 @@ Welcome to my GitHub profile! Here, you'll find a collection of my projects and 
 
 ## Information Management
 ### ISO 19560
-[19560 ontology](/Information_Management/ISO19560/) (WIP)
+[19560 ontology](/Information_Management/ISO19560/) WIP
 
 ### Versioning
-[Entity Version Ontology](/Information_Management/Versions/) (WIP)
+[Entity Version Ontology](/Information_Management/Versions/) WIP
 
 ## Bridge 
 ### Steel Damage Ontology
@@ -31,7 +31,7 @@ English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Netw
 
 ## Spatial
 ### Map conversion
-[MCO (Map Conversion Ontology)](/Spatial/mco) (WIP)
+[MCO (Map Conversion Ontology)](/Spatial/mco) WIP
 
 # Converters
 
