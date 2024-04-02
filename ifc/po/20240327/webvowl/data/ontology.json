@@ -1,0 +1,1265 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/dot", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/po-ifc", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Proces Ontology"
+    },
+    "iri" : "https://w3id.org/po-ifc#",
+    "version" : "1.0",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "undefined" : "OWL ontology to describe processes in the built environment. It is based on the Proces ontology descibed in IFC (Insutry Foundation Classes) schema."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/03/27",
+        "type" : "label"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "Proces Ontology",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "po",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFCExpress2OWL_Proces custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/po-ifc#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Proces Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/po-ifc#EventTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventTime"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/dot#Inspection",
+    "baseIri" : "https://w3id.org/dot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inspection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/po-ifc#SchedulingTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SchedulingTime"
+    },
+    "union" : [ "1", "4" ],
+    "subClasses" : [ "1", "4" ],
+    "attributes" : [ "union" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/po-ifc#Event",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "id" : "52",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/po-ifc#TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TaskTime"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/po-ifc#Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "union" : [ "48", "52", "10" ],
+    "subClasses" : [ "48", "52", "10" ],
+    "attributes" : [ "union" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#Procedure",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Procedure"
+    },
+    "id" : "48",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/po-ifc#Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task"
+    },
+    "subClasses" : [ "23" ],
+    "id" : "10",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/po-ifc#totalFloat_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "totalFloat_TaskTime",
+      "undefined" : "TotalFloat"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#name_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "name_Process",
+      "undefined" : "Name"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#status_Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "status_Task",
+      "undefined" : "Status"
+    },
+    "domain" : "10",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#actualFinish_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "actualFinish_TaskTime",
+      "undefined" : "ActualFinish"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#earlyDate_EventTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "earlyDate_EventTime",
+      "undefined" : "EarlyDate"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#lateDate_EventTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "lateDate_EventTime",
+      "undefined" : "LateDate"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#actualStart_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "actualStart_TaskTime",
+      "undefined" : "ActualStart"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#completion_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "completion_TaskTime",
+      "undefined" : "Completion"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isNestedBy_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isNestedBy_Process",
+      "undefined" : "IsNestedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isSuccessorFrom_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isSuccessorFrom_Process",
+      "undefined" : "IsSuccessorFrom"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#scheduleDate_EventTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "scheduleDate_EventTime",
+      "undefined" : "ScheduleDate"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#globalId_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "globalId_Process",
+      "undefined" : "GlobalId"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#actualDuration_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "actualDuration_TaskTime",
+      "undefined" : "ActualDuration"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "44"
+  }, {
+    "range" : "10",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "7",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "7",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "7",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#dataOrigin_SchedulingTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "dataOrigin_SchedulingTime",
+      "undefined" : "DataOrigin"
+    },
+    "domain" : "2",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "53"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#earlyStart_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "earlyStart_TaskTime",
+      "undefined" : "EarlyStart"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#objectType_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "objectType_Process",
+      "undefined" : "ObjectType"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#statusTime_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "statusTime_TaskTime",
+      "undefined" : "StatusTime"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#scheduleFinish_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "scheduleFinish_TaskTime",
+      "undefined" : "ScheduleFinish"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#taskTime_Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "taskTime_Task",
+      "undefined" : "TaskTime"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "functional" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#remainingTime_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "remainingTime_TaskTime",
+      "undefined" : "RemainingTime"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#priority_Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "priority_Task",
+      "undefined" : "Priority"
+    },
+    "domain" : "10",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#eventTriggerType_Event",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "eventTriggerType_Event",
+      "undefined" : "EventTriggerType"
+    },
+    "domain" : "52",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#name_SchedulingTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "name_SchedulingTime",
+      "undefined" : "Name"
+    },
+    "domain" : "2",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#freeFloat_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "freeFloat_TaskTime",
+      "undefined" : "FreeFloat"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#eventOccurenceTime_Event",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "eventOccurenceTime_Event",
+      "undefined" : "EventOccurenceTime"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "functional" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#lateFinish_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "lateFinish_TaskTime",
+      "undefined" : "LateFinish"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#decomposes_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "decomposes_Process",
+      "undefined" : "Decomposes"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#workMethod_Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "workMethod_Task",
+      "undefined" : "WorkMethod"
+    },
+    "domain" : "10",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isMilestone_Task",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isMilestone_Task",
+      "undefined" : "IsMilestone"
+    },
+    "domain" : "10",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#lateStart_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "lateStart_TaskTime",
+      "undefined" : "LateStart"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#actualDate_EventTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "actualDate_EventTime",
+      "undefined" : "ActualDate"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isDecomposedBy_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isDecomposedBy_Process",
+      "undefined" : "IsDecomposedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#identification_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "identification_Process",
+      "undefined" : "Identification"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isPredecessorTo_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isPredecessorTo_Process",
+      "undefined" : "IsPredecessorTo"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#isCritical_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "isCritical_TaskTime",
+      "undefined" : "IsCritical"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#nests_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "nests_Process",
+      "undefined" : "Nests"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#description_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "description_Process",
+      "undefined" : "Description"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#scheduleStart_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "scheduleStart_TaskTime",
+      "undefined" : "ScheduleStart"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#operatesOn_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "operatesOn_Process",
+      "undefined" : "OperatesOn"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "10",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "userDefinedDataOrigin_SchedulingTime",
+      "undefined" : "UserDefinedDataOrigin"
+    },
+    "domain" : "2",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#earlyFinish_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "earlyFinish_TaskTime",
+      "undefined" : "EarlyFinish"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#scheduleDuration_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "scheduleDuration_TaskTime",
+      "undefined" : "ScheduleDuration"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "94"
+  }, {
+    "range" : "10",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#durationType_TaskTime",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "durationType_TaskTime",
+      "undefined" : "DurationType"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "96"
+  }, {
+    "range" : "48",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#longDescription_Process",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "longDescription_Process",
+      "undefined" : "LongDescription"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/po-ifc#userDefinedEventTriggerType_Event",
+    "baseIri" : "https://w3id.org/po-ifc",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "userDefinedEventTriggerType_Event",
+      "undefined" : "UserDefinedEventTriggerType"
+    },
+    "domain" : "52",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "99"
+  } ]
+}

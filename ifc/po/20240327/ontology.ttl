@@ -1,0 +1,488 @@
+@prefix : <https://w3id.org/po-ifc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/po-ifc#> .
+
+<https://w3id.org/po-ifc#> rdf:type owl:Ontology ;
+                            owl:versionIRI <https://w3id.org/po-ifc#> ;
+                            <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                            <http://purl.org/dc/elements/1.1/abstract> "This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFCExpress2OWL_Proces custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)" ;
+                            <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                            <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
+                            <http://purl.org/dc/elements/1.1/description> "OWL ontology to describe processes in the built environment. It is based on the Proces ontology descibed in IFC (Insutry Foundation Classes) schema." ;
+                            <http://purl.org/dc/elements/1.1/identifier> "Proces Ontology" ;
+                            <http://purl.org/dc/elements/1.1/language> "en" ;
+                            <http://purl.org/dc/elements/1.1/title> "Proces Ontology" ;
+                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "po" ;
+                            <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/po-ifc#" ;
+                            owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/po-ifc#decomposes_Process
+:decomposes_Process rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Process ;
+                    rdfs:range :Process ;
+                    rdfs:label "Decomposes" .
+
+
+###  https://w3id.org/po-ifc#eventOccurenceTime_Event
+:eventOccurenceTime_Event rdf:type owl:ObjectProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :Event ;
+                          rdfs:range :EventTime ;
+                          rdfs:label "EventOccurenceTime" .
+
+
+###  https://w3id.org/po-ifc#isDecomposedBy_Process
+:isDecomposedBy_Process rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Process ;
+                        rdfs:range :Process ;
+                        rdfs:label "IsDecomposedBy" .
+
+
+###  https://w3id.org/po-ifc#isNestedBy_Process
+:isNestedBy_Process rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Process ;
+                    rdfs:range :Process ;
+                    rdfs:label "IsNestedBy" .
+
+
+###  https://w3id.org/po-ifc#isPredecessorTo_Process
+:isPredecessorTo_Process rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Process ;
+                         rdfs:range :Process ;
+                         rdfs:label "IsPredecessorTo" .
+
+
+###  https://w3id.org/po-ifc#isSuccessorFrom_Process
+:isSuccessorFrom_Process rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Process ;
+                         rdfs:range :Process ;
+                         rdfs:label "IsSuccessorFrom" .
+
+
+###  https://w3id.org/po-ifc#nests_Process
+:nests_Process rdf:type owl:ObjectProperty ;
+               rdfs:domain :Process ;
+               rdfs:range :Process ;
+               rdfs:label "Nests" .
+
+
+###  https://w3id.org/po-ifc#operatesOn_Process
+:operatesOn_Process rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Process ;
+                    rdfs:label "OperatesOn" .
+
+
+###  https://w3id.org/po-ifc#taskTime_Task
+:taskTime_Task rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Task ;
+               rdfs:range :TaskTime ;
+               rdfs:label "TaskTime" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/po-ifc#actualDate_EventTime
+:actualDate_EventTime rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :EventTime ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "ActualDate" .
+
+
+###  https://w3id.org/po-ifc#actualDuration_TaskTime
+:actualDuration_TaskTime rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :TaskTime ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "ActualDuration" .
+
+
+###  https://w3id.org/po-ifc#actualFinish_TaskTime
+:actualFinish_TaskTime rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :TaskTime ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "ActualFinish" .
+
+
+###  https://w3id.org/po-ifc#actualStart_TaskTime
+:actualStart_TaskTime rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :TaskTime ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "ActualStart" .
+
+
+###  https://w3id.org/po-ifc#completion_TaskTime
+:completion_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "Completion" .
+
+
+###  https://w3id.org/po-ifc#dataOrigin_SchedulingTime
+:dataOrigin_SchedulingTime rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :SchedulingTime ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "DataOrigin" .
+
+
+###  https://w3id.org/po-ifc#description_Process
+:description_Process rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Process ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "Description" .
+
+
+###  https://w3id.org/po-ifc#durationType_TaskTime
+:durationType_TaskTime rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :TaskTime ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "DurationType" .
+
+
+###  https://w3id.org/po-ifc#earlyDate_EventTime
+:earlyDate_EventTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :EventTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "EarlyDate" .
+
+
+###  https://w3id.org/po-ifc#earlyFinish_TaskTime
+:earlyFinish_TaskTime rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :TaskTime ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "EarlyFinish" .
+
+
+###  https://w3id.org/po-ifc#earlyStart_TaskTime
+:earlyStart_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "EarlyStart" .
+
+
+###  https://w3id.org/po-ifc#eventTriggerType_Event
+:eventTriggerType_Event rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :Event ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "EventTriggerType" .
+
+
+###  https://w3id.org/po-ifc#freeFloat_TaskTime
+:freeFloat_TaskTime rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :TaskTime ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "FreeFloat" .
+
+
+###  https://w3id.org/po-ifc#globalId_Process
+:globalId_Process rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Process ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "GlobalId" .
+
+
+###  https://w3id.org/po-ifc#identification_Process
+:identification_Process rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :Process ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "Identification" .
+
+
+###  https://w3id.org/po-ifc#isCritical_TaskTime
+:isCritical_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:label "IsCritical" .
+
+
+###  https://w3id.org/po-ifc#isMilestone_Task
+:isMilestone_Task rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Task ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:label "IsMilestone" .
+
+
+###  https://w3id.org/po-ifc#lateDate_EventTime
+:lateDate_EventTime rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :EventTime ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "LateDate" .
+
+
+###  https://w3id.org/po-ifc#lateFinish_TaskTime
+:lateFinish_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "LateFinish" .
+
+
+###  https://w3id.org/po-ifc#lateStart_TaskTime
+:lateStart_TaskTime rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :TaskTime ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "LateStart" .
+
+
+###  https://w3id.org/po-ifc#longDescription_Process
+:longDescription_Process rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Process ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "LongDescription" .
+
+
+###  https://w3id.org/po-ifc#name_Process
+:name_Process rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Process ;
+              rdfs:range xsd:string ;
+              rdfs:label "Name" .
+
+
+###  https://w3id.org/po-ifc#name_SchedulingTime
+:name_SchedulingTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :SchedulingTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "Name" .
+
+
+###  https://w3id.org/po-ifc#objectType_Process
+:objectType_Process rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Process ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "ObjectType" .
+
+
+###  https://w3id.org/po-ifc#priority_Task
+:priority_Task rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Task ;
+               rdfs:range xsd:integer ;
+               rdfs:label "Priority" .
+
+
+###  https://w3id.org/po-ifc#remainingTime_TaskTime
+:remainingTime_TaskTime rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :TaskTime ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "RemainingTime" .
+
+
+###  https://w3id.org/po-ifc#scheduleDate_EventTime
+:scheduleDate_EventTime rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :EventTime ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "ScheduleDate" .
+
+
+###  https://w3id.org/po-ifc#scheduleDuration_TaskTime
+:scheduleDuration_TaskTime rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :TaskTime ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "ScheduleDuration" .
+
+
+###  https://w3id.org/po-ifc#scheduleFinish_TaskTime
+:scheduleFinish_TaskTime rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :TaskTime ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "ScheduleFinish" .
+
+
+###  https://w3id.org/po-ifc#scheduleStart_TaskTime
+:scheduleStart_TaskTime rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :TaskTime ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "ScheduleStart" .
+
+
+###  https://w3id.org/po-ifc#statusTime_TaskTime
+:statusTime_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "StatusTime" .
+
+
+###  https://w3id.org/po-ifc#status_Task
+:status_Task rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Task ;
+             rdfs:range xsd:string ;
+             rdfs:label "Status" .
+
+
+###  https://w3id.org/po-ifc#totalFloat_TaskTime
+:totalFloat_TaskTime rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :TaskTime ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "TotalFloat" .
+
+
+###  https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime
+:userDefinedDataOrigin_SchedulingTime rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain :SchedulingTime ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:label "UserDefinedDataOrigin" .
+
+
+###  https://w3id.org/po-ifc#userDefinedEventTriggerType_Event
+:userDefinedEventTriggerType_Event rdf:type owl:DatatypeProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:domain :Event ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:label "UserDefinedEventTriggerType" .
+
+
+###  https://w3id.org/po-ifc#workMethod_Task
+:workMethod_Task rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Task ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "WorkMethod" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/dot#Inspection
+<https://w3id.org/dot#Inspection> rdf:type owl:Class ;
+                                  rdfs:subClassOf :Task .
+
+
+###  https://w3id.org/po-ifc#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :Process ;
+       owl:disjointWith :Procedure ,
+                        :Task .
+
+
+###  https://w3id.org/po-ifc#EventTime
+:EventTime rdf:type owl:Class ;
+           rdfs:subClassOf :SchedulingTime ;
+           owl:disjointWith :TaskTime .
+
+
+###  https://w3id.org/po-ifc#Procedure
+:Procedure rdf:type owl:Class ;
+           rdfs:subClassOf :Process ;
+           owl:disjointWith :Task .
+
+
+###  https://w3id.org/po-ifc#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Class ;
+                           owl:unionOf ( :Event
+                                         :Procedure
+                                         :Task
+                                       )
+                         ] .
+
+
+###  https://w3id.org/po-ifc#SchedulingTime
+:SchedulingTime rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Class ;
+                                  owl:unionOf ( :EventTime
+                                                :TaskTime
+                                              )
+                                ] .
+
+
+###  https://w3id.org/po-ifc#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf :Process .
+
+
+###  https://w3id.org/po-ifc#TaskTime
+:TaskTime rdf:type owl:Class ;
+          rdfs:subClassOf :SchedulingTime .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

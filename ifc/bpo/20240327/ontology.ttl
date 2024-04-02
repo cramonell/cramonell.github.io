@@ -1,0 +1,2461 @@
+@prefix : <https://w3id.org/bpo-ifc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/bpo-ifc#> .
+
+<https://w3id.org/bpo-ifc#> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://w3id.org/bpo-ifc#> ;
+                             <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                             <http://purl.org/dc/elements/1.1/abstract> "This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFC2Product custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)" ;
+                             <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                             <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
+                             <http://purl.org/dc/elements/1.1/description> "OWL ontology to describe built products in the built environment. It is based on the Product ontology descibed in IFC (Insutry Foundation Classes) schema." ;
+                             <http://purl.org/dc/elements/1.1/identifier> "Built Product Ontology" ;
+                             <http://purl.org/dc/elements/1.1/language> "en" ;
+                             <http://purl.org/dc/elements/1.1/title> "Built Product Ontology" ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "bpo" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/bpo-ifc#" ;
+                             owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/bpo-ifc#assignedToFlowElement_DistributionControlElement
+:assignedToFlowElement_DistributionControlElement rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :DistributionControlElement ;
+                                                  rdfs:range :DistributionFlowElement ;
+                                                  rdfs:label "AssignedToFlowElement" .
+
+
+###  https://w3id.org/bpo-ifc#containsElements_SpatialElement
+:containsElements_SpatialElement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :SpatialElement ;
+                                 rdfs:range :Product ;
+                                 rdfs:label "ContainsElements" .
+
+
+###  https://w3id.org/bpo-ifc#coversElements_Covering
+:coversElements_Covering rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Covering ;
+                         rdfs:range :Element ;
+                         rdfs:label "CoversElements" .
+
+
+###  https://w3id.org/bpo-ifc#coversSpaces_Covering
+:coversSpaces_Covering rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Covering ;
+                       rdfs:range :Space ;
+                       rdfs:label "CoversSpaces" .
+
+
+###  https://w3id.org/bpo-ifc#decomposes_Product
+:decomposes_Product rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Product ;
+                    rdfs:range :Product ;
+                    rdfs:label "Decomposes" .
+
+
+###  https://w3id.org/bpo-ifc#hasControlElements_DistributionFlowElement
+:hasControlElements_DistributionFlowElement rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :DistributionFlowElement ;
+                                            rdfs:range :DistributionControlElement ;
+                                            rdfs:label "HasControlElements" .
+
+
+###  https://w3id.org/bpo-ifc#hasCoverings_Element
+:hasCoverings_Element rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Element ;
+                      rdfs:range :Covering ;
+                      rdfs:label "HasCoverings" .
+
+
+###  https://w3id.org/bpo-ifc#hasCoverings_Space
+:hasCoverings_Space rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Space ;
+                    rdfs:range :Covering ;
+                    rdfs:label "HasCoverings" .
+
+
+###  https://w3id.org/bpo-ifc#isDecomposedBy_Product
+:isDecomposedBy_Product rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Product ;
+                        rdfs:range :Product ;
+                        rdfs:label "IsDecomposedBy" .
+
+
+###  https://w3id.org/bpo-ifc#isNestedBy_Product
+:isNestedBy_Product rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Product ;
+                    rdfs:range :Product ;
+                    rdfs:label "IsNestedBy" .
+
+
+###  https://w3id.org/bpo-ifc#nests_Product
+:nests_Product rdf:type owl:ObjectProperty ;
+               rdfs:domain :Product ;
+               rdfs:range :Product ;
+               rdfs:label "Nests" .
+
+
+###  https://w3id.org/bpo-ifc#referencedBy_Product
+:referencedBy_Product rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Product ;
+                      rdfs:range :Product ;
+                      rdfs:label "ReferencedBy" .
+
+
+###  https://w3id.org/bpo-ifc#referencesElements_SpatialElement
+:referencesElements_SpatialElement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :SpatialElement ;
+                                   rdfs:range :Product ;
+                                   rdfs:label "ReferencesElements" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/bpo-ifc#anchorageSlip_Tendon
+:anchorageSlip_Tendon rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Tendon ;
+                      rdfs:range xsd:float ;
+                      rdfs:label "AnchorageSlip" .
+
+
+###  https://w3id.org/bpo-ifc#assemblyPlace_ElementAssembly
+:assemblyPlace_ElementAssembly rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :ElementAssembly ;
+                               rdfs:range xsd:string ;
+                               rdfs:label "AssemblyPlace" .
+
+
+###  https://w3id.org/bpo-ifc#barLength_ReinforcingBar
+:barLength_ReinforcingBar rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :ReinforcingBar ;
+                          rdfs:range xsd:float ;
+                          rdfs:label "BarLength" .
+
+
+###  https://w3id.org/bpo-ifc#barSurface_ReinforcingBar
+:barSurface_ReinforcingBar rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :ReinforcingBar ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "BarSurface" .
+
+
+###  https://w3id.org/bpo-ifc#compositionType_SpatialStructureElement
+:compositionType_SpatialStructureElement rdf:type owl:DatatypeProperty ,
+                                                  owl:FunctionalProperty ;
+                                         rdfs:domain :SpatialStructureElement ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:label "CompositionType" .
+
+
+###  https://w3id.org/bpo-ifc#constructionType_Pile
+:constructionType_Pile rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :Pile ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "ConstructionType" .
+
+
+###  https://w3id.org/bpo-ifc#crossSectionArea_ReinforcingBar
+:crossSectionArea_ReinforcingBar rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain :ReinforcingBar ;
+                                 rdfs:range xsd:float ;
+                                 rdfs:label "CrossSectionArea" .
+
+
+###  https://w3id.org/bpo-ifc#crossSectionArea_Tendon
+:crossSectionArea_Tendon rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Tendon ;
+                         rdfs:range xsd:float ;
+                         rdfs:label "CrossSectionArea" .
+
+
+###  https://w3id.org/bpo-ifc#description_Product
+:description_Product rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Product ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "Description" .
+
+
+###  https://w3id.org/bpo-ifc#elevationOfRefHeight_Building
+:elevationOfRefHeight_Building rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :Building ;
+                               rdfs:range xsd:float ;
+                               rdfs:label "ElevationOfRefHeight" .
+
+
+###  https://w3id.org/bpo-ifc#elevationOfTerrain_Building
+:elevationOfTerrain_Building rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Building ;
+                             rdfs:range xsd:float ;
+                             rdfs:label "ElevationOfTerrain" .
+
+
+###  https://w3id.org/bpo-ifc#elevationWithFlooring_Space
+:elevationWithFlooring_Space rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Space ;
+                             rdfs:range xsd:float ;
+                             rdfs:label "ElevationWithFlooring" .
+
+
+###  https://w3id.org/bpo-ifc#elevation_BuildingStorey
+:elevation_BuildingStorey rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :BuildingStorey ;
+                          rdfs:range xsd:float ;
+                          rdfs:label "Elevation" .
+
+
+###  https://w3id.org/bpo-ifc#frictionCoefficient_Tendon
+:frictionCoefficient_Tendon rdf:type owl:DatatypeProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain :Tendon ;
+                            rdfs:range xsd:float ;
+                            rdfs:label "FrictionCoefficient" .
+
+
+###  https://w3id.org/bpo-ifc#globalId_Product
+:globalId_Product rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Product ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "GlobalId" .
+
+
+###  https://w3id.org/bpo-ifc#landTitleNumber_Site
+:landTitleNumber_Site rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Site ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "LandTitleNumber" .
+
+
+###  https://w3id.org/bpo-ifc#longName_SpatialElement
+:longName_SpatialElement rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :SpatialElement ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "LongName" .
+
+
+###  https://w3id.org/bpo-ifc#longitudinalBarCrossSectionArea_ReinforcingMesh
+:longitudinalBarCrossSectionArea_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                                          owl:FunctionalProperty ;
+                                                 rdfs:domain :ReinforcingMesh ;
+                                                 rdfs:range xsd:float ;
+                                                 rdfs:label "LongitudinalBarCrossSectionArea" .
+
+
+###  https://w3id.org/bpo-ifc#longitudinalBarNominalDiameter_ReinforcingMesh
+:longitudinalBarNominalDiameter_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                                         owl:FunctionalProperty ;
+                                                rdfs:domain :ReinforcingMesh ;
+                                                rdfs:range xsd:float ;
+                                                rdfs:label "LongitudinalBarNominalDiameter" .
+
+
+###  https://w3id.org/bpo-ifc#longitudinalBarSpacing_ReinforcingMesh
+:longitudinalBarSpacing_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                                 owl:FunctionalProperty ;
+                                        rdfs:domain :ReinforcingMesh ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:label "LongitudinalBarSpacing" .
+
+
+###  https://w3id.org/bpo-ifc#meshLength_ReinforcingMesh
+:meshLength_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain :ReinforcingMesh ;
+                            rdfs:range xsd:float ;
+                            rdfs:label "MeshLength" .
+
+
+###  https://w3id.org/bpo-ifc#meshWidth_ReinforcingMesh
+:meshWidth_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :ReinforcingMesh ;
+                           rdfs:range xsd:float ;
+                           rdfs:label "MeshWidth" .
+
+
+###  https://w3id.org/bpo-ifc#minCurvatureRadius_Tendon
+:minCurvatureRadius_Tendon rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :Tendon ;
+                           rdfs:range xsd:float ;
+                           rdfs:label "MinCurvatureRadius" .
+
+
+###  https://w3id.org/bpo-ifc#name_Product
+:name_Product rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Product ;
+              rdfs:range xsd:string ;
+              rdfs:label "Name" .
+
+
+###  https://w3id.org/bpo-ifc#nominalDiameter_MechanicalFastener
+:nominalDiameter_MechanicalFastener rdf:type owl:DatatypeProperty ,
+                                             owl:FunctionalProperty ;
+                                    rdfs:domain :MechanicalFastener ;
+                                    rdfs:range xsd:float ;
+                                    rdfs:label "NominalDiameter" .
+
+
+###  https://w3id.org/bpo-ifc#nominalDiameter_ReinforcingBar
+:nominalDiameter_ReinforcingBar rdf:type owl:DatatypeProperty ,
+                                         owl:FunctionalProperty ;
+                                rdfs:domain :ReinforcingBar ;
+                                rdfs:range xsd:float ;
+                                rdfs:label "NominalDiameter" .
+
+
+###  https://w3id.org/bpo-ifc#nominalDiameter_Tendon
+:nominalDiameter_Tendon rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :Tendon ;
+                        rdfs:range xsd:float ;
+                        rdfs:label "NominalDiameter" .
+
+
+###  https://w3id.org/bpo-ifc#nominalLength_MechanicalFastener
+:nominalLength_MechanicalFastener rdf:type owl:DatatypeProperty ,
+                                           owl:FunctionalProperty ;
+                                  rdfs:domain :MechanicalFastener ;
+                                  rdfs:range xsd:float ;
+                                  rdfs:label "NominalLength" .
+
+
+###  https://w3id.org/bpo-ifc#numberOfRisers_StairFlight
+:numberOfRisers_StairFlight rdf:type owl:DatatypeProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain :StairFlight ;
+                            rdfs:range xsd:integer ;
+                            rdfs:label "NumberOfRisers" .
+
+
+###  https://w3id.org/bpo-ifc#numberOfTreads_StairFlight
+:numberOfTreads_StairFlight rdf:type owl:DatatypeProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain :StairFlight ;
+                            rdfs:range xsd:integer ;
+                            rdfs:label "NumberOfTreads" .
+
+
+###  https://w3id.org/bpo-ifc#objectType_Product
+:objectType_Product rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Product ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "ObjectType" .
+
+
+###  https://w3id.org/bpo-ifc#operationType_Door
+:operationType_Door rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Door ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "OperationType" .
+
+
+###  https://w3id.org/bpo-ifc#overallHeight_Door
+:overallHeight_Door rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Door ;
+                    rdfs:range xsd:float ;
+                    rdfs:label "OverallHeight" .
+
+
+###  https://w3id.org/bpo-ifc#overallHeight_Window
+:overallHeight_Window rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Window ;
+                      rdfs:range xsd:float ;
+                      rdfs:label "OverallHeight" .
+
+
+###  https://w3id.org/bpo-ifc#overallWidth_Door
+:overallWidth_Door rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Door ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "OverallWidth" .
+
+
+###  https://w3id.org/bpo-ifc#overallWidth_Window
+:overallWidth_Window rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Window ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "OverallWidth" .
+
+
+###  https://w3id.org/bpo-ifc#partitioningType_Window
+:partitioningType_Window rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Window ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "PartitioningType" .
+
+
+###  https://w3id.org/bpo-ifc#preStress_Tendon
+:preStress_Tendon rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Tendon ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "PreStress" .
+
+
+###  https://w3id.org/bpo-ifc#riserHeight_StairFlight
+:riserHeight_StairFlight rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :StairFlight ;
+                         rdfs:range xsd:float ;
+                         rdfs:label "RiserHeight" .
+
+
+###  https://w3id.org/bpo-ifc#steelGrade_ReinforcingElement
+:steelGrade_ReinforcingElement rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :ReinforcingElement ;
+                               rdfs:range xsd:string ;
+                               rdfs:label "SteelGrade" .
+
+
+###  https://w3id.org/bpo-ifc#tag_Element
+:tag_Element rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Element ;
+             rdfs:range xsd:string ;
+             rdfs:label "Tag" .
+
+
+###  https://w3id.org/bpo-ifc#tensionForce_Tendon
+:tensionForce_Tendon rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Tendon ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "TensionForce" .
+
+
+###  https://w3id.org/bpo-ifc#transverseBarCrossSectionArea_ReinforcingMesh
+:transverseBarCrossSectionArea_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                                        owl:FunctionalProperty ;
+                                               rdfs:domain :ReinforcingMesh ;
+                                               rdfs:range xsd:float ;
+                                               rdfs:label "TransverseBarCrossSectionArea" .
+
+
+###  https://w3id.org/bpo-ifc#transverseBarNominalDiameter_ReinforcingMesh
+:transverseBarNominalDiameter_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                                       owl:FunctionalProperty ;
+                                              rdfs:domain :ReinforcingMesh ;
+                                              rdfs:range xsd:float ;
+                                              rdfs:label "TransverseBarNominalDiameter" .
+
+
+###  https://w3id.org/bpo-ifc#transverseBarSpacing_ReinforcingMesh
+:transverseBarSpacing_ReinforcingMesh rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain :ReinforcingMesh ;
+                                      rdfs:range xsd:float ;
+                                      rdfs:label "TransverseBarSpacing" .
+
+
+###  https://w3id.org/bpo-ifc#treadLength_StairFlight
+:treadLength_StairFlight rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :StairFlight ;
+                         rdfs:range xsd:float ;
+                         rdfs:label "TreadLength" .
+
+
+###  https://w3id.org/bpo-ifc#usageType_FacilityPart
+:usageType_FacilityPart rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :FacilityPart ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "UsageType" .
+
+
+###  https://w3id.org/bpo-ifc#userDefinedOperationType_Door
+:userDefinedOperationType_Door rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :Door ;
+                               rdfs:range xsd:string ;
+                               rdfs:label "UserDefinedOperationType" .
+
+
+###  https://w3id.org/bpo-ifc#userDefinedPartitioningType_Window
+:userDefinedPartitioningType_Window rdf:type owl:DatatypeProperty ,
+                                             owl:FunctionalProperty ;
+                                    rdfs:domain :Window ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:label "UserDefinedPartitioningType" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/bpo-ifc#Actuator
+:Actuator rdf:type owl:Class ;
+          rdfs:subClassOf :DistributionControlElement ;
+          owl:disjointWith :Alarm ,
+                           :Controller ,
+                           :FlowInstrument ,
+                           :ProtectiveDeviceTrippingUnit ,
+                           :Sensor ,
+                           :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#AirTerminal
+:AirTerminal rdf:type owl:Class ;
+             rdfs:subClassOf :FlowTerminal ;
+             owl:disjointWith :AudioVisualAppliance ,
+                              :CommunicationsAppliance ,
+                              :ElectricAppliance ,
+                              :FireSuppressionTerminal ,
+                              :Lamp ,
+                              :LightFixture ,
+                              :LiquidTerminal ,
+                              :MedicalDevice ,
+                              :MobileTelecommunicationsAppliance ,
+                              :Outlet ,
+                              :SanitaryTerminal ,
+                              :Signal ,
+                              :SpaceHeater ,
+                              :StackTerminal ,
+                              :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#AirTerminalBox
+:AirTerminalBox rdf:type owl:Class ;
+                rdfs:subClassOf :FlowController ;
+                owl:disjointWith :Damper ,
+                                 :DistributionBoard ,
+                                 :ElectricDistributionBoard ,
+                                 :ElectricTimeControl ,
+                                 :FlowMeter ,
+                                 :ProtectiveDevice ,
+                                 :SwitchingDevice ,
+                                 :Valve .
+
+
+###  https://w3id.org/bpo-ifc#AirToAirHeatRecovery
+:AirToAirHeatRecovery rdf:type owl:Class ;
+                      rdfs:subClassOf :EnergyConversionDevice ;
+                      owl:disjointWith :Boiler ,
+                                       :Burner ,
+                                       :Chiller ,
+                                       :Coil ,
+                                       :Condenser ,
+                                       :CooledBeam ,
+                                       :CoolingTower ,
+                                       :ElectricGenerator ,
+                                       :ElectricMotor ,
+                                       :Engine ,
+                                       :EvaporativeCooler ,
+                                       :Evaporator ,
+                                       :HeatExchanger ,
+                                       :Humidifier ,
+                                       :MotorConnection ,
+                                       :SolarDevice ,
+                                       :Transformer ,
+                                       :TubeBundle ,
+                                       :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Alarm
+:Alarm rdf:type owl:Class ;
+       rdfs:subClassOf :DistributionControlElement ;
+       owl:disjointWith :Controller ,
+                        :FlowInstrument ,
+                        :ProtectiveDeviceTrippingUnit ,
+                        :Sensor ,
+                        :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#AudioVisualAppliance
+:AudioVisualAppliance rdf:type owl:Class ;
+                      rdfs:subClassOf :FlowTerminal ;
+                      owl:disjointWith :CommunicationsAppliance ,
+                                       :ElectricAppliance ,
+                                       :FireSuppressionTerminal ,
+                                       :Lamp ,
+                                       :LightFixture ,
+                                       :LiquidTerminal ,
+                                       :MedicalDevice ,
+                                       :MobileTelecommunicationsAppliance ,
+                                       :Outlet ,
+                                       :SanitaryTerminal ,
+                                       :Signal ,
+                                       :SpaceHeater ,
+                                       :StackTerminal ,
+                                       :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Beam
+:Beam rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :Bearing ,
+                       :BuildingElementProxy ,
+                       :Chimney ,
+                       :Column ,
+                       :Course ,
+                       :Covering ,
+                       :CurtainWall ,
+                       :DeepFoundation ,
+                       :Door ,
+                       :EarthworksElement ,
+                       :Footing ,
+                       :Kerb ,
+                       :Member ,
+                       :MooringDevice ,
+                       :NavigationElement ,
+                       :Pavement ,
+                       :Plate ,
+                       :Rail ,
+                       :Railing ,
+                       :Ramp ,
+                       :RampFlight ,
+                       :Roof ,
+                       :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#Bearing
+:Bearing rdf:type owl:Class ;
+         rdfs:subClassOf :BuiltElement ;
+         owl:disjointWith :BuildingElementProxy ,
+                          :Chimney ,
+                          :Column ,
+                          :Course ,
+                          :Covering ,
+                          :CurtainWall ,
+                          :DeepFoundation ,
+                          :Door ,
+                          :EarthworksElement ,
+                          :Footing ,
+                          :Kerb ,
+                          :Member ,
+                          :MooringDevice ,
+                          :NavigationElement ,
+                          :Pavement ,
+                          :Plate ,
+                          :Rail ,
+                          :Railing ,
+                          :Ramp ,
+                          :RampFlight ,
+                          :Roof ,
+                          :ShadingDevice ,
+                          :Slab ,
+                          :Stair ,
+                          :StairFlight ,
+                          :TrackElement ,
+                          :Wall ,
+                          :Window .
+
+
+###  https://w3id.org/bpo-ifc#Boiler
+:Boiler rdf:type owl:Class ;
+        rdfs:subClassOf :EnergyConversionDevice ;
+        owl:disjointWith :Burner ,
+                         :Chiller ,
+                         :Coil ,
+                         :Condenser ,
+                         :CooledBeam ,
+                         :CoolingTower ,
+                         :ElectricGenerator ,
+                         :ElectricMotor ,
+                         :Engine ,
+                         :EvaporativeCooler ,
+                         :Evaporator ,
+                         :HeatExchanger ,
+                         :Humidifier ,
+                         :MotorConnection ,
+                         :SolarDevice ,
+                         :Transformer ,
+                         :TubeBundle ,
+                         :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Borehole
+:Borehole rdf:type owl:Class ;
+          rdfs:subClassOf :GeotechnicalAssembly ;
+          owl:disjointWith :Geomodel ,
+                           :Geoslice .
+
+
+###  https://w3id.org/bpo-ifc#Bridge
+:Bridge rdf:type owl:Class ;
+        rdfs:subClassOf :Facility ;
+        owl:disjointWith :Building ,
+                         :MarineFacility ,
+                         :Railway ,
+                         :Road .
+
+
+###  https://w3id.org/bpo-ifc#BridgePart
+:BridgePart rdf:type owl:Class ;
+            rdfs:subClassOf :FacilityPart ;
+            owl:disjointWith :FacilityPartCommon ,
+                             :MarinePart ,
+                             :RailwayPart ,
+                             :RoadPart .
+
+
+###  https://w3id.org/bpo-ifc#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :Facility ;
+          owl:disjointWith :MarineFacility ,
+                           :Railway ,
+                           :Road .
+
+
+###  https://w3id.org/bpo-ifc#BuildingElementPart
+:BuildingElementPart rdf:type owl:Class ;
+                     rdfs:subClassOf :ElementComponent ;
+                     owl:disjointWith :DiscreteAccessory ,
+                                      :Fastener ,
+                                      :ImpactProtectionDevice ,
+                                      :MechanicalFastener ,
+                                      :ReinforcingElement ,
+                                      :Sign ,
+                                      :VibrationDamper ,
+                                      :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#BuildingElementProxy
+:BuildingElementProxy rdf:type owl:Class ;
+                      rdfs:subClassOf :BuiltElement ;
+                      owl:disjointWith :Chimney ,
+                                       :Column ,
+                                       :Course ,
+                                       :Covering ,
+                                       :CurtainWall ,
+                                       :DeepFoundation ,
+                                       :Door ,
+                                       :EarthworksElement ,
+                                       :Footing ,
+                                       :Kerb ,
+                                       :Member ,
+                                       :MooringDevice ,
+                                       :NavigationElement ,
+                                       :Pavement ,
+                                       :Plate ,
+                                       :Rail ,
+                                       :Railing ,
+                                       :Ramp ,
+                                       :RampFlight ,
+                                       :Roof ,
+                                       :ShadingDevice ,
+                                       :Slab ,
+                                       :Stair ,
+                                       :StairFlight ,
+                                       :TrackElement ,
+                                       :Wall ,
+                                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#BuildingStorey
+:BuildingStorey rdf:type owl:Class ;
+                rdfs:subClassOf :SpatialStructureElement ;
+                owl:disjointWith :Facility ,
+                                 :FacilityPart ,
+                                 :Site ,
+                                 :Space .
+
+
+###  https://w3id.org/bpo-ifc#BuiltElement
+:BuiltElement rdf:type owl:Class ;
+              rdfs:subClassOf :Element ;
+              owl:disjointWith :DistributionElement ,
+                               :ElementAssembly ,
+                               :ElementComponent ,
+                               :FurnishingElement ,
+                               :GeographicElement ,
+                               :GeotechnicalElement ,
+                               :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#Burner
+:Burner rdf:type owl:Class ;
+        rdfs:subClassOf :EnergyConversionDevice ;
+        owl:disjointWith :Chiller ,
+                         :Coil ,
+                         :Condenser ,
+                         :CooledBeam ,
+                         :CoolingTower ,
+                         :ElectricGenerator ,
+                         :ElectricMotor ,
+                         :Engine ,
+                         :EvaporativeCooler ,
+                         :Evaporator ,
+                         :HeatExchanger ,
+                         :Humidifier ,
+                         :MotorConnection ,
+                         :SolarDevice ,
+                         :Transformer ,
+                         :TubeBundle ,
+                         :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#CableCarrierFitting
+:CableCarrierFitting rdf:type owl:Class ;
+                     rdfs:subClassOf :FlowFitting ;
+                     owl:disjointWith :CableFitting ,
+                                      :DuctFitting ,
+                                      :JunctionBox ,
+                                      :PipeFitting .
+
+
+###  https://w3id.org/bpo-ifc#CableCarrierSegment
+:CableCarrierSegment rdf:type owl:Class ;
+                     rdfs:subClassOf :FlowSegment ;
+                     owl:disjointWith :CableSegment ,
+                                      :ConveyorSegment ,
+                                      :DuctSegment ,
+                                      :PipeSegment .
+
+
+###  https://w3id.org/bpo-ifc#CableFitting
+:CableFitting rdf:type owl:Class ;
+              rdfs:subClassOf :FlowFitting ;
+              owl:disjointWith :DuctFitting ,
+                               :JunctionBox ,
+                               :PipeFitting .
+
+
+###  https://w3id.org/bpo-ifc#CableSegment
+:CableSegment rdf:type owl:Class ;
+              rdfs:subClassOf :FlowSegment ;
+              owl:disjointWith :ConveyorSegment ,
+                               :DuctSegment ,
+                               :PipeSegment .
+
+
+###  https://w3id.org/bpo-ifc#CaissonFoundation
+:CaissonFoundation rdf:type owl:Class ;
+                   rdfs:subClassOf :DeepFoundation ;
+                   owl:disjointWith :Pile .
+
+
+###  https://w3id.org/bpo-ifc#Chiller
+:Chiller rdf:type owl:Class ;
+         rdfs:subClassOf :EnergyConversionDevice ;
+         owl:disjointWith :Coil ,
+                          :Condenser ,
+                          :CooledBeam ,
+                          :CoolingTower ,
+                          :ElectricGenerator ,
+                          :ElectricMotor ,
+                          :Engine ,
+                          :EvaporativeCooler ,
+                          :Evaporator ,
+                          :HeatExchanger ,
+                          :Humidifier ,
+                          :MotorConnection ,
+                          :SolarDevice ,
+                          :Transformer ,
+                          :TubeBundle ,
+                          :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Chimney
+:Chimney rdf:type owl:Class ;
+         rdfs:subClassOf :BuiltElement ;
+         owl:disjointWith :Column ,
+                          :Course ,
+                          :Covering ,
+                          :CurtainWall ,
+                          :DeepFoundation ,
+                          :Door ,
+                          :EarthworksElement ,
+                          :Footing ,
+                          :Kerb ,
+                          :Member ,
+                          :MooringDevice ,
+                          :NavigationElement ,
+                          :Pavement ,
+                          :Plate ,
+                          :Rail ,
+                          :Railing ,
+                          :Ramp ,
+                          :RampFlight ,
+                          :Roof ,
+                          :ShadingDevice ,
+                          :Slab ,
+                          :Stair ,
+                          :StairFlight ,
+                          :TrackElement ,
+                          :Wall ,
+                          :Window .
+
+
+###  https://w3id.org/bpo-ifc#Coil
+:Coil rdf:type owl:Class ;
+      rdfs:subClassOf :EnergyConversionDevice ;
+      owl:disjointWith :Condenser ,
+                       :CooledBeam ,
+                       :CoolingTower ,
+                       :ElectricGenerator ,
+                       :ElectricMotor ,
+                       :Engine ,
+                       :EvaporativeCooler ,
+                       :Evaporator ,
+                       :HeatExchanger ,
+                       :Humidifier ,
+                       :MotorConnection ,
+                       :SolarDevice ,
+                       :Transformer ,
+                       :TubeBundle ,
+                       :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Column
+:Column rdf:type owl:Class ;
+        rdfs:subClassOf :BuiltElement ;
+        owl:disjointWith :Course ,
+                         :Covering ,
+                         :CurtainWall ,
+                         :DeepFoundation ,
+                         :Door ,
+                         :EarthworksElement ,
+                         :Footing ,
+                         :Kerb ,
+                         :Member ,
+                         :MooringDevice ,
+                         :NavigationElement ,
+                         :Pavement ,
+                         :Plate ,
+                         :Rail ,
+                         :Railing ,
+                         :Ramp ,
+                         :RampFlight ,
+                         :Roof ,
+                         :ShadingDevice ,
+                         :Slab ,
+                         :Stair ,
+                         :StairFlight ,
+                         :TrackElement ,
+                         :Wall ,
+                         :Window .
+
+
+###  https://w3id.org/bpo-ifc#CommunicationsAppliance
+:CommunicationsAppliance rdf:type owl:Class ;
+                         rdfs:subClassOf :FlowTerminal ;
+                         owl:disjointWith :ElectricAppliance ,
+                                          :FireSuppressionTerminal ,
+                                          :Lamp ,
+                                          :LightFixture ,
+                                          :LiquidTerminal ,
+                                          :MedicalDevice ,
+                                          :MobileTelecommunicationsAppliance ,
+                                          :Outlet ,
+                                          :SanitaryTerminal ,
+                                          :Signal ,
+                                          :SpaceHeater ,
+                                          :StackTerminal ,
+                                          :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Compressor
+:Compressor rdf:type owl:Class ;
+            rdfs:subClassOf :FlowMovingDevice ;
+            owl:disjointWith :Fan ,
+                             :Pump .
+
+
+###  https://w3id.org/bpo-ifc#Condenser
+:Condenser rdf:type owl:Class ;
+           rdfs:subClassOf :EnergyConversionDevice ;
+           owl:disjointWith :CooledBeam ,
+                            :CoolingTower ,
+                            :ElectricGenerator ,
+                            :ElectricMotor ,
+                            :Engine ,
+                            :EvaporativeCooler ,
+                            :Evaporator ,
+                            :HeatExchanger ,
+                            :Humidifier ,
+                            :MotorConnection ,
+                            :SolarDevice ,
+                            :Transformer ,
+                            :TubeBundle ,
+                            :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Controller
+:Controller rdf:type owl:Class ;
+            rdfs:subClassOf :DistributionControlElement ;
+            owl:disjointWith :FlowInstrument ,
+                             :ProtectiveDeviceTrippingUnit ,
+                             :Sensor ,
+                             :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#ConveyorSegment
+:ConveyorSegment rdf:type owl:Class ;
+                 rdfs:subClassOf :FlowSegment ;
+                 owl:disjointWith :DuctSegment ,
+                                  :PipeSegment .
+
+
+###  https://w3id.org/bpo-ifc#CooledBeam
+:CooledBeam rdf:type owl:Class ;
+            rdfs:subClassOf :EnergyConversionDevice ;
+            owl:disjointWith :CoolingTower ,
+                             :ElectricGenerator ,
+                             :ElectricMotor ,
+                             :Engine ,
+                             :EvaporativeCooler ,
+                             :Evaporator ,
+                             :HeatExchanger ,
+                             :Humidifier ,
+                             :MotorConnection ,
+                             :SolarDevice ,
+                             :Transformer ,
+                             :TubeBundle ,
+                             :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#CoolingTower
+:CoolingTower rdf:type owl:Class ;
+              rdfs:subClassOf :EnergyConversionDevice ;
+              owl:disjointWith :ElectricGenerator ,
+                               :ElectricMotor ,
+                               :Engine ,
+                               :EvaporativeCooler ,
+                               :Evaporator ,
+                               :HeatExchanger ,
+                               :Humidifier ,
+                               :MotorConnection ,
+                               :SolarDevice ,
+                               :Transformer ,
+                               :TubeBundle ,
+                               :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Course
+:Course rdf:type owl:Class ;
+        rdfs:subClassOf :BuiltElement ;
+        owl:disjointWith :Covering ,
+                         :CurtainWall ,
+                         :DeepFoundation ,
+                         :Door ,
+                         :EarthworksElement ,
+                         :Footing ,
+                         :Kerb ,
+                         :Member ,
+                         :MooringDevice ,
+                         :NavigationElement ,
+                         :Pavement ,
+                         :Plate ,
+                         :Rail ,
+                         :Railing ,
+                         :Ramp ,
+                         :RampFlight ,
+                         :Roof ,
+                         :ShadingDevice ,
+                         :Slab ,
+                         :Stair ,
+                         :StairFlight ,
+                         :TrackElement ,
+                         :Wall ,
+                         :Window .
+
+
+###  https://w3id.org/bpo-ifc#Covering
+:Covering rdf:type owl:Class ;
+          rdfs:subClassOf :BuiltElement ;
+          owl:disjointWith :CurtainWall ,
+                           :DeepFoundation ,
+                           :Door ,
+                           :EarthworksElement ,
+                           :Footing ,
+                           :Kerb ,
+                           :Member ,
+                           :MooringDevice ,
+                           :NavigationElement ,
+                           :Pavement ,
+                           :Plate ,
+                           :Rail ,
+                           :Railing ,
+                           :Ramp ,
+                           :RampFlight ,
+                           :Roof ,
+                           :ShadingDevice ,
+                           :Slab ,
+                           :Stair ,
+                           :StairFlight ,
+                           :TrackElement ,
+                           :Wall ,
+                           :Window .
+
+
+###  https://w3id.org/bpo-ifc#CurtainWall
+:CurtainWall rdf:type owl:Class ;
+             rdfs:subClassOf :BuiltElement ;
+             owl:disjointWith :DeepFoundation ,
+                              :Door ,
+                              :EarthworksElement ,
+                              :Footing ,
+                              :Kerb ,
+                              :Member ,
+                              :MooringDevice ,
+                              :NavigationElement ,
+                              :Pavement ,
+                              :Plate ,
+                              :Rail ,
+                              :Railing ,
+                              :Ramp ,
+                              :RampFlight ,
+                              :Roof ,
+                              :ShadingDevice ,
+                              :Slab ,
+                              :Stair ,
+                              :StairFlight ,
+                              :TrackElement ,
+                              :Wall ,
+                              :Window .
+
+
+###  https://w3id.org/bpo-ifc#Damper
+:Damper rdf:type owl:Class ;
+        rdfs:subClassOf :FlowController ;
+        owl:disjointWith :DistributionBoard ,
+                         :ElectricDistributionBoard ,
+                         :ElectricTimeControl ,
+                         :FlowMeter ,
+                         :ProtectiveDevice ,
+                         :SwitchingDevice ,
+                         :Valve .
+
+
+###  https://w3id.org/bpo-ifc#DeepFoundation
+:DeepFoundation rdf:type owl:Class ;
+                rdfs:subClassOf :BuiltElement ;
+                owl:disjointWith :Door ,
+                                 :EarthworksElement ,
+                                 :Footing ,
+                                 :Kerb ,
+                                 :Member ,
+                                 :MooringDevice ,
+                                 :NavigationElement ,
+                                 :Pavement ,
+                                 :Plate ,
+                                 :Rail ,
+                                 :Railing ,
+                                 :Ramp ,
+                                 :RampFlight ,
+                                 :Roof ,
+                                 :ShadingDevice ,
+                                 :Slab ,
+                                 :Stair ,
+                                 :StairFlight ,
+                                 :TrackElement ,
+                                 :Wall ,
+                                 :Window .
+
+
+###  https://w3id.org/bpo-ifc#DiscreteAccessory
+:DiscreteAccessory rdf:type owl:Class ;
+                   rdfs:subClassOf :ElementComponent ;
+                   owl:disjointWith :Fastener ,
+                                    :ImpactProtectionDevice ,
+                                    :MechanicalFastener ,
+                                    :ReinforcingElement ,
+                                    :Sign ,
+                                    :VibrationDamper ,
+                                    :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#DistributionBoard
+:DistributionBoard rdf:type owl:Class ;
+                   rdfs:subClassOf :FlowController ;
+                   owl:disjointWith :ElectricDistributionBoard ,
+                                    :ElectricTimeControl ,
+                                    :FlowMeter ,
+                                    :ProtectiveDevice ,
+                                    :SwitchingDevice ,
+                                    :Valve .
+
+
+###  https://w3id.org/bpo-ifc#DistributionChamberElement
+:DistributionChamberElement rdf:type owl:Class ;
+                            rdfs:subClassOf :DistributionFlowElement ;
+                            owl:disjointWith :EnergyConversionDevice ,
+                                             :FlowController ,
+                                             :FlowFitting ,
+                                             :FlowMovingDevice ,
+                                             :FlowSegment ,
+                                             :FlowStorageDevice ,
+                                             :FlowTerminal ,
+                                             :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#DistributionControlElement
+:DistributionControlElement rdf:type owl:Class ;
+                            rdfs:subClassOf :DistributionElement ;
+                            owl:disjointWith :DistributionFlowElement .
+
+
+###  https://w3id.org/bpo-ifc#DistributionElement
+:DistributionElement rdf:type owl:Class ;
+                     rdfs:subClassOf :Element ;
+                     owl:disjointWith :ElementAssembly ,
+                                      :ElementComponent ,
+                                      :FurnishingElement ,
+                                      :GeographicElement ,
+                                      :GeotechnicalElement ,
+                                      :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#DistributionFlowElement
+:DistributionFlowElement rdf:type owl:Class ;
+                         rdfs:subClassOf :DistributionElement .
+
+
+###  https://w3id.org/bpo-ifc#Door
+:Door rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :EarthworksElement ,
+                       :Footing ,
+                       :Kerb ,
+                       :Member ,
+                       :MooringDevice ,
+                       :NavigationElement ,
+                       :Pavement ,
+                       :Plate ,
+                       :Rail ,
+                       :Railing ,
+                       :Ramp ,
+                       :RampFlight ,
+                       :Roof ,
+                       :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#DuctFitting
+:DuctFitting rdf:type owl:Class ;
+             rdfs:subClassOf :FlowFitting ;
+             owl:disjointWith :JunctionBox ,
+                              :PipeFitting .
+
+
+###  https://w3id.org/bpo-ifc#DuctSegment
+:DuctSegment rdf:type owl:Class ;
+             rdfs:subClassOf :FlowSegment ;
+             owl:disjointWith :PipeSegment .
+
+
+###  https://w3id.org/bpo-ifc#DuctSilencer
+:DuctSilencer rdf:type owl:Class ;
+              rdfs:subClassOf :FlowTreatmentDevice ;
+              owl:disjointWith :ElectricFlowTreatmentDevice ,
+                               :Filter ,
+                               :Interceptor .
+
+
+###  https://w3id.org/bpo-ifc#EarthworksElement
+:EarthworksElement rdf:type owl:Class ;
+                   rdfs:subClassOf :BuiltElement ;
+                   owl:disjointWith :Footing ,
+                                    :Kerb ,
+                                    :Member ,
+                                    :MooringDevice ,
+                                    :NavigationElement ,
+                                    :Pavement ,
+                                    :Plate ,
+                                    :Rail ,
+                                    :Railing ,
+                                    :Ramp ,
+                                    :RampFlight ,
+                                    :Roof ,
+                                    :ShadingDevice ,
+                                    :Slab ,
+                                    :Stair ,
+                                    :StairFlight ,
+                                    :TrackElement ,
+                                    :Wall ,
+                                    :Window .
+
+
+###  https://w3id.org/bpo-ifc#EarthworksFill
+:EarthworksFill rdf:type owl:Class ;
+                rdfs:subClassOf :EarthworksElement ;
+                owl:disjointWith :ReinforcedSoil .
+
+
+###  https://w3id.org/bpo-ifc#ElectricAppliance
+:ElectricAppliance rdf:type owl:Class ;
+                   rdfs:subClassOf :FlowTerminal ;
+                   owl:disjointWith :FireSuppressionTerminal ,
+                                    :Lamp ,
+                                    :LightFixture ,
+                                    :LiquidTerminal ,
+                                    :MedicalDevice ,
+                                    :MobileTelecommunicationsAppliance ,
+                                    :Outlet ,
+                                    :SanitaryTerminal ,
+                                    :Signal ,
+                                    :SpaceHeater ,
+                                    :StackTerminal ,
+                                    :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#ElectricDistributionBoard
+:ElectricDistributionBoard rdf:type owl:Class ;
+                           rdfs:subClassOf :FlowController ;
+                           owl:disjointWith :ElectricTimeControl ,
+                                            :FlowMeter ,
+                                            :ProtectiveDevice ,
+                                            :SwitchingDevice ,
+                                            :Valve .
+
+
+###  https://w3id.org/bpo-ifc#ElectricFlowStorageDevice
+:ElectricFlowStorageDevice rdf:type owl:Class ;
+                           rdfs:subClassOf :FlowStorageDevice ;
+                           owl:disjointWith :Tank .
+
+
+###  https://w3id.org/bpo-ifc#ElectricFlowTreatmentDevice
+:ElectricFlowTreatmentDevice rdf:type owl:Class ;
+                             rdfs:subClassOf :FlowTreatmentDevice ;
+                             owl:disjointWith :Filter ,
+                                              :Interceptor .
+
+
+###  https://w3id.org/bpo-ifc#ElectricGenerator
+:ElectricGenerator rdf:type owl:Class ;
+                   rdfs:subClassOf :EnergyConversionDevice ;
+                   owl:disjointWith :ElectricMotor ,
+                                    :Engine ,
+                                    :EvaporativeCooler ,
+                                    :Evaporator ,
+                                    :HeatExchanger ,
+                                    :Humidifier ,
+                                    :MotorConnection ,
+                                    :SolarDevice ,
+                                    :Transformer ,
+                                    :TubeBundle ,
+                                    :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#ElectricMotor
+:ElectricMotor rdf:type owl:Class ;
+               rdfs:subClassOf :EnergyConversionDevice ;
+               owl:disjointWith :Engine ,
+                                :EvaporativeCooler ,
+                                :Evaporator ,
+                                :HeatExchanger ,
+                                :Humidifier ,
+                                :MotorConnection ,
+                                :SolarDevice ,
+                                :Transformer ,
+                                :TubeBundle ,
+                                :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#ElectricTimeControl
+:ElectricTimeControl rdf:type owl:Class ;
+                     rdfs:subClassOf :FlowController ;
+                     owl:disjointWith :FlowMeter ,
+                                      :ProtectiveDevice ,
+                                      :SwitchingDevice ,
+                                      :Valve .
+
+
+###  https://w3id.org/bpo-ifc#Element
+:Element rdf:type owl:Class ;
+         rdfs:subClassOf :Product ,
+                         [ rdf:type owl:Class ;
+                           owl:unionOf ( :BuiltElement
+                                         :DistributionElement
+                                         :ElementAssembly
+                                         :ElementComponent
+                                         :FurnishingElement
+                                         :GeographicElement
+                                         :GeotechnicalElement
+                                         :TransportationDevice
+                                       )
+                         ] ;
+         owl:disjointWith :SpatialElement .
+
+
+###  https://w3id.org/bpo-ifc#ElementAssembly
+:ElementAssembly rdf:type owl:Class ;
+                 rdfs:subClassOf :Element ;
+                 owl:disjointWith :ElementComponent ,
+                                  :FurnishingElement ,
+                                  :GeographicElement ,
+                                  :GeotechnicalElement ,
+                                  :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#ElementComponent
+:ElementComponent rdf:type owl:Class ;
+                  rdfs:subClassOf :Element ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( :BuildingElementPart
+                                                  :DiscreteAccessory
+                                                  :Fastener
+                                                  :ImpactProtectionDevice
+                                                  :MechanicalFastener
+                                                  :ReinforcingElement
+                                                  :Sign
+                                                  :VibrationDamper
+                                                  :VibrationIsolator
+                                                )
+                                  ] ;
+                  owl:disjointWith :FurnishingElement ,
+                                   :GeographicElement ,
+                                   :GeotechnicalElement ,
+                                   :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#EnergyConversionDevice
+:EnergyConversionDevice rdf:type owl:Class ;
+                        rdfs:subClassOf :DistributionFlowElement ;
+                        owl:disjointWith :FlowController ,
+                                         :FlowFitting ,
+                                         :FlowMovingDevice ,
+                                         :FlowSegment ,
+                                         :FlowStorageDevice ,
+                                         :FlowTerminal ,
+                                         :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#Engine
+:Engine rdf:type owl:Class ;
+        rdfs:subClassOf :EnergyConversionDevice ;
+        owl:disjointWith :EvaporativeCooler ,
+                         :Evaporator ,
+                         :HeatExchanger ,
+                         :Humidifier ,
+                         :MotorConnection ,
+                         :SolarDevice ,
+                         :Transformer ,
+                         :TubeBundle ,
+                         :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#EvaporativeCooler
+:EvaporativeCooler rdf:type owl:Class ;
+                   rdfs:subClassOf :EnergyConversionDevice ;
+                   owl:disjointWith :Evaporator ,
+                                    :HeatExchanger ,
+                                    :Humidifier ,
+                                    :MotorConnection ,
+                                    :SolarDevice ,
+                                    :Transformer ,
+                                    :TubeBundle ,
+                                    :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Evaporator
+:Evaporator rdf:type owl:Class ;
+            rdfs:subClassOf :EnergyConversionDevice ;
+            owl:disjointWith :HeatExchanger ,
+                             :Humidifier ,
+                             :MotorConnection ,
+                             :SolarDevice ,
+                             :Transformer ,
+                             :TubeBundle ,
+                             :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Facility
+:Facility rdf:type owl:Class ;
+          rdfs:subClassOf :SpatialStructureElement ;
+          owl:disjointWith :FacilityPart ,
+                           :Site ,
+                           :Space .
+
+
+###  https://w3id.org/bpo-ifc#FacilityPart
+:FacilityPart rdf:type owl:Class ;
+              rdfs:subClassOf :SpatialStructureElement ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( :BridgePart
+                                              :FacilityPartCommon
+                                              :MarinePart
+                                              :RailwayPart
+                                              :RoadPart
+                                            )
+                              ] ;
+              owl:disjointWith :Site ,
+                               :Space .
+
+
+###  https://w3id.org/bpo-ifc#FacilityPartCommon
+:FacilityPartCommon rdf:type owl:Class ;
+                    rdfs:subClassOf :FacilityPart ;
+                    owl:disjointWith :MarinePart ,
+                                     :RailwayPart ,
+                                     :RoadPart .
+
+
+###  https://w3id.org/bpo-ifc#Fan
+:Fan rdf:type owl:Class ;
+     rdfs:subClassOf :FlowMovingDevice ;
+     owl:disjointWith :Pump .
+
+
+###  https://w3id.org/bpo-ifc#Fastener
+:Fastener rdf:type owl:Class ;
+          rdfs:subClassOf :ElementComponent ;
+          owl:disjointWith :ImpactProtectionDevice ,
+                           :MechanicalFastener ,
+                           :ReinforcingElement ,
+                           :Sign ,
+                           :VibrationDamper ,
+                           :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#Filter
+:Filter rdf:type owl:Class ;
+        rdfs:subClassOf :FlowTreatmentDevice ;
+        owl:disjointWith :Interceptor .
+
+
+###  https://w3id.org/bpo-ifc#FireSuppressionTerminal
+:FireSuppressionTerminal rdf:type owl:Class ;
+                         rdfs:subClassOf :FlowTerminal ;
+                         owl:disjointWith :Lamp ,
+                                          :LightFixture ,
+                                          :LiquidTerminal ,
+                                          :MedicalDevice ,
+                                          :MobileTelecommunicationsAppliance ,
+                                          :Outlet ,
+                                          :SanitaryTerminal ,
+                                          :Signal ,
+                                          :SpaceHeater ,
+                                          :StackTerminal ,
+                                          :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#FlowController
+:FlowController rdf:type owl:Class ;
+                rdfs:subClassOf :DistributionFlowElement ;
+                owl:disjointWith :FlowFitting ,
+                                 :FlowMovingDevice ,
+                                 :FlowSegment ,
+                                 :FlowStorageDevice ,
+                                 :FlowTerminal ,
+                                 :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowFitting
+:FlowFitting rdf:type owl:Class ;
+             rdfs:subClassOf :DistributionFlowElement ;
+             owl:disjointWith :FlowMovingDevice ,
+                              :FlowSegment ,
+                              :FlowStorageDevice ,
+                              :FlowTerminal ,
+                              :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowInstrument
+:FlowInstrument rdf:type owl:Class ;
+                rdfs:subClassOf :DistributionControlElement ;
+                owl:disjointWith :ProtectiveDeviceTrippingUnit ,
+                                 :Sensor ,
+                                 :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#FlowMeter
+:FlowMeter rdf:type owl:Class ;
+           rdfs:subClassOf :FlowController ;
+           owl:disjointWith :ProtectiveDevice ,
+                            :SwitchingDevice ,
+                            :Valve .
+
+
+###  https://w3id.org/bpo-ifc#FlowMovingDevice
+:FlowMovingDevice rdf:type owl:Class ;
+                  rdfs:subClassOf :DistributionFlowElement ;
+                  owl:disjointWith :FlowSegment ,
+                                   :FlowStorageDevice ,
+                                   :FlowTerminal ,
+                                   :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowSegment
+:FlowSegment rdf:type owl:Class ;
+             rdfs:subClassOf :DistributionFlowElement ;
+             owl:disjointWith :FlowStorageDevice ,
+                              :FlowTerminal ,
+                              :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowStorageDevice
+:FlowStorageDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :DistributionFlowElement ;
+                   owl:disjointWith :FlowTerminal ,
+                                    :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowTerminal
+:FlowTerminal rdf:type owl:Class ;
+              rdfs:subClassOf :DistributionFlowElement ;
+              owl:disjointWith :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#FlowTreatmentDevice
+:FlowTreatmentDevice rdf:type owl:Class ;
+                     rdfs:subClassOf :DistributionFlowElement .
+
+
+###  https://w3id.org/bpo-ifc#Footing
+:Footing rdf:type owl:Class ;
+         rdfs:subClassOf :BuiltElement ;
+         owl:disjointWith :Kerb ,
+                          :Member ,
+                          :MooringDevice ,
+                          :NavigationElement ,
+                          :Pavement ,
+                          :Plate ,
+                          :Rail ,
+                          :Railing ,
+                          :Ramp ,
+                          :RampFlight ,
+                          :Roof ,
+                          :ShadingDevice ,
+                          :Slab ,
+                          :Stair ,
+                          :StairFlight ,
+                          :TrackElement ,
+                          :Wall ,
+                          :Window .
+
+
+###  https://w3id.org/bpo-ifc#FurnishingElement
+:FurnishingElement rdf:type owl:Class ;
+                   rdfs:subClassOf :Element ;
+                   owl:disjointWith :GeographicElement ,
+                                    :GeotechnicalElement ,
+                                    :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#Furniture
+:Furniture rdf:type owl:Class ;
+           rdfs:subClassOf :FurnishingElement ;
+           owl:disjointWith :SystemFurnitureElement .
+
+
+###  https://w3id.org/bpo-ifc#GeographicElement
+:GeographicElement rdf:type owl:Class ;
+                   rdfs:subClassOf :Element ;
+                   owl:disjointWith :GeotechnicalElement ,
+                                    :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#Geomodel
+:Geomodel rdf:type owl:Class ;
+          rdfs:subClassOf :GeotechnicalAssembly ;
+          owl:disjointWith :Geoslice .
+
+
+###  https://w3id.org/bpo-ifc#Geoslice
+:Geoslice rdf:type owl:Class ;
+          rdfs:subClassOf :GeotechnicalAssembly .
+
+
+###  https://w3id.org/bpo-ifc#GeotechnicalAssembly
+:GeotechnicalAssembly rdf:type owl:Class ;
+                      rdfs:subClassOf :GeotechnicalElement ,
+                                      [ rdf:type owl:Class ;
+                                        owl:unionOf ( :Borehole
+                                                      :Geomodel
+                                                      :Geoslice
+                                                    )
+                                      ] ;
+                      owl:disjointWith :GeotechnicalStratum .
+
+
+###  https://w3id.org/bpo-ifc#GeotechnicalElement
+:GeotechnicalElement rdf:type owl:Class ;
+                     rdfs:subClassOf :Element ,
+                                     [ rdf:type owl:Class ;
+                                       owl:unionOf ( :GeotechnicalAssembly
+                                                     :GeotechnicalStratum
+                                                   )
+                                     ] ;
+                     owl:disjointWith :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#GeotechnicalStratum
+:GeotechnicalStratum rdf:type owl:Class ;
+                     rdfs:subClassOf :GeotechnicalElement .
+
+
+###  https://w3id.org/bpo-ifc#HeatExchanger
+:HeatExchanger rdf:type owl:Class ;
+               rdfs:subClassOf :EnergyConversionDevice ;
+               owl:disjointWith :Humidifier ,
+                                :MotorConnection ,
+                                :SolarDevice ,
+                                :Transformer ,
+                                :TubeBundle ,
+                                :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Humidifier
+:Humidifier rdf:type owl:Class ;
+            rdfs:subClassOf :EnergyConversionDevice ;
+            owl:disjointWith :MotorConnection ,
+                             :SolarDevice ,
+                             :Transformer ,
+                             :TubeBundle ,
+                             :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#ImpactProtectionDevice
+:ImpactProtectionDevice rdf:type owl:Class ;
+                        rdfs:subClassOf :ElementComponent ;
+                        owl:disjointWith :MechanicalFastener ,
+                                         :ReinforcingElement ,
+                                         :Sign ,
+                                         :VibrationDamper ,
+                                         :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#Interceptor
+:Interceptor rdf:type owl:Class ;
+             rdfs:subClassOf :FlowTreatmentDevice .
+
+
+###  https://w3id.org/bpo-ifc#JunctionBox
+:JunctionBox rdf:type owl:Class ;
+             rdfs:subClassOf :FlowFitting ;
+             owl:disjointWith :PipeFitting .
+
+
+###  https://w3id.org/bpo-ifc#Kerb
+:Kerb rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :Member ,
+                       :MooringDevice ,
+                       :NavigationElement ,
+                       :Pavement ,
+                       :Plate ,
+                       :Rail ,
+                       :Railing ,
+                       :Ramp ,
+                       :RampFlight ,
+                       :Roof ,
+                       :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#Lamp
+:Lamp rdf:type owl:Class ;
+      rdfs:subClassOf :FlowTerminal ;
+      owl:disjointWith :LightFixture ,
+                       :LiquidTerminal ,
+                       :MedicalDevice ,
+                       :MobileTelecommunicationsAppliance ,
+                       :Outlet ,
+                       :SanitaryTerminal ,
+                       :Signal ,
+                       :SpaceHeater ,
+                       :StackTerminal ,
+                       :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#LightFixture
+:LightFixture rdf:type owl:Class ;
+              rdfs:subClassOf :FlowTerminal ;
+              owl:disjointWith :LiquidTerminal ,
+                               :MedicalDevice ,
+                               :MobileTelecommunicationsAppliance ,
+                               :Outlet ,
+                               :SanitaryTerminal ,
+                               :Signal ,
+                               :SpaceHeater ,
+                               :StackTerminal ,
+                               :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#LiquidTerminal
+:LiquidTerminal rdf:type owl:Class ;
+                rdfs:subClassOf :FlowTerminal ;
+                owl:disjointWith :MedicalDevice ,
+                                 :MobileTelecommunicationsAppliance ,
+                                 :Outlet ,
+                                 :SanitaryTerminal ,
+                                 :Signal ,
+                                 :SpaceHeater ,
+                                 :StackTerminal ,
+                                 :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#MarineFacility
+:MarineFacility rdf:type owl:Class ;
+                rdfs:subClassOf :Facility ;
+                owl:disjointWith :Railway ,
+                                 :Road .
+
+
+###  https://w3id.org/bpo-ifc#MarinePart
+:MarinePart rdf:type owl:Class ;
+            rdfs:subClassOf :FacilityPart ;
+            owl:disjointWith :RailwayPart ,
+                             :RoadPart .
+
+
+###  https://w3id.org/bpo-ifc#MechanicalFastener
+:MechanicalFastener rdf:type owl:Class ;
+                    rdfs:subClassOf :ElementComponent ;
+                    owl:disjointWith :ReinforcingElement ,
+                                     :Sign ,
+                                     :VibrationDamper ,
+                                     :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#MedicalDevice
+:MedicalDevice rdf:type owl:Class ;
+               rdfs:subClassOf :FlowTerminal ;
+               owl:disjointWith :MobileTelecommunicationsAppliance ,
+                                :Outlet ,
+                                :SanitaryTerminal ,
+                                :Signal ,
+                                :SpaceHeater ,
+                                :StackTerminal ,
+                                :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Member
+:Member rdf:type owl:Class ;
+        rdfs:subClassOf :BuiltElement ;
+        owl:disjointWith :MooringDevice ,
+                         :NavigationElement ,
+                         :Pavement ,
+                         :Plate ,
+                         :Rail ,
+                         :Railing ,
+                         :Ramp ,
+                         :RampFlight ,
+                         :Roof ,
+                         :ShadingDevice ,
+                         :Slab ,
+                         :Stair ,
+                         :StairFlight ,
+                         :TrackElement ,
+                         :Wall ,
+                         :Window .
+
+
+###  https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance
+:MobileTelecommunicationsAppliance rdf:type owl:Class ;
+                                   rdfs:subClassOf :FlowTerminal ;
+                                   owl:disjointWith :Outlet ,
+                                                    :SanitaryTerminal ,
+                                                    :Signal ,
+                                                    :SpaceHeater ,
+                                                    :StackTerminal ,
+                                                    :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#MooringDevice
+:MooringDevice rdf:type owl:Class ;
+               rdfs:subClassOf :BuiltElement ;
+               owl:disjointWith :NavigationElement ,
+                                :Pavement ,
+                                :Plate ,
+                                :Rail ,
+                                :Railing ,
+                                :Ramp ,
+                                :RampFlight ,
+                                :Roof ,
+                                :ShadingDevice ,
+                                :Slab ,
+                                :Stair ,
+                                :StairFlight ,
+                                :TrackElement ,
+                                :Wall ,
+                                :Window .
+
+
+###  https://w3id.org/bpo-ifc#MotorConnection
+:MotorConnection rdf:type owl:Class ;
+                 rdfs:subClassOf :EnergyConversionDevice ;
+                 owl:disjointWith :SolarDevice ,
+                                  :Transformer ,
+                                  :TubeBundle ,
+                                  :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#NavigationElement
+:NavigationElement rdf:type owl:Class ;
+                   rdfs:subClassOf :BuiltElement ;
+                   owl:disjointWith :Pavement ,
+                                    :Plate ,
+                                    :Rail ,
+                                    :Railing ,
+                                    :Ramp ,
+                                    :RampFlight ,
+                                    :Roof ,
+                                    :ShadingDevice ,
+                                    :Slab ,
+                                    :Stair ,
+                                    :StairFlight ,
+                                    :TrackElement ,
+                                    :Wall ,
+                                    :Window .
+
+
+###  https://w3id.org/bpo-ifc#Outlet
+:Outlet rdf:type owl:Class ;
+        rdfs:subClassOf :FlowTerminal ;
+        owl:disjointWith :SanitaryTerminal ,
+                         :Signal ,
+                         :SpaceHeater ,
+                         :StackTerminal ,
+                         :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Pavement
+:Pavement rdf:type owl:Class ;
+          rdfs:subClassOf :BuiltElement ;
+          owl:disjointWith :Plate ,
+                           :Rail ,
+                           :Railing ,
+                           :Ramp ,
+                           :RampFlight ,
+                           :Roof ,
+                           :ShadingDevice ,
+                           :Slab ,
+                           :Stair ,
+                           :StairFlight ,
+                           :TrackElement ,
+                           :Wall ,
+                           :Window .
+
+
+###  https://w3id.org/bpo-ifc#Pile
+:Pile rdf:type owl:Class ;
+      rdfs:subClassOf :DeepFoundation .
+
+
+###  https://w3id.org/bpo-ifc#PipeFitting
+:PipeFitting rdf:type owl:Class ;
+             rdfs:subClassOf :FlowFitting .
+
+
+###  https://w3id.org/bpo-ifc#PipeSegment
+:PipeSegment rdf:type owl:Class ;
+             rdfs:subClassOf :FlowSegment .
+
+
+###  https://w3id.org/bpo-ifc#Plate
+:Plate rdf:type owl:Class ;
+       rdfs:subClassOf :BuiltElement ;
+       owl:disjointWith :Rail ,
+                        :Railing ,
+                        :Ramp ,
+                        :RampFlight ,
+                        :Roof ,
+                        :ShadingDevice ,
+                        :Slab ,
+                        :Stair ,
+                        :StairFlight ,
+                        :TrackElement ,
+                        :Wall ,
+                        :Window .
+
+
+###  https://w3id.org/bpo-ifc#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Class ;
+                           owl:unionOf ( :Element
+                                         :SpatialElement
+                                       )
+                         ] .
+
+
+###  https://w3id.org/bpo-ifc#ProtectiveDevice
+:ProtectiveDevice rdf:type owl:Class ;
+                  rdfs:subClassOf :FlowController ;
+                  owl:disjointWith :SwitchingDevice ,
+                                   :Valve .
+
+
+###  https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit
+:ProtectiveDeviceTrippingUnit rdf:type owl:Class ;
+                              rdfs:subClassOf :DistributionControlElement ;
+                              owl:disjointWith :Sensor ,
+                                               :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#Pump
+:Pump rdf:type owl:Class ;
+      rdfs:subClassOf :FlowMovingDevice .
+
+
+###  https://w3id.org/bpo-ifc#Rail
+:Rail rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :Railing ,
+                       :Ramp ,
+                       :RampFlight ,
+                       :Roof ,
+                       :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#Railing
+:Railing rdf:type owl:Class ;
+         rdfs:subClassOf :BuiltElement ;
+         owl:disjointWith :Ramp ,
+                          :RampFlight ,
+                          :Roof ,
+                          :ShadingDevice ,
+                          :Slab ,
+                          :Stair ,
+                          :StairFlight ,
+                          :TrackElement ,
+                          :Wall ,
+                          :Window .
+
+
+###  https://w3id.org/bpo-ifc#Railway
+:Railway rdf:type owl:Class ;
+         rdfs:subClassOf :Facility ;
+         owl:disjointWith :Road .
+
+
+###  https://w3id.org/bpo-ifc#RailwayPart
+:RailwayPart rdf:type owl:Class ;
+             rdfs:subClassOf :FacilityPart ;
+             owl:disjointWith :RoadPart .
+
+
+###  https://w3id.org/bpo-ifc#Ramp
+:Ramp rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :RampFlight ,
+                       :Roof ,
+                       :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#RampFlight
+:RampFlight rdf:type owl:Class ;
+            rdfs:subClassOf :BuiltElement ;
+            owl:disjointWith :Roof ,
+                             :ShadingDevice ,
+                             :Slab ,
+                             :Stair ,
+                             :StairFlight ,
+                             :TrackElement ,
+                             :Wall ,
+                             :Window .
+
+
+###  https://w3id.org/bpo-ifc#ReinforcedSoil
+:ReinforcedSoil rdf:type owl:Class ;
+                rdfs:subClassOf :EarthworksElement .
+
+
+###  https://w3id.org/bpo-ifc#ReinforcingBar
+:ReinforcingBar rdf:type owl:Class ;
+                rdfs:subClassOf :ReinforcingElement ;
+                owl:disjointWith :ReinforcingMesh ,
+                                 :Tendon ,
+                                 :TendonAnchor ,
+                                 :TendonConduit .
+
+
+###  https://w3id.org/bpo-ifc#ReinforcingElement
+:ReinforcingElement rdf:type owl:Class ;
+                    rdfs:subClassOf :ElementComponent ,
+                                    [ rdf:type owl:Class ;
+                                      owl:unionOf ( :ReinforcingBar
+                                                    :ReinforcingMesh
+                                                    :Tendon
+                                                    :TendonAnchor
+                                                    :TendonConduit
+                                                  )
+                                    ] ;
+                    owl:disjointWith :Sign ,
+                                     :VibrationDamper ,
+                                     :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#ReinforcingMesh
+:ReinforcingMesh rdf:type owl:Class ;
+                 rdfs:subClassOf :ReinforcingElement ;
+                 owl:disjointWith :Tendon ,
+                                  :TendonAnchor ,
+                                  :TendonConduit .
+
+
+###  https://w3id.org/bpo-ifc#Road
+:Road rdf:type owl:Class ;
+      rdfs:subClassOf :Facility .
+
+
+###  https://w3id.org/bpo-ifc#RoadPart
+:RoadPart rdf:type owl:Class ;
+          rdfs:subClassOf :FacilityPart .
+
+
+###  https://w3id.org/bpo-ifc#Roof
+:Roof rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :ShadingDevice ,
+                       :Slab ,
+                       :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#SanitaryTerminal
+:SanitaryTerminal rdf:type owl:Class ;
+                  rdfs:subClassOf :FlowTerminal ;
+                  owl:disjointWith :Signal ,
+                                   :SpaceHeater ,
+                                   :StackTerminal ,
+                                   :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :DistributionControlElement ;
+        owl:disjointWith :UnitaryControlElement .
+
+
+###  https://w3id.org/bpo-ifc#ShadingDevice
+:ShadingDevice rdf:type owl:Class ;
+               rdfs:subClassOf :BuiltElement ;
+               owl:disjointWith :Slab ,
+                                :Stair ,
+                                :StairFlight ,
+                                :TrackElement ,
+                                :Wall ,
+                                :Window .
+
+
+###  https://w3id.org/bpo-ifc#Sign
+:Sign rdf:type owl:Class ;
+      rdfs:subClassOf :ElementComponent ;
+      owl:disjointWith :VibrationDamper ,
+                       :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#Signal
+:Signal rdf:type owl:Class ;
+        rdfs:subClassOf :FlowTerminal ;
+        owl:disjointWith :SpaceHeater ,
+                         :StackTerminal ,
+                         :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf :SpatialStructureElement ;
+      owl:disjointWith :Space .
+
+
+###  https://w3id.org/bpo-ifc#Slab
+:Slab rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :Stair ,
+                       :StairFlight ,
+                       :TrackElement ,
+                       :Wall ,
+                       :Window .
+
+
+###  https://w3id.org/bpo-ifc#SolarDevice
+:SolarDevice rdf:type owl:Class ;
+             rdfs:subClassOf :EnergyConversionDevice ;
+             owl:disjointWith :Transformer ,
+                              :TubeBundle ,
+                              :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#Space
+:Space rdf:type owl:Class ;
+       rdfs:subClassOf :SpatialStructureElement .
+
+
+###  https://w3id.org/bpo-ifc#SpaceHeater
+:SpaceHeater rdf:type owl:Class ;
+             rdfs:subClassOf :FlowTerminal ;
+             owl:disjointWith :StackTerminal ,
+                              :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#SpatialElement
+:SpatialElement rdf:type owl:Class ;
+                rdfs:subClassOf :Product ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( :SpatialStructureElement
+                                                :SpatialZone
+                                              )
+                                ] .
+
+
+###  https://w3id.org/bpo-ifc#SpatialStructureElement
+:SpatialStructureElement rdf:type owl:Class ;
+                         rdfs:subClassOf :SpatialElement ,
+                                         [ rdf:type owl:Class ;
+                                           owl:unionOf ( :BuildingStorey
+                                                         :Facility
+                                                         :FacilityPart
+                                                         :Site
+                                                         :Space
+                                                       )
+                                         ] ;
+                         owl:disjointWith :SpatialZone .
+
+
+###  https://w3id.org/bpo-ifc#SpatialZone
+:SpatialZone rdf:type owl:Class ;
+             rdfs:subClassOf :SpatialElement .
+
+
+###  https://w3id.org/bpo-ifc#StackTerminal
+:StackTerminal rdf:type owl:Class ;
+               rdfs:subClassOf :FlowTerminal ;
+               owl:disjointWith :WasteTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Stair
+:Stair rdf:type owl:Class ;
+       rdfs:subClassOf :BuiltElement ;
+       owl:disjointWith :StairFlight ,
+                        :TrackElement ,
+                        :Wall ,
+                        :Window .
+
+
+###  https://w3id.org/bpo-ifc#StairFlight
+:StairFlight rdf:type owl:Class ;
+             rdfs:subClassOf :BuiltElement ;
+             owl:disjointWith :TrackElement ,
+                              :Wall ,
+                              :Window .
+
+
+###  https://w3id.org/bpo-ifc#SwitchingDevice
+:SwitchingDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :FlowController ;
+                 owl:disjointWith :Valve .
+
+
+###  https://w3id.org/bpo-ifc#SystemFurnitureElement
+:SystemFurnitureElement rdf:type owl:Class ;
+                        rdfs:subClassOf :FurnishingElement .
+
+
+###  https://w3id.org/bpo-ifc#Tank
+:Tank rdf:type owl:Class ;
+      rdfs:subClassOf :FlowStorageDevice .
+
+
+###  https://w3id.org/bpo-ifc#Tendon
+:Tendon rdf:type owl:Class ;
+        rdfs:subClassOf :ReinforcingElement ;
+        owl:disjointWith :TendonAnchor ,
+                         :TendonConduit .
+
+
+###  https://w3id.org/bpo-ifc#TendonAnchor
+:TendonAnchor rdf:type owl:Class ;
+              rdfs:subClassOf :ReinforcingElement ;
+              owl:disjointWith :TendonConduit .
+
+
+###  https://w3id.org/bpo-ifc#TendonConduit
+:TendonConduit rdf:type owl:Class ;
+               rdfs:subClassOf :ReinforcingElement .
+
+
+###  https://w3id.org/bpo-ifc#TrackElement
+:TrackElement rdf:type owl:Class ;
+              rdfs:subClassOf :BuiltElement ;
+              owl:disjointWith :Wall ,
+                               :Window .
+
+
+###  https://w3id.org/bpo-ifc#Transformer
+:Transformer rdf:type owl:Class ;
+             rdfs:subClassOf :EnergyConversionDevice ;
+             owl:disjointWith :TubeBundle ,
+                              :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#TransportElement
+:TransportElement rdf:type owl:Class ;
+                  rdfs:subClassOf :TransportationDevice ;
+                  owl:disjointWith :Vehicle .
+
+
+###  https://w3id.org/bpo-ifc#TransportationDevice
+:TransportationDevice rdf:type owl:Class ;
+                      rdfs:subClassOf :Element ,
+                                      [ rdf:type owl:Class ;
+                                        owl:unionOf ( :TransportElement
+                                                      :Vehicle
+                                                    )
+                                      ] .
+
+
+###  https://w3id.org/bpo-ifc#TubeBundle
+:TubeBundle rdf:type owl:Class ;
+            rdfs:subClassOf :EnergyConversionDevice ;
+            owl:disjointWith :UnitaryEquipment .
+
+
+###  https://w3id.org/bpo-ifc#UnitaryControlElement
+:UnitaryControlElement rdf:type owl:Class ;
+                       rdfs:subClassOf :DistributionControlElement .
+
+
+###  https://w3id.org/bpo-ifc#UnitaryEquipment
+:UnitaryEquipment rdf:type owl:Class ;
+                  rdfs:subClassOf :EnergyConversionDevice .
+
+
+###  https://w3id.org/bpo-ifc#Valve
+:Valve rdf:type owl:Class ;
+       rdfs:subClassOf :FlowController .
+
+
+###  https://w3id.org/bpo-ifc#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :TransportationDevice .
+
+
+###  https://w3id.org/bpo-ifc#VibrationDamper
+:VibrationDamper rdf:type owl:Class ;
+                 rdfs:subClassOf :ElementComponent ;
+                 owl:disjointWith :VibrationIsolator .
+
+
+###  https://w3id.org/bpo-ifc#VibrationIsolator
+:VibrationIsolator rdf:type owl:Class ;
+                   rdfs:subClassOf :ElementComponent .
+
+
+###  https://w3id.org/bpo-ifc#Wall
+:Wall rdf:type owl:Class ;
+      rdfs:subClassOf :BuiltElement ;
+      owl:disjointWith :Window .
+
+
+###  https://w3id.org/bpo-ifc#WallStandardCase
+:WallStandardCase rdf:type owl:Class ;
+                  rdfs:subClassOf :Wall .
+
+
+###  https://w3id.org/bpo-ifc#WasteTerminal
+:WasteTerminal rdf:type owl:Class ;
+               rdfs:subClassOf :FlowTerminal .
+
+
+###  https://w3id.org/bpo-ifc#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf :BuiltElement .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

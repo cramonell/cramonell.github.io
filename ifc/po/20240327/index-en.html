@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Proces Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/po-ifc#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/po-ifc#","name":"Proces Ontology", "headline":"This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFC2Product custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)", "dateReleased":"Tue Apr 02 10:21:48 CEST 2024", "version":"1.0", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Proces Ontology</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://w3id.org/po-ifc#">https://w3id.org/po-ifc#</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://w3id.org/po-ifc#">https://w3id.org/po-ifc#</a></dd>
+<dt>Revision:</dt>
+<dd>1.0</dd>
+<dt>Authors:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/3.0/-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu). Proces Ontology. Revision: 1.0. Retrieved from: https://w3id.org/po-ifc#</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFC2Product custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
+<tr><td><b>dce</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>dot</b></td><td>&lt;https://w3id.org/dot#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>po</b></td><td>&lt;https://w3id.org/po-ifc#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Proces Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Event" title="https://w3id.org/po-ifc#Event">
+         <span>event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">
+         <span>event time</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
+         <span>inspection</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Procedure" title="https://w3id.org/po-ifc#Procedure">
+         <span>procedure</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Process" title="https://w3id.org/po-ifc#Process">
+         <span>process</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">
+         <span>scheduling time</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Task" title="https://w3id.org/po-ifc#Task">
+         <span>task</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">
+         <span>task time</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#decomposes_Process" title="https://w3id.org/po-ifc#decomposes_Process">Decomposes</a>
+   </li>
+   <li>
+      <a href="#eventOccurenceTime_Event" title="https://w3id.org/po-ifc#eventOccurenceTime_Event">EventOccurenceTime</a>
+   </li>
+   <li>
+      <a href="#isDecomposedBy_Process" title="https://w3id.org/po-ifc#isDecomposedBy_Process">IsDecomposedBy</a>
+   </li>
+   <li>
+      <a href="#isNestedBy_Process" title="https://w3id.org/po-ifc#isNestedBy_Process">IsNestedBy</a>
+   </li>
+   <li>
+      <a href="#isPredecessorTo_Process" title="https://w3id.org/po-ifc#isPredecessorTo_Process">IsPredecessorTo</a>
+   </li>
+   <li>
+      <a href="#isSuccessorFrom_Process" title="https://w3id.org/po-ifc#isSuccessorFrom_Process">IsSuccessorFrom</a>
+   </li>
+   <li>
+      <a href="#nests_Process" title="https://w3id.org/po-ifc#nests_Process">Nests</a>
+   </li>
+   <li>
+      <a href="#operatesOn_Process" title="https://w3id.org/po-ifc#operatesOn_Process">OperatesOn</a>
+   </li>
+   <li>
+      <a href="#taskTime_Task" title="https://w3id.org/po-ifc#taskTime_Task">TaskTime</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#actualDate_EventTime" title="https://w3id.org/po-ifc#actualDate_EventTime">ActualDate</a>
+   </li>
+   <li>
+      <a href="#actualDuration_TaskTime" title="https://w3id.org/po-ifc#actualDuration_TaskTime">ActualDuration</a>
+   </li>
+   <li>
+      <a href="#actualFinish_TaskTime" title="https://w3id.org/po-ifc#actualFinish_TaskTime">ActualFinish</a>
+   </li>
+   <li>
+      <a href="#actualStart_TaskTime" title="https://w3id.org/po-ifc#actualStart_TaskTime">ActualStart</a>
+   </li>
+   <li>
+      <a href="#completion_TaskTime" title="https://w3id.org/po-ifc#completion_TaskTime">Completion</a>
+   </li>
+   <li>
+      <a href="#dataOrigin_SchedulingTime"
+         title="https://w3id.org/po-ifc#dataOrigin_SchedulingTime">DataOrigin</a>
+   </li>
+   <li>
+      <a href="#description_Process" title="https://w3id.org/po-ifc#description_Process">Description</a>
+   </li>
+   <li>
+      <a href="#durationType_TaskTime" title="https://w3id.org/po-ifc#durationType_TaskTime">DurationType</a>
+   </li>
+   <li>
+      <a href="#earlyDate_EventTime" title="https://w3id.org/po-ifc#earlyDate_EventTime">EarlyDate</a>
+   </li>
+   <li>
+      <a href="#earlyFinish_TaskTime" title="https://w3id.org/po-ifc#earlyFinish_TaskTime">EarlyFinish</a>
+   </li>
+   <li>
+      <a href="#earlyStart_TaskTime" title="https://w3id.org/po-ifc#earlyStart_TaskTime">EarlyStart</a>
+   </li>
+   <li>
+      <a href="#eventTriggerType_Event" title="https://w3id.org/po-ifc#eventTriggerType_Event">EventTriggerType</a>
+   </li>
+   <li>
+      <a href="#freeFloat_TaskTime" title="https://w3id.org/po-ifc#freeFloat_TaskTime">FreeFloat</a>
+   </li>
+   <li>
+      <a href="#globalId_Process" title="https://w3id.org/po-ifc#globalId_Process">GlobalId</a>
+   </li>
+   <li>
+      <a href="#identification_Process" title="https://w3id.org/po-ifc#identification_Process">Identification</a>
+   </li>
+   <li>
+      <a href="#isCritical_TaskTime" title="https://w3id.org/po-ifc#isCritical_TaskTime">IsCritical</a>
+   </li>
+   <li>
+      <a href="#isMilestone_Task" title="https://w3id.org/po-ifc#isMilestone_Task">IsMilestone</a>
+   </li>
+   <li>
+      <a href="#lateDate_EventTime" title="https://w3id.org/po-ifc#lateDate_EventTime">LateDate</a>
+   </li>
+   <li>
+      <a href="#lateFinish_TaskTime" title="https://w3id.org/po-ifc#lateFinish_TaskTime">LateFinish</a>
+   </li>
+   <li>
+      <a href="#lateStart_TaskTime" title="https://w3id.org/po-ifc#lateStart_TaskTime">LateStart</a>
+   </li>
+   <li>
+      <a href="#longDescription_Process" title="https://w3id.org/po-ifc#longDescription_Process">LongDescription</a>
+   </li>
+   <li>
+      <a href="#name_Process" title="https://w3id.org/po-ifc#name_Process">Name</a>
+   </li>
+   <li>
+      <a href="#name_SchedulingTime" title="https://w3id.org/po-ifc#name_SchedulingTime">Name</a>
+   </li>
+   <li>
+      <a href="#objectType_Process" title="https://w3id.org/po-ifc#objectType_Process">ObjectType</a>
+   </li>
+   <li>
+      <a href="#priority_Task" title="https://w3id.org/po-ifc#priority_Task">Priority</a>
+   </li>
+   <li>
+      <a href="#remainingTime_TaskTime" title="https://w3id.org/po-ifc#remainingTime_TaskTime">RemainingTime</a>
+   </li>
+   <li>
+      <a href="#scheduleDate_EventTime" title="https://w3id.org/po-ifc#scheduleDate_EventTime">ScheduleDate</a>
+   </li>
+   <li>
+      <a href="#scheduleDuration_TaskTime"
+         title="https://w3id.org/po-ifc#scheduleDuration_TaskTime">ScheduleDuration</a>
+   </li>
+   <li>
+      <a href="#scheduleFinish_TaskTime" title="https://w3id.org/po-ifc#scheduleFinish_TaskTime">ScheduleFinish</a>
+   </li>
+   <li>
+      <a href="#scheduleStart_TaskTime" title="https://w3id.org/po-ifc#scheduleStart_TaskTime">ScheduleStart</a>
+   </li>
+   <li>
+      <a href="#status_Task" title="https://w3id.org/po-ifc#status_Task">Status</a>
+   </li>
+   <li>
+      <a href="#statusTime_TaskTime" title="https://w3id.org/po-ifc#statusTime_TaskTime">StatusTime</a>
+   </li>
+   <li>
+      <a href="#totalFloat_TaskTime" title="https://w3id.org/po-ifc#totalFloat_TaskTime">TotalFloat</a>
+   </li>
+   <li>
+      <a href="#userDefinedDataOrigin_SchedulingTime"
+         title="https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime">UserDefinedDataOrigin</a>
+   </li>
+   <li>
+      <a href="#userDefinedEventTriggerType_Event"
+         title="https://w3id.org/po-ifc#userDefinedEventTriggerType_Event">UserDefinedEventTriggerType</a>
+   </li>
+   <li>
+      <a href="#workMethod_Task" title="https://w3id.org/po-ifc#workMethod_Task">WorkMethod</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Proces Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">OWL ontology to describe processes in the built environment. It is based on the Proces ontology descibed in IFC (Insutry Foundation Classes) schema.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Proces Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Proces Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Event" title="https://w3id.org/po-ifc#Event">
+            <span>event</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">
+            <span>event time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
+            <span>inspection</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Procedure" title="https://w3id.org/po-ifc#Procedure">
+            <span>procedure</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Process" title="https://w3id.org/po-ifc#Process">
+            <span>process</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">
+            <span>scheduling time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Task" title="https://w3id.org/po-ifc#Task">
+            <span>task</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">
+            <span>task time</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Event">
+      <h3>event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#Event</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#eventOccurenceTime_Event" title="https://w3id.org/po-ifc#eventOccurenceTime_Event">EventOccurenceTime</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#eventTriggerType_Event" title="https://w3id.org/po-ifc#eventTriggerType_Event">EventTriggerType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#userDefinedEventTriggerType_Event"
+               title="https://w3id.org/po-ifc#userDefinedEventTriggerType_Event">UserDefinedEventTriggerType</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Procedure" title="https://w3id.org/po-ifc#Procedure">procedure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EventTime">
+      <h3>event time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#EventTime</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">scheduling time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#actualDate_EventTime" title="https://w3id.org/po-ifc#actualDate_EventTime">ActualDate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#earlyDate_EventTime" title="https://w3id.org/po-ifc#earlyDate_EventTime">EarlyDate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lateDate_EventTime" title="https://w3id.org/po-ifc#lateDate_EventTime">LateDate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#scheduleDate_EventTime" title="https://w3id.org/po-ifc#scheduleDate_EventTime">ScheduleDate</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#eventOccurenceTime_Event" title="https://w3id.org/po-ifc#eventOccurenceTime_Event">EventOccurenceTime</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/dot#Inspection">
+      <h3>inspection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/dot#Inspection</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Procedure">
+      <h3>procedure<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#Procedure</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Process">
+      <h3>process<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#Process</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Procedure" title="https://w3id.org/po-ifc#Procedure">procedure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#decomposes_Process" title="https://w3id.org/po-ifc#decomposes_Process">Decomposes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#description_Process" title="https://w3id.org/po-ifc#description_Process">Description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#globalId_Process" title="https://w3id.org/po-ifc#globalId_Process">GlobalId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#identification_Process" title="https://w3id.org/po-ifc#identification_Process">Identification</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isDecomposedBy_Process" title="https://w3id.org/po-ifc#isDecomposedBy_Process">IsDecomposedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isNestedBy_Process" title="https://w3id.org/po-ifc#isNestedBy_Process">IsNestedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPredecessorTo_Process" title="https://w3id.org/po-ifc#isPredecessorTo_Process">IsPredecessorTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSuccessorFrom_Process" title="https://w3id.org/po-ifc#isSuccessorFrom_Process">IsSuccessorFrom</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#longDescription_Process" title="https://w3id.org/po-ifc#longDescription_Process">LongDescription</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name_Process" title="https://w3id.org/po-ifc#name_Process">Name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nests_Process" title="https://w3id.org/po-ifc#nests_Process">Nests</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#objectType_Process" title="https://w3id.org/po-ifc#objectType_Process">ObjectType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operatesOn_Process" title="https://w3id.org/po-ifc#operatesOn_Process">OperatesOn</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#decomposes_Process" title="https://w3id.org/po-ifc#decomposes_Process">Decomposes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isDecomposedBy_Process" title="https://w3id.org/po-ifc#isDecomposedBy_Process">IsDecomposedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isNestedBy_Process" title="https://w3id.org/po-ifc#isNestedBy_Process">IsNestedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPredecessorTo_Process" title="https://w3id.org/po-ifc#isPredecessorTo_Process">IsPredecessorTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSuccessorFrom_Process" title="https://w3id.org/po-ifc#isSuccessorFrom_Process">IsSuccessorFrom</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nests_Process" title="https://w3id.org/po-ifc#nests_Process">Nests</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SchedulingTime">
+      <h3>scheduling time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#SchedulingTime</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#dataOrigin_SchedulingTime"
+               title="https://w3id.org/po-ifc#dataOrigin_SchedulingTime">DataOrigin</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name_SchedulingTime" title="https://w3id.org/po-ifc#name_SchedulingTime">Name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#userDefinedDataOrigin_SchedulingTime"
+               title="https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime">UserDefinedDataOrigin</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Task">
+      <h3>task<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#Task</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isMilestone_Task" title="https://w3id.org/po-ifc#isMilestone_Task">IsMilestone</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#priority_Task" title="https://w3id.org/po-ifc#priority_Task">Priority</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#status_Task" title="https://w3id.org/po-ifc#status_Task">Status</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#taskTime_Task" title="https://w3id.org/po-ifc#taskTime_Task">TaskTime</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#workMethod_Task" title="https://w3id.org/po-ifc#workMethod_Task">WorkMethod</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Procedure" title="https://w3id.org/po-ifc#Procedure">procedure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TaskTime">
+      <h3>task time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#TaskTime</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">scheduling time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#actualDuration_TaskTime" title="https://w3id.org/po-ifc#actualDuration_TaskTime">ActualDuration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#actualFinish_TaskTime" title="https://w3id.org/po-ifc#actualFinish_TaskTime">ActualFinish</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#actualStart_TaskTime" title="https://w3id.org/po-ifc#actualStart_TaskTime">ActualStart</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#completion_TaskTime" title="https://w3id.org/po-ifc#completion_TaskTime">Completion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#durationType_TaskTime" title="https://w3id.org/po-ifc#durationType_TaskTime">DurationType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#earlyFinish_TaskTime" title="https://w3id.org/po-ifc#earlyFinish_TaskTime">EarlyFinish</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#earlyStart_TaskTime" title="https://w3id.org/po-ifc#earlyStart_TaskTime">EarlyStart</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#freeFloat_TaskTime" title="https://w3id.org/po-ifc#freeFloat_TaskTime">FreeFloat</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isCritical_TaskTime" title="https://w3id.org/po-ifc#isCritical_TaskTime">IsCritical</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lateFinish_TaskTime" title="https://w3id.org/po-ifc#lateFinish_TaskTime">LateFinish</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lateStart_TaskTime" title="https://w3id.org/po-ifc#lateStart_TaskTime">LateStart</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#remainingTime_TaskTime" title="https://w3id.org/po-ifc#remainingTime_TaskTime">RemainingTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#scheduleDuration_TaskTime"
+               title="https://w3id.org/po-ifc#scheduleDuration_TaskTime">ScheduleDuration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#scheduleFinish_TaskTime" title="https://w3id.org/po-ifc#scheduleFinish_TaskTime">ScheduleFinish</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#scheduleStart_TaskTime" title="https://w3id.org/po-ifc#scheduleStart_TaskTime">ScheduleStart</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#statusTime_TaskTime" title="https://w3id.org/po-ifc#statusTime_TaskTime">StatusTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#totalFloat_TaskTime" title="https://w3id.org/po-ifc#totalFloat_TaskTime">TotalFloat</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#taskTime_Task" title="https://w3id.org/po-ifc#taskTime_Task">TaskTime</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#decomposes_Process" title="https://w3id.org/po-ifc#decomposes_Process">Decomposes</a>
+      </li>
+      <li>
+         <a href="#eventOccurenceTime_Event" title="https://w3id.org/po-ifc#eventOccurenceTime_Event">EventOccurenceTime</a>
+      </li>
+      <li>
+         <a href="#isDecomposedBy_Process" title="https://w3id.org/po-ifc#isDecomposedBy_Process">IsDecomposedBy</a>
+      </li>
+      <li>
+         <a href="#isNestedBy_Process" title="https://w3id.org/po-ifc#isNestedBy_Process">IsNestedBy</a>
+      </li>
+      <li>
+         <a href="#isPredecessorTo_Process" title="https://w3id.org/po-ifc#isPredecessorTo_Process">IsPredecessorTo</a>
+      </li>
+      <li>
+         <a href="#isSuccessorFrom_Process" title="https://w3id.org/po-ifc#isSuccessorFrom_Process">IsSuccessorFrom</a>
+      </li>
+      <li>
+         <a href="#nests_Process" title="https://w3id.org/po-ifc#nests_Process">Nests</a>
+      </li>
+      <li>
+         <a href="#operatesOn_Process" title="https://w3id.org/po-ifc#operatesOn_Process">OperatesOn</a>
+      </li>
+      <li>
+         <a href="#taskTime_Task" title="https://w3id.org/po-ifc#taskTime_Task">TaskTime</a>
+      </li>
+   </ul>
+   <div class="entity" id="decomposes_Process">
+      <h3>Decomposes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#decomposes_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="eventOccurenceTime_Event">
+      <h3>EventOccurenceTime<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#eventOccurenceTime_Event</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDecomposedBy_Process">
+      <h3>IsDecomposedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isDecomposedBy_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isNestedBy_Process">
+      <h3>IsNestedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isNestedBy_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPredecessorTo_Process">
+      <h3>IsPredecessorTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isPredecessorTo_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSuccessorFrom_Process">
+      <h3>IsSuccessorFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isSuccessorFrom_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nests_Process">
+      <h3>Nests<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#nests_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatesOn_Process">
+      <h3>OperatesOn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#operatesOn_Process</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="taskTime_Task">
+      <h3>TaskTime<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#taskTime_Task</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#actualDate_EventTime" title="https://w3id.org/po-ifc#actualDate_EventTime">ActualDate</a>
+      </li>
+      <li>
+         <a href="#actualDuration_TaskTime" title="https://w3id.org/po-ifc#actualDuration_TaskTime">ActualDuration</a>
+      </li>
+      <li>
+         <a href="#actualFinish_TaskTime" title="https://w3id.org/po-ifc#actualFinish_TaskTime">ActualFinish</a>
+      </li>
+      <li>
+         <a href="#actualStart_TaskTime" title="https://w3id.org/po-ifc#actualStart_TaskTime">ActualStart</a>
+      </li>
+      <li>
+         <a href="#completion_TaskTime" title="https://w3id.org/po-ifc#completion_TaskTime">Completion</a>
+      </li>
+      <li>
+         <a href="#dataOrigin_SchedulingTime"
+            title="https://w3id.org/po-ifc#dataOrigin_SchedulingTime">DataOrigin</a>
+      </li>
+      <li>
+         <a href="#description_Process" title="https://w3id.org/po-ifc#description_Process">Description</a>
+      </li>
+      <li>
+         <a href="#durationType_TaskTime" title="https://w3id.org/po-ifc#durationType_TaskTime">DurationType</a>
+      </li>
+      <li>
+         <a href="#earlyDate_EventTime" title="https://w3id.org/po-ifc#earlyDate_EventTime">EarlyDate</a>
+      </li>
+      <li>
+         <a href="#earlyFinish_TaskTime" title="https://w3id.org/po-ifc#earlyFinish_TaskTime">EarlyFinish</a>
+      </li>
+      <li>
+         <a href="#earlyStart_TaskTime" title="https://w3id.org/po-ifc#earlyStart_TaskTime">EarlyStart</a>
+      </li>
+      <li>
+         <a href="#eventTriggerType_Event" title="https://w3id.org/po-ifc#eventTriggerType_Event">EventTriggerType</a>
+      </li>
+      <li>
+         <a href="#freeFloat_TaskTime" title="https://w3id.org/po-ifc#freeFloat_TaskTime">FreeFloat</a>
+      </li>
+      <li>
+         <a href="#globalId_Process" title="https://w3id.org/po-ifc#globalId_Process">GlobalId</a>
+      </li>
+      <li>
+         <a href="#identification_Process" title="https://w3id.org/po-ifc#identification_Process">Identification</a>
+      </li>
+      <li>
+         <a href="#isCritical_TaskTime" title="https://w3id.org/po-ifc#isCritical_TaskTime">IsCritical</a>
+      </li>
+      <li>
+         <a href="#isMilestone_Task" title="https://w3id.org/po-ifc#isMilestone_Task">IsMilestone</a>
+      </li>
+      <li>
+         <a href="#lateDate_EventTime" title="https://w3id.org/po-ifc#lateDate_EventTime">LateDate</a>
+      </li>
+      <li>
+         <a href="#lateFinish_TaskTime" title="https://w3id.org/po-ifc#lateFinish_TaskTime">LateFinish</a>
+      </li>
+      <li>
+         <a href="#lateStart_TaskTime" title="https://w3id.org/po-ifc#lateStart_TaskTime">LateStart</a>
+      </li>
+      <li>
+         <a href="#longDescription_Process" title="https://w3id.org/po-ifc#longDescription_Process">LongDescription</a>
+      </li>
+      <li>
+         <a href="#name_Process" title="https://w3id.org/po-ifc#name_Process">Name</a>
+      </li>
+      <li>
+         <a href="#name_SchedulingTime" title="https://w3id.org/po-ifc#name_SchedulingTime">Name</a>
+      </li>
+      <li>
+         <a href="#objectType_Process" title="https://w3id.org/po-ifc#objectType_Process">ObjectType</a>
+      </li>
+      <li>
+         <a href="#priority_Task" title="https://w3id.org/po-ifc#priority_Task">Priority</a>
+      </li>
+      <li>
+         <a href="#remainingTime_TaskTime" title="https://w3id.org/po-ifc#remainingTime_TaskTime">RemainingTime</a>
+      </li>
+      <li>
+         <a href="#scheduleDate_EventTime" title="https://w3id.org/po-ifc#scheduleDate_EventTime">ScheduleDate</a>
+      </li>
+      <li>
+         <a href="#scheduleDuration_TaskTime"
+            title="https://w3id.org/po-ifc#scheduleDuration_TaskTime">ScheduleDuration</a>
+      </li>
+      <li>
+         <a href="#scheduleFinish_TaskTime" title="https://w3id.org/po-ifc#scheduleFinish_TaskTime">ScheduleFinish</a>
+      </li>
+      <li>
+         <a href="#scheduleStart_TaskTime" title="https://w3id.org/po-ifc#scheduleStart_TaskTime">ScheduleStart</a>
+      </li>
+      <li>
+         <a href="#status_Task" title="https://w3id.org/po-ifc#status_Task">Status</a>
+      </li>
+      <li>
+         <a href="#statusTime_TaskTime" title="https://w3id.org/po-ifc#statusTime_TaskTime">StatusTime</a>
+      </li>
+      <li>
+         <a href="#totalFloat_TaskTime" title="https://w3id.org/po-ifc#totalFloat_TaskTime">TotalFloat</a>
+      </li>
+      <li>
+         <a href="#userDefinedDataOrigin_SchedulingTime"
+            title="https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime">UserDefinedDataOrigin</a>
+      </li>
+      <li>
+         <a href="#userDefinedEventTriggerType_Event"
+            title="https://w3id.org/po-ifc#userDefinedEventTriggerType_Event">UserDefinedEventTriggerType</a>
+      </li>
+      <li>
+         <a href="#workMethod_Task" title="https://w3id.org/po-ifc#workMethod_Task">WorkMethod</a>
+      </li>
+   </ul>
+   <div class="entity" id="actualDate_EventTime">
+      <h3>ActualDate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#actualDate_EventTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="actualDuration_TaskTime">
+      <h3>ActualDuration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#actualDuration_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="actualFinish_TaskTime">
+      <h3>ActualFinish<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#actualFinish_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="actualStart_TaskTime">
+      <h3>ActualStart<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#actualStart_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="completion_TaskTime">
+      <h3>Completion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#completion_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dataOrigin_SchedulingTime">
+      <h3>DataOrigin<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#dataOrigin_SchedulingTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">scheduling time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="description_Process">
+      <h3>Description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#description_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="durationType_TaskTime">
+      <h3>DurationType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#durationType_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="earlyDate_EventTime">
+      <h3>EarlyDate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#earlyDate_EventTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="earlyFinish_TaskTime">
+      <h3>EarlyFinish<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#earlyFinish_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="earlyStart_TaskTime">
+      <h3>EarlyStart<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#earlyStart_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="eventTriggerType_Event">
+      <h3>EventTriggerType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#eventTriggerType_Event</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="freeFloat_TaskTime">
+      <h3>FreeFloat<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#freeFloat_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="globalId_Process">
+      <h3>GlobalId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#globalId_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="identification_Process">
+      <h3>Identification<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#identification_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCritical_TaskTime">
+      <h3>IsCritical<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isCritical_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isMilestone_Task">
+      <h3>IsMilestone<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#isMilestone_Task</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lateDate_EventTime">
+      <h3>LateDate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#lateDate_EventTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lateFinish_TaskTime">
+      <h3>LateFinish<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#lateFinish_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lateStart_TaskTime">
+      <h3>LateStart<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#lateStart_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="longDescription_Process">
+      <h3>LongDescription<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#longDescription_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name_Process">
+      <h3>Name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#name_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name_SchedulingTime">
+      <h3>Name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#name_SchedulingTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">scheduling time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="objectType_Process">
+      <h3>ObjectType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#objectType_Process</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="https://w3id.org/po-ifc#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="priority_Task">
+      <h3>Priority<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#priority_Task</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="remainingTime_TaskTime">
+      <h3>RemainingTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#remainingTime_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scheduleDate_EventTime">
+      <h3>ScheduleDate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#scheduleDate_EventTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EventTime" title="https://w3id.org/po-ifc#EventTime">event time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scheduleDuration_TaskTime">
+      <h3>ScheduleDuration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#scheduleDuration_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scheduleFinish_TaskTime">
+      <h3>ScheduleFinish<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#scheduleFinish_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scheduleStart_TaskTime">
+      <h3>ScheduleStart<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#scheduleStart_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="status_Task">
+      <h3>Status<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#status_Task</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="statusTime_TaskTime">
+      <h3>StatusTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#statusTime_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalFloat_TaskTime">
+      <h3>TotalFloat<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#totalFloat_TaskTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TaskTime" title="https://w3id.org/po-ifc#TaskTime">task time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="userDefinedDataOrigin_SchedulingTime">
+      <h3>UserDefinedDataOrigin<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SchedulingTime" title="https://w3id.org/po-ifc#SchedulingTime">scheduling time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="userDefinedEventTriggerType_Event">
+      <h3>UserDefinedEventTriggerType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#userDefinedEventTriggerType_Event</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://w3id.org/po-ifc#Event">event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="workMethod_Task">
+      <h3>WorkMethod<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/po-ifc#workMethod_Task</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="https://w3id.org/po-ifc#Task">task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
