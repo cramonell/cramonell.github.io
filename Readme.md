@@ -23,7 +23,7 @@ English: [Entity Version Ontology](/Information_Management/Versions/) WIP
 Spanish: [Entity Version Ontology](/Information_Management/Versions/) WIP
 
 
-## Bridge 
+## Bridge Management
 ### Steel Damage Ontology
 English: [SDO (Steel Damage Ontology)](/bridge/damage/sdo/20240327/index-en.html) 
 
