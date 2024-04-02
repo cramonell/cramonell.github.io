@@ -41,12 +41,12 @@
       "language" : [ {
         "identifier" : "language",
         "language" : "undefined",
-        "value" : "es",
+        "value" : "en",
         "type" : "label"
       }, {
         "identifier" : "language",
         "language" : "undefined",
-        "value" : "en",
+        "value" : "es",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -63,13 +63,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "es",
-        "value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
+        "language" : "en",
+        "value" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "Ontology for the Inspection of Bridges in the Spanish Road Network",
+        "language" : "es",
+        "value" : "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado",
         "type" : "label"
       } ]
     }
