@@ -27,7 +27,7 @@ Spanish: [Entity Version Ontology](/Information_Management/Versions/) WIP
 ### Steel Damage Ontology
 English: [SDO (Steel Damage Ontology)](/bridge/damage/sdo/20240327/index-en.html) 
 
-Spanish: [SDO (Steel Damage Ontology)](/bridge/damage/sdo/20240327/index-es.html)
+Spanish: [SDO (Ontologia de Deterioro en Acero)](/bridge/damage/sdo/20240327/index-es.html)
 
 ### Road Bridge Inspections Spain
 Spanish : [IOPCE (Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado)](/bridge/inspection/iopce/20240327/index-es.html)
