@@ -7,23 +7,31 @@
 @base <https://w3id.org/ifc/IFC4X3_ADD2#> .
 
 <https://w3id.org/ifc/IFC4X3_ADD2#> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://w3id.org/ifc/IFC4X3_ADD2#> ;
                                      owl:imports <https://w3id.org/express> ;
                                      <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
-                                     <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
-                                     <http://purl.org/dc/elements/1.1/date> "2024/01/04" ;
-                                     <http://purl.org/dc/elements/1.1/description> "OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data" ;
+                                     <http://purl.org/dc/elements/1.1/abstract> "This ifcOWL ontology is automatically generated from the EXPRESS schema 'IFC4X3_ADD2' using the 'IFCExpress2OWL' converter developed by Carlos Ramonell (carlos.ramonell@upc.edu). The ontology is identical to the ontology that is generated from the EXPRESS schema 'IFC4X3_ADD2.exp' using the 'IFC-to-RDF' converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be)" ;
+                                     <http://purl.org/dc/elements/1.1/contributor> "Aleksandra Sojic (aleksandra.sojic@itia.cnr.it)" ,
+                                                                                   "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ,
+                                                                                   "Jakob Beetz (j.beetz@tue.nl)" ,
+                                                                                   "María Poveda Villalón (mpoveda@fi.upm.es)" ;
+                                     <http://purl.org/dc/elements/1.1/creator> "Pieter Pauwels (pipauwel.pauwels@ugent.be)" ,
+                                                                               "Walter Terkaj (walter.terkaj@itia.cnr.it)" ;
+                                     <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
+                                     <http://purl.org/dc/elements/1.1/description> "OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data. Release 4X3 ADD2." ;
                                      <http://purl.org/dc/elements/1.1/identifier> "IFC4X3_ADD2" ;
                                      <http://purl.org/dc/elements/1.1/language> "en" ;
                                      <http://purl.org/dc/elements/1.1/title> "IFC4X3_ADD2" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifc" ;
-                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ifc/IFC4X3_ADD2#" .
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ifc/IFC4X3_ADD2#" ;
+                                     owl:versionInfo "1.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/contributor
@@ -54,29 +62,9 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
-owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2002/07/owl#qualifiedCardinality
-owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
-
-###  https://w3id.org/express#hasSet
-<https://w3id.org/express#hasSet> rdf:type owl:ObjectProperty .
-
 
 ###  https://w3id.org/ifc/IFC4X3_ADD2#accessState_IfcSimplePropertyTemplate
 :accessState_IfcSimplePropertyTemplate rdf:type owl:ObjectProperty ,
@@ -14526,129 +14514,9 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                   rdfs:label "ZLength" .
 
 
-###  https://w3id.org/list#hasContents
-<https://w3id.org/list#hasContents> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/list#hasNext
-<https://w3id.org/list#hasNext> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/list#isFollowedBy
-<https://w3id.org/list#isFollowedBy> rdf:type owl:ObjectProperty .
-
-
 #################################################################
 #    Classes
 #################################################################
-
-###  http://org.semanticweb.owlapi/error#Error17
-<http://org.semanticweb.owlapi/error#Error17> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error18
-<http://org.semanticweb.owlapi/error#Error18> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error19
-<http://org.semanticweb.owlapi/error#Error19> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error20
-<http://org.semanticweb.owlapi/error#Error20> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error21
-<http://org.semanticweb.owlapi/error#Error21> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error22
-<http://org.semanticweb.owlapi/error#Error22> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error23
-<http://org.semanticweb.owlapi/error#Error23> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error24
-<http://org.semanticweb.owlapi/error#Error24> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error25
-<http://org.semanticweb.owlapi/error#Error25> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error26
-<http://org.semanticweb.owlapi/error#Error26> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error27
-<http://org.semanticweb.owlapi/error#Error27> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error28
-<http://org.semanticweb.owlapi/error#Error28> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error29
-<http://org.semanticweb.owlapi/error#Error29> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error30
-<http://org.semanticweb.owlapi/error#Error30> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error31
-<http://org.semanticweb.owlapi/error#Error31> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error32
-<http://org.semanticweb.owlapi/error#Error32> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#BINARY
-<https://w3id.org/express#BINARY> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#BOOLEAN
-<https://w3id.org/express#BOOLEAN> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#ENUMERATION
-<https://w3id.org/express#ENUMERATION> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#INTEGER
-<https://w3id.org/express#INTEGER> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#INTEGER_List
-<https://w3id.org/express#INTEGER_List> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#LOGICAL
-<https://w3id.org/express#LOGICAL> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#NUMBER
-<https://w3id.org/express#NUMBER> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#REAL
-<https://w3id.org/express#REAL> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#REAL_List
-<https://w3id.org/express#REAL_List> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#SELECT
-<https://w3id.org/express#SELECT> rdf:type owl:Class .
-
-
-###  https://w3id.org/express#STRING
-<https://w3id.org/express#STRING> rdf:type owl:Class .
-
 
 ###  https://w3id.org/ifc/IFC4X3_ADD2#IfcAbsorbedDoseMeasure
 :IfcAbsorbedDoseMeasure rdf:type owl:Class ;
@@ -15966,7 +15834,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                owl:onProperty <https://w3id.org/list#hasNext> ;
                                owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                    owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                   owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error26>
+                                                   owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass :IfcPositiveInteger_EmptyList
+                                                                     ]
                                                  ]
                              ] .
 
@@ -18147,7 +18019,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                          owl:onProperty <https://w3id.org/list#hasNext> ;
                                                          owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                              owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                             owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error20>
+                                                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                 owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                               ]
                                                                            ]
                                                        ]
                                    ] ,
@@ -19180,7 +19056,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <https://w3id.org/list#hasNext> ;
-                                    owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error19>
+                                    owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <https://w3id.org/express#REAL_EmptyList>
+                                                      ]
                                   ] .
 
 
@@ -19352,7 +19232,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                     owl:onProperty <https://w3id.org/list#hasNext> ;
                                                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                                         owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                                        owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error27>
+                                                                                        owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                            owl:onClass <https://w3id.org/express#INTEGER_EmptyList>
+                                                                                                          ]
                                                                                       ]
                                                                   ]
                                               ] .
@@ -21718,7 +21602,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                     owl:onProperty <https://w3id.org/list#hasNext> ;
                                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                         owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                        owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error17>
+                                                                        owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass :IfcReal_EmptyList
+                                                                                          ]
                                                                       ]
                                                   ]
                               ] ,
@@ -24703,7 +24591,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                          owl:onProperty :tilingPattern_IfcFillAreaStyleTiles ;
                                          owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                              owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                             owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error23>
+                                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                 owl:onClass :IfcVector_EmptyList
+                                                                               ]
                                                            ]
                                        ] ,
                                        [ rdf:type owl:Restriction ;
@@ -28365,7 +28257,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                owl:onProperty :offsetValues_IfcMaterialLayerWithOffsets ;
                                                owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                    owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                   owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error25>
+                                                                   owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                       owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                     ]
                                                                  ]
                                              ] ,
                                              [ rdf:type owl:Restriction ;
@@ -28614,7 +28510,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                  owl:onProperty :offsetValues_IfcMaterialProfileWithOffsets ;
                                                  owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                      owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                     owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error24>
+                                                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                         owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                       ]
                                                                    ]
                                                ] ,
                                                [ rdf:type owl:Restriction ;
@@ -32679,11 +32579,15 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ifc/IFC4X3_ADD2#IfcPropertySetDefinitionSet
 :IfcPropertySetDefinitionSet rdf:type owl:Class ;
-                             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error21> ,
-                                             :IfcPropertySetDefinitionSelect ,
+                             rdfs:subClassOf :IfcPropertySetDefinitionSelect ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty <https://w3id.org/express#hasSet> ;
                                                owl:allValuesFrom :IfcPropertySetDefinition
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/express#hasSet> ;
+                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :IfcPropertySetDefinition
                                              ] .
 
 
@@ -38664,7 +38568,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                              owl:onProperty <https://w3id.org/list#hasNext> ;
                                                              owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                                  owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                                 owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error18>
+                                                                                 owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                     owl:onClass :IfcRatioMeasure_EmptyList
+                                                                                                   ]
                                                                                ]
                                                            ]
                                        ] ,
@@ -39413,7 +39321,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                    owl:onProperty :associatedGeometry_IfcSurfaceCurve ;
                                    owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                        owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                       owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error22>
+                                                       owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass :IfcPcurve_EmptyList
+                                                                         ]
                                                      ]
                                  ] ,
                                  [ rdf:type owl:Restriction ;
@@ -39553,7 +39465,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                    owl:onProperty <https://w3id.org/list#hasNext> ;
                                                                    owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                                        owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                                       owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error29>
+                                                                                       owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                                         ]
                                                                                      ]
                                                                  ]
                                              ] ,
@@ -39577,7 +39493,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                    owl:onProperty <https://w3id.org/list#hasNext> ;
                                                                    owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                                        owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                                       owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error28>
+                                                                                       owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                                         ]
                                                                                      ]
                                                                  ]
                                              ] ,
@@ -41544,7 +41464,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                     owl:onProperty :coordinates_IfcTextureVertex ;
                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                         owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                        owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error30>
+                                                        owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                            owl:onClass :IfcParameterValue_EmptyList
+                                                                          ]
                                                       ]
                                   ] ,
                                   [ rdf:type owl:Restriction ;
@@ -42938,7 +42862,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                               owl:onProperty :intersectingAxes_IfcVirtualGridIntersection ;
                                               owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                   owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                  owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error31>
+                                                                  owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass :IfcGridAxis_EmptyList
+                                                                                    ]
                                                                 ]
                                             ] ,
                                             [ rdf:type owl:Restriction ;
@@ -42961,7 +42889,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                   owl:onProperty <https://w3id.org/list#hasNext> ;
                                                                   owl:allValuesFrom [ rdf:type owl:Restriction ;
                                                                                       owl:onProperty <https://w3id.org/list#hasNext> ;
-                                                                                      owl:allValuesFrom <http://org.semanticweb.owlapi/error#Error32>
+                                                                                      owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass :IfcLengthMeasure_EmptyList
+                                                                                                        ]
                                                                                     ]
                                                                 ]
                                             ] ,
@@ -43639,14 +43571,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :IfcLabel
                          ] .
-
-
-###  https://w3id.org/list#EmptyList
-<https://w3id.org/list#EmptyList> rdf:type owl:Class .
-
-
-###  https://w3id.org/list#OWLList
-<https://w3id.org/list#OWLList> rdf:type owl:Class .
 
 
 #################################################################
@@ -53529,53 +53453,5 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                              :IfcRecurrenceTypeEnum ;
                     rdfs:label "YEARLY_BY_POSITION" .
 
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
