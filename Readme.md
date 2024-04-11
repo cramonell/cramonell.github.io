@@ -5,10 +5,14 @@ Welcome to my GitHub profile! Here, you'll find a collection of my projects and 
 ## Based on IFC (Industry Foundation Classes)
 ### IFC 4X3 ADD2 
 English: [IFC 4X3 ADD2 ](/ifc/ifcowl/IFC4X3_ADD2/20240327/index-en.html)
-### IFC Built Products
-English: [BPO (Built Product Ontology) ](/ifc/bpo/20240327/index-en.html)
 ### IFC Processes
 English: [PO (Processes Ontology) ](/ifc/po/20240327/index-en.html)
+### Ontology for built elements
+English: [BEO (Ontology for Built Elements) ](/beo/20240411/index-en.html)
+Spanish: [BEO (Ontology for Built Elements) ](/beo/20240411/index-es.html)
+
+
+
 
 
 ## Information Management
