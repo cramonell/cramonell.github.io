@@ -1,0 +1,162 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/dot", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/sdo" ],
+    "title" : {
+      "undefined" : "Steel Damage Ontology"
+    },
+    "iri" : "https://w3id.org/sdo#",
+    "version" : "1.0",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology to describe material damages identified in built elements made of steel. It extends de Damage Topology Ontology (DTO): https://alhakam.github.io/dot/",
+      "es" : "Ontologia que describe los deterioros en el material de elementos construidos con acero. Extiende la damage topology ontology (DTO): https://alhakam.github.io/dot/"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/03/27",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sdo",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "es",
+        "type" : "label"
+      }, {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sdo#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Steel Damage Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/dot#ClassifiedDamage",
+    "baseIri" : "https://w3id.org/dot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassifiedDamage"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/sdo#Corrosion",
+    "baseIri" : "https://w3id.org/sdo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sdo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Corrosion",
+      "en" : "Corrosion",
+      "es" : "Corrosion"
+    },
+    "comment" : {
+      "en" : "Damage caused by iron oxidation, which occurs at a rate largely dependent on temperature, humidity, and the aggressiveness of the air in contact with the element, and causes partial or total loss of material section",
+      "es" : "Deterioro causado por la oxidaciñon del hierro, que se produce a una velocidad que depende en gran medida de la temperatura, la humedad  y la agresividad del aire en contacto con el elemento y causa la perdida parcial o total de la seccion de material. "
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/sdo#section_loss",
+    "baseIri" : "https://w3id.org/sdo",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sdo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "section_loss",
+      "en" : "section loss",
+      "es" : "pérdida de sección"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "material loss that modifies the mechanical characteristics of a corroded element to which affets. Unit: mm",
+      "es" : "pérdida de material que modifica las propiedades mecánicas de el elemento corroido al que afecta. Unidades: mm"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  } ]
+}

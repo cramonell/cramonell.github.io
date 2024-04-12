@@ -1,0 +1,445 @@
+<https://w3id.org/po-ifc#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/po-ifc#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/po-ifc#> .
+<https://w3id.org/po-ifc#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/abstract> "This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFCExpress2OWL_Proces custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/date> "2024/03/27" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/description> "OWL ontology to describe processes in the built environment. It is based on the Proces ontology descibed in IFC (Insutry Foundation Classes) schema." .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/identifier> "Proces Ontology" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/language> "en" .
+<https://w3id.org/po-ifc#> <http://purl.org/dc/elements/1.1/title> "Proces Ontology" .
+<https://w3id.org/po-ifc#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "po" .
+<https://w3id.org/po-ifc#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/po-ifc#" .
+<https://w3id.org/po-ifc#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/po-ifc#decomposes_Process
+<https://w3id.org/po-ifc#decomposes_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#decomposes_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#decomposes_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#decomposes_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Decomposes" .
+# 
+# https://w3id.org/po-ifc#eventOccurenceTime_Event
+<https://w3id.org/po-ifc#eventOccurenceTime_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#eventOccurenceTime_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#eventOccurenceTime_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Event> .
+<https://w3id.org/po-ifc#eventOccurenceTime_Event> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#EventTime> .
+<https://w3id.org/po-ifc#eventOccurenceTime_Event> <http://www.w3.org/2000/01/rdf-schema#label> "EventOccurenceTime" .
+# 
+# https://w3id.org/po-ifc#isDecomposedBy_Process
+<https://w3id.org/po-ifc#isDecomposedBy_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#isDecomposedBy_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isDecomposedBy_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isDecomposedBy_Process> <http://www.w3.org/2000/01/rdf-schema#label> "IsDecomposedBy" .
+# 
+# https://w3id.org/po-ifc#isNestedBy_Process
+<https://w3id.org/po-ifc#isNestedBy_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#isNestedBy_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isNestedBy_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isNestedBy_Process> <http://www.w3.org/2000/01/rdf-schema#label> "IsNestedBy" .
+# 
+# https://w3id.org/po-ifc#isPredecessorTo_Process
+<https://w3id.org/po-ifc#isPredecessorTo_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#isPredecessorTo_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isPredecessorTo_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isPredecessorTo_Process> <http://www.w3.org/2000/01/rdf-schema#label> "IsPredecessorTo" .
+# 
+# https://w3id.org/po-ifc#isSuccessorFrom_Process
+<https://w3id.org/po-ifc#isSuccessorFrom_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#isSuccessorFrom_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isSuccessorFrom_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#isSuccessorFrom_Process> <http://www.w3.org/2000/01/rdf-schema#label> "IsSuccessorFrom" .
+# 
+# https://w3id.org/po-ifc#nests_Process
+<https://w3id.org/po-ifc#nests_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#nests_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#nests_Process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#nests_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Nests" .
+# 
+# https://w3id.org/po-ifc#operatesOn_Process
+<https://w3id.org/po-ifc#operatesOn_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#operatesOn_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#operatesOn_Process> <http://www.w3.org/2000/01/rdf-schema#label> "OperatesOn" .
+# 
+# https://w3id.org/po-ifc#taskTime_Task
+<https://w3id.org/po-ifc#taskTime_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/po-ifc#taskTime_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#taskTime_Task> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Task> .
+<https://w3id.org/po-ifc#taskTime_Task> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#taskTime_Task> <http://www.w3.org/2000/01/rdf-schema#label> "TaskTime" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/po-ifc#actualDate_EventTime
+<https://w3id.org/po-ifc#actualDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#actualDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#actualDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#EventTime> .
+<https://w3id.org/po-ifc#actualDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#actualDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#label> "ActualDate" .
+# 
+# https://w3id.org/po-ifc#actualDuration_TaskTime
+<https://w3id.org/po-ifc#actualDuration_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#actualDuration_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#actualDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#actualDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#actualDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ActualDuration" .
+# 
+# https://w3id.org/po-ifc#actualFinish_TaskTime
+<https://w3id.org/po-ifc#actualFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#actualFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#actualFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#actualFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#actualFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ActualFinish" .
+# 
+# https://w3id.org/po-ifc#actualStart_TaskTime
+<https://w3id.org/po-ifc#actualStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#actualStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#actualStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#actualStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#actualStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ActualStart" .
+# 
+# https://w3id.org/po-ifc#completion_TaskTime
+<https://w3id.org/po-ifc#completion_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#completion_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#completion_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#completion_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/po-ifc#completion_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "Completion" .
+# 
+# https://w3id.org/po-ifc#dataOrigin_SchedulingTime
+<https://w3id.org/po-ifc#dataOrigin_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#dataOrigin_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#dataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#SchedulingTime> .
+<https://w3id.org/po-ifc#dataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#dataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#label> "DataOrigin" .
+# 
+# https://w3id.org/po-ifc#description_Process
+<https://w3id.org/po-ifc#description_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#description_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#description_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#description_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#description_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Description" .
+# 
+# https://w3id.org/po-ifc#durationType_TaskTime
+<https://w3id.org/po-ifc#durationType_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#durationType_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#durationType_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#durationType_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#durationType_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "DurationType" .
+# 
+# https://w3id.org/po-ifc#earlyDate_EventTime
+<https://w3id.org/po-ifc#earlyDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#earlyDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#earlyDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#EventTime> .
+<https://w3id.org/po-ifc#earlyDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#earlyDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#label> "EarlyDate" .
+# 
+# https://w3id.org/po-ifc#earlyFinish_TaskTime
+<https://w3id.org/po-ifc#earlyFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#earlyFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#earlyFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#earlyFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#earlyFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "EarlyFinish" .
+# 
+# https://w3id.org/po-ifc#earlyStart_TaskTime
+<https://w3id.org/po-ifc#earlyStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#earlyStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#earlyStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#earlyStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#earlyStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "EarlyStart" .
+# 
+# https://w3id.org/po-ifc#eventTriggerType_Event
+<https://w3id.org/po-ifc#eventTriggerType_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#eventTriggerType_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#eventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Event> .
+<https://w3id.org/po-ifc#eventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#eventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#label> "EventTriggerType" .
+# 
+# https://w3id.org/po-ifc#freeFloat_TaskTime
+<https://w3id.org/po-ifc#freeFloat_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#freeFloat_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#freeFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#freeFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#freeFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "FreeFloat" .
+# 
+# https://w3id.org/po-ifc#globalId_Process
+<https://w3id.org/po-ifc#globalId_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#globalId_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#globalId_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#globalId_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#globalId_Process> <http://www.w3.org/2000/01/rdf-schema#label> "GlobalId" .
+# 
+# https://w3id.org/po-ifc#identification_Process
+<https://w3id.org/po-ifc#identification_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#identification_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#identification_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#identification_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#identification_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Identification" .
+# 
+# https://w3id.org/po-ifc#isCritical_TaskTime
+<https://w3id.org/po-ifc#isCritical_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#isCritical_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#isCritical_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#isCritical_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/po-ifc#isCritical_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "IsCritical" .
+# 
+# https://w3id.org/po-ifc#isMilestone_Task
+<https://w3id.org/po-ifc#isMilestone_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#isMilestone_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#isMilestone_Task> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Task> .
+<https://w3id.org/po-ifc#isMilestone_Task> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/po-ifc#isMilestone_Task> <http://www.w3.org/2000/01/rdf-schema#label> "IsMilestone" .
+# 
+# https://w3id.org/po-ifc#lateDate_EventTime
+<https://w3id.org/po-ifc#lateDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#lateDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#lateDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#EventTime> .
+<https://w3id.org/po-ifc#lateDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#lateDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#label> "LateDate" .
+# 
+# https://w3id.org/po-ifc#lateFinish_TaskTime
+<https://w3id.org/po-ifc#lateFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#lateFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#lateFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#lateFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#lateFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "LateFinish" .
+# 
+# https://w3id.org/po-ifc#lateStart_TaskTime
+<https://w3id.org/po-ifc#lateStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#lateStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#lateStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#lateStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#lateStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "LateStart" .
+# 
+# https://w3id.org/po-ifc#longDescription_Process
+<https://w3id.org/po-ifc#longDescription_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#longDescription_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#longDescription_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#longDescription_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#longDescription_Process> <http://www.w3.org/2000/01/rdf-schema#label> "LongDescription" .
+# 
+# https://w3id.org/po-ifc#name_Process
+<https://w3id.org/po-ifc#name_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#name_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#name_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#name_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#name_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Name" .
+# 
+# https://w3id.org/po-ifc#name_SchedulingTime
+<https://w3id.org/po-ifc#name_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#name_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#name_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#SchedulingTime> .
+<https://w3id.org/po-ifc#name_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#name_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Name" .
+# 
+# https://w3id.org/po-ifc#objectType_Process
+<https://w3id.org/po-ifc#objectType_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#objectType_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#objectType_Process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#objectType_Process> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#objectType_Process> <http://www.w3.org/2000/01/rdf-schema#label> "ObjectType" .
+# 
+# https://w3id.org/po-ifc#priority_Task
+<https://w3id.org/po-ifc#priority_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#priority_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#priority_Task> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Task> .
+<https://w3id.org/po-ifc#priority_Task> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/po-ifc#priority_Task> <http://www.w3.org/2000/01/rdf-schema#label> "Priority" .
+# 
+# https://w3id.org/po-ifc#remainingTime_TaskTime
+<https://w3id.org/po-ifc#remainingTime_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#remainingTime_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#remainingTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#remainingTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#remainingTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "RemainingTime" .
+# 
+# https://w3id.org/po-ifc#scheduleDate_EventTime
+<https://w3id.org/po-ifc#scheduleDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#scheduleDate_EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#scheduleDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#EventTime> .
+<https://w3id.org/po-ifc#scheduleDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#scheduleDate_EventTime> <http://www.w3.org/2000/01/rdf-schema#label> "ScheduleDate" .
+# 
+# https://w3id.org/po-ifc#scheduleDuration_TaskTime
+<https://w3id.org/po-ifc#scheduleDuration_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#scheduleDuration_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#scheduleDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#scheduleDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#scheduleDuration_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ScheduleDuration" .
+# 
+# https://w3id.org/po-ifc#scheduleFinish_TaskTime
+<https://w3id.org/po-ifc#scheduleFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#scheduleFinish_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#scheduleFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#scheduleFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#scheduleFinish_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ScheduleFinish" .
+# 
+# https://w3id.org/po-ifc#scheduleStart_TaskTime
+<https://w3id.org/po-ifc#scheduleStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#scheduleStart_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#scheduleStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#scheduleStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#scheduleStart_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "ScheduleStart" .
+# 
+# https://w3id.org/po-ifc#statusTime_TaskTime
+<https://w3id.org/po-ifc#statusTime_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#statusTime_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#statusTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#statusTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#statusTime_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "StatusTime" .
+# 
+# https://w3id.org/po-ifc#status_Task
+<https://w3id.org/po-ifc#status_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#status_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#status_Task> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Task> .
+<https://w3id.org/po-ifc#status_Task> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#status_Task> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
+# 
+# https://w3id.org/po-ifc#totalFloat_TaskTime
+<https://w3id.org/po-ifc#totalFloat_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#totalFloat_TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#totalFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#TaskTime> .
+<https://w3id.org/po-ifc#totalFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#totalFloat_TaskTime> <http://www.w3.org/2000/01/rdf-schema#label> "TotalFloat" .
+# 
+# https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime
+<https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#SchedulingTime> .
+<https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#userDefinedDataOrigin_SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#label> "UserDefinedDataOrigin" .
+# 
+# https://w3id.org/po-ifc#userDefinedEventTriggerType_Event
+<https://w3id.org/po-ifc#userDefinedEventTriggerType_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#userDefinedEventTriggerType_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#userDefinedEventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Event> .
+<https://w3id.org/po-ifc#userDefinedEventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#userDefinedEventTriggerType_Event> <http://www.w3.org/2000/01/rdf-schema#label> "UserDefinedEventTriggerType" .
+# 
+# https://w3id.org/po-ifc#workMethod_Task
+<https://w3id.org/po-ifc#workMethod_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/po-ifc#workMethod_Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/po-ifc#workMethod_Task> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/po-ifc#Task> .
+<https://w3id.org/po-ifc#workMethod_Task> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/po-ifc#workMethod_Task> <http://www.w3.org/2000/01/rdf-schema#label> "WorkMethod" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/dot#Inspection
+<https://w3id.org/dot#Inspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/dot#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#Task> .
+# 
+# https://w3id.org/po-ifc#Event
+<https://w3id.org/po-ifc#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/po-ifc#Procedure> .
+<https://w3id.org/po-ifc#Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/po-ifc#Task> .
+# 
+# https://w3id.org/po-ifc#EventTime
+<https://w3id.org/po-ifc#EventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#EventTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#SchedulingTime> .
+<https://w3id.org/po-ifc#EventTime> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/po-ifc#TaskTime> .
+# 
+# https://w3id.org/po-ifc#Procedure
+<https://w3id.org/po-ifc#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#Process> .
+<https://w3id.org/po-ifc#Procedure> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/po-ifc#Task> .
+# 
+# https://w3id.org/po-ifc#Process
+<https://w3id.org/po-ifc#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/po-ifc#Task> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/po-ifc#Procedure> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/po-ifc#Event> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/po-ifc#SchedulingTime
+<https://w3id.org/po-ifc#SchedulingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#SchedulingTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/po-ifc#TaskTime> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/po-ifc#EventTime> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/po-ifc#Task
+<https://w3id.org/po-ifc#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#Process> .
+# 
+# https://w3id.org/po-ifc#TaskTime
+<https://w3id.org/po-ifc#TaskTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/po-ifc#TaskTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/po-ifc#SchedulingTime> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

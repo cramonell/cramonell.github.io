@@ -1,0 +1,4095 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#DistributionElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#ElementAssembly"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#BuildingElementPart"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#DiscreteAccessory"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Fastener"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#ImpactProtectionDevice"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Sign"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#BridgePart"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#FacilityPartCommon"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#MarinePart"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#RailwayPart"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#RoadPart"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#Borehole"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Geomodel"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Geoslice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#GeotechnicalAssembly"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#GeotechnicalStratum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#Element"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Tendon"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#TendonAnchor"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#TendonConduit"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#SpatialZone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#BuildingStorey"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Facility"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Site"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Space"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bpo-ifc#TransportElement"
+    }, {
+      "@id" : "https://w3id.org/bpo-ifc#Vehicle"
+    } ]
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@value" : "This Ontology is automatically created from the EXPRESS schema 'IFC4X3_ADD2' using the IFC2Product custom converter developed  by Carlos Ramonell (carlos.ramonell@upc.edu)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2024/03/27"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "OWL ontology to describe built products in the built environment. It is based on the Product ontology descibed in IFC (Insutry Foundation Classes) schema."
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "Built Product Ontology"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Built Product Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "bpo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/bpo-ifc#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Alarm"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Controller"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowInstrument"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sensor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#AirTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#AudioVisualAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FireSuppressionTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Lamp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#AirTerminalBox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Damper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionBoard"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricDistributionBoard"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricTimeControl"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMeter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#AirToAirHeatRecovery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Boiler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Burner"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Chiller"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Coil"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Condenser"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Alarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Controller"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowInstrument"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sensor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#AudioVisualAppliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FireSuppressionTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Lamp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Beam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Bearing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#BuildingElementProxy"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Chimney"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Column"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Course"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Bearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuildingElementProxy"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Chimney"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Column"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Course"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Boiler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Burner"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Chiller"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Coil"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Condenser"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Borehole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalAssembly"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Geomodel"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Geoslice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Bridge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Building"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MarineFacility"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railway"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Road"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#BridgePart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPartCommon"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MarinePart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RailwayPart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RoadPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MarineFacility"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railway"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Road"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#BuildingElementPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DiscreteAccessory"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Fastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ImpactProtectionDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#BuildingElementProxy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Chimney"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Column"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Course"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#BuildingStorey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Site"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#BuiltElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElementAssembly"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Burner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Chiller"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Coil"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Condenser"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CableCarrierFitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CableFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DuctFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#JunctionBox"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeFitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CableCarrierSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CableSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ConveyorSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DuctSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeSegment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CableFitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DuctFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#JunctionBox"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeFitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CableSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ConveyorSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DuctSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeSegment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CaissonFoundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Pile"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Chiller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Coil"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Condenser"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Chimney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Column"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Course"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Coil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Condenser"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Column",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Course"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CommunicationsAppliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FireSuppressionTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Lamp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Compressor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Fan"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pump"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Condenser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CooledBeam"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Controller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowInstrument"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sensor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ConveyorSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DuctSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeSegment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CooledBeam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CoolingTower"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CoolingTower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Course",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Covering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#CurtainWall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#CurtainWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Damper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionBoard"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricDistributionBoard"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricTimeControl"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMeter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DeepFoundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DiscreteAccessory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Fastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ImpactProtectionDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DistributionBoard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricDistributionBoard"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricTimeControl"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMeter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DistributionChamberElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DistributionElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementAssembly"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DuctFitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#JunctionBox"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#PipeFitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DuctSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#PipeSegment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#DuctSilencer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricFlowTreatmentDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Filter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Interceptor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#EarthworksElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Footing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#EarthworksFill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcedSoil"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricAppliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FireSuppressionTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Lamp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricDistributionBoard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricTimeControl"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMeter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricFlowStorageDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricFlowTreatmentDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Filter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Interceptor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricGenerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElectricMotor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricMotor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Engine"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElectricTimeControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMeter"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElementAssembly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ElementComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  }, {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Engine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#EvaporativeCooler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Evaporator"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Evaporator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#HeatExchanger"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Facility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Site"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FacilityPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Site"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FacilityPartCommon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MarinePart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RailwayPart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RoadPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Fan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Pump"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Fastener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ImpactProtectionDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Filter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Interceptor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FireSuppressionTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Lamp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowController",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowFitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sensor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Footing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Kerb"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#FurnishingElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeographicElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Furniture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SystemFurnitureElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#GeographicElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Geomodel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalAssembly"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Geoslice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Geoslice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalAssembly"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#GeotechnicalAssembly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  }, {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalStratum"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  }, {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#GeotechnicalStratum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#GeotechnicalElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#HeatExchanger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Humidifier"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Humidifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MotorConnection"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ImpactProtectionDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Interceptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTreatmentDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#JunctionBox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#PipeFitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Kerb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Member"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Lamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#LightFixture"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#LightFixture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#LiquidTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MedicalDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MarineFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Railway"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Road"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MarinePart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#RailwayPart"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RoadPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MedicalDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MooringDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MobileTelecommunicationsAppliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Outlet"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MooringDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#NavigationElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#MotorConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SolarDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#NavigationElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Pavement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Outlet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Pavement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Plate"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Pile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DeepFoundation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#PipeFitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowFitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#PipeSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowSegment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Plate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Rail"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ProtectiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ProtectiveDeviceTrippingUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Sensor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Pump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowMovingDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Rail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Railing"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Railing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Ramp"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Railway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Road"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#RailwayPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#RoadPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Ramp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#RampFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#RampFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Roof"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ReinforcedSoil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EarthworksElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TendonAnchor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TendonConduit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  }, {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Sign"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TendonAnchor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TendonConduit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Road",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Facility"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#RoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Roof",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ShadingDevice"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SanitaryTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Signal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#ShadingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Slab"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Sign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationDamper"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Signal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpaceHeater"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Slab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Stair"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SolarDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Transformer"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SpaceHeater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StackTerminal"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SpatialElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  }, {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialZone"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SpatialZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#StackTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#WasteTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Stair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#StairFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TrackElement"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SwitchingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Valve"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#SystemFurnitureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FurnishingElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Tank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowStorageDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TendonAnchor"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#TendonConduit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TendonAnchor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TendonConduit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TendonConduit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TrackElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Transformer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TubeBundle"
+  }, {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TransportElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Vehicle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TransportationDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  }, {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#TubeBundle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#UnitaryControlElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#UnitaryEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#EnergyConversionDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowController"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#TransportationDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#VibrationDamper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#VibrationIsolator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Wall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#WallStandardCase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Wall"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#WasteTerminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FlowTerminal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuiltElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#anchorageSlip_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnchorageSlip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#assemblyPlace_ElementAssembly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ElementAssembly"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AssemblyPlace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#assignedToFlowElement_DistributionControlElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AssignedToFlowElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#barLength_ReinforcingBar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BarLength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#barSurface_ReinforcingBar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BarSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#compositionType_SpatialStructureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialStructureElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CompositionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#constructionType_Pile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Pile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ConstructionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#containsElements_SpatialElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContainsElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#coversElements_Covering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CoversElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#coversSpaces_Covering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CoversSpaces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#crossSectionArea_ReinforcingBar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CrossSectionArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#crossSectionArea_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CrossSectionArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#decomposes_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Decomposes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#description_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#elevationOfRefHeight_Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ElevationOfRefHeight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#elevationOfTerrain_Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ElevationOfTerrain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#elevationWithFlooring_Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ElevationWithFlooring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#elevation_BuildingStorey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#BuildingStorey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Elevation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#frictionCoefficient_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FrictionCoefficient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#globalId_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GlobalId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#hasControlElements_DistributionFlowElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionFlowElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HasControlElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#DistributionControlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#hasCoverings_Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HasCoverings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#hasCoverings_Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HasCoverings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#isDecomposedBy_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IsDecomposedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#isNestedBy_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IsNestedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#landTitleNumber_Site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LandTitleNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#longName_SpatialElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LongName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#longitudinalBarCrossSectionArea_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LongitudinalBarCrossSectionArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#longitudinalBarNominalDiameter_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LongitudinalBarNominalDiameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#longitudinalBarSpacing_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LongitudinalBarSpacing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#meshLength_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MeshLength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#meshWidth_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MeshWidth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#minCurvatureRadius_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MinCurvatureRadius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#name_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#nests_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nests"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#nominalDiameter_MechanicalFastener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NominalDiameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#nominalDiameter_ReinforcingBar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingBar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NominalDiameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#nominalDiameter_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NominalDiameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#nominalLength_MechanicalFastener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#MechanicalFastener"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NominalLength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#numberOfRisers_StairFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NumberOfRisers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#numberOfTreads_StairFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NumberOfTreads"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#objectType_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ObjectType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#operationType_Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OperationType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#overallHeight_Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OverallHeight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#overallHeight_Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OverallHeight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#overallWidth_Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OverallWidth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#overallWidth_Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OverallWidth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#partitioningType_Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PartitioningType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#preStress_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PreStress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#referencedBy_Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReferencedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#referencesElements_SpatialElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#SpatialElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReferencesElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#riserHeight_StairFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RiserHeight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#steelGrade_ReinforcingElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SteelGrade"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#tag_Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#tensionForce_Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TensionForce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#transverseBarCrossSectionArea_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TransverseBarCrossSectionArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#transverseBarNominalDiameter_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TransverseBarNominalDiameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#transverseBarSpacing_ReinforcingMesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#ReinforcingMesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TransverseBarSpacing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#treadLength_StairFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#StairFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TreadLength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#usageType_FacilityPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#FacilityPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UsageType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#userDefinedOperationType_Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Door"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UserDefinedOperationType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bpo-ifc#userDefinedPartitioningType_Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bpo-ifc#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UserDefinedPartitioningType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]
