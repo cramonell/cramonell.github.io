@@ -15,9 +15,9 @@
         <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
         <dc:abstract>This ifcOWL ontology is automatically generated from the EXPRESS schema &apos;IFC4X3_ADD2&apos; using the &apos;IFCExpress2OWL&apos; converter developed by Carlos Ramonell (carlos.ramonell@upc.edu). The ontology is identical to the ontology that is generated from the EXPRESS schema &apos;IFC4X3_ADD2.exp&apos; using the &apos;IFC-to-RDF&apos; converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be)</dc:abstract>
         <dc:contributor>Aleksandra Sojic (aleksandra.sojic@itia.cnr.it)</dc:contributor>
-        <dc:contributor>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:contributor>
         <dc:contributor>Jakob Beetz (j.beetz@tue.nl)</dc:contributor>
         <dc:contributor>María Poveda Villalón (mpoveda@fi.upm.es)</dc:contributor>
+        <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
         <dc:creator>Pieter Pauwels (pipauwel.pauwels@ugent.be)</dc:creator>
         <dc:creator>Walter Terkaj (walter.terkaj@itia.cnr.it)</dc:creator>
         <dc:date>2024/03/27</dc:date>
@@ -27,6 +27,7 @@
         <dc:title>IFC4X3_ADD2</dc:title>
         <vann:preferredNamespacePrefix>ifc</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/ifc/IFC4X3_ADD2#</vann:preferredNamespaceUri>
+        <owl:priorVersion>https://pi.pauwel.be/evoc/ifc_W3ID/20151211/IFC4_ADD1/index.html</owl:priorVersion>
         <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
     

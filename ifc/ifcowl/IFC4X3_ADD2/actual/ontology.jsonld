@@ -44792,13 +44792,13 @@
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@value" : "Aleksandra Sojic (aleksandra.sojic@itia.cnr.it)"
   }, {
-    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
-  }, {
     "@value" : "Jakob Beetz (j.beetz@tue.nl)"
   }, {
     "@value" : "María Poveda Villalón (mpoveda@fi.upm.es)"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+  }, {
     "@value" : "Pieter Pauwels (pipauwel.pauwels@ugent.be)"
   }, {
     "@value" : "Walter Terkaj (walter.terkaj@itia.cnr.it)"
@@ -44826,6 +44826,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://w3id.org/express"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : "https://pi.pauwel.be/evoc/ifc_W3ID/20151211/IFC4_ADD1/index.html"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/ifc/IFC4X3_ADD2#"
