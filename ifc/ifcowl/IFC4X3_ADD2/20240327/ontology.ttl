@@ -12,10 +12,10 @@
                                      <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
                                      <http://purl.org/dc/elements/1.1/abstract> "This ifcOWL ontology is automatically generated from the EXPRESS schema 'IFC4X3_ADD2' using the 'IFCExpress2OWL' converter developed by Carlos Ramonell (carlos.ramonell@upc.edu). The ontology is identical to the ontology that is generated from the EXPRESS schema 'IFC4X3_ADD2.exp' using the 'IFC-to-RDF' converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be)" ;
                                      <http://purl.org/dc/elements/1.1/contributor> "Aleksandra Sojic (aleksandra.sojic@itia.cnr.it)" ,
-                                                                                   "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ,
                                                                                    "Jakob Beetz (j.beetz@tue.nl)" ,
                                                                                    "María Poveda Villalón (mpoveda@fi.upm.es)" ;
-                                     <http://purl.org/dc/elements/1.1/creator> "Pieter Pauwels (pipauwel.pauwels@ugent.be)" ,
+                                     <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ,
+                                                                               "Pieter Pauwels (pipauwel.pauwels@ugent.be)" ,
                                                                                "Walter Terkaj (walter.terkaj@itia.cnr.it)" ;
                                      <http://purl.org/dc/elements/1.1/date> "2024/03/27" ;
                                      <http://purl.org/dc/elements/1.1/description> "OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data. Release 4X3 ADD2." ;
@@ -24,6 +24,7 @@
                                      <http://purl.org/dc/elements/1.1/title> "IFC4X3_ADD2" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifc" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ifc/IFC4X3_ADD2#" ;
+                                     owl:priorVersion "https://pi.pauwel.be/evoc/ifc_W3ID/20151211/IFC4_ADD1/index.html" ;
                                      owl:versionInfo "1.0" .
 
 #################################################################
