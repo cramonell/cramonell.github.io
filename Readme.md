@@ -46,6 +46,6 @@ English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Netw
 [IFC2BEO converter](https://github.com/cramonell/beo) 
 
 ## IFC2RDF
-[IFC2RDFconverter](https://github.com/cramonell/ifcowl/IFC4X3_ADD2) 
+[IFC2RDFconverter](https://github.com/cramonell/ifcowl) 
 
 
