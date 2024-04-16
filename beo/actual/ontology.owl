@@ -16,9 +16,9 @@
         <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
         <dc:date>2024/04/11</dc:date>
         <dc:description>OWL ontology to describe built elements in the built environment. It is based on the Product ontology descibed in IFC (Insutry Foundation Classes) schema.</dc:description>
-        <dc:identifier>Built Product Ontology</dc:identifier>
+        <dc:identifier>Built Element Ontology</dc:identifier>
         <dc:language>en</dc:language>
-        <dc:title>Built Product Ontology</dc:title>
+        <dc:title>Built Element Ontology</dc:title>
         <vann:preferredNamespacePrefix>beo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/beo#</vann:preferredNamespaceUri>
         <owl:versionInfo>1.0</owl:versionInfo>

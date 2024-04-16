@@ -13,9 +13,9 @@
                          <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
                          <http://purl.org/dc/elements/1.1/date> "2024/04/11" ;
                          <http://purl.org/dc/elements/1.1/description> "OWL ontology to describe built elements in the built environment. It is based on the Product ontology descibed in IFC (Insutry Foundation Classes) schema." ;
-                         <http://purl.org/dc/elements/1.1/identifier> "Built Product Ontology" ;
+                         <http://purl.org/dc/elements/1.1/identifier> "Built Element Ontology" ;
                          <http://purl.org/dc/elements/1.1/language> "en" ;
-                         <http://purl.org/dc/elements/1.1/title> "Built Product Ontology" ;
+                         <http://purl.org/dc/elements/1.1/title> "Built Element Ontology" ;
                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "beo" ;
                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/beo#" ;
                          owl:versionInfo "1.0" .

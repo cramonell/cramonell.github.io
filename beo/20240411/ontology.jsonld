@@ -50,13 +50,13 @@
     "@value" : "OWL ontology to describe built elements in the built environment. It is based on the Product ontology descibed in IFC (Insutry Foundation Classes) schema."
   } ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
-    "@value" : "Built Product Ontology"
+    "@value" : "Built Element Ontology"
   } ],
   "http://purl.org/dc/elements/1.1/language" : [ {
     "@value" : "en"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Built Product Ontology"
+    "@value" : "Built Element Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "beo"
