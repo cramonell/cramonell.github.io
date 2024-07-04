@@ -11,18 +11,10 @@ English: [PO (Processes Ontology) ](/ifc/po/actual/index-en.html)
 English: [BEO (Ontology for Built Elements) ](/beo/actual/index-en.html)
 
 Spanish: [BEO (Ontology for Built Elements) ](/beo/actual/index-es.html)
+### Ontology for distribution elements
+English: [MEP (Distribution Element Ontology) ](/mep/actual/index-en.html)
 
-
-## Information Management
-### ISO 19560
-English: [19560 ontology](/Information_Management/ISO19560/) WIP
-
-Spanish: [19560 ontology](/Information_Management/ISO19560/) WIP
-
-### Versioning
-English: [Entity Version Ontology](/Information_Management/Versions/) WIP
-
-Spanish: [Entity Version Ontology](/Information_Management/Versions/) WIP
+Spanish: [MEP (Distribution Element Ontology) ](/mep/actual/index-es.html)
 
 ## Bridge Management
 ### Steel Damage Ontology
@@ -37,15 +29,19 @@ English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Netw
 
 
 ## Spatial
-## Map conversion
-[MCO (Map Conversion Ontology)](/Spatial/mco) WIP
 
 # Converters
 
-## IFC2BEO
+## IFCEXPRESS2BEO
 [IFC2BEO converter](https://github.com/cramonell/beo) 
 
-## IFC2RDF
-[IFC2RDFconverter](https://github.com/cramonell/ifcowl) 
+## IFCEXPRESS2MEP
+[IFC2BEO converter](https://github.com/cramonell/mep) 
+
+## IFC2RDF (IfcOwl)
+[IFC2RDF converter](https://github.com/cramonell/ifcowl) 
+
+# IFC2KG (LBD)
+[IFC2KG converter](https://github.com/cramonell/KG4BE) 
 
 
