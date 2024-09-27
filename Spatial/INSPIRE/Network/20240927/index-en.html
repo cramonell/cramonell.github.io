@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>INSPIRE Network</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.w3id.org/inspireOnts/Network#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.w3id.org/inspireOnts/Network#","name":"INSPIRE Network", "headline":"Document describing the ontology http://www.w3id.org/inspireOnts/Network#", "dateReleased":"Fri Sep 27 12:19:50 CEST 2024", "version":"0.1", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>INSPIRE Network</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a></dd>
+<dt>Revision:</dt>
+<dd>0.1</dd>
+<dt>Authors:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dd>
+
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://www.opengis.net/ont/geosparql">geosparql</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/3.0/-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu). INSPIRE Network. Revision: 0.1. Retrieved from: http://www.w3id.org/inspireOnts/Network#</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>ConnectionTypeValue</b></td><td>&lt;https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/&gt;</td></tr>
+<tr><td><b>INSPIRE-feaure</b></td><td>&lt;http://inspire.ec.europa.eu/featureconcept/&gt;</td></tr>
+<tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
+<tr><td><b>dce</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>geo</b></td><td>&lt;http://www.opengis.net/ont/geosparql#&gt;</td></tr>
+<tr><td><b>inspire-net</b></td><td>&lt;http://www.w3id.org/inspireOnts/Network#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>sf</b></td><td>&lt;http://www.opengis.net/ont/sf#&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">INSPIRE Network: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected"
+         title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected">
+         <span>cross border connected</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical"
+         title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical">
+         <span>cross border identical</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal"
+         title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal">
+         <span>intermodal</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/Link" title="http://inspire.ec.europa.eu/featureconcept/Link">Link</a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/LinkSet"
+         title="http://inspire.ec.europa.eu/featureconcept/LinkSet">
+         <span>link set</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/Network"
+         title="http://inspire.ec.europa.eu/featureconcept/Network">Network</a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkArea"
+         title="http://inspire.ec.europa.eu/featureconcept/NetworkArea">Network Area</a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+         title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+         title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+   </li>
+   <li>
+      <a href="#http://inspire.ec.europa.eu/featureconcept/Node" title="http://inspire.ec.europa.eu/featureconcept/Node">Node</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#endNode" title="http://www.w3id.org/inspireOnts/Network#endNode">end Node</a>
+   </li>
+   <li>
+      <a href="#hasElement"
+         title="http://www.w3id.org/inspireOnts/Network#hasElement">has Element</a>
+   </li>
+   <li>
+      <a href="#inNetwork"
+         title="http://www.w3id.org/inspireOnts/Network#inNetwork">in Network</a>
+   </li>
+   <li>
+      <a href="#startNode"
+         title="http://www.w3id.org/inspireOnts/Network#startNode">start Node</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">INSPIRE Network: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology for representing the INSPIRE Network data model</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for INSPIRE Network classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by INSPIRE Network.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected"
+            title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected">
+            <span>cross border connected</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical"
+            title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical">
+            <span>cross border identical</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal"
+            title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal">
+            <span>intermodal</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/Link" title="http://inspire.ec.europa.eu/featureconcept/Link">Link</a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/LinkSet"
+            title="http://inspire.ec.europa.eu/featureconcept/LinkSet">
+            <span>link set</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/Network"
+            title="http://inspire.ec.europa.eu/featureconcept/Network">Network</a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkArea"
+            title="http://inspire.ec.europa.eu/featureconcept/NetworkArea">Network Area</a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+            title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+            title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+      </li>
+      <li>
+         <a href="#http://inspire.ec.europa.eu/featureconcept/Node" title="http://inspire.ec.europa.eu/featureconcept/Node">Node</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected">
+      <h3>cross border connected<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical">
+      <h3>cross border identical<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal">
+      <h3>intermodal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/Link">
+      <h3>Link<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/Link</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#endNode" title="http://www.w3id.org/inspireOnts/Network#endNode">end Node</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startNode"
+               title="http://www.w3id.org/inspireOnts/Network#startNode">start Node</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/LinkSet">
+      <h3>link set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/LinkSet</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#FeatureCollection"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#FeatureCollection">feature collection</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/Network">
+      <h3>Network<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/Network</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#Feature"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasElement"
+               title="http://www.w3id.org/inspireOnts/Network#hasElement">has Element</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#inNetwork"
+               title="http://www.w3id.org/inspireOnts/Network#inNetwork">in Network</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/NetworkArea">
+      <h3>Network Area<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/NetworkArea</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">
+      <h3>Network Connection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/NetworkConnection</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected"
+               title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected">cross border connected</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical"
+               title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical">cross border identical</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal"
+               title="https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal">intermodal</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/NetworkElement">
+      <h3>Network Element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/NetworkElement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#Feature"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/Link" title="http://inspire.ec.europa.eu/featureconcept/Link">Link</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkArea"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkArea">Network Area</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkConnection"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkConnection">Network Connection</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://inspire.ec.europa.eu/featureconcept/Node" title="http://inspire.ec.europa.eu/featureconcept/Node">Node</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inNetwork"
+               title="http://www.w3id.org/inspireOnts/Network#inNetwork">in Network</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasElement"
+               title="http://www.w3id.org/inspireOnts/Network#hasElement">has Element</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://inspire.ec.europa.eu/featureconcept/Node">
+      <h3>Node<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://inspire.ec.europa.eu/featureconcept/Node</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+               title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#endNode" title="http://www.w3id.org/inspireOnts/Network#endNode">end Node</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startNode"
+               title="http://www.w3id.org/inspireOnts/Network#startNode">start Node</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#endNode" title="http://www.w3id.org/inspireOnts/Network#endNode">end Node</a>
+      </li>
+      <li>
+         <a href="#hasElement"
+            title="http://www.w3id.org/inspireOnts/Network#hasElement">has Element</a>
+      </li>
+      <li>
+         <a href="#inNetwork"
+            title="http://www.w3id.org/inspireOnts/Network#inNetwork">in Network</a>
+      </li>
+      <li>
+         <a href="#startNode"
+            title="http://www.w3id.org/inspireOnts/Network#startNode">start Node</a>
+      </li>
+   </ul>
+   <div class="entity" id="endNode">
+      <h3>end Node<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/inspireOnts/Network#endNode</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Link" title="http://inspire.ec.europa.eu/featureconcept/Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Node" title="http://inspire.ec.europa.eu/featureconcept/Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasElement">
+      <h3>has Element<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/inspireOnts/Network#hasElement</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Network"
+                  title="http://inspire.ec.europa.eu/featureconcept/Network">Network</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+                  title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inNetwork">
+      <h3>in Network<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/inspireOnts/Network#inNetwork</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/NetworkElement"
+                  title="http://inspire.ec.europa.eu/featureconcept/NetworkElement">Network Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Network"
+                  title="http://inspire.ec.europa.eu/featureconcept/Network">Network</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startNode">
+      <h3>start Node<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/inspireOnts/Network#startNode</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3id.org/inspireOnts/Network#">http://www.w3id.org/inspireOnts/Network#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Link" title="http://inspire.ec.europa.eu/featureconcept/Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://inspire.ec.europa.eu/featureconcept/Node" title="http://inspire.ec.europa.eu/featureconcept/Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

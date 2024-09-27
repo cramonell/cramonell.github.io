@@ -1,0 +1,399 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://inspire.ec.europa.eu/featureconcept", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3id.org/inspireOnts/RailwayNetwork" ],
+    "title" : {
+      "en" : "INSPIRE Railway Network"
+    },
+    "iri" : "http://www.w3id.org/inspireOnts/RailwayNetwork#",
+    "version" : "0.1",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology for representing the INSPIRE data model for Railway Networks"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/11/09",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "inspire-rail",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RailwayNetwork#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "INSPIRE Railway Network",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportArea"
+    },
+    "subClasses" : [ "1", "2", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayYardNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayYardNode",
+      "en" : "Railway Yard Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayStationArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayStationArea",
+      "en" : "Railway Station Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportNode"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLink",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLink"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayLine",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayLine",
+      "en" : "Railway Line"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayNode",
+      "en" : "Railway Node"
+    },
+    "subClasses" : [ "11", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Railwaylink",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Railwaylink",
+      "en" : "Railway Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayArea",
+      "en" : "Railway Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLinkSet",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLinkSet"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayStationNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayStationNode",
+      "en" : "Railway Station Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RailwayYardArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayYardArea",
+      "en" : "Railway Yard Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "17",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RailwayNetwork",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RailwayNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numberOfPlatforms",
+      "en" : "number of platforms"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RailwayNetwork",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RailwayNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "formOfRailwayNode",
+      "en" : "national level"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "https://inspire.ec.europa.eu/codelist/FormOfRailwayNodeValue"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "range" : "20",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RailwayNetwork",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RailwayNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "railwayLineCode",
+      "en" : "railway line code"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  } ]
+}

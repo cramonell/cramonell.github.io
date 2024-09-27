@@ -1,0 +1,419 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.opengis.net/ont/sf", "http://inspire.ec.europa.eu/featureconcept", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3id.org/inspireOnts/CommonTransportElements", "http://www.w3.org/2001/XMLSchema", "http://www.opengis.net/ont/geosparql" ],
+    "title" : {
+      "en" : "INSPIRE Common Transport Elements"
+    },
+    "iri" : "http://www.w3id.org/inspireOnts/CommonTransportElements#",
+    "version" : "0.1",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology for representing the INSPIRE Common Transport Elements data model"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/09/27",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "inspire-cte",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/CommonTransportElements#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "INSPIRE Common Transport Elements",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/NetworkArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkArea"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/MarkerPost",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MarkerPost",
+      "en" : "Transport Point"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Node",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportNode",
+      "en" : "Transport Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "12", "5" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLink",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLink",
+      "en" : "Transport Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10", "12" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TrasportArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrasportArea",
+      "en" : "Transport Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0", "12" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportNetwork",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportNetwork",
+      "en" : "Transport Network"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "12", "23" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportPoint",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportPoint",
+      "en" : "Transport Point"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "12", "24" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLinkSet",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLinkSet",
+      "en" : "Transport LinkSet"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "12", "25" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Link",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Link"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.opengis.net/ont/sf#Point",
+    "baseIri" : "http://www.opengis.net/ont/sf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TrasportObject",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrasportObject",
+      "en" : "Transport Object"
+    },
+    "subClasses" : [ "6", "14", "9", "3", "18", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Network",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Network"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/NetworkElement",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkElement"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/LinkSet",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinkSet"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "12",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "12",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "19"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost",
+    "baseIri" : "http://www.w3id.org/inspireOnts/CommonTransportElements",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasPost",
+      "en" : "has Post"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute",
+    "baseIri" : "http://www.w3id.org/inspireOnts/CommonTransportElements",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasRoute",
+      "en" : "has Route"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "25",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "24",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "23",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  } ]
+}

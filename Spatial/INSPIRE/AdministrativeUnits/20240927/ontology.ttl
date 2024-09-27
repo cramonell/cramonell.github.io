@@ -1,0 +1,330 @@
+@prefix : <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> rdf:type owl:Ontology ;
+                                                        owl:versionIRI <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                                                        owl:imports <http://www.opengis.net/ont/geosparql#> ;
+                                                        <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2024/09/27" ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE administrative units data model"@en ;
+                                                        <http://purl.org/dc/elements/1.1/language> "en" ;
+                                                        <http://purl.org/dc/elements/1.1/title> "INSPIRE Administrative Units"@en ;
+                                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-au" ;
+                                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/AdministrativeUnits#" ;
+                                                        owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby
+:adminsiteredby rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                rdfs:range <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                rdfs:label "administered by"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter
+:coadminsiter rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+              rdfs:range <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+              rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+              rdfs:label "co-administer"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary
+:hasBoundary rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+             rdfs:range <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit
+:haslowerlevelunit rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                   rdfs:range <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                   rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                   rdfs:label "has lower level unit"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit
+:hasupperlevelunit rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                   rdfs:range <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                   rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                   rdfs:label "has upper level unit"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ,
+                     <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:oneOf [ rdf:type rdf:List ;
+                                  rdf:first "AT" ;
+                                  rdf:rest [ rdf:type rdf:List ;
+                                             rdf:first "BE" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "BG" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "CY" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "CZ" ;
+                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                         rdf:first "DE" ;
+                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                    rdf:first "DK" ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first "EE" ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first "EL" ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "ES" ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "FI" ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first "FR" ;
+                                                                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first "HR" ;
+                                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first "HU" ;
+                                                                                                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                            rdf:first "IE" ;
+                                                                                                                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                       rdf:first "IT" ;
+                                                                                                                                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                  rdf:first "LT" ;
+                                                                                                                                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                             rdf:first "LV" ;
+                                                                                                                                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                        rdf:first "MT" ;
+                                                                                                                                                                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                   rdf:first "NL" ;
+                                                                                                                                                                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                              rdf:first "PL" ;
+                                                                                                                                                                                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                         rdf:first "PT" ;
+                                                                                                                                                                                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                    rdf:first "RO" ;
+                                                                                                                                                                                                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                               rdf:first "SE" ;
+                                                                                                                                                                                                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                                          rdf:first "SI" ;
+                                                                                                                                                                                                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                                                     rdf:first "SK" ;
+                                                                                                                                                                                                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                                                                rdf:first "TR" ;
+                                                                                                                                                                                                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                                                                                                                           rdf:first "UK" ;
+                                                                                                                                                                                                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                                                                                                                                                                                                         ]
+                                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                                   ]
+                                                                                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                                                                             ]
+                                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                       ]
+                                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                                 ]
+                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                           ]
+                                                                                                                                                                                                                ]
+                                                                                                                                                                                                     ]
+                                                                                                                                                                                          ]
+                                                                                                                                                                               ]
+                                                                                                                                                                    ]
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                                                             ]
+                                                                                                  ]
+                                                                                       ]
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                           ]
+                                ]
+                    ] ;
+         rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+         rdfs:label "country"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid
+:inspireid rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ,
+                       <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+           rdfs:range xsd:string ;
+           rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+           rdfs:label "INSPIRE ID"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus
+:legalstatus rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "agreed" ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "notAgreed" ;
+                                                 rdf:rest rdf:nil
+                                               ]
+                                    ]
+                        ] ;
+             rdfs:comment <https://inspire.ec.europa.eu/codelist/LegalStatusValue> ;
+             rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+             rdfs:label "legalstatus"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit
+:nameunit rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+          rdfs:range xsd:string ;
+          rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+          rdfs:label "nameunit"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode
+:nationalcode rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ,
+                          <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+              rdfs:range xsd:string ;
+              rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+              rdfs:label "national code"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel
+:nationallevel rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ,
+                           <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "1stOrder" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "2ndOrder" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "3rdOrder" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "4thOrder" ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "5thOrder" ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "6thOrder" ;
+                                                                                               rdf:rest rdf:nil
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                 ]
+                                      ]
+                          ] ;
+               rdfs:comment "https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel" ;
+               rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+               rdfs:label "national level"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname
+:nationallevelname rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ,
+                               <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> ;
+                   rdfs:range xsd:string ;
+                   rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                   rdfs:label "national level name"@en .
+
+
+###  http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus
+:technicalstatus rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "edgeMatched" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "notEdgeMatched" ;
+                                                     rdf:rest rdf:nil
+                                                   ]
+                                        ]
+                            ] ;
+                 rdfs:comment <https://inspire.ec.europa.eu/codelist/TechnicalStatusValue> ;
+                 rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/AdministrativeUnits#> ;
+                 rdfs:label "technical status"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                                                      owl:allValuesFrom <http://www.opengis.net/ont/sf#Curve>
+                                                                                    ] ;
+                                                                    rdfs:label "Administrative Boundary"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                                                  owl:allValuesFrom <http://www.opengis.net/ont/sf#MultiSurface>
+                                                                                ] ;
+                                                                rdfs:label "Administrative Unit"@en .
+
+
+###  http://www.opengis.net/ont/sf#Curve
+<http://www.opengis.net/ont/sf#Curve> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#MultiSurface
+<http://www.opengis.net/ont/sf#MultiSurface> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

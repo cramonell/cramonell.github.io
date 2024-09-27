@@ -1,0 +1,405 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://inspire.ec.europa.eu/featureconcept", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3id.org/inspireOnts/RoadNetwork" ],
+    "title" : {
+      "en" : "INSPIRE Administrative Units"
+    },
+    "iri" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
+    "version" : "0.1",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology for representing the INSPIRE Road Transport Network data model"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/11/09",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "inspire-road",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "INSPIRE Administrative Units",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportArea"
+    },
+    "subClasses" : [ "1", "2", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TrafficVehicleArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrafficVehicleArea",
+      "en" : "Traffic Vehicle Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Roadlink",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Roadlink",
+      "en" : "Road Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RoadNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadNode",
+      "en" : "Road Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportNode",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportNode"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RoadArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadArea",
+      "en" : "Road Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLink",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLink"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/TransportLinkSet",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportLinkSet"
+    },
+    "subClasses" : [ "8", "13" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/RoadServiceArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadServiceArea",
+      "en" : "Road Service Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/ERoad",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ERoad",
+      "en" : "ERoad"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Road",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Road",
+      "en" : "Road"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "21" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3id.org/inspireOnts/RoadNetwork#formOfRoadNode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RoadNetwork",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://inspire.ec.europa.eu/codelist/FormOfRoadNodeValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "formOfRoadNode",
+      "en" : "form of RoadNode"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RoadNetwork#europeanRouteNumber",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RoadNetwork",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "europeanRouteNumber",
+      "en" : "national road code"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RoadNetwork#localRoadCode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RoadNetwork",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "localRoadCode",
+      "en" : "local road code"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "21",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "21",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "18",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/RoadNetwork#nationalRoadCode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/RoadNetwork",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nationalRoadCode",
+      "en" : "national road code"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  } ]
+}

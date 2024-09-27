@@ -1,0 +1,431 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "AT"
+    }, {
+      "@value" : "BE"
+    }, {
+      "@value" : "BG"
+    }, {
+      "@value" : "CY"
+    }, {
+      "@value" : "CZ"
+    }, {
+      "@value" : "DE"
+    }, {
+      "@value" : "DK"
+    }, {
+      "@value" : "EE"
+    }, {
+      "@value" : "EL"
+    }, {
+      "@value" : "ES"
+    }, {
+      "@value" : "FI"
+    }, {
+      "@value" : "FR"
+    }, {
+      "@value" : "HR"
+    }, {
+      "@value" : "HU"
+    }, {
+      "@value" : "IE"
+    }, {
+      "@value" : "IT"
+    }, {
+      "@value" : "LT"
+    }, {
+      "@value" : "LV"
+    }, {
+      "@value" : "MT"
+    }, {
+      "@value" : "NL"
+    }, {
+      "@value" : "PL"
+    }, {
+      "@value" : "PT"
+    }, {
+      "@value" : "RO"
+    }, {
+      "@value" : "SE"
+    }, {
+      "@value" : "SI"
+    }, {
+      "@value" : "SK"
+    }, {
+      "@value" : "TR"
+    }, {
+      "@value" : "UK"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "agreed"
+    }, {
+      "@value" : "notAgreed"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "1stOrder"
+    }, {
+      "@value" : "2ndOrder"
+    }, {
+      "@value" : "3rdOrder"
+    }, {
+      "@value" : "4thOrder"
+    }, {
+      "@value" : "5thOrder"
+    }, {
+      "@value" : "6thOrder"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "edgeMatched"
+    }, {
+      "@value" : "notEdgeMatched"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.opengis.net/ont/sf#Curve"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.opengis.net/ont/sf#MultiSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative Boundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/sf#Curve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/sf#MultiSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2024/09/27"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for representing the INSPIRE administrative units data model"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "INSPIRE Administrative Units"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "inspire-au"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "administered by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "co-administer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  }, {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has lower level unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has upper level unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  }, {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "INSPIRE ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://inspire.ec.europa.eu/codelist/LegalStatusValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "legalstatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nameunit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  }, {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "national code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  }, {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "national level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  }, {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "national level name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://inspire.ec.europa.eu/codelist/TechnicalStatusValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.org/inspireOnts/AdministrativeUnits#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "technical status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid40"
+  } ]
+} ]

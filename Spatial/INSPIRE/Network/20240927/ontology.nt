@@ -1,0 +1,159 @@
+<http://www.w3id.org/inspireOnts/Network#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/inspireOnts/Network#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/Network#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql#> .
+<http://www.w3id.org/inspireOnts/Network#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/dc/elements/1.1/date> "2024/09/27" .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE Network data model"@en .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Network"@en .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-net" .
+<http://www.w3id.org/inspireOnts/Network#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/Network#" .
+<http://www.w3id.org/inspireOnts/Network#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/inspireOnts/Network#endNode
+<http://www.w3id.org/inspireOnts/Network#endNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/Network#endNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/Link> .
+<http://www.w3id.org/inspireOnts/Network#endNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/Node> .
+<http://www.w3id.org/inspireOnts/Network#endNode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/Network#endNode> <http://www.w3.org/2000/01/rdf-schema#label> "end Node"@en .
+# 
+# http://www.w3id.org/inspireOnts/Network#hasElement
+<http://www.w3id.org/inspireOnts/Network#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/Network#hasElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/Network> .
+<http://www.w3id.org/inspireOnts/Network#hasElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://www.w3id.org/inspireOnts/Network#hasElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/Network#hasElement> <http://www.w3.org/2000/01/rdf-schema#label> "has Element"@en .
+# 
+# http://www.w3id.org/inspireOnts/Network#inNetwork
+<http://www.w3id.org/inspireOnts/Network#inNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/Network#inNetwork> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://www.w3id.org/inspireOnts/Network#inNetwork> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/Network> .
+<http://www.w3id.org/inspireOnts/Network#inNetwork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/Network#inNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "in Network"@en .
+# 
+# http://www.w3id.org/inspireOnts/Network#startNode
+<http://www.w3id.org/inspireOnts/Network#startNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/Network#startNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/Link> .
+<http://www.w3id.org/inspireOnts/Network#startNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/Node> .
+<http://www.w3id.org/inspireOnts/Network#startNode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/Network#startNode> <http://www.w3.org/2000/01/rdf-schema#label> "start Node"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inspire.ec.europa.eu/featureconcept/Link
+<http://inspire.ec.europa.eu/featureconcept/Link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/Link> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://inspire.ec.europa.eu/featureconcept/Link> <http://www.w3.org/2000/01/rdf-schema#label> "Link"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/LinkSet
+<http://inspire.ec.europa.eu/featureconcept/LinkSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/LinkSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#FeatureCollection> .
+# 
+# http://inspire.ec.europa.eu/featureconcept/Network
+<http://inspire.ec.europa.eu/featureconcept/Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://inspire.ec.europa.eu/featureconcept/Network> <http://www.w3.org/2000/01/rdf-schema#label> "Network"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/NetworkArea
+<http://inspire.ec.europa.eu/featureconcept/NetworkArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#Surface> .
+<http://www.opengis.net/ont/sf#Surface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkArea> <http://www.w3.org/2000/01/rdf-schema#label> "Network Area"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/NetworkConnection
+<http://inspire.ec.europa.eu/featureconcept/NetworkConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Network Connection"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/NetworkElement
+<http://inspire.ec.europa.eu/featureconcept/NetworkElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://inspire.ec.europa.eu/featureconcept/NetworkElement> <http://www.w3.org/2000/01/rdf-schema#label> "Network Element"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/Node
+<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkElement> .
+<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#Curve> .
+<http://www.opengis.net/ont/sf#Curve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#Point> .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node"@en .
+# 
+# http://www.opengis.net/ont/sf#Curve
+# 
+# http://www.opengis.net/ont/sf#Point
+# 
+# http://www.opengis.net/ont/sf#Surface
+# 
+# https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkConnection> .
+# 
+# https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkConnection> .
+# 
+# https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/NetworkConnection> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

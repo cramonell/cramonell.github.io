@@ -1,0 +1,79 @@
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/HydroObject#> .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/date> "2024/11/09" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE base spatial object for Hydrological Networks"@en .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-ho" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/HydroObject#" .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/inspireOnts/HydroObject#hasRelatedHydroObject
+<http://www.w3id.org/inspireOnts/HydroObject#hasRelatedHydroObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/HydroObject#hasRelatedHydroObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/HydroObject> .
+<http://www.w3id.org/inspireOnts/HydroObject#hasRelatedHydroObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/HydroObject> .
+<http://www.w3id.org/inspireOnts/HydroObject#hasRelatedHydroObject> <http://www.w3.org/2000/01/rdf-schema#label> "has related HydroObject"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inspire.ec.europa.eu/featureconcept/HydroObject
+<http://inspire.ec.europa.eu/featureconcept/HydroObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/HydroObject> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrological Object"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

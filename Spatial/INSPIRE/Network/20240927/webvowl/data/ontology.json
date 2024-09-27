@@ -1,0 +1,4247 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.opengis.net/ont/sf", "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue", "http://inspire.ec.europa.eu/featureconcept", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "http://www.w3id.org/inspireOnts/Network", "http://www.opengis.net/ont/geosparql" ],
+    "title" : {
+      "en" : "INSPIRE Network"
+    },
+    "iri" : "http://www.w3id.org/inspireOnts/Network#",
+    "version" : "0.1",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology for representing the INSPIRE Network data model"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024/09/27",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "inspire-net",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/Network#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "INSPIRE Network",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/NetworkArea",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkArea",
+      "en" : "Network Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#SpatialObject",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Subclasses of this class are expected to be used for instance data.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/core/spatial-object-class",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Spatial Object",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Anything spatial (being or having a shape, position or an extent).",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.1.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.1.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialObject"
+    },
+    "subClasses" : [ "4", "6" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Node",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "en" : "Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "27",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Link",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Link",
+      "en" : "Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/Network",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Network",
+      "en" : "Network"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-collection-class",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Feature Collection",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of individual Features.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.6",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureCollection"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/LinkSet",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinkSet"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#kmlLiteral",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "kmlLiteral"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "wktLiteral"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A Feature represents a uniquely identifiable phenomenon, for example a river or an apple. While such phenomena (and therefore the Features used to represent them) are bounded, their boundaries may be crisp (e.g., the declared boundaries of a state), vague (e.g., the delineation of a valley versus its neighboring mountains), and change with time (e.g., a storm front). While discrete in nature, Features may be created from continuous observations, such as an isochrone that determines the region that can be reached by ambulance within 5 minutes.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/core/feature-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Feature",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A discrete spatial phenomenon in a universe of discourse.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.7",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.9",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "subClasses" : [ "3", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/intermodal",
+    "baseIri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "intermodal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/NetworkConnection",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkConnection",
+      "en" : "Network Connection"
+    },
+    "subClasses" : [ "70", "71", "64" ],
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/sf#Surface",
+    "baseIri" : "http://www.opengis.net/ont/sf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Surface"
+    },
+    "attributes" : [ "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderConnected",
+    "baseIri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "crossBorderConnected"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "This is the superclass of Feature Collection and Geometry Collection.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-collection-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Spatial Object Collection",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of individual Spatial Objects.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialObjectCollection"
+    },
+    "subClasses" : [ "81", "20" ],
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Container",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Container"
+    },
+    "subClasses" : [ "42" ],
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://schema.org/Organization",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.opengis.net/ont/sf#Point",
+    "baseIri" : "http://www.opengis.net/ont/sf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Geometry can be used as a representation of the shape, extent or location of a Feature and may exist as a self-contained entity.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Geometry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://inspire.ec.europa.eu/featureconcept/NetworkElement",
+    "baseIri" : "http://inspire.ec.europa.eu/featureconcept",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkElement",
+      "en" : "Network Element"
+    },
+    "subClasses" : [ "37", "0", "65", "13" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue/crossBorderIdentical",
+    "baseIri" : "https://inspire.ec.europa.eu/codelist/ConnectionTypeValue",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "crossBorderIdentical"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#dggsLiteral",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "dggsLiteral"
+    }
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#gmlLiteral",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "gmlLiteral"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#geoJSONLiteral",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "geoJSONLiteral"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#GeometryCollection",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/geometry-collection-class",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Geometry Collection",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of individual Geometries.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.7",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeometryCollection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/sf#Curve",
+    "baseIri" : "http://www.opengis.net/ont/sf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Curve"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasSize",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "The recommended way to specify size is by using a subproperty of hasMetricSize. Subproperties of hasSize can be used if more complex expressions are necessary, for example if the unit of length can not be converted to meter, or if additional data are needed to describe the measurement or estimate.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/spatial-object-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has size",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Subproperties of this property are used to indicate the size of a Spatial Object as a measurement or estimate of one or more dimensions of the Spatial Object's spatial presence.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSize"
+    },
+    "domain" : "5",
+    "subproperty" : [ "9", "10", "11", "12" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehDisjoint",
+    "equivalent" : [ "15", "16" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "disjoint",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehDisjoint"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/Network#hasElement",
+    "baseIri" : "http://www.w3id.org/inspireOnts/Network",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/Network#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElement",
+      "en" : "has Element"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfTouches",
+    "equivalent" : [ "22", "23" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "touches",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially touches the object SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfTouches"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasLength",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has length",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The length of a Spatial Object.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.7",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLength"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#spatialDimension",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "spatial dimension",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The number of measurements or axes needed to describe the spatial position of this Geometry in a coordinate system.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "spatialDimension"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfContains",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "contains",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: T*****FF*",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfContains"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8ec",
+    "equivalent" : [ "21", "23" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "externally connected",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially meets the object SpatialObject. DE-9IM: FFTFTTTTT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8ec"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#isSimple",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is simple",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "(true) if this geometric object has no anomalous geometric points, such as self intersection or self tangency.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://portal.ogc.org/files/?artifact_id=25355",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSimple"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8ntppi",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "non-tangential proper part inverse",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: TTTFFTFFT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8ntppi"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasSpatialAccuracy",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "27",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Spatial accuracy is applicable when a Geometry is used to represent a Feature. It is expressed as a distance that indicates the truthfullness of the positions (coordinates) that define the Geometry. In this case accuracy defines a zone surrounding each coordinate within wich the real positions are known to be. The accuracy value defines this zone as a distance from the coordinate(s) in all directions (e.g. a line, a circle or a sphere, depending on spatial dimension).",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has spatial accuracy",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The positional accuracy of the coordinates of a Geometry.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpatialAccuracy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfDisjoint",
+    "equivalent" : [ "16", "14" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "disjoint",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfDisjoint"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfWithin",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "within",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially within the object SpatialObject. DE-9IM: T*F**F***",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfWithin"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8eq",
+    "equivalent" : [ "49", "50" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "equals",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8eq"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#coordinateDimension",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "coordinate dimension",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The number of measurements or axes needed to describe the position of this Geometry in a coordinate system.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "coordinateDimension"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasSpatialResolution",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "27",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Spatial resolution specifies the level of detail of a Geometry. It the smallest distinguishable distance between spatially adjacent coordinates.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has spatial resolution",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The spatial resolution of a Geometry.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpatialResolution"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8po",
+    "equivalent" : [ "56", "57" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "partially overlapping",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: TTTTTTTTT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8po"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasDefaultGeometry",
+    "equivalent" : [ "60" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "6",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Duplicate properties defaultGeometry and hasDefaultGeometry exist because of an inconsistency between ontology and documentation in GeoSPARQL 1.0. Only hasDefaultGeometry is described in the documention.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has default geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The default Geometry to be used in spatial calculations. It is usually the most detailed Geometry.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDefaultGeometry"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehOverlap",
+    "equivalent" : [ "55", "56" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "overlap",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: T*T***T**",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehOverlap"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8tpp",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "tangential proper part",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially covered by the object SpatialObject. DE-9IM: TFFTTFTTT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8tpp"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asDGGS",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "63",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "as DGGS",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Discrete Global Grid System (DGGS) serialization of a Geometry",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asDGGS"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "62"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricSize",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has metric size",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Subproperties of this property are used to indicate the size of a Spatial Object, as a measurement or estimate of one or more dimensions of the Spatial Object's spatial presence. Units are always metric (meter, square meter or cubic meter).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricSize"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehCoveredBy",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "covered by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially covered by the object SpatialObject. DE-9IM: TFF*TFT**",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehCoveredBy"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehContains",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "contains",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: T*TFF*FF*",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehContains"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "74",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-geojson-literal",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "as GeoJSON",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The GeoJSON serialization of a Geometry",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://tools.ietf.org/html/rfc7946",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asGeoJSON"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehInside",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "inside",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially inside the object SpatialObject. DE-9IM: TFF*FFT**",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehInside"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfCrosses",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "crosses",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially crosses the object SpatialObject. DE-9IM: T*T******",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfCrosses"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "76"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/Network#inNetwork",
+    "baseIri" : "http://www.w3id.org/inspireOnts/Network",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/Network#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inNetwork",
+      "en" : "in Network"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehMeet",
+    "equivalent" : [ "22", "21" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "meet",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially meets the object SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehMeet"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "42",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "42",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "1",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "84",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricLength",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has length in meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The length of a Spatial Object in meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricLength"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "65",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "65",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "65",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasVolume",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has volume",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The volume of a three-dimensional Spatial Object.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolume"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfIntersects",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "intersects",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfIntersects"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehEquals",
+    "equivalent" : [ "49", "48" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "equals",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehEquals"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasArea",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has area",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The area of a Spatial Object.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArea"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricVolume",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has volume in cubic meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The volume of a Spatial Object in cubic meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.9",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricVolume"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#dimension",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "dimension",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The topological dimension of this geometric object, which must be less than or equal to the coordinate dimension. In non-homogeneous collections, this will return the largest topological dimension of the contained objects.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dimension"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/Network#startNode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/Network",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/Network#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startNode",
+      "en" : "start Node"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasSerialization",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has serialization",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a Geometry object with its text-based serialization.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSerialization"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#isEmpty",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is empty",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "(true) if this geometric object is the empty Geometry. If true, then this geometric object represents the empty point set for the coordinate space.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isEmpty"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A spatial representation for a given Feature.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "4",
+    "subproperty" : [ "98", "58", "60", "99" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricSpatialAccuracy",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "38",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Spatial accuracy is applicable when a Geometry is used to represent a Feature. It is expressed as a distance that indicates the truthfullness of the positions (coordinates) that define the Geometry. In this case accuracy defines a zone surrounding each coordinate within wich the real positions are known to be. The accuracy value defines this zone as a distance from the coordinate(s) in all directions (e.g. a line, a circle or a sphere, depending on spatial dimension).",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has spatial accuracy in meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The positional accuracy of the coordinates of a Geometry in meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricSpatialAccuracy"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasCentroid",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has centroid",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The arithmetic mean position of all the Geometry points of a given Feature.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The target Geometry shall describe a point, for example an instance of http://www.opengis.net/ont/sf#Point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCentroid"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasPerimeterLength",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has perimeter length",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The length of the perimeter of a Spatial Object.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.1.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPerimeterLength"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8ntpp",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "non-tangential proper part",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially inside the object SpatialObject. DE-9IM: TFFTFFTTT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8ntpp"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+    "equivalent" : [ "58" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "6",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Duplicate properties defaultGeometry and hasDefaultGeometry exist because of an inconsistency between ontology and documentation in GeoSPARQL 1.0. Only hasDefaultGeometry is described in the documention.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "default geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The default Geometry to be used in spatial calculations. It is usually the most detailed Geometry.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2.1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "defaultGeometry"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfEquals",
+    "equivalent" : [ "50", "48" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "equals",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfEquals"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8dc",
+    "equivalent" : [ "15", "14" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "disconnected",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8dc"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A spatial representation for a given Feature.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "13",
+    "subproperty" : [ "98", "58", "60", "99" ],
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "103"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "81",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "42",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricPerimeterLength",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has perimeter length in meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The length of the perimeter of a Spatial Object in meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.1.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricPerimeterLength"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A spatial representation for a given Feature.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "0",
+    "subproperty" : [ "98", "58", "60", "99" ],
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has geometry",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A spatial representation for a given Feature.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "13",
+    "subproperty" : [ "98", "58", "60", "99" ],
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-wkt-literal",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "as WKT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The WKT serialization of a Geometry",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.2.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.8",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.5",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asWKT"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#ehCovers",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "covers",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially covers the object SpatialObject. DE-9IM: T*TFT*FF*",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ehCovers"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#rcc8tppi",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "tangential proper part inverse",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially covers the object SpatialObject. DE-9IM: TTTFTTFFT",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rcc8tppi"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricSpatialResolution",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "41",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Spatial resolution specifies the level of detail of a Geometry. It the smallest dinstinguishable distance between spatially adjacent coordinates.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has spatial resolution in meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The spatial resolution of a Geometry in meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.6",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricSpatialResolution"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasBoundingBox",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has bounding box",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The minimum or smallest bounding or enclosing box of a given Feature.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The target is a Geometry that defines a rectilinear region whose edges are aligned with the axes of the coordinate reference system, which exactly contains the Feature, for example an instance of http://www.opengis.net/ont/sf#envelope.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBoundingBox"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asGML",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-gml-literal",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-gml-literal",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "as GML",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The GML serialization of a Geometry",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asGML"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
+    "equivalent" : [ "55", "57" ],
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "overlaps",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "States that the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: T*T***T**",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/DE-9IM",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sfOverlaps"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasMetricArea",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has area in square meters",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The area of a Spatial Object in square meters.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.3.3",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.9",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.1.2.3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMetricArea"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asKML",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-kml-literal",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "as KML",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The KML serialization of a Geometry",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.ogc.org/standards/kml",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.1/specification.html#C.1.2.4",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asKML"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.w3id.org/inspireOnts/Network#endNode",
+    "baseIri" : "http://www.w3id.org/inspireOnts/Network",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/inspireOnts/Network#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endNode",
+      "en" : "end Node"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "121"
+  } ]
+}

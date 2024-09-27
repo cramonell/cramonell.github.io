@@ -1,0 +1,162 @@
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/inspireOnts/CommonTransportElements#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/date> "2024/11/09" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE data model for Railway Networks"@en .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-rail" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/RailwayNetwork#" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/RailwayNode> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "railwayStop" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "railwayEnd" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pseudoNode" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "levelcrossing" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "junction" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/2000/01/rdf-schema#comment> "https://inspire.ec.europa.eu/codelist/FormOfRailwayNodeValue" .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode> <http://www.w3.org/2000/01/rdf-schema#label> "national level"@en .
+# 
+# http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms
+<http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms> <http://www.w3.org/2000/01/rdf-schema#label> "number of platforms"@en .
+# 
+# http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode
+<http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/RailwayLine> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode> <http://www.w3.org/2000/01/rdf-schema#label> "railway line code"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportArea> .
+<http://inspire.ec.europa.eu/featureconcept/TransportArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayArea> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Area"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayLine
+<http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
+<http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Line"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportNode> .
+<http://inspire.ec.europa.eu/featureconcept/TransportNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Node"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayStationArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportArea> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationArea> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Station Area"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayStationNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/RailwayNode> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Station Node"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayYardArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportArea> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardArea> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Yard Area"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/RailwayYardNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/RailwayNode> .
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardNode> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Yard Node"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/Railwaylink
+<http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportLink> .
+<http://inspire.ec.europa.eu/featureconcept/TransportLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Link"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/TransportArea
+# 
+# http://inspire.ec.europa.eu/featureconcept/TransportLink
+# 
+# http://inspire.ec.europa.eu/featureconcept/TransportLinkSet
+# 
+# http://inspire.ec.europa.eu/featureconcept/TransportNode
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

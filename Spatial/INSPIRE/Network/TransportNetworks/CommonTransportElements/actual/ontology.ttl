@@ -1,0 +1,176 @@
+@prefix : <http://www.w3id.org/inspireOnts/CommonTransportElements#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/inspireOnts/CommonTransportElements#> .
+
+<http://www.w3id.org/inspireOnts/CommonTransportElements#> rdf:type owl:Ontology ;
+                                                            owl:versionIRI <http://www.w3id.org/inspireOnts/CommonTransportElements#> ;
+                                                            <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                                                            <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                                                            <http://purl.org/dc/elements/1.1/date> "2024/09/27" ;
+                                                            <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE Common Transport Elements data model"@en ;
+                                                            <http://purl.org/dc/elements/1.1/language> "en" ;
+                                                            <http://purl.org/dc/elements/1.1/title> "INSPIRE Common Transport Elements"@en ;
+                                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-cte" ;
+                                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/CommonTransportElements#" ;
+                                                            owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost
+:hasPost rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> ;
+         rdfs:range <http://inspire.ec.europa.eu/featureconcept/MarkerPost> ;
+         rdfs:label "has Post"@en .
+
+
+###  http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute
+:hasRoute rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://inspire.ec.europa.eu/featureconcept/MarkerPost> ;
+          rdfs:range <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> ;
+          rdfs:label "has Route"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://inspire.ec.europa.eu/featureconcept/Link
+<http://inspire.ec.europa.eu/featureconcept/Link> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/LinkSet
+<http://inspire.ec.europa.eu/featureconcept/LinkSet> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/MarkerPost
+<http://inspire.ec.europa.eu/featureconcept/MarkerPost> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportPoint> ;
+                                                        rdfs:label "Transport Point"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/Network
+<http://inspire.ec.europa.eu/featureconcept/Network> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/NetworkArea
+<http://inspire.ec.europa.eu/featureconcept/NetworkArea> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/NetworkElement
+<http://inspire.ec.europa.eu/featureconcept/NetworkElement> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/Node
+<http://inspire.ec.europa.eu/featureconcept/Node> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportLink
+<http://inspire.ec.europa.eu/featureconcept/TransportLink> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/Link> ,
+                                                                           <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ;
+                                                           rdfs:label "Transport Link"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportLinkSet
+<http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/LinkSet> ,
+                                                                              <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ;
+                                                              rdfs:label "Transport LinkSet"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportNetwork
+<http://inspire.ec.europa.eu/featureconcept/TransportNetwork> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/Network> ,
+                                                                              <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ;
+                                                              rdfs:label "Transport Network"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportNode
+<http://inspire.ec.europa.eu/featureconcept/TransportNode> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/Node> ,
+                                                                           <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ;
+                                                           rdfs:label "Transport Node"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportPoint
+<http://inspire.ec.europa.eu/featureconcept/TransportPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/NetworkElement> ,
+                                                                            <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                                              owl:allValuesFrom <http://www.opengis.net/ont/sf#Point>
+                                                                            ] ;
+                                                            rdfs:label "Transport Point"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TrasportArea
+<http://inspire.ec.europa.eu/featureconcept/TrasportArea> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/NetworkArea> ,
+                                                                          <http://inspire.ec.europa.eu/featureconcept/TrasportObject> ;
+                                                          rdfs:label "Transport Area"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TrasportObject
+<http://inspire.ec.europa.eu/featureconcept/TrasportObject> rdf:type owl:Class ;
+                                                            rdfs:label "Transport Object"@en .
+
+
+###  http://www.opengis.net/ont/sf#Point
+<http://www.opengis.net/ont/sf#Point> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

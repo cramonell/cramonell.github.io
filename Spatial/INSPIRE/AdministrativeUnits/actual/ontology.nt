@@ -1,0 +1,316 @@
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/dc/elements/1.1/date> "2024/09/27" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE administrative units data model"@en .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Administrative Units"@en .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-au" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/AdministrativeUnits#" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#adminsiteredby> <http://www.w3.org/2000/01/rdf-schema#label> "administered by"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#coadminsiter> <http://www.w3.org/2000/01/rdf-schema#label> "co-administer"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#haslowerlevelunit> <http://www.w3.org/2000/01/rdf-schema#label> "has lower level unit"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#hasupperlevelunit> <http://www.w3.org/2000/01/rdf-schema#label> "has upper level unit"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#country
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "UK" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "TR" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SK" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SI" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SE" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RO" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PT" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PL" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NL" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MT" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LV" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LT" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IT" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IE" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "HU" .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "HR" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FR" .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FI" .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ES" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EL" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EE" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DK" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DE" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CZ" .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CY" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BG" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BE" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "AT" .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#inspireid> <http://www.w3.org/2000/01/rdf-schema#label> "INSPIRE ID"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#oneOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "notAgreed" .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "agreed" .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/2000/01/rdf-schema#comment> <https://inspire.ec.europa.eu/codelist/LegalStatusValue> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#legalstatus> <http://www.w3.org/2000/01/rdf-schema#label> "legalstatus"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nameunit> <http://www.w3.org/2000/01/rdf-schema#label> "nameunit"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationalcode> <http://www.w3.org/2000/01/rdf-schema#label> "national code"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#range> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#oneOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "6thOrder" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5thOrder" .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4thOrder" .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3rdOrder" .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2ndOrder" .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1stOrder" .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#comment> "https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel" .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevel> <http://www.w3.org/2000/01/rdf-schema#label> "national level"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#nationallevelname> <http://www.w3.org/2000/01/rdf-schema#label> "national level name"@en .
+# 
+# http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#oneOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "notEdgeMatched" .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "edgeMatched" .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/2000/01/rdf-schema#comment> <https://inspire.ec.europa.eu/codelist/TechnicalStatusValue> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3id.org/inspireOnts/AdministrativeUnits#> .
+<http://www.w3id.org/inspireOnts/AdministrativeUnits#technicalstatus> <http://www.w3.org/2000/01/rdf-schema#label> "technical status"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#Curve> .
+<http://www.opengis.net/ont/sf#Curve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Boundary"@en .
+# 
+# http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#MultiSurface> .
+<http://www.opengis.net/ont/sf#MultiSurface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://inspire.ec.europa.eu/featureconcept/AdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Unit"@en .
+# 
+# http://www.opengis.net/ont/sf#Curve
+# 
+# http://www.opengis.net/ont/sf#MultiSurface
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

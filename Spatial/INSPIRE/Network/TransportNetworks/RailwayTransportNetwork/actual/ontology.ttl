@@ -1,0 +1,181 @@
+@prefix : <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
+
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <http://www.w3id.org/inspireOnts/RailwayNetwork#> ;
+                                                   owl:imports <http://www.w3id.org/inspireOnts/CommonTransportElements#> ,
+                                                               <http://www.w3id.org/inspireOnts/Network#> ;
+                                                   <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                                                   <http://purl.org/dc/elements/1.1/date> "2024/11/09" ;
+                                                   <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE data model for Railway Networks"@en ;
+                                                   <http://purl.org/dc/elements/1.1/language> "en" ;
+                                                   <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en ;
+                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-rail" ;
+                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/RailwayNetwork#" ;
+                                                   owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3id.org/inspireOnts/RailwayNetwork#formOfRailwayNode
+:formOfRailwayNode rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://inspire.ec.europa.eu/featureconcept/RailwayNode> ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first "junction" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "levelcrossing" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "pseudoNode" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "railwayEnd" ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first "railwayStop" ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                                ]
+                                                     ]
+                                          ]
+                              ] ;
+                   rdfs:comment "https://inspire.ec.europa.eu/codelist/FormOfRailwayNodeValue" ;
+                   rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/RailwayNetwork#> ;
+                   rdfs:label "national level"@en .
+
+
+###  http://www.w3id.org/inspireOnts/RailwayNetwork#numberOfPlatforms
+:numberOfPlatforms rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> ;
+                   rdfs:range xsd:integer ;
+                   rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/RailwayNetwork#> ;
+                   rdfs:label "number of platforms"@en .
+
+
+###  http://www.w3id.org/inspireOnts/RailwayNetwork#railwayLineCode
+:railwayLineCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://inspire.ec.europa.eu/featureconcept/RailwayLine> ;
+                 rdfs:range xsd:string ;
+                 rdfs:isDefinedBy <http://www.w3id.org/inspireOnts/RailwayNetwork#> ;
+                 rdfs:label "railway line code"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayArea> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportArea> ;
+                                                         rdfs:label "Railway Area"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayLine
+<http://inspire.ec.europa.eu/featureconcept/RailwayLine> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> ;
+                                                         rdfs:label "Railway Line"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayNode> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportNode> ;
+                                                         rdfs:label "Railway Node"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayStationArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationArea> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportArea> ;
+                                                                rdfs:label "Railway Station Area"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayStationNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayStationNode> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/RailwayNode> ;
+                                                                rdfs:label "Railway Station Node"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayYardArea
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardArea> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportArea> ;
+                                                             rdfs:label "Railway Yard Area"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/RailwayYardNode
+<http://inspire.ec.europa.eu/featureconcept/RailwayYardNode> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/RailwayNode> ;
+                                                             rdfs:label "Railway Yard Node"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/Railwaylink
+<http://inspire.ec.europa.eu/featureconcept/Railwaylink> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://inspire.ec.europa.eu/featureconcept/TransportLink> ;
+                                                         rdfs:label "Railway Link"@en .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportArea
+<http://inspire.ec.europa.eu/featureconcept/TransportArea> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportLink
+<http://inspire.ec.europa.eu/featureconcept/TransportLink> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportLinkSet
+<http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> rdf:type owl:Class .
+
+
+###  http://inspire.ec.europa.eu/featureconcept/TransportNode
+<http://inspire.ec.europa.eu/featureconcept/TransportNode> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
