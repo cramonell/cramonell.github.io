@@ -1,7 +1,4 @@
 [ {
-  "@id" : "http://creativecommons.org/ns#license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://inspire.ec.europa.eu/featureconcept/HydroNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -13,12 +10,6 @@
   }, {
     "@id" : "http://inspire.ec.europa.eu/featureconcept/Node"
   } ]
-}, {
-  "@id" : "http://inspire.ec.europa.eu/featureconcept/HydroObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://inspire.ec.europa.eu/featureconcept/Node",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://inspire.ec.europa.eu/featureconcept/WatercourseLink",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -53,12 +44,6 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3id.org/inspireOnts/HydroNetwork#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
@@ -79,7 +64,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "INSPIRE Hydrological Network"
+    "@value" : "INSPIRE Hydrology Network"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "inspire-hydronet"
@@ -88,9 +73,9 @@
     "@value" : "http://www.w3id.org/inspireOnts/HydroNetwork#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3id.org/inspireOnts/HydroObject#"
+    "@id" : "https://cramonell.github.io/Spatial/INSPIRE/Network/HydroObject/actual/ontology.ttl"
   }, {
-    "@id" : "http://www.w3id.org/inspireOnts/Network#"
+    "@id" : "https://cramonell.github.io/Spatial/INSPIRE/Network/actual/ontology.ttl"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.w3id.org/inspireOnts/HydroNetwork#"

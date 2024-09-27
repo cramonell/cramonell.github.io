@@ -4,7 +4,7 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3id.org/inspireOnts/HydroObject", "http://inspire.ec.europa.eu/featureconcept", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "en" : "INSPIRE Railway Network"
+      "en" : "INSPIRE Hydrology Object"
     },
     "iri" : "http://www.w3id.org/inspireOnts/HydroObject#",
     "version" : "0.1",
@@ -58,7 +58,7 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "INSPIRE Railway Network",
+        "value" : "INSPIRE Hydrology Object",
         "type" : "label"
       } ]
     }

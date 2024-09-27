@@ -5,7 +5,7 @@
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/date> "2024/11/09" .
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE base spatial object for Hydrological Networks"@en .
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/language> "en" .
-<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en .
+<http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Hydrology Object"@en .
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-ho" .
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/HydroObject#" .
 <http://www.w3id.org/inspireOnts/HydroObject#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .

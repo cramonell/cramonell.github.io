@@ -56,7 +56,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "INSPIRE Railway Network"
+    "@value" : "INSPIRE Hydrology Object"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "inspire-ho"

@@ -19,9 +19,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://creativecommons.org/ns#license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://inspire.ec.europa.eu/featureconcept/ERoad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -95,15 +92,6 @@
   "@id" : "http://inspire.ec.europa.eu/featureconcept/TransportArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://inspire.ec.europa.eu/featureconcept/TransportLink",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://inspire.ec.europa.eu/featureconcept/TransportLinkSet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://inspire.ec.europa.eu/featureconcept/TransportNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -123,12 +111,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3id.org/inspireOnts/RoadNetwork#",
@@ -151,7 +133,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "INSPIRE Administrative Units"
+    "@value" : "INSPIRE Road Transport Network"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "inspire-road"
@@ -160,9 +142,9 @@
     "@value" : "http://www.w3id.org/inspireOnts/RoadNetwork#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3id.org/inspireOnts/CommonTransportElements#"
+    "@id" : "https://cramonell.github.io/Spatial/INSPIRE/Network/TransportNetworks/CommonTransportElements/actual/ontology.ttl"
   }, {
-    "@id" : "http://www.w3id.org/inspireOnts/Network#"
+    "@id" : "https://cramonell.github.io/Spatial/INSPIRE/Network/actual/ontology.ttl"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.w3id.org/inspireOnts/RoadNetwork#"

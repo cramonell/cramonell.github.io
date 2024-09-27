@@ -16,7 +16,7 @@
         <dc:date>2024/11/09</dc:date>
         <dc:description xml:lang="en">Ontology for representing the INSPIRE base spatial object for Hydrological Networks</dc:description>
         <dc:language>en</dc:language>
-        <dc:title xml:lang="en">INSPIRE Railway Network</dc:title>
+        <dc:title xml:lang="en">INSPIRE Hydrology Object</dc:title>
         <vann:preferredNamespacePrefix>inspire-ho</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.w3id.org/inspireOnts/HydroObject#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.1</owl:versionInfo>

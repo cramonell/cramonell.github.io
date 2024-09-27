@@ -29,6 +29,13 @@ English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Netw
 
 
 ## Spatial
+[INSPIRE Administrative Units](/Spatial/INSPIRE/AdministrativeUnits/actual/index-en.html) 
+[INSPIRE Network](/Spatial/INSPIRE/Network/actual/index-en.html) 
+[INSPIRE Hydrological Object](/Spatial/INSPIRE/Network/HydroObject/actual/index-en.html) 
+[INSPIRE Hydrological Network](/Spatial/INSPIRE/Network/HydroNetwork/actual/index-en.html) 
+[INSPIRE Transport Elements](/Spatial/INSPIRE/Network/TransportNetworks/CommonTransportElements/actual/index-en.html) 
+[INSPIRE Rail Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RailwayTransportNetwork/actual/index-en.html) 
+[INSPIRE Road Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RoadTransportNetwork/actual\index-en.html) 
 
 # Converters
 

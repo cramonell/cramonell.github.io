@@ -1,14 +1,15 @@
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/CommonTransportElements#> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/dc/elements/1.1/date> "2024/09/27" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE Common Transport Elements data model"@en .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/dc/elements/1.1/language> "en" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Common Transport Elements"@en .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-cte" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/CommonTransportElements#" .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/CommonTransportObject#> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://www.w3.org/2002/07/owl#imports> <https://cramonell.github.io/Spatial/INSPIRE/Network/actual/ontology.ttl> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/dc/elements/1.1/date> "2024/09/27" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE Common Transport Elements data model"@en .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Common Transport Objects"@en .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-cte" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/CommonTransportObject#" .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
 # 
 # 
 # #################################################################
@@ -17,9 +18,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -42,12 +40,6 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # 
 # 
 # #################################################################
@@ -57,20 +49,17 @@
 # #################################################################
 # 
 # 
-# http://www.opengis.net/ont/geosparql#hasGeometry
-<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# http://www.w3id.org/inspireOnts/CommonTransportObject#hasPost
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasPost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasPost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasPost> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/MarkerPost> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasPost> <http://www.w3.org/2000/01/rdf-schema#label> "has Post"@en .
 # 
-# http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/MarkerPost> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasPost> <http://www.w3.org/2000/01/rdf-schema#label> "has Post"@en .
-# 
-# http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/MarkerPost> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
-<http://www.w3id.org/inspireOnts/CommonTransportElements#hasRoute> <http://www.w3.org/2000/01/rdf-schema#label> "has Route"@en .
+# http://www.w3id.org/inspireOnts/CommonTransportObject#hasRoute
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inspire.ec.europa.eu/featureconcept/MarkerPost> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
+<http://www.w3id.org/inspireOnts/CommonTransportObject#hasRoute> <http://www.w3.org/2000/01/rdf-schema#label> "has Route"@en .
 # 
 # 
 # 
@@ -81,28 +70,10 @@
 # #################################################################
 # 
 # 
-# http://inspire.ec.europa.eu/featureconcept/Link
-<http://inspire.ec.europa.eu/featureconcept/Link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://inspire.ec.europa.eu/featureconcept/LinkSet
-<http://inspire.ec.europa.eu/featureconcept/LinkSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://inspire.ec.europa.eu/featureconcept/MarkerPost
 <http://inspire.ec.europa.eu/featureconcept/MarkerPost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/MarkerPost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportPoint> .
 <http://inspire.ec.europa.eu/featureconcept/MarkerPost> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Point"@en .
-# 
-# http://inspire.ec.europa.eu/featureconcept/Network
-<http://inspire.ec.europa.eu/featureconcept/Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://inspire.ec.europa.eu/featureconcept/NetworkArea
-<http://inspire.ec.europa.eu/featureconcept/NetworkArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://inspire.ec.europa.eu/featureconcept/NetworkElement
-<http://inspire.ec.europa.eu/featureconcept/NetworkElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://inspire.ec.europa.eu/featureconcept/Node
-<http://inspire.ec.europa.eu/featureconcept/Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://inspire.ec.europa.eu/featureconcept/TransportLink
 <http://inspire.ec.europa.eu/featureconcept/TransportLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -134,7 +105,6 @@
 <http://inspire.ec.europa.eu/featureconcept/TransportPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TrasportObject> .
 <http://inspire.ec.europa.eu/featureconcept/TransportPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/sf#Point> .
-<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://inspire.ec.europa.eu/featureconcept/TransportPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Point"@en .
@@ -148,7 +118,5 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://inspire.ec.europa.eu/featureconcept/TrasportObject
 <http://inspire.ec.europa.eu/featureconcept/TrasportObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/TrasportObject> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Object"@en .
-# 
-# http://www.opengis.net/ont/sf#Point
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

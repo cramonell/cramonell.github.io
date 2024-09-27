@@ -13,7 +13,7 @@
                                                 <http://purl.org/dc/elements/1.1/date> "2024/11/09" ;
                                                 <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE base spatial object for Hydrological Networks"@en ;
                                                 <http://purl.org/dc/elements/1.1/language> "en" ;
-                                                <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en ;
+                                                <http://purl.org/dc/elements/1.1/title> "INSPIRE Hydrology Object"@en ;
                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-ho" ;
                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/HydroObject#" ;
                                                 owl:versionInfo "0.1" .

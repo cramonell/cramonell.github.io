@@ -8,17 +8,20 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:vann="http://purl.org/vocab/vann/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://www.w3id.org/inspireOnts/RailwayNetwork#">
         <owl:versionIRI rdf:resource="http://www.w3id.org/inspireOnts/RailwayNetwork#"/>
-        <owl:imports rdf:resource="http://www.w3id.org/inspireOnts/CommonTransportElements#"/>
-        <owl:imports rdf:resource="http://www.w3id.org/inspireOnts/Network#"/>
+        <owl:imports rdf:resource="https://cramonell.github.io/Spatial/INSPIRE/Network/TransportNetworks/CommonTransportElements/actual/ontology.ttl"/>
+        <owl:imports rdf:resource="https://cramonell.github.io/Spatial/INSPIRE/Network/actual/ontology.ttl"/>
         <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
         <dc:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dc:creator>
         <dc:date>2024/11/09</dc:date>
         <dc:description xml:lang="en">Ontology for representing the INSPIRE data model for Railway Networks</dc:description>
         <dc:language>en</dc:language>
-        <dc:title xml:lang="en">INSPIRE Railway Network</dc:title>
+        <dc:title xml:lang="en">INSPIRE Rail Transport Network</dc:title>
         <vann:preferredNamespacePrefix>inspire-rail</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.w3id.org/inspireOnts/RailwayNetwork#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.1</owl:versionInfo>
@@ -35,13 +38,6 @@
      -->
 
 
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -91,20 +87,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -287,27 +269,6 @@
 
 
     <owl:Class rdf:about="http://inspire.ec.europa.eu/featureconcept/TransportArea"/>
-    
-
-
-    <!-- http://inspire.ec.europa.eu/featureconcept/TransportLink -->
-
-
-    <owl:Class rdf:about="http://inspire.ec.europa.eu/featureconcept/TransportLink"/>
-    
-
-
-    <!-- http://inspire.ec.europa.eu/featureconcept/TransportLinkSet -->
-
-
-    <owl:Class rdf:about="http://inspire.ec.europa.eu/featureconcept/TransportLinkSet"/>
-    
-
-
-    <!-- http://inspire.ec.europa.eu/featureconcept/TransportNode -->
-
-
-    <owl:Class rdf:about="http://inspire.ec.europa.eu/featureconcept/TransportNode"/>
 </rdf:RDF>
 
 

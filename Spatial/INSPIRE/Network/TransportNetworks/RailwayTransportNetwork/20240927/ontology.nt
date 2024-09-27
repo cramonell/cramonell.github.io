@@ -1,13 +1,13 @@
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/inspireOnts/RailwayNetwork#> .
-<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/inspireOnts/CommonTransportElements#> .
-<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/inspireOnts/Network#> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <https://cramonell.github.io/Spatial/INSPIRE/Network/TransportNetworks/CommonTransportElements/actual/ontology.ttl> .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#imports> <https://cramonell.github.io/Spatial/INSPIRE/Network/actual/ontology.ttl> .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/date> "2024/11/09" .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing the INSPIRE data model for Railway Networks"@en .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/language> "en" .
-<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Railway Network"@en .
+<http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/dc/elements/1.1/title> "INSPIRE Rail Transport Network"@en .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inspire-rail" .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/inspireOnts/RailwayNetwork#" .
 <http://www.w3id.org/inspireOnts/RailwayNetwork#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
@@ -19,9 +19,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -43,12 +40,6 @@
 # 
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -116,13 +107,11 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://inspire.ec.europa.eu/featureconcept/RailwayLine
 <http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> .
-<http://inspire.ec.europa.eu/featureconcept/TransportLinkSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/RailwayLine> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Line"@en .
 # 
 # http://inspire.ec.europa.eu/featureconcept/RailwayNode
 <http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportNode> .
-<http://inspire.ec.europa.eu/featureconcept/TransportNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/RailwayNode> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Node"@en .
 # 
 # http://inspire.ec.europa.eu/featureconcept/RailwayStationArea
@@ -148,15 +137,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://inspire.ec.europa.eu/featureconcept/Railwaylink
 <http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inspire.ec.europa.eu/featureconcept/TransportLink> .
-<http://inspire.ec.europa.eu/featureconcept/TransportLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://inspire.ec.europa.eu/featureconcept/Railwaylink> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Link"@en .
 # 
 # http://inspire.ec.europa.eu/featureconcept/TransportArea
-# 
-# http://inspire.ec.europa.eu/featureconcept/TransportLink
-# 
-# http://inspire.ec.europa.eu/featureconcept/TransportLinkSet
-# 
-# http://inspire.ec.europa.eu/featureconcept/TransportNode
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
