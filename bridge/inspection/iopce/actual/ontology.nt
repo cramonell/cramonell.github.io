@@ -11,6 +11,9 @@
 <https://w3id.org/iopce#> <http://purl.org/dc/elements/1.1/title> "Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado"@es .
 <https://w3id.org/iopce#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "iopce" .
 <https://w3id.org/iopce#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/iopce#" .
+<https://w3id.org/iopce#> <http://www.w3.org/2002/07/owl#imports> "http://www.w3.org/TR/prov-o/" .
+<https://w3id.org/iopce#> <http://www.w3.org/2002/07/owl#imports> "http://www.w3id.org/opm/opm.ttl" .
+<https://w3id.org/iopce#> <http://www.w3.org/2002/07/owl#imports> "http://www.w3id.org/seas/FeatureOfInterestOntology#" .
 <https://w3id.org/iopce#> <http://www.w3.org/2002/07/owl#imports> "https://alhakam.github.io/dot/" .
 <https://w3id.org/iopce#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
 # 
@@ -59,6 +62,68 @@
 # 
 # #################################################################
 # #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty
+<http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/iopce#evolucion
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
+<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadEvolucion> .
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#label> "evolucion"@es .
+<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#label> "evolution"@en .
+# 
+# https://w3id.org/iopce#extension
+<https://w3id.org/iopce#extension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
+<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadExtension> .
+<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#label> "extension"@en .
+<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#label> "extension"@es .
+# 
+# https://w3id.org/iopce#gravedad
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadGravedad> .
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#label> "gravedad"@es .
+<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# 
+# https://w3id.org/iopce#indice_de_condicion
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest> .
+<http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadIndiceDeCondicion> .
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/2000/01/rdf-schema#label> "Indice de condicion"@es .
+<https://w3id.org/iopce#indice_de_condicion> <http://www.w3.org/2000/01/rdf-schema#label> "condition index"@en .
+# 
+# https://w3id.org/iopce#indice_de_deterioro
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest> .
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadIndiceDeDeterioro> .
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/2000/01/rdf-schema#label> "damage index"@en .
+<https://w3id.org/iopce#indice_de_deterioro> <http://www.w3.org/2000/01/rdf-schema#label> "indice de deterioro"@es .
+# 
+# https://w3id.org/iopce#porcentaje
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty> .
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iopce#PropiedadPorcentaje> .
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/2000/01/rdf-schema#label> "percentage"@en .
+<https://w3id.org/iopce#porcentaje> <http://www.w3.org/2000/01/rdf-schema#label> "porcentaje"@es .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Data properties
 # #
 # #################################################################
@@ -84,7 +149,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/iopce#accesibilidad> <http://www.w3.org/2000/01/rdf-schema#comment> "\nalta (high):\n    - Repairs easily accessible for equipment and machinery that need to perform them: small scaffolding, basket with truck crane within 15 meters of reach.\n    - No need to cut traffic for the execution of these works, or the cut has little importance.\n    - No affected services.\nmedia (medium):\n    - Requires the use of scaffolding of considerable height.\n    - Small volume formwork is needed to support the elements.\n    - It is necessary to resort to cranes with a reach of more than 15 meters.\n    - Access roads or small platforms need to be created to reach the base of the element.\n    - Other elements that can be reused need to be removed.\n    - Special measures are required for the protection of people.\n    - The affected services do not involve major works for their replacement (conduits under sidewalks, cables attached to the board…).\nbaja (low):\n    - Special scaffolding or large-volume formwork is required.\n    - Cranes with a reach of more than 60 meters must be used.\n    - An auxiliary work or road diversion is necessary to divert traffic.\n    - Railway traffic is affected.\n    - The work will be carried out in deep water, with divers or other special means.\n    - Artificial peninsulas, enclosures with sheet piles, or particularly important platforms need to be created.\n    - Other elements that need to be replaced must be demolished or removed.\n    - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries\n"@en .
 <https://w3id.org/iopce#accesibilidad> <http://www.w3.org/2000/01/rdf-schema#comment> "alta: \n    - Reparaciones facilmente accesibles para el equipo y maquinaria que tenga que realizarlos: pequeños andamios, cesta con camión grúa a menos de 15m de alcance.\n    - No es necesario realizar cortes de tráfico para larealización de estas obras, o el  corte de los mismos tiene poca importancia.\n    - No hay servicios afectados\nmedia:\n    - Se necesita utilizar andamios de  considerable altura.\n    - Se precisan cimbras de pequeño volumen para el  sopoorte de los elementos.\n    - Se precisan recurrir a grúas de más de 15 m de alcance.\n    - Se necesita realizar caminos de acceso o plataformas de pequeña magnitud para llegar a la base del elemento.\n    - Es necesario retirar otros elementos que luego pueden ser reutilizados.\n    - Se requieren medidas especiales para protección de las personas.\n    - Los servicios afectados no implican obras importantes para su reposición (conducciones bajo aceras, cables adosados al tablero...)\nbaja:\n    - Se requieren andamios especiales,cimbras exentas o de gran volumen.\n    - Se debe usar grúas de más de 60 m de alcance\n    - Se necesita realizar una obra auxiliar o camino para desviar el tráfico.\n    - Se afecta al tráfico ferroviario\n    - La obra se realizará bajo aguaprofunda, con buzos u otros medios especiales.\n    - Se requiere realizar pernínsulas artificiales, recintos con tablestacas o plataformas especialmente importantes.\n    - Se necesita demoler o retirar otros elementos que luego debenser repuestos.\n    - Son precisas obras auxiliares para protección temporal en cauces o pueden verse  afectados servicios de importancia:conducciones o alcantarillado importante, líneas AT, catenarias de FFCC.\n"@es .
-<https://w3id.org/iopce#accesibilidad> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
 <https://w3id.org/iopce#accesibilidad> <http://www.w3.org/2000/01/rdf-schema#label> "accesibilidad"@es .
 <https://w3id.org/iopce#accesibilidad> <http://www.w3.org/2000/01/rdf-schema#label> "accessibility"@en .
 # 
@@ -95,121 +159,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#comment> "código de la inspección"@es .
 <https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#comment> "inspection code"@en .
-<https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
 <https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#label> "code"@en .
 <https://w3id.org/iopce#codigo> <http://www.w3.org/2000/01/rdf-schema#label> "codigo"@es .
-# 
-# https://w3id.org/iopce#evolucion
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
-<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
-_:genid8 <http://www.w3.org/2001/XMLSchema#minInclusive> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
-_:genid10 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "0: slow speed and non-aggressive environment\n1: low speed and aggressive environment or high speed and non-aggressive environment\n2: fast speed and aggressive environment\n"@en .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "0: velocidad lenta y ambiente no agresivo\n1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo\n2: velocidad rápida  y  ambiente agresivo\n"@es .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#label> "evolucion"@es .
-<https://w3id.org/iopce#evolucion> <http://www.w3.org/2000/01/rdf-schema#label> "evolution"@en .
-# 
-# https://w3id.org/iopce#extension
-<https://w3id.org/iopce#extension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
-_:genid13 <http://www.w3.org/2001/XMLSchema#minInclusive> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
-_:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#comment> "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "@en .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#comment> "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "@es .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#label> "extension"@en .
-<https://w3id.org/iopce#extension> <http://www.w3.org/2000/01/rdf-schema#label> "extension"@es .
-# 
-# https://w3id.org/iopce#gravedad
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dot#ClassifiedDamage> .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
-_:genid18 <http://www.w3.org/2001/XMLSchema#minInclusive> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
-_:genid20 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#comment> "0: <25%\n1:25-50%\n2:50-75%\n"@en .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#comment> "0: <25%\n1:25-50%\n2:50-75%\n"@es .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#label> "gravedad"@es .
-<https://w3id.org/iopce#gravedad> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
-# 
-# https://w3id.org/iopce#indiceDeCondicion
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#indiceDeCondicion> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
-_:genid24 <http://www.w3.org/2001/XMLSchema#minInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
-_:genid26 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.\n21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.\n41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.\n61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.\n81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso"@es .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.\n21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. \n61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. \n81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary"@en .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#label> "condition index"@en .
-<https://w3id.org/iopce#indiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#label> "indice de condicion"@es .
-# 
-# https://w3id.org/iopce#indiceDeDeterioro
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#indiceDeDeterioro> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
-_:genid30 <http://www.w3.org/2001/XMLSchema#minInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
-_:genid32 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: No significant consequences 'a priori' deterioration.\n21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.\n41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.\n61-80: Deterioration that can translate into a modification of the structural or functional behavior.\n81-100: Deterioration that compromises the safety of the element"@en .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20:Deterioro sin consecuencias importantes 'a priori'\n21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.\n41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.\n61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.\n81-100: Deterioro quecompromete la seguridad del elemento"@es .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#label> "damage index"@en .
-<https://w3id.org/iopce#indiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#label> "indice de deterioro"@es .
 # 
 # 
 # 
@@ -220,32 +171,44 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://www.w3.org/TR/prov-o#Activity
+<http://www.w3.org/TR/prov-o#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/opm#Property
+<http://www.w3id.org/opm#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest
+# 
+# http://www.w3id.org/seas/FeatureOfInterestOntology#Property
+<http://www.w3id.org/seas/FeatureOfInterestOntology#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/dot#ClassifiedDamage
-<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#evolucion> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#extension> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#gravedad> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest> .
+<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#evolucion> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#extension> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/dot#ClassifiedDamage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#gravedad> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/dot#Inspection
-<https://w3id.org/dot#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#codigo> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/dot#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/TR/prov-o#Activity> .
+<https://w3id.org/dot#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/iopce#codigo> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/iopce#InpeccionBasica
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dot#Inspection> .
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#comment> "Inspección visual desarrollada por personal no especializado. Este nivel de inspección consituye una sistemática útil  para detectar deterioros de forma temprana y poder así prevenir que éstos degeneren en deterioros graves, así  comopara localizar daños que necesiten una reparación urgente"@es .
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#comment> "Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair."@en .
-<https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Inspection"@en .
 <https://w3id.org/iopce#InpeccionBasica> <http://www.w3.org/2000/01/rdf-schema#label> "Inspeccion Basica"@es .
 # 
@@ -263,8 +226,61 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dot#Inspection> .
 <https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#comment> "Inspección visual minuciosa del estado de todos los elementos del puente, constituyendo una auténtica auscultacion del mismo. A priori no requieren la utilización de medios extraordinarios. Deben ser realizadas por personal especializado bajo la supervisión de un ingeniero. Se recomienda que la primera inspección principal, denominada comunmente inspección cero, se realice poco antes de la puesta en servicio del puente, ya que servirá de referencia para determinar la evolución de los deterioros."@es .
 <https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#comment> "Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as 'inspection zero', be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration."@en .
-<https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iopce#> .
 <https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#label> "Inspeccion Principal"@es .
 <https://w3id.org/iopce#InpeccionPrincipal> <http://www.w3.org/2000/01/rdf-schema#label> "Main Inspection"@en .
+# 
+# https://w3id.org/iopce#PropiedadEvolucion
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "0: slow speed and non-aggressive environment\n1: low speed and aggressive environment or high speed and non-aggressive environment\n2: fast speed and aggressive environment\n"@en .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "0: velocidad lenta y ambiente no agresivo\n1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo\n2: velocidad rápida  y  ambiente agresivo\n"@es .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#label> "Evolucion"@es .
+<https://w3id.org/iopce#PropiedadEvolucion> <http://www.w3.org/2000/01/rdf-schema#label> "Evolution"@en .
+# 
+# https://w3id.org/iopce#PropiedadExtension
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#comment> "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "@en .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#comment> "1: <25%\n2:25-50%\n3:50-75%\n4:>75% "@es .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#label> "Extension"@en .
+<https://w3id.org/iopce#PropiedadExtension> <http://www.w3.org/2000/01/rdf-schema#label> "Extension"@es .
+# 
+# https://w3id.org/iopce#PropiedadGravedad
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#comment> "0: <25%\n1:25-50%\n2:50-75%\n"@en .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#comment> "0: <25%\n1:25-50%\n2:50-75%\n"@es .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#label> "Gravedad"@es .
+<https://w3id.org/iopce#PropiedadGravedad> <http://www.w3.org/2000/01/rdf-schema#label> "Severity"@en .
+# 
+# https://w3id.org/iopce#PropiedadIndiceDeCondicion
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.\n21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.\n41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.\n61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.\n81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso"@es .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.\n21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. \n61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. \n81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary"@en .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#label> "Condition index"@en .
+<https://w3id.org/iopce#PropiedadIndiceDeCondicion> <http://www.w3.org/2000/01/rdf-schema#label> "Indice de condicion"@es .
+# 
+# https://w3id.org/iopce#PropiedadIndiceDeDeterioro
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20: No significant consequences 'a priori' deterioration.\n21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.\n41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.\n61-80: Deterioration that can translate into a modification of the structural or functional behavior.\n81-100: Deterioration that compromises the safety of the element"@en .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#comment> "0-20:Deterioro sin consecuencias importantes 'a priori'\n21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.\n41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.\n61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.\n81-100: Deterioro quecompromete la seguridad del elemento"@es .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#label> "Damage index"@en .
+<https://w3id.org/iopce#PropiedadIndiceDeDeterioro> <http://www.w3.org/2000/01/rdf-schema#label> "Indice de deterioro"@es .
+# 
+# https://w3id.org/iopce#PropiedadPorcentaje
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/opm#Property> .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/seas/FeatureOfInterestOntology#Property> .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#comment> "percentage of surface/volume damage"@en .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#comment> "porcentaje de daño en superficie/volumen"@es .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#label> "Percentage"@en .
+<https://w3id.org/iopce#PropiedadPorcentaje> <http://www.w3.org/2000/01/rdf-schema#label> "Porcentaje"@es .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

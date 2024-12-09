@@ -22,6 +22,9 @@
         <dc:title xml:lang="es">Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado</dc:title>
         <vann:preferredNamespacePrefix>iopce</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/iopce#</vann:preferredNamespaceUri>
+        <owl:imports>http://www.w3.org/TR/prov-o/</owl:imports>
+        <owl:imports>http://www.w3id.org/opm/opm.ttl</owl:imports>
+        <owl:imports>http://www.w3id.org/seas/FeatureOfInterestOntology#</owl:imports>
         <owl:imports>https://alhakam.github.io/dot/</owl:imports>
         <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
@@ -120,6 +123,103 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+    
+
+
+    <!-- https://w3id.org/iopce#evolucion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#evolucion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadEvolucion"/>
+        <rdfs:label xml:lang="es">evolucion</rdfs:label>
+        <rdfs:label xml:lang="en">evolution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#extension -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadExtension"/>
+        <rdfs:label xml:lang="en">extension</rdfs:label>
+        <rdfs:label xml:lang="es">extension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#gravedad -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#gravedad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadGravedad"/>
+        <rdfs:label xml:lang="es">gravedad</rdfs:label>
+        <rdfs:label xml:lang="en">severity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#indice_de_condicion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#indice_de_condicion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadIndiceDeCondicion"/>
+        <rdfs:label xml:lang="es">Indice de condicion</rdfs:label>
+        <rdfs:label xml:lang="en">condition index</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#indice_de_deterioro -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#indice_de_deterioro">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadIndiceDeDeterioro"/>
+        <rdfs:label xml:lang="en">damage index</rdfs:label>
+        <rdfs:label xml:lang="es">indice de deterioro</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/iopce#porcentaje -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iopce#porcentaje">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
+        <rdfs:range rdf:resource="https://w3id.org/iopce#PropiedadPorcentaje"/>
+        <rdfs:label xml:lang="en">percentage</rdfs:label>
+        <rdfs:label xml:lang="es">porcentaje</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -207,7 +307,6 @@ baja:
     - Se necesita demoler o retirar otros elementos que luego debenser repuestos.
     - Son precisas obras auxiliares para protección temporal en cauces o pueden verse  afectados servicios de importancia:conducciones o alcantarillado importante, líneas AT, catenarias de FFCC.
 </rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
         <rdfs:label xml:lang="es">accesibilidad</rdfs:label>
         <rdfs:label xml:lang="en">accessibility</rdfs:label>
     </owl:DatatypeProperty>
@@ -222,187 +321,8 @@ baja:
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">código de la inspección</rdfs:comment>
         <rdfs:comment xml:lang="en">inspection code</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
         <rdfs:label xml:lang="en">code</rdfs:label>
         <rdfs:label xml:lang="es">codigo</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/iopce#evolucion -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#evolucion">
-        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">0: slow speed and non-aggressive environment
-1: low speed and aggressive environment or high speed and non-aggressive environment
-2: fast speed and aggressive environment
-</rdfs:comment>
-        <rdfs:comment xml:lang="es">0: velocidad lenta y ambiente no agresivo
-1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo
-2: velocidad rápida  y  ambiente agresivo
-</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
-        <rdfs:label xml:lang="es">evolucion</rdfs:label>
-        <rdfs:label xml:lang="en">evolution</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/iopce#extension -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#extension">
-        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">1: &lt;25%
-2:25-50%
-3:50-75%
-4:&gt;75% </rdfs:comment>
-        <rdfs:comment xml:lang="es">1: &lt;25%
-2:25-50%
-3:50-75%
-4:&gt;75% </rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
-        <rdfs:label xml:lang="en">extension</rdfs:label>
-        <rdfs:label xml:lang="es">extension</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/iopce#gravedad -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#gravedad">
-        <rdfs:domain rdf:resource="https://w3id.org/dot#ClassifiedDamage"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">0: &lt;25%
-1:25-50%
-2:50-75%
-</rdfs:comment>
-        <rdfs:comment xml:lang="es">0: &lt;25%
-1:25-50%
-2:50-75%
-</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
-        <rdfs:label xml:lang="es">gravedad</rdfs:label>
-        <rdfs:label xml:lang="en">severity</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/iopce#indiceDeCondicion -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#indiceDeCondicion">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/iopce#indiceDeCondicion"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="es">0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.
-21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.
-41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.
-61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.
-81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso</rdfs:comment>
-        <rdfs:comment xml:lang="en">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
-21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
-61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
-81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
-        <rdfs:label xml:lang="en">condition index</rdfs:label>
-        <rdfs:label xml:lang="es">indice de condicion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/iopce#indiceDeDeterioro -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/iopce#indiceDeDeterioro">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/iopce#indiceDeDeterioro"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">0-20: No significant consequences &apos;a priori&apos; deterioration.
-21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
-41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
-61-80: Deterioration that can translate into a modification of the structural or functional behavior.
-81-100: Deterioration that compromises the safety of the element</rdfs:comment>
-        <rdfs:comment xml:lang="es">0-20:Deterioro sin consecuencias importantes &apos;a priori&apos;
-21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.
-41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.
-61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.
-81-100: Deterioro quecompromete la seguridad del elemento</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
-        <rdfs:label xml:lang="en">damage index</rdfs:label>
-        <rdfs:label xml:lang="es">indice de deterioro</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -419,10 +339,39 @@ baja:
     
 
 
+    <!-- http://www.w3.org/TR/prov-o#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/TR/prov-o#Activity"/>
+    
+
+
+    <!-- http://www.w3id.org/opm#Property -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/opm#Property"/>
+    
+
+
+    <!-- http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3id.org/seas/FeatureOfInterestOntology#Property -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+    
+
+
     <!-- https://w3id.org/dot#ClassifiedDamage -->
 
 
     <owl:Class rdf:about="https://w3id.org/dot#ClassifiedDamage">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/iopce#evolucion"/>
@@ -449,6 +398,7 @@ baja:
 
 
     <owl:Class rdf:about="https://w3id.org/dot#Inspection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/prov-o#Activity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/iopce#codigo"/>
@@ -466,7 +416,6 @@ baja:
         <rdfs:subClassOf rdf:resource="https://w3id.org/dot#Inspection"/>
         <rdfs:comment xml:lang="es">Inspección visual desarrollada por personal no especializado. Este nivel de inspección consituye una sistemática útil  para detectar deterioros de forma temprana y poder así prevenir que éstos degeneren en deterioros graves, así  comopara localizar daños que necesiten una reparación urgente</rdfs:comment>
         <rdfs:comment xml:lang="en">Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
         <rdfs:label xml:lang="en">Basic Inspection</rdfs:label>
         <rdfs:label xml:lang="es">Inspeccion Basica</rdfs:label>
     </owl:Class>
@@ -494,9 +443,125 @@ baja:
         <rdfs:subClassOf rdf:resource="https://w3id.org/dot#Inspection"/>
         <rdfs:comment xml:lang="es">Inspección visual minuciosa del estado de todos los elementos del puente, constituyendo una auténtica auscultacion del mismo. A priori no requieren la utilización de medios extraordinarios. Deben ser realizadas por personal especializado bajo la supervisión de un ingeniero. Se recomienda que la primera inspección principal, denominada comunmente inspección cero, se realice poco antes de la puesta en servicio del puente, ya que servirá de referencia para determinar la evolución de los deterioros.</rdfs:comment>
         <rdfs:comment xml:lang="en">Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as &apos;inspection zero&apos;, be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/iopce#"/>
         <rdfs:label xml:lang="es">Inspeccion Principal</rdfs:label>
         <rdfs:label xml:lang="en">Main Inspection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadEvolucion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadEvolucion">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="en">0: slow speed and non-aggressive environment
+1: low speed and aggressive environment or high speed and non-aggressive environment
+2: fast speed and aggressive environment
+</rdfs:comment>
+        <rdfs:comment xml:lang="es">0: velocidad lenta y ambiente no agresivo
+1: velocidad baja y ambiente agresivo o velocidad alta y ambiente no agresivo
+2: velocidad rápida  y  ambiente agresivo
+</rdfs:comment>
+        <rdfs:label xml:lang="es">Evolucion</rdfs:label>
+        <rdfs:label xml:lang="en">Evolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadExtension -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadExtension">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="en">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </rdfs:comment>
+        <rdfs:comment xml:lang="es">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </rdfs:comment>
+        <rdfs:label xml:lang="en">Extension</rdfs:label>
+        <rdfs:label xml:lang="es">Extension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadGravedad -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadGravedad">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="en">0: &lt;25%
+1:25-50%
+2:50-75%
+</rdfs:comment>
+        <rdfs:comment xml:lang="es">0: &lt;25%
+1:25-50%
+2:50-75%
+</rdfs:comment>
+        <rdfs:label xml:lang="es">Gravedad</rdfs:label>
+        <rdfs:label xml:lang="en">Severity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadIndiceDeCondicion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadIndiceDeCondicion">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="es">0-20: Estructura sin patologías  evidentes o  con deterioros sin consecuencias relevantes para la durabilidad, condiciones de servicio o seguridad de la estructura.
+21-40: Estructura con deterioros que pueden tener una evolución patológica que afecte a la durabilidad o las condiciones de servicion de la estructura. Es conveniente sequir su evolución temporal para su determinación objetiva.
+41-60: Estructura con deterioros que evidencian una patología que puede suponer una reducción de las condiciones de servicio de la estructura. Será necesario seguir la evolución de la patología en posteriores inspecciones. Puede requerir una actuación a medio plazo para mejorar la durabilidad de la estructura.
+61-80: Estructura con deterioros o patologíasque se pueden traducir en una modificación del comportamiento resistente o una reducción importante de los niveles de servicio. Requiere una ctuación a corto-medio plazo. Enfunción de la naturalezadeldaño puede requerir una inspección especial.
+81-100: Estructura con deterioros o patologías que compromenten la seguridad del elemento/estructura. Requiere una inspección especial yuna actuación urgente. En algunos casos puede ser necesario una limitación del uso</rdfs:comment>
+        <rdfs:comment xml:lang="en">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
+21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
+61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
+81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</rdfs:comment>
+        <rdfs:label xml:lang="en">Condition index</rdfs:label>
+        <rdfs:label xml:lang="es">Indice de condicion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadIndiceDeDeterioro -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadIndiceDeDeterioro">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="en">0-20: No significant consequences &apos;a priori&apos; deterioration.
+21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
+41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
+61-80: Deterioration that can translate into a modification of the structural or functional behavior.
+81-100: Deterioration that compromises the safety of the element</rdfs:comment>
+        <rdfs:comment xml:lang="es">0-20:Deterioro sin consecuencias importantes &apos;a priori&apos;
+21-40: Deterioro que puede tener una evolucion patológica o reducir las condiciones de servicio o de durabilidad del elemento si no se repara en el tiempo adecuado.
+41-60: Deterioro que indica una patología que supone una reducción de las condiciones de servicio o de durabilidad del elemento.
+61-80: Deterioro que se puede traducir en una modificación del comportamiento resistente o funcional.
+81-100: Deterioro quecompromete la seguridad del elemento</rdfs:comment>
+        <rdfs:label xml:lang="en">Damage index</rdfs:label>
+        <rdfs:label xml:lang="es">Indice de deterioro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/iopce#PropiedadPorcentaje -->
+
+
+    <owl:Class rdf:about="https://w3id.org/iopce#PropiedadPorcentaje">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"/>
+        <rdfs:comment xml:lang="en">percentage of surface/volume damage</rdfs:comment>
+        <rdfs:comment xml:lang="es">porcentaje de daño en superficie/volumen</rdfs:comment>
+        <rdfs:label xml:lang="en">Percentage</rdfs:label>
+        <rdfs:label xml:lang="es">Porcentaje</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

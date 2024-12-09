@@ -25,17 +25,23 @@ Spanish: [SDO (Ontologia de Deterioro en Acero)](/bridge/damage/sdo/actual/index
 ### Road Bridge Inspections Spain
 Spanish : [IOPCE (Ontología para la Inspección de Obras de Paso en la Red de Carreteras del Estado)](/bridge/inspection/iopce/actual/index-es.html)
 
-English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Network)](/bridge/inspection/iopce/20240327/index-en.html) 
+English: [IOPCE (Ontology for the Inspection of Bridges in the Spanish Road Network)](/bridge/inspection/iopce/actual/index-en.html) 
 
 
 ## Spatial
 [INSPIRE Administrative Units](/Spatial/INSPIRE/AdministrativeUnits/actual/index-en.html) 
+
 [INSPIRE Network](/Spatial/INSPIRE/Network/actual/index-en.html) 
+
 [INSPIRE Hydrological Object](/Spatial/INSPIRE/Network/HydroObject/actual/index-en.html) 
+
 [INSPIRE Hydrological Network](/Spatial/INSPIRE/Network/HydroNetwork/actual/index-en.html) 
+
 [INSPIRE Transport Elements](/Spatial/INSPIRE/Network/TransportNetworks/CommonTransportElements/actual/index-en.html) 
+
 [INSPIRE Rail Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RailwayTransportNetwork/actual/index-en.html) 
-[INSPIRE Road Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RoadTransportNetwork/actual\index-en.html) 
+
+[INSPIRE Road Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RoadTransportNetwork/actual/index-en.html) 
 
 # Converters
 

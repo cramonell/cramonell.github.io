@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/iopce#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/iopce#","name":"Ontology for the Inspection of Bridges in the Spanish Road Network", "headline":"Document describing the ontology https://w3id.org/iopce#", "dateReleased":"Tue Apr 02 13:01:42 CEST 2024", "version":"1.0", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/iopce#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/iopce#","name":"Ontology for the Inspection of Bridges in the Spanish Road Network", "headline":"Document describing the ontology https://w3id.org/iopce#", "dateReleased":"Mon Dec 09 06:17:03 CET 2024", "version":"1.0", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -79,7 +79,17 @@ $(function(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div><div id="toc"></div>  
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+</div>
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Ontology for the Inspection of Bridges in the Spanish Road Network: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -98,6 +108,20 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#PropiedadIndiceDeCondicion"
+         title="https://w3id.org/iopce#PropiedadIndiceDeCondicion">Condition index</a>
+   </li>
+   <li>
+      <a href="#PropiedadIndiceDeDeterioro"
+         title="https://w3id.org/iopce#PropiedadIndiceDeDeterioro">Damage index</a>
+   </li>
+   <li>
+      <a href="#PropiedadEvolucion" title="https://w3id.org/iopce#PropiedadEvolucion">Evolution</a>
+   </li>
+   <li>
+      <a href="#PropiedadExtension" title="https://w3id.org/iopce#PropiedadExtension">Extension</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
          <span>inspection</span>
       </a>
@@ -106,7 +130,34 @@ This ontology has the following classes and properties.</span>
       <a href="#InpeccionPrincipal" title="https://w3id.org/iopce#InpeccionPrincipal">Main Inspection</a>
    </li>
    <li>
+      <a href="#PropiedadPorcentaje" title="https://w3id.org/iopce#PropiedadPorcentaje">Percentage</a>
+   </li>
+   <li>
+      <a href="#PropiedadGravedad" title="https://w3id.org/iopce#PropiedadGravedad">Severity</a>
+   </li>
+   <li>
       <a href="#InpeccionEspecial" title="https://w3id.org/iopce#InpeccionEspecial">Special Inspection</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#indice_de_condicion" title="https://w3id.org/iopce#indice_de_condicion">condition index</a>
+   </li>
+   <li>
+      <a href="#indice_de_deterioro" title="https://w3id.org/iopce#indice_de_deterioro">damage index</a>
+   </li>
+   <li>
+      <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
+   </li>
+   <li>
+      <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+   </li>
+   <li>
+      <a href="#porcentaje" title="https://w3id.org/iopce#porcentaje">percentage</a>
+   </li>
+   <li>
+      <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -116,21 +167,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
-   </li>
-   <li>
-      <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
-   </li>
-   <li>
-      <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
-   </li>
-   <li>
-      <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
-   </li>
-   <li>
-      <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
-   </li>
-   <li>
-      <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
@@ -159,12 +195,32 @@ This section provides details for each class and property defined by Ontology fo
          </a>
       </li>
       <li>
+         <a href="#PropiedadIndiceDeCondicion"
+            title="https://w3id.org/iopce#PropiedadIndiceDeCondicion">Condition index</a>
+      </li>
+      <li>
+         <a href="#PropiedadIndiceDeDeterioro"
+            title="https://w3id.org/iopce#PropiedadIndiceDeDeterioro">Damage index</a>
+      </li>
+      <li>
+         <a href="#PropiedadEvolucion" title="https://w3id.org/iopce#PropiedadEvolucion">Evolution</a>
+      </li>
+      <li>
+         <a href="#PropiedadExtension" title="https://w3id.org/iopce#PropiedadExtension">Extension</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">
             <span>inspection</span>
          </a>
       </li>
       <li>
          <a href="#InpeccionPrincipal" title="https://w3id.org/iopce#InpeccionPrincipal">Main Inspection</a>
+      </li>
+      <li>
+         <a href="#PropiedadPorcentaje" title="https://w3id.org/iopce#PropiedadPorcentaje">Percentage</a>
+      </li>
+      <li>
+         <a href="#PropiedadGravedad" title="https://w3id.org/iopce#PropiedadGravedad">Severity</a>
       </li>
       <li>
          <a href="#InpeccionEspecial" title="https://w3id.org/iopce#InpeccionEspecial">Special Inspection</a>
@@ -180,12 +236,6 @@ This section provides details for each class and property defined by Ontology fo
       <div class="comment">
          <span class="markdown">Visual inspection carried out by non-specialized personnel. This level of inspection provides a useful system for detecting early deterioration and thus preventing it from progressing into serious damage, as well as identifying any damage that requires urgent repair.</span>
       </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -203,13 +253,144 @@ This section provides details for each class and property defined by Ontology fo
          <strong>IRI:</strong> https://w3id.org/dot#ClassifiedDamage</p>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest">feature of interest</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#porcentaje" title="https://w3id.org/iopce#porcentaje">percentage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadIndiceDeCondicion">
+      <h3>Condition index<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadIndiceDeCondicion</p>
+      <div class="comment">
+         <span class="markdown">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
+21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
+61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
+81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#indice_de_condicion" title="https://w3id.org/iopce#indice_de_condicion">condition index</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadIndiceDeDeterioro">
+      <h3>Damage index<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadIndiceDeDeterioro</p>
+      <div class="comment">
+         <span class="markdown">0-20: No significant consequences 'a priori' deterioration.
+21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
+41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
+61-80: Deterioration that can translate into a modification of the structural or functional behavior.
+81-100: Deterioration that compromises the safety of the element</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#indice_de_deterioro" title="https://w3id.org/iopce#indice_de_deterioro">damage index</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadEvolucion">
+      <h3>Evolution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadEvolucion</p>
+      <div class="comment">
+         <span class="markdown">0: slow speed and non-aggressive environment
+1: low speed and aggressive environment or high speed and non-aggressive environment
+2: fast speed and aggressive environment
+</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadExtension">
+      <h3>Extension<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadExtension</p>
+      <div class="comment">
+         <span class="markdown">1: &lt;25%
+2:25-50%
+3:50-75%
+4:&gt;75% </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -222,7 +403,12 @@ This section provides details for each class and property defined by Ontology fo
          <strong>IRI:</strong> https://w3id.org/dot#Inspection</p>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="http://www.w3.org/TR/prov-o#Activity"
+               target="_blank"
+               title="http://www.w3.org/TR/prov-o#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#InpeccionBasica" title="https://w3id.org/iopce#InpeccionBasica">Basic Inspection</a>
@@ -247,17 +433,70 @@ This section provides details for each class and property defined by Ontology fo
       <div class="comment">
          <span class="markdown">Thorough visual inspection of all bridge elements, constituting a genuine auscultation of the structure. Initially, it does not require the use of extraordinary means. It should be carried out by specialized personnel under the supervision of an engineer. It is recommended that the first major inspection, commonly known as 'inspection zero', be conducted shortly before the bridge is put into service, as it will serve as a reference for assessing the evolution of deterioration.</span>
       </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/dot#Inspection" title="https://w3id.org/dot#Inspection">inspection</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadPorcentaje">
+      <h3>Percentage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadPorcentaje</p>
+      <div class="comment">
+         <span class="markdown">percentage of surface/volume damage</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#porcentaje" title="https://w3id.org/iopce#porcentaje">percentage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropiedadGravedad">
+      <h3>Severity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#PropiedadGravedad</p>
+      <div class="comment">
+         <span class="markdown">0: &lt;25%
+1:25-50%
+2:50-75%
+</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3id.org/opm#Property"
+               target="_blank"
+               title="http://www.w3id.org/opm#Property">property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#Property"
+               target="_blank"
+               title="http://www.w3id.org/seas/FeatureOfInterestOntology#Property">property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -287,20 +526,14 @@ This section provides details for each class and property defined by Ontology fo
    </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="dataproperties">
-   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#accesibilidad" title="https://w3id.org/iopce#accesibilidad">accessibility</a>
+         <a href="#indice_de_condicion" title="https://w3id.org/iopce#indice_de_condicion">condition index</a>
       </li>
       <li>
-         <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
-      </li>
-      <li>
-         <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
-      </li>
-      <li>
-         <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
+         <a href="#indice_de_deterioro" title="https://w3id.org/iopce#indice_de_deterioro">damage index</a>
       </li>
       <li>
          <a href="#evolucion" title="https://w3id.org/iopce#evolucion">evolution</a>
@@ -309,7 +542,202 @@ This section provides details for each class and property defined by Ontology fo
          <a href="#extension" title="https://w3id.org/iopce#extension">extension</a>
       </li>
       <li>
+         <a href="#porcentaje" title="https://w3id.org/iopce#porcentaje">percentage</a>
+      </li>
+      <li>
          <a href="#gravedad" title="https://w3id.org/iopce#gravedad">severity</a>
+      </li>
+   </ul>
+   <div class="entity" id="indice_de_condicion">
+      <h3>condition index<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#indice_de_condicion</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest">feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadIndiceDeCondicion"
+                  title="https://w3id.org/iopce#PropiedadIndiceDeCondicion">Condition index</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="indice_de_deterioro">
+      <h3>damage index<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#indice_de_deterioro</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#FeatureOfInterest">feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadIndiceDeDeterioro"
+                  title="https://w3id.org/iopce#PropiedadIndiceDeDeterioro">Damage index</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="evolucion">
+      <h3>evolution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#evolucion</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadEvolucion" title="https://w3id.org/iopce#PropiedadEvolucion">Evolution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="extension">
+      <h3>extension<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#extension</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadExtension" title="https://w3id.org/iopce#PropiedadExtension">Extension</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="porcentaje">
+      <h3>percentage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#porcentaje</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadPorcentaje" title="https://w3id.org/iopce#PropiedadPorcentaje">Percentage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="gravedad">
+      <h3>severity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/iopce#gravedad</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty"
+                  target="_blank"
+                  title="http://www.w3id.org/seas/FeatureOfInterestOntology#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadGravedad" title="https://w3id.org/iopce#PropiedadGravedad">Severity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#accesibilidad" title="https://w3id.org/iopce#accesibilidad">accessibility</a>
+      </li>
+      <li>
+         <a href="#codigo" title="https://w3id.org/iopce#codigo">code</a>
       </li>
    </ul>
    <div class="entity" id="accesibilidad">
@@ -344,12 +772,6 @@ baja (low):
     - Auxiliary works are needed for temporary protection in riverbeds, or important services may be affected, such as major conduits or sewerage, high-voltage lines, or railway catenaries
 </span>
       </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -372,12 +794,6 @@ baja (low):
       <div class="comment">
          <span class="markdown">inspection code</span>
       </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -394,166 +810,11 @@ baja (low):
          </dl>
       </div>
    </div>
-   <div class="entity" id="indiceDeCondicion">
-      <h3>condition index<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/iopce#indiceDeCondicion</p>
-      <div class="comment">
-         <span class="markdown">0-20: Structure without evident pathologies or with deteriorations that have no relevant consequences for the durability, service conditions, or safety of the structure.
-21-40: Structure with deteriorations that may have a pathological evolution affecting the durability or service conditions of the structure. It is advisable to monitor its temporal evolution for objective determination. 41-60: Structure with deteriorations that indicate a pathology leading to a reduction in the service conditions of the structure. It will be necessary to track the evolution of the pathology in subsequent inspections. Medium-term action may be required to enhance the structure’s durability. 
-61-80: Structure with deteriorations or pathologies that can result in a modification of the load-bearing behavior or a significant reduction in service levels. Requires short-to-medium-term action. Depending on the nature of the damage, a special inspection may be necessary. 
-81-100: Structure with deteriorations or pathologies compromising the safety of the element/structure. Requires a special inspection and urgent intervention. In some cases, usage restrictions may be necessary</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#indiceDeCondicion" title="https://w3id.org/iopce#indiceDeCondicion">condition index</a>
-               <sup class="type-dp" title="data property">dp</sup> 
-               <span class="logic">max</span> 1</dd>
-            <dt>has range</dt>
-            <dd/>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="indiceDeDeterioro">
-      <h3>damage index<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/iopce#indiceDeDeterioro</p>
-      <div class="comment">
-         <span class="markdown">0-20: No significant consequences 'a priori' deterioration.
-21-40: Deterioration that may have pathological progression or reduce the serviceability or durability of the element if not repaired in a timely manner.
-41-60: Deterioration indicating a pathology that results in a reduction of serviceability or durability of the element.
-61-80: Deterioration that can translate into a modification of the structural or functional behavior.
-81-100: Deterioration that compromises the safety of the element</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#indiceDeDeterioro" title="https://w3id.org/iopce#indiceDeDeterioro">damage index</a>
-               <sup class="type-dp" title="data property">dp</sup> 
-               <span class="logic">max</span> 1</dd>
-            <dt>has range</dt>
-            <dd/>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="evolucion">
-      <h3>evolution<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/iopce#evolucion</p>
-      <div class="comment">
-         <span class="markdown">0: slow speed and non-aggressive environment
-1: low speed and aggressive environment or high speed and non-aggressive environment
-2: fast speed and aggressive environment
-</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd/>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="extension">
-      <h3>extension<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/iopce#extension</p>
-      <div class="comment">
-         <span class="markdown">1: &lt;25%
-2:25-50%
-3:50-75%
-4:&gt;75% </span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd/>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="gravedad">
-      <h3>severity<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/iopce#gravedad</p>
-      <div class="comment">
-         <span class="markdown">0: &lt;25%
-1:25-50%
-2:50-75%
-</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/iopce#">https://w3id.org/iopce#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/dot#ClassifiedDamage" title="https://w3id.org/dot#ClassifiedDamage">classified damage</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd/>
-         </dl>
-      </div>
-   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
