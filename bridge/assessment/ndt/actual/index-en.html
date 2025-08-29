@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Non-Destructive Testing Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ndto#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ndto#","name":"Non-Destructive Testing Ontology", "headline":"Document describing the ontology https://w3id.org/ndto#", "dateReleased":"Fri Aug 29 11:02:44 CEST 2025", "version":"1.1", "license":"http://creativecommons.org/licenses/by/3.0/", "author":[{"@type":"Person","name":"Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Non-Destructive Testing Ontology</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://w3id.org/ndto#">https://w3id.org/ndto#</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://w3id.org/ndto#">https://w3id.org/ndto#</a></dd>
+<dt>Revision:</dt>
+<dd>1.1</dd>
+<dt>Authors:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu)</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/3.0/-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Carlos Ramonell Cazador (carlos.ramonell@upc.edu). Non-Destructive Testing Ontology. Revision: 1.1. Retrieved from: https://w3id.org/ndto#</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
+<tr><td><b>dce</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>ndt</b></td><td>&lt;https://w3id.org/ndto#&gt;</td></tr>
+<tr><td><b>ns1</b></td><td>&lt;http://qudt.org/schema/qudt/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa/&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Non-Destructive Testing Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#CompressiveStrength" title="https://w3id.org/ndto#CompressiveStrength">Compressive Strength</a>
+   </li>
+   <li>
+      <a href="#Displacement" title="https://w3id.org/ndto#Displacement">Displacement</a>
+   </li>
+   <li>
+      <a href="#DisplacementMeasurement" title="https://w3id.org/ndto#DisplacementMeasurement">Displacement Measurement</a>
+   </li>
+   <li>
+      <a href="#DoubleFlatJackTest" title="https://w3id.org/ndto#DoubleFlatJackTest">Double Flat-Jack Test</a>
+   </li>
+   <li>
+      <a href="#DRMSTest" title="https://w3id.org/ndto#DRMSTest">DRMS Test</a>
+   </li>
+   <li>
+      <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+   </li>
+   <li>
+      <a href="#FlatJackTest" title="https://w3id.org/ndto#FlatJackTest">Flat-Jack Test</a>
+   </li>
+   <li>
+      <a href="#Force" title="https://w3id.org/ndto#Force">Force</a>
+   </li>
+   <li>
+      <a href="#ForceMeasurement" title="https://w3id.org/ndto#ForceMeasurement">Force</a>
+   </li>
+   <li>
+      <a href="#Frequency" title="https://w3id.org/ndto#Frequency">Frequency</a>
+   </li>
+   <li>
+      <a href="#FrequencyMeasurement" title="https://w3id.org/ndto#FrequencyMeasurement">Frequency Measurement</a>
+   </li>
+   <li>
+      <a href="#HelixScrewPullOutTest" title="https://w3id.org/ndto#HelixScrewPullOutTest">Helix-Screw Pull-Out Test</a>
+   </li>
+   <li>
+      <a href="#ImpactEchoTest" title="https://w3id.org/ndto#ImpactEchoTest">Impact-Echo Test</a>
+   </li>
+   <li>
+      <a href="#InfraredThermography" title="https://w3id.org/ndto#InfraredThermography">Infrared Thermography</a>
+   </li>
+   <li>
+      <a href="#Material" title="https://w3id.org/ndto#Material">Material</a>
+   </li>
+   <li>
+      <a href="#MaterialProperty" title="https://w3id.org/ndto#MaterialProperty">Material</a>
+   </li>
+   <li>
+      <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+   </li>
+   <li>
+      <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+   </li>
+   <li>
+      <a href="#PWaveVelocityMeasurement" title="https://w3id.org/ndto#PWaveVelocityMeasurement">P-Wave Velocity</a>
+   </li>
+   <li>
+      <a href="#PendulumHammerTest" title="https://w3id.org/ndto#PendulumHammerTest">Pendulum Hammer Test</a>
+   </li>
+   <li>
+      <a href="#PenetrationDepth" title="https://w3id.org/ndto#PenetrationDepth">Penetration Depth</a>
+   </li>
+   <li>
+      <a href="#PenetrationDepthMeasurement"
+         title="https://w3id.org/ndto#PenetrationDepthMeasurement">Penetration Depth Measurement</a>
+   </li>
+   <li>
+      <a href="#PinPenetrationTest" title="https://w3id.org/ndto#PinPenetrationTest">Pin Penetration Test</a>
+   </li>
+   <li>
+      <a href="#Pressure" title="https://w3id.org/ndto#Pressure">Pressure</a>
+   </li>
+   <li>
+      <a href="#PressureMeasurement" title="https://w3id.org/ndto#PressureMeasurement">Pressure Measurement</a>
+   </li>
+   <li>
+      <a href="#PullOffResistanceTest" title="https://w3id.org/ndto#PullOffResistanceTest">Pull-Off Resistance Test</a>
+   </li>
+   <li>
+      <a href="#PullOutForceMeasurement" title="https://w3id.org/ndto#PullOutForceMeasurement">Pull-Out Force Measurement</a>
+   </li>
+   <li>
+      <a href="#PullOutResistanceTest" title="https://w3id.org/ndto#PullOutResistanceTest">Pull-Out Resistance Test</a>
+   </li>
+   <li>
+      <a href="#RWaveVelocityMeasurement" title="https://w3id.org/ndto#RWaveVelocityMeasurement">R-Wave Velocity</a>
+   </li>
+   <li>
+      <a href="#RadiationTest" title="https://w3id.org/ndto#RadiationTest">Radiation-Based Test</a>
+   </li>
+   <li>
+      <a href="#ReboundNumber" title="https://w3id.org/ndto#ReboundNumber">Rebound Number</a>
+   </li>
+   <li>
+      <a href="#ReboundNumberMeasurement" title="https://w3id.org/ndto#ReboundNumberMeasurement">Rebound Number Measurement</a>
+   </li>
+   <li>
+      <a href="#Result" title="https://w3id.org/ndto#Result">Result</a>
+   </li>
+   <li>
+      <a href="#SWaveVelocityMeasurement" title="https://w3id.org/ndto#SWaveVelocityMeasurement">S-Wave Velocity</a>
+   </li>
+   <li>
+      <a href="#SchmidtHammerTest" title="https://w3id.org/ndto#SchmidtHammerTest">Schmidt Hammer Test</a>
+   </li>
+   <li>
+      <a href="#SingleFlatJackTest" title="https://w3id.org/ndto#SingleFlatJackTest">Single Flat-Jack Test</a>
+   </li>
+   <li>
+      <a href="#SonicTest" title="https://w3id.org/ndto#SonicTest">Sonic Test</a>
+   </li>
+   <li>
+      <a href="#SurfaceHardnessTest" title="https://w3id.org/ndto#SurfaceHardnessTest">Surface Hardness Test</a>
+   </li>
+   <li>
+      <a href="#Temperature" title="https://w3id.org/ndto#Temperature">Temperature</a>
+   </li>
+   <li>
+      <a href="#TemperatureMeasurement" title="https://w3id.org/ndto#TemperatureMeasurement">Temperature Measurement</a>
+   </li>
+   <li>
+      <a href="#ThermalTest" title="https://w3id.org/ndto#ThermalTest">Thermal Test</a>
+   </li>
+   <li>
+      <a href="#Thrust" title="https://w3id.org/ndto#Thrust">Thrust</a>
+   </li>
+   <li>
+      <a href="#ThrustForceMeasurement" title="https://w3id.org/ndto#ThrustForceMeasurement">Thrust Force Measurement</a>
+   </li>
+   <li>
+      <a href="#TorquePenetrometricTest" title="https://w3id.org/ndto#TorquePenetrometricTest">Torque Penetrometric Test</a>
+   </li>
+   <li>
+      <a href="#TorquePerUnitLengthMeasurement"
+         title="https://w3id.org/ndto#TorquePerUnitLengthMeasurement">Torque per Unit Length Measurement</a>
+   </li>
+   <li>
+      <a href="#UltrasonicPulseVelocityTest"
+         title="https://w3id.org/ndto#UltrasonicPulseVelocityTest">Ultrasonic Test</a>
+   </li>
+   <li>
+      <a href="#WavePropagationVelocity" title="https://w3id.org/ndto#WavePropagationVelocity">Wave Propagation Velocity</a>
+   </li>
+   <li>
+      <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+   </li>
+   <li>
+      <a href="#XRayTest" title="https://w3id.org/ndto#XRayTest">X-Ray Test</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasMeasurement" title="https://w3id.org/ndto#hasMeasurement">has measurement</a>
+   </li>
+   <li>
+      <a href="#hasMaterialProperty" title="https://w3id.org/ndto#hasMaterialProperty">is made of</a>
+   </li>
+   <li>
+      <a href="#isMadeOf" title="https://w3id.org/ndto#isMadeOf">is made of</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Non-Destructive Testing Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology that describes different non-destructive testing techniques and their applications for structural assessment</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Non-Destructive Testing Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Non-Destructive Testing Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#CompressiveStrength" title="https://w3id.org/ndto#CompressiveStrength">Compressive Strength</a>
+      </li>
+      <li>
+         <a href="#Displacement" title="https://w3id.org/ndto#Displacement">Displacement</a>
+      </li>
+      <li>
+         <a href="#DisplacementMeasurement" title="https://w3id.org/ndto#DisplacementMeasurement">Displacement Measurement</a>
+      </li>
+      <li>
+         <a href="#DoubleFlatJackTest" title="https://w3id.org/ndto#DoubleFlatJackTest">Double Flat-Jack Test</a>
+      </li>
+      <li>
+         <a href="#DRMSTest" title="https://w3id.org/ndto#DRMSTest">DRMS Test</a>
+      </li>
+      <li>
+         <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+      </li>
+      <li>
+         <a href="#FlatJackTest" title="https://w3id.org/ndto#FlatJackTest">Flat-Jack Test</a>
+      </li>
+      <li>
+         <a href="#Force" title="https://w3id.org/ndto#Force">Force</a>
+      </li>
+      <li>
+         <a href="#ForceMeasurement" title="https://w3id.org/ndto#ForceMeasurement">Force</a>
+      </li>
+      <li>
+         <a href="#Frequency" title="https://w3id.org/ndto#Frequency">Frequency</a>
+      </li>
+      <li>
+         <a href="#FrequencyMeasurement" title="https://w3id.org/ndto#FrequencyMeasurement">Frequency Measurement</a>
+      </li>
+      <li>
+         <a href="#HelixScrewPullOutTest" title="https://w3id.org/ndto#HelixScrewPullOutTest">Helix-Screw Pull-Out Test</a>
+      </li>
+      <li>
+         <a href="#ImpactEchoTest" title="https://w3id.org/ndto#ImpactEchoTest">Impact-Echo Test</a>
+      </li>
+      <li>
+         <a href="#InfraredThermography" title="https://w3id.org/ndto#InfraredThermography">Infrared Thermography</a>
+      </li>
+      <li>
+         <a href="#Material" title="https://w3id.org/ndto#Material">Material</a>
+      </li>
+      <li>
+         <a href="#MaterialProperty" title="https://w3id.org/ndto#MaterialProperty">Material</a>
+      </li>
+      <li>
+         <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+      </li>
+      <li>
+         <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+      </li>
+      <li>
+         <a href="#PWaveVelocityMeasurement" title="https://w3id.org/ndto#PWaveVelocityMeasurement">P-Wave Velocity</a>
+      </li>
+      <li>
+         <a href="#PendulumHammerTest" title="https://w3id.org/ndto#PendulumHammerTest">Pendulum Hammer Test</a>
+      </li>
+      <li>
+         <a href="#PenetrationDepth" title="https://w3id.org/ndto#PenetrationDepth">Penetration Depth</a>
+      </li>
+      <li>
+         <a href="#PenetrationDepthMeasurement"
+            title="https://w3id.org/ndto#PenetrationDepthMeasurement">Penetration Depth Measurement</a>
+      </li>
+      <li>
+         <a href="#PinPenetrationTest" title="https://w3id.org/ndto#PinPenetrationTest">Pin Penetration Test</a>
+      </li>
+      <li>
+         <a href="#Pressure" title="https://w3id.org/ndto#Pressure">Pressure</a>
+      </li>
+      <li>
+         <a href="#PressureMeasurement" title="https://w3id.org/ndto#PressureMeasurement">Pressure Measurement</a>
+      </li>
+      <li>
+         <a href="#PullOffResistanceTest" title="https://w3id.org/ndto#PullOffResistanceTest">Pull-Off Resistance Test</a>
+      </li>
+      <li>
+         <a href="#PullOutForceMeasurement" title="https://w3id.org/ndto#PullOutForceMeasurement">Pull-Out Force Measurement</a>
+      </li>
+      <li>
+         <a href="#PullOutResistanceTest" title="https://w3id.org/ndto#PullOutResistanceTest">Pull-Out Resistance Test</a>
+      </li>
+      <li>
+         <a href="#RWaveVelocityMeasurement" title="https://w3id.org/ndto#RWaveVelocityMeasurement">R-Wave Velocity</a>
+      </li>
+      <li>
+         <a href="#RadiationTest" title="https://w3id.org/ndto#RadiationTest">Radiation-Based Test</a>
+      </li>
+      <li>
+         <a href="#ReboundNumber" title="https://w3id.org/ndto#ReboundNumber">Rebound Number</a>
+      </li>
+      <li>
+         <a href="#ReboundNumberMeasurement" title="https://w3id.org/ndto#ReboundNumberMeasurement">Rebound Number Measurement</a>
+      </li>
+      <li>
+         <a href="#Result" title="https://w3id.org/ndto#Result">Result</a>
+      </li>
+      <li>
+         <a href="#SWaveVelocityMeasurement" title="https://w3id.org/ndto#SWaveVelocityMeasurement">S-Wave Velocity</a>
+      </li>
+      <li>
+         <a href="#SchmidtHammerTest" title="https://w3id.org/ndto#SchmidtHammerTest">Schmidt Hammer Test</a>
+      </li>
+      <li>
+         <a href="#SingleFlatJackTest" title="https://w3id.org/ndto#SingleFlatJackTest">Single Flat-Jack Test</a>
+      </li>
+      <li>
+         <a href="#SonicTest" title="https://w3id.org/ndto#SonicTest">Sonic Test</a>
+      </li>
+      <li>
+         <a href="#SurfaceHardnessTest" title="https://w3id.org/ndto#SurfaceHardnessTest">Surface Hardness Test</a>
+      </li>
+      <li>
+         <a href="#Temperature" title="https://w3id.org/ndto#Temperature">Temperature</a>
+      </li>
+      <li>
+         <a href="#TemperatureMeasurement" title="https://w3id.org/ndto#TemperatureMeasurement">Temperature Measurement</a>
+      </li>
+      <li>
+         <a href="#ThermalTest" title="https://w3id.org/ndto#ThermalTest">Thermal Test</a>
+      </li>
+      <li>
+         <a href="#Thrust" title="https://w3id.org/ndto#Thrust">Thrust</a>
+      </li>
+      <li>
+         <a href="#ThrustForceMeasurement" title="https://w3id.org/ndto#ThrustForceMeasurement">Thrust Force Measurement</a>
+      </li>
+      <li>
+         <a href="#TorquePenetrometricTest" title="https://w3id.org/ndto#TorquePenetrometricTest">Torque Penetrometric Test</a>
+      </li>
+      <li>
+         <a href="#TorquePerUnitLengthMeasurement"
+            title="https://w3id.org/ndto#TorquePerUnitLengthMeasurement">Torque per Unit Length Measurement</a>
+      </li>
+      <li>
+         <a href="#UltrasonicPulseVelocityTest"
+            title="https://w3id.org/ndto#UltrasonicPulseVelocityTest">Ultrasonic Test</a>
+      </li>
+      <li>
+         <a href="#WavePropagationVelocity" title="https://w3id.org/ndto#WavePropagationVelocity">Wave Propagation Velocity</a>
+      </li>
+      <li>
+         <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+      </li>
+      <li>
+         <a href="#XRayTest" title="https://w3id.org/ndto#XRayTest">X-Ray Test</a>
+      </li>
+   </ul>
+   <div class="entity" id="CompressiveStrength">
+      <h3>Compressive Strength<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#CompressiveStrength</p>
+      <div class="comment">
+         <span class="markdown">Compressive strength</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Displacement">
+      <h3>Displacement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Displacement</p>
+      <div class="comment">
+         <span class="markdown">Displacement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DisplacementMeasurement">
+      <h3>Displacement Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#DisplacementMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Displacement measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DoubleFlatJackTest">
+      <h3>Double Flat-Jack Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#DoubleFlatJackTest</p>
+      <div class="comment">
+         <span class="markdown">Double flat-jack tests isolate a masonry specimen between two flat-jacks to perform in-situ compression testing</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FlatJackTest" title="https://w3id.org/ndto#FlatJackTest">Flat-Jack Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DRMSTest">
+      <h3>DRMS Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#DRMSTest</p>
+      <div class="comment">
+         <span class="markdown">Drilling Resistance Measurement System (DRMS) investigates material strength by measuring the energy required to penetrate compact materials</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ElasticWavePropagationTest">
+      <h3>Elastic Wave Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ElasticWavePropagationTest</p>
+      <div class="comment">
+         <span class="markdown">Elastic wave methods are based on the propagation of mechanical waves through materials to assess their internal structure and properties</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ImpactEchoTest" title="https://w3id.org/ndto#ImpactEchoTest">Impact-Echo Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SonicTest" title="https://w3id.org/ndto#SonicTest">Sonic Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UltrasonicPulseVelocityTest"
+               title="https://w3id.org/ndto#UltrasonicPulseVelocityTest">Ultrasonic Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FlatJackTest">
+      <h3>Flat-Jack Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#FlatJackTest</p>
+      <div class="comment">
+         <span class="markdown">Flat-jack tests determine compressive stress levels (single flat-jack) and mechanical properties (double flat-jack) of masonry walls</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DoubleFlatJackTest" title="https://w3id.org/ndto#DoubleFlatJackTest">Double Flat-Jack Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleFlatJackTest" title="https://w3id.org/ndto#SingleFlatJackTest">Single Flat-Jack Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Force">
+      <h3>Force<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Force</p>
+      <div class="comment">
+         <span class="markdown">Force</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForceMeasurement">
+      <h3>Force<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ForceMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Force measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PullOutForceMeasurement" title="https://w3id.org/ndto#PullOutForceMeasurement">Pull-Out Force Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ThrustForceMeasurement" title="https://w3id.org/ndto#ThrustForceMeasurement">Thrust Force Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Frequency">
+      <h3>Frequency<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Frequency</p>
+      <div class="comment">
+         <span class="markdown">Frequency</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FrequencyMeasurement">
+      <h3>Frequency Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#FrequencyMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Frequency measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HelixScrewPullOutTest">
+      <h3>Helix-Screw Pull-Out Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#HelixScrewPullOutTest</p>
+      <div class="comment">
+         <span class="markdown">Helix-Screw pull-out test</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PullOutResistanceTest" title="https://w3id.org/ndto#PullOutResistanceTest">Pull-Out Resistance Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ImpactEchoTest">
+      <h3>Impact-Echo Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ImpactEchoTest</p>
+      <div class="comment">
+         <span class="markdown">Impact-echo tests are used for estimating the thickness of elements and detecting the presence of cracks and voids through frequency analysis</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InfraredThermography">
+      <h3>Infrared Thermography<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#InfraredThermography</p>
+      <div class="comment">
+         <span class="markdown">Uses infrared cameras to detect temperature variations indicating structural defects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ThermalTest" title="https://w3id.org/ndto#ThermalTest">Thermal Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Material">
+      <h3>Material<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Material</p>
+      <div class="comment">
+         <span class="markdown">Generalization of the Materials tested using NDT methods</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/Observation"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Observation">observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMeasurement" title="https://w3id.org/ndto#hasMeasurement">has measurement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isMadeOf" title="https://w3id.org/ndto#isMadeOf">is made of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaterialProperty">
+      <h3>Material<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#MaterialProperty</p>
+      <div class="comment">
+         <span class="markdown">Generalization of the Materials tested using NDT methods</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/Observation"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Observation">observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMaterialProperty" title="https://w3id.org/ndto#hasMaterialProperty">is made of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NDTMeasurement">
+      <h3>NDT Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#NDTMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Measurements realized in NDT procedures</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/Observation"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Observation">observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DisplacementMeasurement" title="https://w3id.org/ndto#DisplacementMeasurement">Displacement Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ForceMeasurement" title="https://w3id.org/ndto#ForceMeasurement">Force</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrequencyMeasurement" title="https://w3id.org/ndto#FrequencyMeasurement">Frequency Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PenetrationDepthMeasurement"
+               title="https://w3id.org/ndto#PenetrationDepthMeasurement">Penetration Depth Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureMeasurement" title="https://w3id.org/ndto#PressureMeasurement">Pressure Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ReboundNumberMeasurement" title="https://w3id.org/ndto#ReboundNumberMeasurement">Rebound Number Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TemperatureMeasurement" title="https://w3id.org/ndto#TemperatureMeasurement">Temperature Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TorquePerUnitLengthMeasurement"
+               title="https://w3id.org/ndto#TorquePerUnitLengthMeasurement">Torque per Unit Length Measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMeasurement" title="https://w3id.org/ndto#hasMeasurement">has measurement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NonDestructiveTest">
+      <h3>Non-Destructive Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#NonDestructiveTest</p>
+      <div class="comment">
+         <span class="markdown">Non-destructive testing methods allow for the investigation of material structural properties which can be applied without any interventions in the object to be examined</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/Observation"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Observation">observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DRMSTest" title="https://w3id.org/ndto#DRMSTest">DRMS Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FlatJackTest" title="https://w3id.org/ndto#FlatJackTest">Flat-Jack Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PinPenetrationTest" title="https://w3id.org/ndto#PinPenetrationTest">Pin Penetration Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PullOffResistanceTest" title="https://w3id.org/ndto#PullOffResistanceTest">Pull-Off Resistance Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PullOutResistanceTest" title="https://w3id.org/ndto#PullOutResistanceTest">Pull-Out Resistance Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RadiationTest" title="https://w3id.org/ndto#RadiationTest">Radiation-Based Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SurfaceHardnessTest" title="https://w3id.org/ndto#SurfaceHardnessTest">Surface Hardness Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ThermalTest" title="https://w3id.org/ndto#ThermalTest">Thermal Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TorquePenetrometricTest" title="https://w3id.org/ndto#TorquePenetrometricTest">Torque Penetrometric Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMeasurement" title="https://w3id.org/ndto#hasMeasurement">has measurement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PWaveVelocityMeasurement">
+      <h3>P-Wave Velocity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PWaveVelocityMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Primary wave velocity (compression wave) measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PendulumHammerTest">
+      <h3>Pendulum Hammer Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PendulumHammerTest</p>
+      <div class="comment">
+         <span class="markdown">Uses a pendulum hammer to measure surface hardness through impact energy</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SurfaceHardnessTest" title="https://w3id.org/ndto#SurfaceHardnessTest">Surface Hardness Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PenetrationDepth">
+      <h3>Penetration Depth<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PenetrationDepth</p>
+      <div class="comment">
+         <span class="markdown">Penetration depth</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PenetrationDepthMeasurement">
+      <h3>Penetration Depth Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PenetrationDepthMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Penetration depth measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PinPenetrationTest">
+      <h3>Pin Penetration Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PinPenetrationTest</p>
+      <div class="comment">
+         <span class="markdown">Pin Penetration Test (Windsor Probe) uses a metal pin driven into the material to correlate penetration depth with compressive strength</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pressure">
+      <h3>Pressure<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Pressure</p>
+      <div class="comment">
+         <span class="markdown">Pressure</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PressureMeasurement">
+      <h3>Pressure Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PressureMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Pressure measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PullOffResistanceTest">
+      <h3>Pull-Off Resistance Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PullOffResistanceTest</p>
+      <div class="comment">
+         <span class="markdown">Pull-out Test</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PullOutForceMeasurement">
+      <h3>Pull-Out Force Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PullOutForceMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Pull-out force measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForceMeasurement" title="https://w3id.org/ndto#ForceMeasurement">Force</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PullOutResistanceTest">
+      <h3>Pull-Out Resistance Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#PullOutResistanceTest</p>
+      <div class="comment">
+         <span class="markdown">Pull-out Test</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#HelixScrewPullOutTest" title="https://w3id.org/ndto#HelixScrewPullOutTest">Helix-Screw Pull-Out Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RWaveVelocityMeasurement">
+      <h3>R-Wave Velocity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#RWaveVelocityMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Rayleigh wave velocity (surface wave) measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RadiationTest">
+      <h3>Radiation-Based Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#RadiationTest</p>
+      <div class="comment">
+         <span class="markdown">Radiation-based methods use electromagnetic waves (X-rays, gamma rays) to penetrate materials and reveal internal structure and defects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#XRayTest" title="https://w3id.org/ndto#XRayTest">X-Ray Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReboundNumber">
+      <h3>Rebound Number<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ReboundNumber</p>
+      <div class="comment">
+         <span class="markdown">Rebound number</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReboundNumberMeasurement">
+      <h3>Rebound Number Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ReboundNumberMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Rebound number measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Result">
+      <h3>Result<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Result</p>
+      <div class="comment">
+         <span class="markdown">Generalization of the results of an NDT.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/Observation"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Observation">observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SWaveVelocityMeasurement">
+      <h3>S-Wave Velocity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#SWaveVelocityMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Secondary wave velocity (shear wave) measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WaveVelocityMeasurement" title="https://w3id.org/ndto#WaveVelocityMeasurement">Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SchmidtHammerTest">
+      <h3>Schmidt Hammer Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#SchmidtHammerTest</p>
+      <div class="comment">
+         <span class="markdown">Measures surface hardness through rebound of a spring-loaded hammer</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SurfaceHardnessTest" title="https://w3id.org/ndto#SurfaceHardnessTest">Surface Hardness Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SingleFlatJackTest">
+      <h3>Single Flat-Jack Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#SingleFlatJackTest</p>
+      <div class="comment">
+         <span class="markdown">Single flat-jack tests measure in-situ stress through stress release and compensation, based on elastic deformation assumptions</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FlatJackTest" title="https://w3id.org/ndto#FlatJackTest">Flat-Jack Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SonicTest">
+      <h3>Sonic Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#SonicTest</p>
+      <div class="comment">
+         <span class="markdown">Sonic tests use wave frequencies between 20Hz and 20kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SurfaceHardnessTest">
+      <h3>Surface Hardness Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#SurfaceHardnessTest</p>
+      <div class="comment">
+         <span class="markdown">Surface hardness methods measure the resistance of material surface to indentation or impact, providing correlation with compressive strength</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PendulumHammerTest" title="https://w3id.org/ndto#PendulumHammerTest">Pendulum Hammer Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SchmidtHammerTest" title="https://w3id.org/ndto#SchmidtHammerTest">Schmidt Hammer Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Temperature">
+      <h3>Temperature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Temperature</p>
+      <div class="comment">
+         <span class="markdown">Temperature</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TemperatureMeasurement">
+      <h3>Temperature Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#TemperatureMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Temperature measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThermalTest">
+      <h3>Thermal Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ThermalTest</p>
+      <div class="comment">
+         <span class="markdown">Thermal methods use infrared thermography to detect temperature variations that indicate structural defects, moisture, or delamination</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InfraredThermography" title="https://w3id.org/ndto#InfraredThermography">Infrared Thermography</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Thrust">
+      <h3>Thrust<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#Thrust</p>
+      <div class="comment">
+         <span class="markdown">Thrust</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThrustForceMeasurement">
+      <h3>Thrust Force Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#ThrustForceMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Thrust force measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ForceMeasurement" title="https://w3id.org/ndto#ForceMeasurement">Force</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TorquePenetrometricTest">
+      <h3>Torque Penetrometric Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#TorquePenetrometricTest</p>
+      <div class="comment">
+         <span class="markdown">Torque Penetrometric Tests evaluate compressive strength by measuring the maximum torque resisted by the material when applied with a specialized nail</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TorquePerUnitLengthMeasurement">
+      <h3>Torque per Unit Length Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#TorquePerUnitLengthMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Torque per unit length measurement</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UltrasonicPulseVelocityTest">
+      <h3>Ultrasonic Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#UltrasonicPulseVelocityTest</p>
+      <div class="comment">
+         <span class="markdown">Ultrasonic tests use wave frequencies between 20kHz and 150kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ElasticWavePropagationTest" title="https://w3id.org/ndto#ElasticWavePropagationTest">Elastic Wave Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WavePropagationVelocity">
+      <h3>Wave Propagation Velocity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#WavePropagationVelocity</p>
+      <div class="comment">
+         <span class="markdown">Wave propagation velocity</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/Quantity"
+               target="_blank"
+               title="http://qudt.org/schema/qudt/Quantity">quantity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WaveVelocityMeasurement">
+      <h3>Wave Velocity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#WaveVelocityMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Measurements realized in wave velocity tests</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PWaveVelocityMeasurement" title="https://w3id.org/ndto#PWaveVelocityMeasurement">P-Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RWaveVelocityMeasurement" title="https://w3id.org/ndto#RWaveVelocityMeasurement">R-Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SWaveVelocityMeasurement" title="https://w3id.org/ndto#SWaveVelocityMeasurement">S-Wave Velocity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="XRayTest">
+      <h3>X-Ray Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#XRayTest</p>
+      <div class="comment">
+         <span class="markdown">Uses X-ray radiation to reveal internal structure and detect defects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RadiationTest" title="https://w3id.org/ndto#RadiationTest">Radiation-Based Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasMeasurement" title="https://w3id.org/ndto#hasMeasurement">has measurement</a>
+      </li>
+      <li>
+         <a href="#hasMaterialProperty" title="https://w3id.org/ndto#hasMaterialProperty">is made of</a>
+      </li>
+      <li>
+         <a href="#isMadeOf" title="https://w3id.org/ndto#isMadeOf">is made of</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasMeasurement">
+      <h3>has measurement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#hasMeasurement</p>
+      <div class="comment">
+         <span class="markdown">relates a test with the measurements realized</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Material" title="https://w3id.org/ndto#Material">Material</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#NonDestructiveTest" title="https://w3id.org/ndto#NonDestructiveTest">Non-Destructive Test</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NDTMeasurement" title="https://w3id.org/ndto#NDTMeasurement">NDT Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMaterialProperty">
+      <h3>is made of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#hasMaterialProperty</p>
+      <div class="comment">
+         <span class="markdown">relates a Material with its mechanical properties, normally those evaluated in the context of an NDT</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MaterialProperty" title="https://w3id.org/ndto#MaterialProperty">Material</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isMadeOf">
+      <h3>is made of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ndto#isMadeOf</p>
+      <div class="comment">
+         <span class="markdown">relates anything with the material it is  made of in the context of an NDT</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Material" title="https://w3id.org/ndto#Material">Material</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

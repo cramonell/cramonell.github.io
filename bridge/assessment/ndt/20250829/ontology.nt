@@ -1,0 +1,532 @@
+<https://w3id.org/ndto#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ndto#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ndto#> .
+<https://w3id.org/ndto#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/date> "2025-07-14" .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/description> "Ontology that describes different non-destructive testing techniques and their applications for structural assessment"@en .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/description> "Ontología que describe diferentes técnicas de ensayo no destructivas y sus aplicaciones para la evaluación estructural"@es .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/language> "en" .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/language> "es" .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/title> "Non-Destructive Testing Ontology"@en .
+<https://w3id.org/ndto#> <http://purl.org/dc/elements/1.1/title> "Ontología de Técnicas de Ensayo No Destructivas"@es .
+<https://w3id.org/ndto#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndt" .
+<https://w3id.org/ndto#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ndto#" .
+<https://w3id.org/ndto#> <http://www.w3.org/2002/07/owl#versionInfo> "1.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/versionIRI
+<http://purl.org/dc/elements/1.1/versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/versionInfo
+<http://purl.org/dc/elements/1.1/versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://qudt.org/schema/qudt/quantityKind
+<http://qudt.org/schema/qudt/quantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ndto#hasMaterialProperty
+<https://w3id.org/ndto#hasMaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ndto#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ndto#MaterialProperty> .
+<https://w3id.org/ndto#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "relates a Material with its mechanical properties, normally those evaluated in the context of an NDT"@en .
+<https://w3id.org/ndto#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "is made of"@en .
+<https://w3id.org/ndto#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "is made of"@es .
+# 
+# https://w3id.org/ndto#hasMeasurement
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ndto#Material> .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "relates a test with the measurements realized"@en .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement"@en .
+<https://w3id.org/ndto#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "tiene medición"@es .
+# 
+# https://w3id.org/ndto#isMadeOf
+<https://w3id.org/ndto#isMadeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ndto#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ndto#Material> .
+<https://w3id.org/ndto#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "relates anything with the material it is  made of in the context of an NDT"@en .
+<https://w3id.org/ndto#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is made of"@en .
+<https://w3id.org/ndto#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is made of"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ndto#CompressiveStrength
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#CompressiveStrength> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/CompressiveStress> .
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "Compressive strength"@en .
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "Resistencia a la compresión"@es .
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#label> "Compressive Strength"@en .
+<https://w3id.org/ndto#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#label> "Resistencia a la Compresión"@es .
+# 
+# https://w3id.org/ndto#DRMSTest
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#ForceMeasurement> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PenetrationDepthMeasurement> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Drilling Resistance Measurement System (DRMS) investigates material strength by measuring the energy required to penetrate compact materials"@en .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#label> "DRMS Test"@en .
+<https://w3id.org/ndto#DRMSTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo DRMS"@es .
+# 
+# https://w3id.org/ndto#Displacement
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Displacement> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Displacement> .
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Desplazamiento"@es .
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Displacement"@en .
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/2000/01/rdf-schema#label> "Desplazamiento"@es .
+<https://w3id.org/ndto#Displacement> <http://www.w3.org/2000/01/rdf-schema#label> "Displacement"@en .
+# 
+# https://w3id.org/ndto#DisplacementMeasurement
+<https://w3id.org/ndto#DisplacementMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#DisplacementMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#DisplacementMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Displacement measurement"@en .
+<https://w3id.org/ndto#DisplacementMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Desplazamiento"@es .
+<https://w3id.org/ndto#DisplacementMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Displacement Measurement"@en .
+# 
+# https://w3id.org/ndto#DoubleFlatJackTest
+<https://w3id.org/ndto#DoubleFlatJackTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#DoubleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#FlatJackTest> .
+<https://w3id.org/ndto#DoubleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Double flat-jack tests isolate a masonry specimen between two flat-jacks to perform in-situ compression testing"@en .
+<https://w3id.org/ndto#DoubleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Double Flat-Jack Test"@en .
+<https://w3id.org/ndto#DoubleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Gato Plano Doble"@es .
+# 
+# https://w3id.org/ndto#ElasticWavePropagationTest
+<https://w3id.org/ndto#ElasticWavePropagationTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ElasticWavePropagationTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#ElasticWavePropagationTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastic wave methods are based on the propagation of mechanical waves through materials to assess their internal structure and properties"@en .
+<https://w3id.org/ndto#ElasticWavePropagationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Elastic Wave Test"@en .
+<https://w3id.org/ndto#ElasticWavePropagationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Ondas Elásticas"@es .
+# 
+# https://w3id.org/ndto#FlatJackTest
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#DisplacementMeasurement> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PressureMeasurement> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Flat-jack tests determine compressive stress levels (single flat-jack) and mechanical properties (double flat-jack) of masonry walls"@en .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Gato Plano"@es .
+<https://w3id.org/ndto#FlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Flat-Jack Test"@en .
+# 
+# https://w3id.org/ndto#Force
+<https://w3id.org/ndto#Force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Force> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Force> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Force> .
+<https://w3id.org/ndto#Force> <http://www.w3.org/2000/01/rdf-schema#comment> "Force"@en .
+<https://w3id.org/ndto#Force> <http://www.w3.org/2000/01/rdf-schema#comment> "Fuerza"@es .
+<https://w3id.org/ndto#Force> <http://www.w3.org/2000/01/rdf-schema#label> "Force"@en .
+<https://w3id.org/ndto#Force> <http://www.w3.org/2000/01/rdf-schema#label> "Fuerza"@es .
+# 
+# https://w3id.org/ndto#ForceMeasurement
+<https://w3id.org/ndto#ForceMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#ForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Force measurement"@en .
+<https://w3id.org/ndto#ForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Force"@en .
+<https://w3id.org/ndto#ForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Fuerza"@es .
+# 
+# https://w3id.org/ndto#Frequency
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Frequency> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Frequency> .
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Frecuencia"@es .
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency"@en .
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frecuencia"@es .
+<https://w3id.org/ndto#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency"@en .
+# 
+# https://w3id.org/ndto#FrequencyMeasurement
+<https://w3id.org/ndto#FrequencyMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#FrequencyMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#FrequencyMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency measurement"@en .
+<https://w3id.org/ndto#FrequencyMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Frecuencia"@es .
+<https://w3id.org/ndto#FrequencyMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency Measurement"@en .
+# 
+# https://w3id.org/ndto#HelixScrewPullOutTest
+<https://w3id.org/ndto#HelixScrewPullOutTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#HelixScrewPullOutTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#PullOutResistanceTest> .
+<https://w3id.org/ndto#HelixScrewPullOutTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Helix-Screw pull-out test"@en .
+<https://w3id.org/ndto#HelixScrewPullOutTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Extracción de Helicoidal"@es .
+<https://w3id.org/ndto#HelixScrewPullOutTest> <http://www.w3.org/2000/01/rdf-schema#label> "Helix-Screw Pull-Out Test"@en .
+# 
+# https://w3id.org/ndto#ImpactEchoTest
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ElasticWavePropagationTest> .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#FrequencyMeasurement> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PWaveVelocityMeasurement> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Impact-echo tests are used for estimating the thickness of elements and detecting the presence of cracks and voids through frequency analysis"@en .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Eco de Impacto"@es .
+<https://w3id.org/ndto#ImpactEchoTest> <http://www.w3.org/2000/01/rdf-schema#label> "Impact-Echo Test"@en .
+# 
+# https://w3id.org/ndto#InfraredThermography
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ThermalTest> .
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#TemperatureMeasurement> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/2000/01/rdf-schema#comment> "Uses infrared cameras to detect temperature variations indicating structural defects"@en .
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/2000/01/rdf-schema#label> "Infrared Thermography"@en .
+<https://w3id.org/ndto#InfraredThermography> <http://www.w3.org/2000/01/rdf-schema#label> "Termografía Infrarroja"@es .
+# 
+# https://w3id.org/ndto#Material
+<https://w3id.org/ndto#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/ndto#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalization of the Materials tested using NDT methods"@en .
+<https://w3id.org/ndto#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+<https://w3id.org/ndto#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@es .
+# 
+# https://w3id.org/ndto#MaterialProperty
+<https://w3id.org/ndto#MaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/ndto#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalization of the Materials tested using NDT methods"@en .
+<https://w3id.org/ndto#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+<https://w3id.org/ndto#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@es .
+# 
+# https://w3id.org/ndto#NDTMeasurement
+<https://w3id.org/ndto#NDTMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#NDTMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/ndto#NDTMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurements realized in NDT procedures"@en .
+<https://w3id.org/ndto#NDTMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Medición de Ensayo No Destructivo"@es .
+<https://w3id.org/ndto#NDTMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "NDT Measurement"@en .
+# 
+# https://w3id.org/ndto#NonDestructiveTest
+<https://w3id.org/ndto#NonDestructiveTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#NonDestructiveTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/ndto#NonDestructiveTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Non-destructive testing methods allow for the investigation of material structural properties which can be applied without any interventions in the object to be examined"@en .
+<https://w3id.org/ndto#NonDestructiveTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo No Destructivo"@es .
+<https://w3id.org/ndto#NonDestructiveTest> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Destructive Test"@en .
+# 
+# https://w3id.org/ndto#PWaveVelocityMeasurement
+<https://w3id.org/ndto#PWaveVelocityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#WaveVelocityMeasurement> .
+<https://w3id.org/ndto#PWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Primary wave velocity (compression wave) measurement"@en .
+<https://w3id.org/ndto#PWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "P-Wave Velocity"@en .
+<https://w3id.org/ndto#PWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Velocidad de Onda P"@es .
+# 
+# https://w3id.org/ndto#PendulumHammerTest
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#SurfaceHardnessTest> .
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#ReboundNumberMeasurement> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Uses a pendulum hammer to measure surface hardness through impact energy"@en .
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Martillo Pendular"@es .
+<https://w3id.org/ndto#PendulumHammerTest> <http://www.w3.org/2000/01/rdf-schema#label> "Pendulum Hammer Test"@en .
+# 
+# https://w3id.org/ndto#PenetrationDepth
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#PenetrationDepth> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Length> .
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/2000/01/rdf-schema#comment> "Penetration depth"@en .
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/2000/01/rdf-schema#comment> "Profundidad de penetración"@es .
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/2000/01/rdf-schema#label> "Penetration Depth"@en .
+<https://w3id.org/ndto#PenetrationDepth> <http://www.w3.org/2000/01/rdf-schema#label> "Profundidad de Penetración"@es .
+# 
+# https://w3id.org/ndto#PenetrationDepthMeasurement
+<https://w3id.org/ndto#PenetrationDepthMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PenetrationDepthMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#PenetrationDepthMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Penetration depth measurement"@en .
+<https://w3id.org/ndto#PenetrationDepthMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Penetration Depth Measurement"@en .
+<https://w3id.org/ndto#PenetrationDepthMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Profundidad de Penetración"@es .
+# 
+# https://w3id.org/ndto#PinPenetrationTest
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PenetrationDepthMeasurement> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Pin Penetration Test (Windsor Probe) uses a metal pin driven into the material to correlate penetration depth with compressive strength"@en .
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Penetración de Perno"@es .
+<https://w3id.org/ndto#PinPenetrationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Pin Penetration Test"@en .
+# 
+# https://w3id.org/ndto#Pressure
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Pressure> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Pressure> .
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "Presión"@es .
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "Pressure"@en .
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Presión"@es .
+<https://w3id.org/ndto#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
+# 
+# https://w3id.org/ndto#PressureMeasurement
+<https://w3id.org/ndto#PressureMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PressureMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#PressureMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Pressure measurement"@en .
+<https://w3id.org/ndto#PressureMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Presión"@es .
+<https://w3id.org/ndto#PressureMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure Measurement"@en .
+# 
+# https://w3id.org/ndto#PullOffResistanceTest
+<https://w3id.org/ndto#PullOffResistanceTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PullOffResistanceTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#PullOffResistanceTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Pull-out Test"@en .
+<https://w3id.org/ndto#PullOffResistanceTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Resistencia a la Extracción"@es .
+<https://w3id.org/ndto#PullOffResistanceTest> <http://www.w3.org/2000/01/rdf-schema#label> "Pull-Off Resistance Test"@en .
+# 
+# https://w3id.org/ndto#PullOutForceMeasurement
+<https://w3id.org/ndto#PullOutForceMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PullOutForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ForceMeasurement> .
+<https://w3id.org/ndto#PullOutForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Pull-out force measurement"@en .
+<https://w3id.org/ndto#PullOutForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Fuerza de Extracción"@es .
+<https://w3id.org/ndto#PullOutForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Pull-Out Force Measurement"@en .
+# 
+# https://w3id.org/ndto#PullOutResistanceTest
+<https://w3id.org/ndto#PullOutResistanceTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#PullOutResistanceTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#PullOutResistanceTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Pull-out Test"@en .
+<https://w3id.org/ndto#PullOutResistanceTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Resistencia a la Extracción"@es .
+<https://w3id.org/ndto#PullOutResistanceTest> <http://www.w3.org/2000/01/rdf-schema#label> "Pull-Out Resistance Test"@en .
+# 
+# https://w3id.org/ndto#RWaveVelocityMeasurement
+<https://w3id.org/ndto#RWaveVelocityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#RWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#WaveVelocityMeasurement> .
+<https://w3id.org/ndto#RWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Rayleigh wave velocity (surface wave) measurement"@en .
+<https://w3id.org/ndto#RWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "R-Wave Velocity"@en .
+<https://w3id.org/ndto#RWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Velocidad de Onda R"@es .
+# 
+# https://w3id.org/ndto#RadiationTest
+<https://w3id.org/ndto#RadiationTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#RadiationTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#RadiationTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Radiation-based methods use electromagnetic waves (X-rays, gamma rays) to penetrate materials and reveal internal structure and defects"@en .
+<https://w3id.org/ndto#RadiationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Basado en Radiación"@es .
+<https://w3id.org/ndto#RadiationTest> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation-Based Test"@en .
+# 
+# https://w3id.org/ndto#ReboundNumber
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#ReboundNumber> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Unitless> .
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de rebote"@es .
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Rebound number"@en .
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Número de Rebote"@es .
+<https://w3id.org/ndto#ReboundNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Rebound Number"@en .
+# 
+# https://w3id.org/ndto#ReboundNumberMeasurement
+<https://w3id.org/ndto#ReboundNumberMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ReboundNumberMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#ReboundNumberMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Rebound number measurement"@en .
+<https://w3id.org/ndto#ReboundNumberMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Número de Rebote"@es .
+<https://w3id.org/ndto#ReboundNumberMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Rebound Number Measurement"@en .
+# 
+# https://w3id.org/ndto#Result
+<https://w3id.org/ndto#Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/ndto#Result> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalization of the results of an NDT."@en .
+<https://w3id.org/ndto#Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result"@en .
+<https://w3id.org/ndto#Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result"@es .
+# 
+# https://w3id.org/ndto#SWaveVelocityMeasurement
+<https://w3id.org/ndto#SWaveVelocityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#SWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#WaveVelocityMeasurement> .
+<https://w3id.org/ndto#SWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Secondary wave velocity (shear wave) measurement"@en .
+<https://w3id.org/ndto#SWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "S-Wave Velocity"@en .
+<https://w3id.org/ndto#SWaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Velocidad de Onda S"@es .
+# 
+# https://w3id.org/ndto#SchmidtHammerTest
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#SurfaceHardnessTest> .
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#ReboundNumberMeasurement> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures surface hardness through rebound of a spring-loaded hammer"@en .
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Esclerómetro Schmidt"@es .
+<https://w3id.org/ndto#SchmidtHammerTest> <http://www.w3.org/2000/01/rdf-schema#label> "Schmidt Hammer Test"@en .
+# 
+# https://w3id.org/ndto#SingleFlatJackTest
+<https://w3id.org/ndto#SingleFlatJackTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#SingleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#FlatJackTest> .
+<https://w3id.org/ndto#SingleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Single flat-jack tests measure in-situ stress through stress release and compensation, based on elastic deformation assumptions"@en .
+<https://w3id.org/ndto#SingleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Gato Plano Simple"@es .
+<https://w3id.org/ndto#SingleFlatJackTest> <http://www.w3.org/2000/01/rdf-schema#label> "Single Flat-Jack Test"@en .
+# 
+# https://w3id.org/ndto#SonicTest
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ElasticWavePropagationTest> .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PWaveVelocityMeasurement> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#SWaveVelocityMeasurement> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Sonic tests use wave frequencies between 20Hz and 20kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"@en .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Sonico"@es .
+<https://w3id.org/ndto#SonicTest> <http://www.w3.org/2000/01/rdf-schema#label> "Sonic Test"@en .
+# 
+# https://w3id.org/ndto#SurfaceHardnessTest
+<https://w3id.org/ndto#SurfaceHardnessTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#SurfaceHardnessTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#SurfaceHardnessTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Surface hardness methods measure the resistance of material surface to indentation or impact, providing correlation with compressive strength"@en .
+<https://w3id.org/ndto#SurfaceHardnessTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Dureza Superficial"@es .
+<https://w3id.org/ndto#SurfaceHardnessTest> <http://www.w3.org/2000/01/rdf-schema#label> "Surface Hardness Test"@en .
+# 
+# https://w3id.org/ndto#Temperature
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Temperature> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Temperature> .
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperatura"@es .
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature"@en .
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatura"@es .
+<https://w3id.org/ndto#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+# 
+# https://w3id.org/ndto#TemperatureMeasurement
+<https://w3id.org/ndto#TemperatureMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#TemperatureMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#TemperatureMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature measurement"@en .
+<https://w3id.org/ndto#TemperatureMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatura"@es .
+<https://w3id.org/ndto#TemperatureMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Measurement"@en .
+# 
+# https://w3id.org/ndto#ThermalTest
+<https://w3id.org/ndto#ThermalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ThermalTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#ThermalTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal methods use infrared thermography to detect temperature variations that indicate structural defects, moisture, or delamination"@en .
+<https://w3id.org/ndto#ThermalTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Térmico"@es .
+<https://w3id.org/ndto#ThermalTest> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal Test"@en .
+# 
+# https://w3id.org/ndto#Thrust
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#Thrust> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Thrust> .
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/2000/01/rdf-schema#comment> "Empuje"@es .
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/2000/01/rdf-schema#comment> "Thrust"@en .
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/2000/01/rdf-schema#label> "Empuje"@es .
+<https://w3id.org/ndto#Thrust> <http://www.w3.org/2000/01/rdf-schema#label> "Thrust"@en .
+# 
+# https://w3id.org/ndto#ThrustForceMeasurement
+<https://w3id.org/ndto#ThrustForceMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#ThrustForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ForceMeasurement> .
+<https://w3id.org/ndto#ThrustForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Thrust force measurement"@en .
+<https://w3id.org/ndto#ThrustForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Fuerza de Empuje"@es .
+<https://w3id.org/ndto#ThrustForceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Thrust Force Measurement"@en .
+# 
+# https://w3id.org/ndto#TorquePenetrometricTest
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NonDestructiveTest> .
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#TorquePerUnitLengthMeasurement> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Torque Penetrometric Tests evaluate compressive strength by measuring the maximum torque resisted by the material when applied with a specialized nail"@en .
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Penetrométrico de Torque"@es .
+<https://w3id.org/ndto#TorquePenetrometricTest> <http://www.w3.org/2000/01/rdf-schema#label> "Torque Penetrometric Test"@en .
+# 
+# https://w3id.org/ndto#TorquePerUnitLengthMeasurement
+<https://w3id.org/ndto#TorquePerUnitLengthMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#TorquePerUnitLengthMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#TorquePerUnitLengthMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Torque per unit length measurement"@en .
+<https://w3id.org/ndto#TorquePerUnitLengthMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Par por Unidad de Longitud"@es .
+<https://w3id.org/ndto#TorquePerUnitLengthMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Torque per Unit Length Measurement"@en .
+# 
+# https://w3id.org/ndto#UltrasonicPulseVelocityTest
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#ElasticWavePropagationTest> .
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ndto#PWaveVelocityMeasurement> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ndto#hasMeasurement> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Ultrasonic tests use wave frequencies between 20kHz and 150kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"@en .
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Ultrasónico"@es .
+<https://w3id.org/ndto#UltrasonicPulseVelocityTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ultrasonic Test"@en .
+# 
+# https://w3id.org/ndto#WavePropagationVelocity
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Velocity> .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "Velocidad de propagación de onda"@es .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "Wave propagation velocity"@en .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/2000/01/rdf-schema#label> "Velocidad de Propagación de Onda"@es .
+<https://w3id.org/ndto#WavePropagationVelocity> <http://www.w3.org/2000/01/rdf-schema#label> "Wave Propagation Velocity"@en .
+# 
+# https://w3id.org/ndto#WaveVelocityMeasurement
+<https://w3id.org/ndto#WaveVelocityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#WaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#NDTMeasurement> .
+<https://w3id.org/ndto#WaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurements realized in wave velocity tests"@en .
+<https://w3id.org/ndto#WaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Velocidad de Onda"@es .
+<https://w3id.org/ndto#WaveVelocityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Wave Velocity"@en .
+# 
+# https://w3id.org/ndto#XRayTest
+<https://w3id.org/ndto#XRayTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ndto#XRayTest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ndto#RadiationTest> .
+<https://w3id.org/ndto#XRayTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Uses X-ray radiation to reveal internal structure and detect defects"@en .
+<https://w3id.org/ndto#XRayTest> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo de Rayos X"@es .
+<https://w3id.org/ndto#XRayTest> <http://www.w3.org/2000/01/rdf-schema#label> "X-Ray Test"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,594 @@
+@prefix : <https://w3id.org/ndto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ndto#> .
+
+<https://w3id.org/ndto#> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/ndto#> ;
+                          <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
+                          <http://purl.org/dc/elements/1.1/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ;
+                          <http://purl.org/dc/elements/1.1/date> "2025-07-14" ;
+                          <http://purl.org/dc/elements/1.1/description> "Ontology that describes different non-destructive testing techniques and their applications for structural assessment"@en ,
+                                                                        "Ontología que describe diferentes técnicas de ensayo no destructivas y sus aplicaciones para la evaluación estructural"@es ;
+                          <http://purl.org/dc/elements/1.1/language> "en" ,
+                                                                     "es" ;
+                          <http://purl.org/dc/elements/1.1/title> "Non-Destructive Testing Ontology"@en ,
+                                                                  "Ontología de Técnicas de Ensayo No Destructivas"@es ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndt" ;
+                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ndto#" ;
+                          owl:versionInfo "1.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/versionIRI
+<http://purl.org/dc/elements/1.1/versionIRI> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/versionInfo
+<http://purl.org/dc/elements/1.1/versionInfo> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/quantityKind
+<http://qudt.org/schema/qudt/quantityKind> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ndto#hasMaterialProperty
+:hasMaterialProperty rdf:type owl:ObjectProperty ;
+                     rdfs:range :MaterialProperty ;
+                     rdfs:comment "relates a Material with its mechanical properties, normally those evaluated in the context of an NDT"@en ;
+                     rdfs:label "is made of"@en ,
+                                "is made of"@es .
+
+
+###  https://w3id.org/ndto#hasMeasurement
+:hasMeasurement rdf:type owl:ObjectProperty ;
+                rdfs:domain :Material ,
+                            :NonDestructiveTest ;
+                rdfs:range :NDTMeasurement ;
+                rdfs:comment "relates a test with the measurements realized"@en ;
+                rdfs:label "has measurement"@en ,
+                           "tiene medición"@es .
+
+
+###  https://w3id.org/ndto#isMadeOf
+:isMadeOf rdf:type owl:ObjectProperty ;
+          rdfs:range :Material ;
+          rdfs:comment "relates anything with the material it is  made of in the context of an NDT"@en ;
+          rdfs:label "is made of"@en ,
+                     "is made of"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> rdf:type owl:Class .
+
+
+###  https://w3id.org/ndto#CompressiveStrength
+:CompressiveStrength rdf:type owl:Class ;
+                     rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+                     <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/CompressiveStress> ;
+                     rdfs:comment "Compressive strength"@en ,
+                                  "Resistencia a la compresión"@es ;
+                     rdfs:label "Compressive Strength"@en ,
+                                "Resistencia a la Compresión"@es .
+
+
+###  https://w3id.org/ndto#DRMSTest
+:DRMSTest rdf:type owl:Class ;
+          rdfs:subClassOf :NonDestructiveTest ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeasurement ;
+                            owl:someValuesFrom :ForceMeasurement
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeasurement ;
+                            owl:someValuesFrom :PenetrationDepthMeasurement
+                          ] ;
+          rdfs:comment "Drilling Resistance Measurement System (DRMS) investigates material strength by measuring the energy required to penetrate compact materials"@en ;
+          rdfs:label "DRMS Test"@en ,
+                     "Ensayo DRMS"@es .
+
+
+###  https://w3id.org/ndto#Displacement
+:Displacement rdf:type owl:Class ;
+              rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+              <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Displacement> ;
+              rdfs:comment "Desplazamiento"@es ,
+                           "Displacement"@en ;
+              rdfs:label "Desplazamiento"@es ,
+                         "Displacement"@en .
+
+
+###  https://w3id.org/ndto#DisplacementMeasurement
+:DisplacementMeasurement rdf:type owl:Class ;
+                         rdfs:subClassOf :NDTMeasurement ;
+                         rdfs:comment "Displacement measurement"@en ;
+                         rdfs:label "Desplazamiento"@es ,
+                                    "Displacement Measurement"@en .
+
+
+###  https://w3id.org/ndto#DoubleFlatJackTest
+:DoubleFlatJackTest rdf:type owl:Class ;
+                    rdfs:subClassOf :FlatJackTest ;
+                    rdfs:comment "Double flat-jack tests isolate a masonry specimen between two flat-jacks to perform in-situ compression testing"@en ;
+                    rdfs:label "Double Flat-Jack Test"@en ,
+                               "Ensayo de Gato Plano Doble"@es .
+
+
+###  https://w3id.org/ndto#ElasticWavePropagationTest
+:ElasticWavePropagationTest rdf:type owl:Class ;
+                            rdfs:subClassOf :NonDestructiveTest ;
+                            rdfs:comment "Elastic wave methods are based on the propagation of mechanical waves through materials to assess their internal structure and properties"@en ;
+                            rdfs:label "Elastic Wave Test"@en ,
+                                       "Ensayo de Ondas Elásticas"@es .
+
+
+###  https://w3id.org/ndto#FlatJackTest
+:FlatJackTest rdf:type owl:Class ;
+              rdfs:subClassOf :NonDestructiveTest ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMeasurement ;
+                                owl:someValuesFrom :DisplacementMeasurement
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMeasurement ;
+                                owl:someValuesFrom :PressureMeasurement
+                              ] ;
+              rdfs:comment "Flat-jack tests determine compressive stress levels (single flat-jack) and mechanical properties (double flat-jack) of masonry walls"@en ;
+              rdfs:label "Ensayo de Gato Plano"@es ,
+                         "Flat-Jack Test"@en .
+
+
+###  https://w3id.org/ndto#Force
+:Force rdf:type owl:Class ;
+       rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+       <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Force> ;
+       rdfs:comment "Force"@en ,
+                    "Fuerza"@es ;
+       rdfs:label "Force"@en ,
+                  "Fuerza"@es .
+
+
+###  https://w3id.org/ndto#ForceMeasurement
+:ForceMeasurement rdf:type owl:Class ;
+                  rdfs:subClassOf :NDTMeasurement ;
+                  rdfs:comment "Force measurement"@en ;
+                  rdfs:label "Force"@en ,
+                             "Fuerza"@es .
+
+
+###  https://w3id.org/ndto#Frequency
+:Frequency rdf:type owl:Class ;
+           rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+           <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Frequency> ;
+           rdfs:comment "Frecuencia"@es ,
+                        "Frequency"@en ;
+           rdfs:label "Frecuencia"@es ,
+                      "Frequency"@en .
+
+
+###  https://w3id.org/ndto#FrequencyMeasurement
+:FrequencyMeasurement rdf:type owl:Class ;
+                      rdfs:subClassOf :NDTMeasurement ;
+                      rdfs:comment "Frequency measurement"@en ;
+                      rdfs:label "Frecuencia"@es ,
+                                 "Frequency Measurement"@en .
+
+
+###  https://w3id.org/ndto#HelixScrewPullOutTest
+:HelixScrewPullOutTest rdf:type owl:Class ;
+                       rdfs:subClassOf :PullOutResistanceTest ;
+                       rdfs:comment "Helix-Screw pull-out test"@en ;
+                       rdfs:label "Ensayo de Extracción de Helicoidal"@es ,
+                                  "Helix-Screw Pull-Out Test"@en .
+
+
+###  https://w3id.org/ndto#ImpactEchoTest
+:ImpactEchoTest rdf:type owl:Class ;
+                rdfs:subClassOf :ElasticWavePropagationTest ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasMeasurement ;
+                                  owl:someValuesFrom :FrequencyMeasurement
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasMeasurement ;
+                                  owl:someValuesFrom :PWaveVelocityMeasurement
+                                ] ;
+                rdfs:comment "Impact-echo tests are used for estimating the thickness of elements and detecting the presence of cracks and voids through frequency analysis"@en ;
+                rdfs:label "Ensayo de Eco de Impacto"@es ,
+                           "Impact-Echo Test"@en .
+
+
+###  https://w3id.org/ndto#InfraredThermography
+:InfraredThermography rdf:type owl:Class ;
+                      rdfs:subClassOf :ThermalTest ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasMeasurement ;
+                                        owl:someValuesFrom :TemperatureMeasurement
+                                      ] ;
+                      rdfs:comment "Uses infrared cameras to detect temperature variations indicating structural defects"@en ;
+                      rdfs:label "Infrared Thermography"@en ,
+                                 "Termografía Infrarroja"@es .
+
+
+###  https://w3id.org/ndto#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+          rdfs:comment "Generalization of the Materials tested using NDT methods"@en ;
+          rdfs:label "Material"@en ,
+                     "Material"@es .
+
+
+###  https://w3id.org/ndto#MaterialProperty
+:MaterialProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                  rdfs:comment "Generalization of the Materials tested using NDT methods"@en ;
+                  rdfs:label "Material"@en ,
+                             "Material"@es .
+
+
+###  https://w3id.org/ndto#NDTMeasurement
+:NDTMeasurement rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                rdfs:comment "Measurements realized in NDT procedures"@en ;
+                rdfs:label "Medición de Ensayo No Destructivo"@es ,
+                           "NDT Measurement"@en .
+
+
+###  https://w3id.org/ndto#NonDestructiveTest
+:NonDestructiveTest rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                    rdfs:comment "Non-destructive testing methods allow for the investigation of material structural properties which can be applied without any interventions in the object to be examined"@en ;
+                    rdfs:label "Ensayo No Destructivo"@es ,
+                               "Non-Destructive Test"@en .
+
+
+###  https://w3id.org/ndto#PWaveVelocityMeasurement
+:PWaveVelocityMeasurement rdf:type owl:Class ;
+                          rdfs:subClassOf :WaveVelocityMeasurement ;
+                          rdfs:comment "Primary wave velocity (compression wave) measurement"@en ;
+                          rdfs:label "P-Wave Velocity"@en ,
+                                     "Velocidad de Onda P"@es .
+
+
+###  https://w3id.org/ndto#PendulumHammerTest
+:PendulumHammerTest rdf:type owl:Class ;
+                    rdfs:subClassOf :SurfaceHardnessTest ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasMeasurement ;
+                                      owl:someValuesFrom :ReboundNumberMeasurement
+                                    ] ;
+                    rdfs:comment "Uses a pendulum hammer to measure surface hardness through impact energy"@en ;
+                    rdfs:label "Ensayo de Martillo Pendular"@es ,
+                               "Pendulum Hammer Test"@en .
+
+
+###  https://w3id.org/ndto#PenetrationDepth
+:PenetrationDepth rdf:type owl:Class ;
+                  rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+                  <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Length> ;
+                  rdfs:comment "Penetration depth"@en ,
+                               "Profundidad de penetración"@es ;
+                  rdfs:label "Penetration Depth"@en ,
+                             "Profundidad de Penetración"@es .
+
+
+###  https://w3id.org/ndto#PenetrationDepthMeasurement
+:PenetrationDepthMeasurement rdf:type owl:Class ;
+                             rdfs:subClassOf :NDTMeasurement ;
+                             rdfs:comment "Penetration depth measurement"@en ;
+                             rdfs:label "Penetration Depth Measurement"@en ,
+                                        "Profundidad de Penetración"@es .
+
+
+###  https://w3id.org/ndto#PinPenetrationTest
+:PinPenetrationTest rdf:type owl:Class ;
+                    rdfs:subClassOf :NonDestructiveTest ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasMeasurement ;
+                                      owl:someValuesFrom :PenetrationDepthMeasurement
+                                    ] ;
+                    rdfs:comment "Pin Penetration Test (Windsor Probe) uses a metal pin driven into the material to correlate penetration depth with compressive strength"@en ;
+                    rdfs:label "Ensayo de Penetración de Perno"@es ,
+                               "Pin Penetration Test"@en .
+
+
+###  https://w3id.org/ndto#Pressure
+:Pressure rdf:type owl:Class ;
+          rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+          <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Pressure> ;
+          rdfs:comment "Presión"@es ,
+                       "Pressure"@en ;
+          rdfs:label "Presión"@es ,
+                     "Pressure"@en .
+
+
+###  https://w3id.org/ndto#PressureMeasurement
+:PressureMeasurement rdf:type owl:Class ;
+                     rdfs:subClassOf :NDTMeasurement ;
+                     rdfs:comment "Pressure measurement"@en ;
+                     rdfs:label "Presión"@es ,
+                                "Pressure Measurement"@en .
+
+
+###  https://w3id.org/ndto#PullOffResistanceTest
+:PullOffResistanceTest rdf:type owl:Class ;
+                       rdfs:subClassOf :NonDestructiveTest ;
+                       rdfs:comment "Pull-out Test"@en ;
+                       rdfs:label "Ensayo de Resistencia a la Extracción"@es ,
+                                  "Pull-Off Resistance Test"@en .
+
+
+###  https://w3id.org/ndto#PullOutForceMeasurement
+:PullOutForceMeasurement rdf:type owl:Class ;
+                         rdfs:subClassOf :ForceMeasurement ;
+                         rdfs:comment "Pull-out force measurement"@en ;
+                         rdfs:label "Fuerza de Extracción"@es ,
+                                    "Pull-Out Force Measurement"@en .
+
+
+###  https://w3id.org/ndto#PullOutResistanceTest
+:PullOutResistanceTest rdf:type owl:Class ;
+                       rdfs:subClassOf :NonDestructiveTest ;
+                       rdfs:comment "Pull-out Test"@en ;
+                       rdfs:label "Ensayo de Resistencia a la Extracción"@es ,
+                                  "Pull-Out Resistance Test"@en .
+
+
+###  https://w3id.org/ndto#RWaveVelocityMeasurement
+:RWaveVelocityMeasurement rdf:type owl:Class ;
+                          rdfs:subClassOf :WaveVelocityMeasurement ;
+                          rdfs:comment "Rayleigh wave velocity (surface wave) measurement"@en ;
+                          rdfs:label "R-Wave Velocity"@en ,
+                                     "Velocidad de Onda R"@es .
+
+
+###  https://w3id.org/ndto#RadiationTest
+:RadiationTest rdf:type owl:Class ;
+               rdfs:subClassOf :NonDestructiveTest ;
+               rdfs:comment "Radiation-based methods use electromagnetic waves (X-rays, gamma rays) to penetrate materials and reveal internal structure and defects"@en ;
+               rdfs:label "Ensayo Basado en Radiación"@es ,
+                          "Radiation-Based Test"@en .
+
+
+###  https://w3id.org/ndto#ReboundNumber
+:ReboundNumber rdf:type owl:Class ;
+               rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+               <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Unitless> ;
+               rdfs:comment "Número de rebote"@es ,
+                            "Rebound number"@en ;
+               rdfs:label "Número de Rebote"@es ,
+                          "Rebound Number"@en .
+
+
+###  https://w3id.org/ndto#ReboundNumberMeasurement
+:ReboundNumberMeasurement rdf:type owl:Class ;
+                          rdfs:subClassOf :NDTMeasurement ;
+                          rdfs:comment "Rebound number measurement"@en ;
+                          rdfs:label "Número de Rebote"@es ,
+                                     "Rebound Number Measurement"@en .
+
+
+###  https://w3id.org/ndto#Result
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+        rdfs:comment "Generalization of the results of an NDT."@en ;
+        rdfs:label "Result"@en ,
+                   "Result"@es .
+
+
+###  https://w3id.org/ndto#SWaveVelocityMeasurement
+:SWaveVelocityMeasurement rdf:type owl:Class ;
+                          rdfs:subClassOf :WaveVelocityMeasurement ;
+                          rdfs:comment "Secondary wave velocity (shear wave) measurement"@en ;
+                          rdfs:label "S-Wave Velocity"@en ,
+                                     "Velocidad de Onda S"@es .
+
+
+###  https://w3id.org/ndto#SchmidtHammerTest
+:SchmidtHammerTest rdf:type owl:Class ;
+                   rdfs:subClassOf :SurfaceHardnessTest ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasMeasurement ;
+                                     owl:someValuesFrom :ReboundNumberMeasurement
+                                   ] ;
+                   rdfs:comment "Measures surface hardness through rebound of a spring-loaded hammer"@en ;
+                   rdfs:label "Ensayo de Esclerómetro Schmidt"@es ,
+                              "Schmidt Hammer Test"@en .
+
+
+###  https://w3id.org/ndto#SingleFlatJackTest
+:SingleFlatJackTest rdf:type owl:Class ;
+                    rdfs:subClassOf :FlatJackTest ;
+                    rdfs:comment "Single flat-jack tests measure in-situ stress through stress release and compensation, based on elastic deformation assumptions"@en ;
+                    rdfs:label "Ensayo de Gato Plano Simple"@es ,
+                               "Single Flat-Jack Test"@en .
+
+
+###  https://w3id.org/ndto#SonicTest
+:SonicTest rdf:type owl:Class ;
+           rdfs:subClassOf :ElasticWavePropagationTest ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMeasurement ;
+                             owl:someValuesFrom :PWaveVelocityMeasurement
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMeasurement ;
+                             owl:someValuesFrom :SWaveVelocityMeasurement
+                           ] ;
+           rdfs:comment "Sonic tests use wave frequencies between 20Hz and 20kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"@en ;
+           rdfs:label "Ensayo Sonico"@es ,
+                      "Sonic Test"@en .
+
+
+###  https://w3id.org/ndto#SurfaceHardnessTest
+:SurfaceHardnessTest rdf:type owl:Class ;
+                     rdfs:subClassOf :NonDestructiveTest ;
+                     rdfs:comment "Surface hardness methods measure the resistance of material surface to indentation or impact, providing correlation with compressive strength"@en ;
+                     rdfs:label "Ensayo de Dureza Superficial"@es ,
+                                "Surface Hardness Test"@en .
+
+
+###  https://w3id.org/ndto#Temperature
+:Temperature rdf:type owl:Class ;
+             rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+             <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Temperature> ;
+             rdfs:comment "Temperatura"@es ,
+                          "Temperature"@en ;
+             rdfs:label "Temperatura"@es ,
+                        "Temperature"@en .
+
+
+###  https://w3id.org/ndto#TemperatureMeasurement
+:TemperatureMeasurement rdf:type owl:Class ;
+                        rdfs:subClassOf :NDTMeasurement ;
+                        rdfs:comment "Temperature measurement"@en ;
+                        rdfs:label "Temperatura"@es ,
+                                   "Temperature Measurement"@en .
+
+
+###  https://w3id.org/ndto#ThermalTest
+:ThermalTest rdf:type owl:Class ;
+             rdfs:subClassOf :NonDestructiveTest ;
+             rdfs:comment "Thermal methods use infrared thermography to detect temperature variations that indicate structural defects, moisture, or delamination"@en ;
+             rdfs:label "Ensayo Térmico"@es ,
+                        "Thermal Test"@en .
+
+
+###  https://w3id.org/ndto#Thrust
+:Thrust rdf:type owl:Class ;
+        rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+        <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Thrust> ;
+        rdfs:comment "Empuje"@es ,
+                     "Thrust"@en ;
+        rdfs:label "Empuje"@es ,
+                   "Thrust"@en .
+
+
+###  https://w3id.org/ndto#ThrustForceMeasurement
+:ThrustForceMeasurement rdf:type owl:Class ;
+                        rdfs:subClassOf :ForceMeasurement ;
+                        rdfs:comment "Thrust force measurement"@en ;
+                        rdfs:label "Fuerza de Empuje"@es ,
+                                   "Thrust Force Measurement"@en .
+
+
+###  https://w3id.org/ndto#TorquePenetrometricTest
+:TorquePenetrometricTest rdf:type owl:Class ;
+                         rdfs:subClassOf :NonDestructiveTest ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasMeasurement ;
+                                           owl:someValuesFrom :TorquePerUnitLengthMeasurement
+                                         ] ;
+                         rdfs:comment "Torque Penetrometric Tests evaluate compressive strength by measuring the maximum torque resisted by the material when applied with a specialized nail"@en ;
+                         rdfs:label "Ensayo Penetrométrico de Torque"@es ,
+                                    "Torque Penetrometric Test"@en .
+
+
+###  https://w3id.org/ndto#TorquePerUnitLengthMeasurement
+:TorquePerUnitLengthMeasurement rdf:type owl:Class ;
+                                rdfs:subClassOf :NDTMeasurement ;
+                                rdfs:comment "Torque per unit length measurement"@en ;
+                                rdfs:label "Par por Unidad de Longitud"@es ,
+                                           "Torque per Unit Length Measurement"@en .
+
+
+###  https://w3id.org/ndto#UltrasonicPulseVelocityTest
+:UltrasonicPulseVelocityTest rdf:type owl:Class ;
+                             rdfs:subClassOf :ElasticWavePropagationTest ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasMeasurement ;
+                                               owl:someValuesFrom :PWaveVelocityMeasurement
+                                             ] ;
+                             rdfs:comment "Ultrasonic tests use wave frequencies between 20kHz and 150kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"@en ;
+                             rdfs:label "Ensayo Ultrasónico"@es ,
+                                        "Ultrasonic Test"@en .
+
+
+###  https://w3id.org/ndto#WavePropagationVelocity
+:WavePropagationVelocity rdf:type owl:Class ;
+                         rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> ;
+                         <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Velocity> ;
+                         rdfs:comment "Velocidad de propagación de onda"@es ,
+                                      "Wave propagation velocity"@en ;
+                         rdfs:label "Velocidad de Propagación de Onda"@es ,
+                                    "Wave Propagation Velocity"@en .
+
+
+###  https://w3id.org/ndto#WaveVelocityMeasurement
+:WaveVelocityMeasurement rdf:type owl:Class ;
+                         rdfs:subClassOf :NDTMeasurement ;
+                         rdfs:comment "Measurements realized in wave velocity tests"@en ;
+                         rdfs:label "Velocidad de Onda"@es ,
+                                    "Wave Velocity"@en .
+
+
+###  https://w3id.org/ndto#XRayTest
+:XRayTest rdf:type owl:Class ;
+          rdfs:subClassOf :RadiationTest ;
+          rdfs:comment "Uses X-ray radiation to reveal internal structure and detect defects"@en ;
+          rdfs:label "Ensayo de Rayos X"@es ,
+                     "X-Ray Test"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

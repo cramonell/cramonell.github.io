@@ -1,0 +1,1768 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://w3id.org/ndto", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa" ],
+    "title" : {
+      "en" : "Non-Destructive Testing Ontology",
+      "es" : "Ontología de Técnicas de Ensayo No Destructivas"
+    },
+    "iri" : "https://w3id.org/ndto#",
+    "version" : "1.1",
+    "author" : [ "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)" ],
+    "description" : {
+      "en" : "Ontology that describes different non-destructive testing techniques and their applications for structural assessment",
+      "es" : "Ontología que describe diferentes técnicas de ensayo no destructivas y sus aplicaciones para la evaluación estructural"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-07-14",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/3.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ndt",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      }, {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "es",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ndto#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Non-Destructive Testing Ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontología de Técnicas de Ensayo No Destructivas",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ndto#NDTMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NDTMeasurement",
+      "en" : "NDT Measurement",
+      "es" : "Medición de Ensayo No Destructivo"
+    },
+    "subClasses" : [ "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+    "comment" : {
+      "en" : "Measurements realized in NDT procedures"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ElasticWavePropagationTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElasticWavePropagationTest",
+      "en" : "Elastic Wave Test",
+      "es" : "Ensayo de Ondas Elásticas"
+    },
+    "subClasses" : [ "13", "14", "15" ],
+    "comment" : {
+      "en" : "Elastic wave methods are based on the propagation of mechanical waves through materials to assess their internal structure and properties"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#SWaveVelocityMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SWaveVelocityMeasurement",
+      "en" : "S-Wave Velocity",
+      "es" : "Velocidad de Onda S"
+    },
+    "comment" : {
+      "en" : "Secondary wave velocity (shear wave) measurement"
+    },
+    "id" : "16",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PullOffResistanceTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PullOffResistanceTest",
+      "en" : "Pull-Off Resistance Test",
+      "es" : "Ensayo de Resistencia a la Extracción"
+    },
+    "comment" : {
+      "en" : "Pull-out Test"
+    },
+    "id" : "19",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#NonDestructiveTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonDestructiveTest",
+      "en" : "Non-Destructive Test",
+      "es" : "Ensayo No Destructivo"
+    },
+    "subClasses" : [ "11", "18", "20", "21", "22", "23", "24", "25", "26", "19" ],
+    "comment" : {
+      "en" : "Non-destructive testing methods allow for the investigation of material structural properties which can be applied without any interventions in the object to be examined"
+    },
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Observation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Observation"
+    },
+    "subClasses" : [ "0", "28", "29", "30", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ndto#PullOutResistanceTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PullOutResistanceTest",
+      "en" : "Pull-Out Resistance Test",
+      "es" : "Ensayo de Resistencia a la Extracción"
+    },
+    "subClasses" : [ "32" ],
+    "comment" : {
+      "en" : "Pull-out Test"
+    },
+    "id" : "24",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Result",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Result",
+      "en" : "Result",
+      "es" : "Result"
+    },
+    "comment" : {
+      "en" : "Generalization of the results of an NDT."
+    },
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#UltrasonicPulseVelocityTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UltrasonicPulseVelocityTest",
+      "en" : "Ultrasonic Test",
+      "es" : "Ensayo Ultrasónico"
+    },
+    "comment" : {
+      "en" : "Ultrasonic tests use wave frequencies between 20kHz and 150kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"
+    },
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#SchmidtHammerTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SchmidtHammerTest",
+      "en" : "Schmidt Hammer Test",
+      "es" : "Ensayo de Esclerómetro Schmidt"
+    },
+    "comment" : {
+      "en" : "Measures surface hardness through rebound of a spring-loaded hammer"
+    },
+    "id" : "41",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "28", "12" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "49",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ndto#RWaveVelocityMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RWaveVelocityMeasurement",
+      "en" : "R-Wave Velocity",
+      "es" : "Velocidad de Onda R"
+    },
+    "comment" : {
+      "en" : "Rayleigh wave velocity (surface wave) measurement"
+    },
+    "id" : "51",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#DoubleFlatJackTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoubleFlatJackTest",
+      "en" : "Double Flat-Jack Test",
+      "es" : "Ensayo de Gato Plano Doble"
+    },
+    "comment" : {
+      "en" : "Double flat-jack tests isolate a masonry specimen between two flat-jacks to perform in-situ compression testing"
+    },
+    "id" : "55",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Thrust",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Thrust",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Thrust",
+      "en" : "Thrust",
+      "es" : "Empuje"
+    },
+    "comment" : {
+      "en" : "Thrust",
+      "es" : "Empuje"
+    },
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PenetrationDepth",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Length",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PenetrationDepth",
+      "en" : "Penetration Depth",
+      "es" : "Profundidad de Penetración"
+    },
+    "comment" : {
+      "en" : "Penetration depth",
+      "es" : "Profundidad de penetración"
+    },
+    "id" : "60",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PenetrationDepthMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PenetrationDepthMeasurement",
+      "en" : "Penetration Depth Measurement",
+      "es" : "Profundidad de Penetración"
+    },
+    "comment" : {
+      "en" : "Penetration depth measurement"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#MaterialProperty",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialProperty",
+      "en" : "Material",
+      "es" : "Material"
+    },
+    "comment" : {
+      "en" : "Generalization of the Materials tested using NDT methods"
+    },
+    "id" : "29",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#TemperatureMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemperatureMeasurement",
+      "en" : "Temperature Measurement",
+      "es" : "Temperatura"
+    },
+    "comment" : {
+      "en" : "Temperature measurement"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Quantity",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quantity"
+    },
+    "subClasses" : [ "75", "76", "77", "78", "79", "80", "58", "81", "60", "82" ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ndto#SingleFlatJackTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleFlatJackTest",
+      "en" : "Single Flat-Jack Test",
+      "es" : "Ensayo de Gato Plano Simple"
+    },
+    "comment" : {
+      "en" : "Single flat-jack tests measure in-situ stress through stress release and compensation, based on elastic deformation assumptions"
+    },
+    "id" : "83",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ThermalTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThermalTest",
+      "en" : "Thermal Test",
+      "es" : "Ensayo Térmico"
+    },
+    "subClasses" : [ "84" ],
+    "comment" : {
+      "en" : "Thermal methods use infrared thermography to detect temperature variations that indicate structural defects, moisture, or delamination"
+    },
+    "id" : "26",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#CompressiveStrength",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/CompressiveStress",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CompressiveStrength",
+      "en" : "Compressive Strength",
+      "es" : "Resistencia a la Compresión"
+    },
+    "comment" : {
+      "en" : "Compressive strength",
+      "es" : "Resistencia a la compresión"
+    },
+    "id" : "81",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PressureMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PressureMeasurement",
+      "en" : "Pressure Measurement",
+      "es" : "Presión"
+    },
+    "comment" : {
+      "en" : "Pressure measurement"
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ReboundNumberMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReboundNumberMeasurement",
+      "en" : "Rebound Number Measurement",
+      "es" : "Número de Rebote"
+    },
+    "comment" : {
+      "en" : "Rebound number measurement"
+    },
+    "id" : "6",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Frequency",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Frequency",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frequency",
+      "en" : "Frequency",
+      "es" : "Frecuencia"
+    },
+    "comment" : {
+      "en" : "Frequency",
+      "es" : "Frecuencia"
+    },
+    "id" : "75",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#TorquePenetrometricTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TorquePenetrometricTest",
+      "en" : "Torque Penetrometric Test",
+      "es" : "Ensayo Penetrométrico de Torque"
+    },
+    "comment" : {
+      "en" : "Torque Penetrometric Tests evaluate compressive strength by measuring the maximum torque resisted by the material when applied with a specialized nail"
+    },
+    "id" : "22",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#XRayTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "XRayTest",
+      "en" : "X-Ray Test",
+      "es" : "Ensayo de Rayos X"
+    },
+    "comment" : {
+      "en" : "Uses X-ray radiation to reveal internal structure and detect defects"
+    },
+    "id" : "71",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PullOutForceMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PullOutForceMeasurement",
+      "en" : "Pull-Out Force Measurement",
+      "es" : "Fuerza de Extracción"
+    },
+    "comment" : {
+      "en" : "Pull-out force measurement"
+    },
+    "id" : "64",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#RadiationTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationTest",
+      "en" : "Radiation-Based Test",
+      "es" : "Ensayo Basado en Radiación"
+    },
+    "subClasses" : [ "71" ],
+    "comment" : {
+      "en" : "Radiation-based methods use electromagnetic waves (X-rays, gamma rays) to penetrate materials and reveal internal structure and defects"
+    },
+    "id" : "21",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ForceMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForceMeasurement",
+      "en" : "Force",
+      "es" : "Fuerza"
+    },
+    "subClasses" : [ "64", "62" ],
+    "comment" : {
+      "en" : "Force measurement"
+    },
+    "id" : "8",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#TorquePerUnitLengthMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TorquePerUnitLengthMeasurement",
+      "en" : "Torque per Unit Length Measurement",
+      "es" : "Par por Unidad de Longitud"
+    },
+    "comment" : {
+      "en" : "Torque per unit length measurement"
+    },
+    "id" : "10",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ReboundNumber",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Unitless",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReboundNumber",
+      "en" : "Rebound Number",
+      "es" : "Número de Rebote"
+    },
+    "comment" : {
+      "en" : "Rebound number",
+      "es" : "Número de rebote"
+    },
+    "id" : "82",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#SurfaceHardnessTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SurfaceHardnessTest",
+      "en" : "Surface Hardness Test",
+      "es" : "Ensayo de Dureza Superficial"
+    },
+    "subClasses" : [ "41", "66" ],
+    "comment" : {
+      "en" : "Surface hardness methods measure the resistance of material surface to indentation or impact, providing correlation with compressive strength"
+    },
+    "id" : "25",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ThrustForceMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThrustForceMeasurement",
+      "en" : "Thrust Force Measurement",
+      "es" : "Fuerza de Empuje"
+    },
+    "comment" : {
+      "en" : "Thrust force measurement"
+    },
+    "id" : "62",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#SonicTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SonicTest",
+      "en" : "Sonic Test",
+      "es" : "Ensayo Sonico"
+    },
+    "comment" : {
+      "en" : "Sonic tests use wave frequencies between 20Hz and 20kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"
+    },
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#DRMSTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DRMSTest",
+      "en" : "DRMS Test",
+      "es" : "Ensayo DRMS"
+    },
+    "comment" : {
+      "en" : "Drilling Resistance Measurement System (DRMS) investigates material strength by measuring the energy required to penetrate compact materials"
+    },
+    "id" : "23",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Force",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Force",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Force",
+      "en" : "Force",
+      "es" : "Fuerza"
+    },
+    "comment" : {
+      "en" : "Force",
+      "es" : "Fuerza"
+    },
+    "id" : "78",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#WavePropagationVelocity",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Velocity",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WavePropagationVelocity",
+      "en" : "Wave Propagation Velocity",
+      "es" : "Velocidad de Propagación de Onda"
+    },
+    "comment" : {
+      "en" : "Wave propagation velocity",
+      "es" : "Velocidad de propagación de onda"
+    },
+    "id" : "80",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#WaveVelocityMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaveVelocityMeasurement",
+      "en" : "Wave Velocity",
+      "es" : "Velocidad de Onda"
+    },
+    "subClasses" : [ "16", "51", "47" ],
+    "comment" : {
+      "en" : "Measurements realized in wave velocity tests"
+    },
+    "id" : "7",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Temperature",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Temperature",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Temperature",
+      "en" : "Temperature",
+      "es" : "Temperatura"
+    },
+    "comment" : {
+      "en" : "Temperature",
+      "es" : "Temperatura"
+    },
+    "id" : "77",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Pressure",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Pressure",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Pressure",
+      "en" : "Pressure",
+      "es" : "Presión"
+    },
+    "comment" : {
+      "en" : "Pressure",
+      "es" : "Presión"
+    },
+    "id" : "79",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#ImpactEchoTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImpactEchoTest",
+      "en" : "Impact-Echo Test",
+      "es" : "Ensayo de Eco de Impacto"
+    },
+    "comment" : {
+      "en" : "Impact-echo tests are used for estimating the thickness of elements and detecting the presence of cracks and voids through frequency analysis"
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#FlatJackTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlatJackTest",
+      "en" : "Flat-Jack Test",
+      "es" : "Ensayo de Gato Plano"
+    },
+    "subClasses" : [ "55", "83" ],
+    "comment" : {
+      "en" : "Flat-jack tests determine compressive stress levels (single flat-jack) and mechanical properties (double flat-jack) of masonry walls"
+    },
+    "id" : "18",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Material",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material",
+      "es" : "Material"
+    },
+    "comment" : {
+      "en" : "Generalization of the Materials tested using NDT methods"
+    },
+    "id" : "28",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PinPenetrationTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PinPenetrationTest",
+      "en" : "Pin Penetration Test",
+      "es" : "Ensayo de Penetración de Perno"
+    },
+    "comment" : {
+      "en" : "Pin Penetration Test (Windsor Probe) uses a metal pin driven into the material to correlate penetration depth with compressive strength"
+    },
+    "id" : "20",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#Displacement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "annotations" : {
+      "quantityKind" : [ {
+        "identifier" : "quantityKind",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/quantitykind/Displacement",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Displacement",
+      "en" : "Displacement",
+      "es" : "Desplazamiento"
+    },
+    "comment" : {
+      "en" : "Displacement",
+      "es" : "Desplazamiento"
+    },
+    "id" : "76",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#HelixScrewPullOutTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HelixScrewPullOutTest",
+      "en" : "Helix-Screw Pull-Out Test",
+      "es" : "Ensayo de Extracción de Helicoidal"
+    },
+    "comment" : {
+      "en" : "Helix-Screw pull-out test"
+    },
+    "id" : "32",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#FrequencyMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrequencyMeasurement",
+      "en" : "Frequency Measurement",
+      "es" : "Frecuencia"
+    },
+    "comment" : {
+      "en" : "Frequency measurement"
+    },
+    "id" : "5",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#DisplacementMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DisplacementMeasurement",
+      "en" : "Displacement Measurement",
+      "es" : "Desplazamiento"
+    },
+    "comment" : {
+      "en" : "Displacement measurement"
+    },
+    "id" : "9",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PendulumHammerTest",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PendulumHammerTest",
+      "en" : "Pendulum Hammer Test",
+      "es" : "Ensayo de Martillo Pendular"
+    },
+    "comment" : {
+      "en" : "Uses a pendulum hammer to measure surface hardness through impact energy"
+    },
+    "id" : "66",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#PWaveVelocityMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PWaveVelocityMeasurement",
+      "en" : "P-Wave Velocity",
+      "es" : "Velocidad de Onda P"
+    },
+    "comment" : {
+      "en" : "Primary wave velocity (compression wave) measurement"
+    },
+    "id" : "47",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/ndto#InfraredThermography",
+    "baseIri" : "https://w3id.org/ndto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfraredThermography",
+      "en" : "Infrared Thermography",
+      "es" : "Termografía Infrarroja"
+    },
+    "comment" : {
+      "en" : "Uses infrared cameras to detect temperature variations indicating structural defects"
+    },
+    "id" : "84",
+    "superClasses" : [ "26" ]
+  } ],
+  "property" : [ {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "110",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "114",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "115",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "118",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "0",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "0",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "0",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "0",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "53"
+  }, {
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "7",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "7",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "8",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "8",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "25",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "25",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "21",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "24",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "1",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "1",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "12",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "12",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "12",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "12",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "12",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "12",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "26",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "59",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "59",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "59",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "59",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "59",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "59",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "59",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "18",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/ndto#isMadeOf",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isMadeOf",
+      "en" : "is made of",
+      "es" : "is made of"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "relates anything with the material it is  made of in the context of an NDT"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "range" : "18",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "59",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "59",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "84",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMeasurement",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasMeasurement",
+      "en" : "has measurement",
+      "es" : "tiene medición"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "relates a test with the measurements realized"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/ndto#hasMaterialProperty",
+    "baseIri" : "https://w3id.org/ndto",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasMaterialProperty",
+      "en" : "is made of",
+      "es" : "is made of"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "relates a Material with its mechanical properties, normally those evaluated in the context of an NDT"
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  } ]
+}

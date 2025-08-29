@@ -1,0 +1,1195 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#ForceMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#ReboundNumberMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PWaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#SWaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#TorquePerUnitLengthMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PWaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PenetrationDepthMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#DisplacementMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PressureMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#FrequencyMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PWaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#TemperatureMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#ReboundNumberMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ndto#hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ndto#PenetrationDepthMeasurement"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/Quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/quantityKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ndto#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2025-07-14"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology that describes different non-destructive testing techniques and their applications for structural assessment"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología que describe diferentes técnicas de ensayo no destructivas y sus aplicaciones para la evaluación estructural"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  }, {
+    "@value" : "es"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Non-Destructive Testing Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología de Técnicas de Ensayo No Destructivas"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ndt"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/ndto#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/ndto#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#CompressiveStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/CompressiveStress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Compressive strength"
+  }, {
+    "@language" : "es",
+    "@value" : "Resistencia a la compresión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Compressive Strength"
+  }, {
+    "@language" : "es",
+    "@value" : "Resistencia a la Compresión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#DRMSTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Drilling Resistance Measurement System (DRMS) investigates material strength by measuring the energy required to penetrate compact materials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DRMS Test"
+  }, {
+    "@language" : "es",
+    "@value" : "Ensayo DRMS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Displacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Displacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Desplazamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Displacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Desplazamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Displacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#DisplacementMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Displacement measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Desplazamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Displacement Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#DoubleFlatJackTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Double flat-jack tests isolate a masonry specimen between two flat-jacks to perform in-situ compression testing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Double Flat-Jack Test"
+  }, {
+    "@language" : "es",
+    "@value" : "Ensayo de Gato Plano Doble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#FlatJackTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ElasticWavePropagationTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Elastic wave methods are based on the propagation of mechanical waves through materials to assess their internal structure and properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Elastic Wave Test"
+  }, {
+    "@language" : "es",
+    "@value" : "Ensayo de Ondas Elásticas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#FlatJackTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Flat-jack tests determine compressive stress levels (single flat-jack) and mechanical properties (double flat-jack) of masonry walls"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Gato Plano"
+  }, {
+    "@language" : "en",
+    "@value" : "Flat-Jack Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Force",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Force"
+  }, {
+    "@language" : "es",
+    "@value" : "Fuerza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Force"
+  }, {
+    "@language" : "es",
+    "@value" : "Fuerza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ForceMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Force measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Force"
+  }, {
+    "@language" : "es",
+    "@value" : "Fuerza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Frequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Frequency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frecuencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Frequency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frecuencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Frequency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#FrequencyMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Frequency measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frecuencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Frequency Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#HelixScrewPullOutTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Helix-Screw pull-out test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Extracción de Helicoidal"
+  }, {
+    "@language" : "en",
+    "@value" : "Helix-Screw Pull-Out Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#PullOutResistanceTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ImpactEchoTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Impact-echo tests are used for estimating the thickness of elements and detecting the presence of cracks and voids through frequency analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Eco de Impacto"
+  }, {
+    "@language" : "en",
+    "@value" : "Impact-Echo Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ElasticWavePropagationTest"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#InfraredThermography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Uses infrared cameras to detect temperature variations indicating structural defects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infrared Thermography"
+  }, {
+    "@language" : "es",
+    "@value" : "Termografía Infrarroja"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ThermalTest"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Generalization of the Materials tested using NDT methods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  }, {
+    "@language" : "es",
+    "@value" : "Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#MaterialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Generalization of the Materials tested using NDT methods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  }, {
+    "@language" : "es",
+    "@value" : "Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#NDTMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measurements realized in NDT procedures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medición de Ensayo No Destructivo"
+  }, {
+    "@language" : "en",
+    "@value" : "NDT Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#NonDestructiveTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Non-destructive testing methods allow for the investigation of material structural properties which can be applied without any interventions in the object to be examined"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo No Destructivo"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-Destructive Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PWaveVelocityMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Primary wave velocity (compression wave) measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "P-Wave Velocity"
+  }, {
+    "@language" : "es",
+    "@value" : "Velocidad de Onda P"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#WaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PendulumHammerTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Uses a pendulum hammer to measure surface hardness through impact energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Martillo Pendular"
+  }, {
+    "@language" : "en",
+    "@value" : "Pendulum Hammer Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#SurfaceHardnessTest"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PenetrationDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Penetration depth"
+  }, {
+    "@language" : "es",
+    "@value" : "Profundidad de penetración"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Penetration Depth"
+  }, {
+    "@language" : "es",
+    "@value" : "Profundidad de Penetración"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PenetrationDepthMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Penetration depth measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Penetration Depth Measurement"
+  }, {
+    "@language" : "es",
+    "@value" : "Profundidad de Penetración"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PinPenetrationTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pin Penetration Test (Windsor Probe) uses a metal pin driven into the material to correlate penetration depth with compressive strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Penetración de Perno"
+  }, {
+    "@language" : "en",
+    "@value" : "Pin Penetration Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Presión"
+  }, {
+    "@language" : "en",
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Presión"
+  }, {
+    "@language" : "en",
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PressureMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pressure measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Presión"
+  }, {
+    "@language" : "en",
+    "@value" : "Pressure Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PullOffResistanceTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pull-out Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Resistencia a la Extracción"
+  }, {
+    "@language" : "en",
+    "@value" : "Pull-Off Resistance Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PullOutForceMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pull-out force measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fuerza de Extracción"
+  }, {
+    "@language" : "en",
+    "@value" : "Pull-Out Force Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ForceMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#PullOutResistanceTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pull-out Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Resistencia a la Extracción"
+  }, {
+    "@language" : "en",
+    "@value" : "Pull-Out Resistance Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#RWaveVelocityMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rayleigh wave velocity (surface wave) measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "R-Wave Velocity"
+  }, {
+    "@language" : "es",
+    "@value" : "Velocidad de Onda R"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#WaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#RadiationTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Radiation-based methods use electromagnetic waves (X-rays, gamma rays) to penetrate materials and reveal internal structure and defects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo Basado en Radiación"
+  }, {
+    "@language" : "en",
+    "@value" : "Radiation-Based Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ReboundNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Unitless"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Número de rebote"
+  }, {
+    "@language" : "en",
+    "@value" : "Rebound number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de Rebote"
+  }, {
+    "@language" : "en",
+    "@value" : "Rebound Number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ReboundNumberMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rebound number measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de Rebote"
+  }, {
+    "@language" : "en",
+    "@value" : "Rebound Number Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Generalization of the results of an NDT."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Result"
+  }, {
+    "@language" : "es",
+    "@value" : "Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#SWaveVelocityMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Secondary wave velocity (shear wave) measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "S-Wave Velocity"
+  }, {
+    "@language" : "es",
+    "@value" : "Velocidad de Onda S"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#WaveVelocityMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#SchmidtHammerTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures surface hardness through rebound of a spring-loaded hammer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Esclerómetro Schmidt"
+  }, {
+    "@language" : "en",
+    "@value" : "Schmidt Hammer Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#SurfaceHardnessTest"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#SingleFlatJackTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Single flat-jack tests measure in-situ stress through stress release and compensation, based on elastic deformation assumptions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Gato Plano Simple"
+  }, {
+    "@language" : "en",
+    "@value" : "Single Flat-Jack Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#FlatJackTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#SonicTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sonic tests use wave frequencies between 20Hz and 20kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo Sonico"
+  }, {
+    "@language" : "en",
+    "@value" : "Sonic Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ElasticWavePropagationTest"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#SurfaceHardnessTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Surface hardness methods measure the resistance of material surface to indentation or impact, providing correlation with compressive strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Dureza Superficial"
+  }, {
+    "@language" : "en",
+    "@value" : "Surface Hardness Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Temperatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temperatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#TemperatureMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Temperature measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temperatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ThermalTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Thermal methods use infrared thermography to detect temperature variations that indicate structural defects, moisture, or delamination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo Térmico"
+  }, {
+    "@language" : "en",
+    "@value" : "Thermal Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#Thrust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Thrust"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Empuje"
+  }, {
+    "@language" : "en",
+    "@value" : "Thrust"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Empuje"
+  }, {
+    "@language" : "en",
+    "@value" : "Thrust"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#ThrustForceMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Thrust force measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fuerza de Empuje"
+  }, {
+    "@language" : "en",
+    "@value" : "Thrust Force Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ForceMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#TorquePenetrometricTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Torque Penetrometric Tests evaluate compressive strength by measuring the maximum torque resisted by the material when applied with a specialized nail"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo Penetrométrico de Torque"
+  }, {
+    "@language" : "en",
+    "@value" : "Torque Penetrometric Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#TorquePerUnitLengthMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Torque per unit length measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Par por Unidad de Longitud"
+  }, {
+    "@language" : "en",
+    "@value" : "Torque per Unit Length Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#UltrasonicPulseVelocityTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ultrasonic tests use wave frequencies between 20kHz and 150kHz. They are used for detecting detachment of layers, locating voids and deteriorated areas, quantifying cracks, and correlating velocities with mechanical material properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo Ultrasónico"
+  }, {
+    "@language" : "en",
+    "@value" : "Ultrasonic Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#ElasticWavePropagationTest"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#WavePropagationVelocity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qudt.org/schema/qudt/quantityKind" : [ {
+    "@id" : "http://qudt.org/vocab/quantitykind/Velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad de propagación de onda"
+  }, {
+    "@language" : "en",
+    "@value" : "Wave propagation velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad de Propagación de Onda"
+  }, {
+    "@language" : "en",
+    "@value" : "Wave Propagation Velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#WaveVelocityMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measurements realized in wave velocity tests"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad de Onda"
+  }, {
+    "@language" : "en",
+    "@value" : "Wave Velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#XRayTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Uses X-ray radiation to reveal internal structure and detect defects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ensayo de Rayos X"
+  }, {
+    "@language" : "en",
+    "@value" : "X-Ray Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ndto#RadiationTest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#hasMaterialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relates a Material with its mechanical properties, normally those evaluated in the context of an NDT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is made of"
+  }, {
+    "@language" : "es",
+    "@value" : "is made of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ndto#MaterialProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#hasMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relates a test with the measurements realized"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ndto#Material"
+  }, {
+    "@id" : "https://w3id.org/ndto#NonDestructiveTest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has measurement"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene medición"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ndto#NDTMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ndto#isMadeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relates anything with the material it is  made of in the context of an NDT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is made of"
+  }, {
+    "@language" : "es",
+    "@value" : "is made of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ndto#Material"
+  } ]
+} ]
