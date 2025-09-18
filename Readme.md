@@ -1,8 +1,10 @@
-Welcome to my GitHub profile! Here, you'll find a collection of my projects and contributions:
+Welcome to my GitHub profile! Here, you'll find a collection of my projects and contributions.
+
+If you areinterested in what you find here and want to contribute/engage in realted problems don't hesistate to contact carlos.ramonell@upc.edu
 
 # Ontologies:
 
-## Based on IFC (Industry Foundation Classes)
+## Based on Industry Foundation Classes (IFC)
 ### IFC 4X3 ADD2 
 English: [IFC 4X3 ADD2 ](/ifc/ifcowl/IFC4X3_ADD2/actual/index-en.html)
 ### IFC Processes
@@ -46,18 +48,28 @@ Spanish : [ndto (Non-Destructive Testing Ontology)](/bridge/assessment/ndt/actua
 
 [INSPIRE Road Transport Network](/Spatial/INSPIRE/Network/TransportNetworks/RoadTransportNetwork/actual/index-en.html) 
 
-# Converters
+## Structural Design
 
-## IFCEXPRESS2BEO
+[Eurocodes Core Ontology (ECO)](https://mlaura1996.github.io/EC1990/) 
+
+# Converters (ETL)
+
+### IFCEXPRESS2BEO
 [IFC2BEO converter](https://github.com/cramonell/beo) 
 
-## IFCEXPRESS2MEP
+### IFCEXPRESS2MEP
 [IFC2BEO converter](https://github.com/cramonell/mep) 
 
-## IFC2RDF (IfcOwl)
+### IFC2RDF (IfcOwl)
 [IFC2RDF converter](https://github.com/cramonell/ifcowl) 
 
-# IFC2KG (LBD)
+### IFC2KG (LBD)
 [IFC2KG converter](https://github.com/cramonell/KG4BE) 
+
+# Tools
+
+### Information Container for Linked Document Delivery (ICDD)
+[ICDD python library](https://github.com/cramonell/ICDD) 
+
 
 
