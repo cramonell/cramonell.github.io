@@ -1,6 +1,6 @@
 Welcome to my GitHub profile! Here, you'll find a collection of my projects and contributions.
 
-If you areinterested in what you find here and want to contribute/engage in realted problems don't hesistate to contact carlos.ramonell@upc.edu
+If you areinterested in what you find here and want to contribute/engage in related projects don't hesistate to contact carlos.ramonell@upc.edu
 
 # Ontologies:
 
